@@ -1,0 +1,1124 @@
+Version 3.13.7 (November 6th 2022)
+
+* Biotech: Added child-equippable Rainbow Dash plushie (+2 to movement speed; does not affect melee hit chance or shooting accuracy).
+* Biotech: Added child-equippable Starlight Glimmer plushie.
+* Biotech: Added the ability to request 5 hemogen packs from Nightmare Moon.
+	* She demands 1000 silver for this service, meaning you are effectively paying 40 times the market value (since 5 hemogen packs have a total market value of 25). As such, making this request should always be considered a last resort.
+	* This recipe is available as soon as you construct the statue.
+* Biotech: Added six new recipes to the Nightmare Moon statue which let your mechanitors request things. Please note that, instead of signal, powerfocus or nanostructuring chips, she will demand 1.5 times the chips value in silver AND chocolate; you will also have to provide the regular/advanced components that you would normally use to create the item. This makes the items quite expensive to acquire, but is useful if you want some upgrades but lack the firepower and/or numbers to take down one of the mechanoid bosses.
+	* Control sublink (standard)
+	* Control sublink (high)
+	* Remote repairer
+	* Mech gestation processor
+	* Remote shielder
+	* Repair probe
+	* These recipes can only be performed by a mechanitor, and are unlocked once you have researched the relevant technologies.
+* Biotech: Added a recipe to the Nightmare Moon statue which lets you request a high subcore. Doing so requires 2250 silver, 750 chocolate and 15 hemogen packs, but you won't be forced to sacrifice a pawn or prisoner, thus avoiding the associated mood debuffs.
+* Biotech: The NPC faction has welcomed various xenotypes into the fold. They are now 65% baseliner and 5% each of dirtmoles, pigskins, imps, yttakin, genies, neanderthals and highmates. Hussars, meanwhile, still only have a chance of appearing as elite mercenaries, while sanguophages and wasters will not appear at all (they refused to partake in all of the fun and magic, the miserable gits).
+* Combat Extended: Added bulk and worn bulk for child-equippable plushies.
+* XML Extensions: Added option to allow the child-equippable Rainbow Dash plushie to give the same bonuses as the adult version.
+* Core: Fixed 'Generated pawn incapable of violence' error.
+* Core: Nightmare Moon now demands both 125 chocolate and 10 industrial medicine before she will give you any glitterworld medicine.
+* Core: Increased amount of random names for NPC faction pawns, though you may see some weird combinations as a result.
+* Royalty: Updated 'request detoxifier stomach' recipe to reflect the fact it is now called a 'sterilising stomach.'
+* Royalty: Fixed recipe to request a reprocessor stomach using the wrong item name in the bill list.
+* Biotech: Fixed plushie trader not stocking child-equippable plushies.
+* RimPonk: Removed patches which add pawns from this mod to the NPC faction.
+
+Version 3.0.0 (October 27th 2022)
+
+* This mod no longer supports RimWorld 1.1 or 1.2; apologies for any inconvenience this may (read: will) cause.
+* Biotech: Added four new genes.
+	* Earth Pony: +25kg to carrying capacity.
+	* Unicorn: +25% to manipulation.
+	* Pegasus: +10% each to melee and trap dodge chance.
+	* Alicorn: All of the above.
+* Biotech: NPC faction elite brony mercenaries now have a 25% chance of being hussars.
+* Biotech: Some plushies now have child-equippable variants that cost half as many materials to make and have increased bonuses.
+	* Apple Bloom (+100% to immunity gain speed)
+	* Big Macintosh (+50kg to carrying capacity)
+	* Cheerilee (+100% to global learning factor)
+	* Discord (+100% to global work speed)
+	* Scootaloo (+100% to injury healing speed)
+	* Shining Armour (+30% each to blunt armour rating, sharp armour rating and heat armour rating)
+* Biotech: The brony trait now conflicts with the 'Recluse' trait.
+* Biotech: Added Button Mash (+2 bandwidth).
+* Biotech: Added a patch which gives you a Button Mash plushie when starting the mechanitor scenario.
+* Core: Added a recipe to the Daybreaker statue which lets you make 250 bottles of beer using 250 wort. You will need to use 75 chemfuel, and unlock the recipe with some additional research, but it's still a lot quicker than using the fermenting barrel!
+* Core: Added patches for RimWorld 1.4 which allow you to change the colour of the regular Discord lamp. If you have the Ideology DLC, you will also be able to turn it into a darklight. The R/G/B and separate darklight versions still exist, as removing them causes errors, but the colour can't be changed.
+* Core: An alert is now shown on the right of the screen when pawns with the anti brony trait have a plushie equipped.
+* MedPod: Added a recipe to request isolinear processors from the Nightmare Moon statue. Each processor costs 3000 chocolate (thus making them cost 9000 silver) and can only be requested once you have researched accelerated cellular regeneration.
+* MedPod: Added a patch which adds one isolinear processor to the stock carried by NPC faction exotic goods traders.
+* Vanilla Achievements Expanded: Added an achievement for crafting the Button Mash plushie.
+* Core: The poison joke addiction cure kit should now be working again.
+* Core: Sweetie Bot turrets have undergone a few more upgrades, chief among them being the fact they no longer require rearming.
+	* To compensate for this, the power consumption has been increased to 350W (was 175).
+	* Furthermore, the construction cost has increased to to 600 stuff, 5 advanced components and 250 plasteel.
+	* You can now build Sweetie Bots out of metals such as steel and uranium.
+	* Lowered required construction skill to 12 (was 15).
+	* Increased mass to 35 (was 8).
+	* Combat Extended users are unaffected by these changes, and will still need to provide ammo as normal.
+* Vanilla Achievements Expanded: Changed the criteria for earning the 'Friendship is Magic' achievement, as it wasn't tracking your psycasts properly. Instead, you now have to buy or sell 100 Elements of Harmony (not all at once, thankfully).
+* Weeb Faction: The Weeaboo Army and the NPC brony faction have had a bit of a falling out, and are once again hostile towards each other. Despite this, player-led brony communities seem to be unaffected, and can still freely interact with their anime loving friends.
+	* Only applies to new colonies; existing ones may still see the two as being friendly with each other.
+* XML Extensions: Removed setting related to rearming Sweetie Bot turrets. This will leave you with an unused setting, which can be safely deleted.
+* XML Extensions: The crafting skill you set for crafting regular plushies will be applied to the child versions as well.
+* XML Extensions: The market value you set for regular plushies will be divided by two and applied to the child versions.
+
+Version 2.94.153 (October 13th 2022)
+
+* Mod is now compatible with the RimWorld 1.4 patch.
+* Core: Added Fleur de Lis (+2 to pawn beauty).
+	* This bonus is not applied to the harmony chip.
+* Core: Added five new recipes to the Daybreaker statue that let you convert materials into 1000 silver. Handy if you've got an excess of one thing and would like to convert it into another.
+	* Materials required are exactly the same as you get when converting from silver, such as 526 steel or 111 plasteel.
+* Combat Extended: Added patch for Fleur de Lis.
+* Hooligan Faction: Added patch which makes the NPC faction non-hostile to player controlled hooligans.
+* Trait Icons: Added icons for brony and anti brony traits.
+* Vanilla Achievements Expanded: Added achievement to craft Fleur de Lis.
+* Vanilla Achievements Expanded: Added achievement to craft a Scootaloo plushie using bird leather.
+* Vanilla Backgrounds Expanded: Added 2 new backgrounds.
+* Core: Fixed plushie traders not stocking Daring Do.
+* Core: Reduced construction skill required to build Daybreaker statues to 6 (was 12).
+* Core: Reduced construction skill required to build Nightmare Moon statues to 6 (was 12).
+* Core: Making the Elements of Harmony no longer requires gold.
+* Core: NPC faction spawns now have silver in their loot tables.
+* Core: Instead of long descriptions, the functions of the Nightmare Moon and Daybreaker statues are now explained in a letter, received when you finish researching the technology to unlock them.
+* Core: NPC faction pawns can no longer have the anti brony trait.
+* Royalty: Reduced market value of the harmony chip to 10000 silver (was 17500).
+* Royalty: The NPC faction has seen fit to upgrade the equipment used by the mercenaries they employ.
+	* Melee brony mercenaries are now equipped with recon armour.
+	* Melee brony mercenaries will now use monoswords, zeushammers and plasmaswords.
+	* Ranged brony mercenaries (non elite) are now equipped with marine armour.
+* RimPonk: Fixed pawns not being able to equip the Aloe and Lotus plushie.
+* RimPonk: Fixed pawns not being able to equip the Daring Do plushie.
+* RimPonk: Fixed pawns not being able to equip the Spoiled Rich plushie.
+
+Version 2.81.138 (October 5th 2022)
+
+* Core: The poison joke addiction cure wasn't showing up in a pawn's health bills, so I've changed how it works.
+	* Added a new item, made at a drug lab using 10 neutroamine and 15 herbal medicine, which will cure the poison joke addiction when it is ingested.
+	* Requires 6 Medical skill to make.
+	* Researching the cure is still required.
+	* Works instantly with no adverse side effects.
+	* Also removes any built-up tolerance.
+	* NPC faction settlements will usually have 1-3 in stock.
+	* Laughable texture by me, as per usual.
+	* RimPonk: This item will also cure magical cake addiction and remove any built-up tolerance. It will also be renamed to 'Equestrian Addiction Removal Kit.'
+	* Many thanks to Cyber and Wild, creators of the Addictol mod, as I examined their code to see how I could do it myself. You can get the Addictol mod here: https://steamcommunity.com/sharedfiles/filedetails/?id=2454250644
+* Core: Added the ability to request skilltrainers from Nightmare Moon.
+	* Each skilltrainer costs 1125 chocolate.
+	* Unlocking these recipes requires research at a hi-tech research bench with a multi-analyser.
+* Royalty: Added the ability to request neurocalculators from Nightmare Moon (requires neural computation).
+* Royalty: Added the ability to request learning assistants from Nightmare Moon (requires neural computation).
+* Royalty: Added the ability to request immunoenhancers from Nightmare Moon (requires molecular analysis).
+* Royalty: Added the ability to request coagulators from Nightmare Moon (requires healing factors).
+* Royalty: Added the ability to request healing enhancers from Nightmare Moon (requires healing factors).
+* Royalty: Added the ability to request toughskin glands from Nightmare Moon (requires skin hardening).
+* Royalty: Added the ability to request armorskin glands from Nightmare Moon (requires skin hardening).
+* Royalty: Added the ability to request stoneskin glands from Nightmare Moon (requires skin hardening).
+* Royalty: Added the ability to request aesthetic shapers from Nightmare Moon (requires flesh shaping).
+* Royalty: Added the ability to request aesthetic noses from Nightmare Moon (requires flesh shaping).
+* Royalty: Added the ability to request love enhancers from Nightmare Moon (requires flesh shaping).
+* Royalty: Added the ability to request detoxifier stomachs from Nightmare Moon (requires artificial metabolism).
+* Royalty: Added the ability to request reprocessor stomachs from Nightmare Moon (requires artificial metabolism).
+* Royalty: Added the ability to request nuclear stomachs from Nightmare Moon (requires artificial metabolism).
+* Royalty: Added the ability to request circadian assistants from Nightmare Moon (requires circadian influence).
+* Royalty: Added the ability to request circadian half-cyclers from Nightmare Moon (requires circadian influence).
+* XML Extensions: Added options which allow you to set the touch/short/medium/long range accuracy of aggro turrets.
+* XML Extensions: Added an option which allows you to set the number of shots fired by aggro turrets each burst.
+* Core: Increased power generation of Screwballs to 300W (was 250).
+* Core: Updated the description of the Daybreaker statue to reflect that research is needed before components can be made.
+* Core: Fixed aggro turrets not 'firing' at enemies.
+* Core: Fixed Izzy Moonbow reducing a pawn's opinions of others instead of increasing them.
+* Core: Fixed bulk goods caravans not buying leather.
+* Royalty: Fixed the harmony chip reducing a pawn's opinions of others instead of increasing them.
+* Royalty: Fixed duplicate text in Nightmare Moon statue description.
+* Combat Extended: Increased bulk and worn bulk of the Cutie Mark Crusaders plush to 1.5 (was 0.5).
+* Combat Extended: Increased bulk and worn bulk of the Elements of Harmony to 3 (was 0.5).
+* Combat Extended: Reduced bulk and worn bulk of Royalty plushies to 0.5 (was 1).
+* Combat Extended: Reduced bulk and worn bulk of Ideology plushies to 0.5 (was 1).
+* Combat Extended: Added missing patch for Daring Do plushie.
+* Combat Extended: Added missing patch for Spoiled Rich plushie.
+* Combat Extended: Added missing patch for Aloe and Lotus plushie.
+* RimPonk: Removed recipe to cure magical cake addiction, as it wasn't showing in the bills on the Health tab.
+* XML Extensions: Fixed brony trait conflicting with traits it shouldn't after changing some settings.
+* XML Extensions: You can now set the commonality of the brony and anti-brony traits to zero.
+* XML Extensions: Setting Nurse Redheart to spawn glitterworld medicine will now make her use twice as much power.
+
+Version 2.61.119 (September 19th 2022)
+
+* Core: Added three new Discord lamps.
+	* Now available in red, green and blue.
+	* Requires coloured lights research.
+* Core: Added NPC faction slave trader.
+	* Only has slaves for sale; will not buy or sell anything else.
+	* Can be requested via the comms console.
+* Core: Added NPC faction stonemason.
+	* Doesn't carry a lot of silver.
+	* Buys and sells blocks of stone.
+	* Can be requested via the comms console.
+* Core: Added NPC faction exotic goods trader.
+	* Sells the usual goods you'd expect from a exotic goods caravan.
+	* Has a (very) small chance of stocking a single Nurse Redheart.
+	* Has a (very) small chance of stocking a single Super Speedy Cider Squeezy 6000.
+	* If you have Royalty enabled, this trader will stock implants and techprints.
+	* Can be requested via the comms console.
+* Ideology: Added darklight Discord lamp.
+	* Has a 25% larger glow radius than the normal standing darklight.
+	* Like all other Discord lamps, it will continue to operate during solar flares.
+* Vanilla Backstories Expanded: Added the 'MLP Obsessive' backstory.
+	* Only seen if RimWorld 1.3 is being used, since VBE only supports it.
+	* Pawns with this backstory will have the brony trait by default.
+	* Gives +10 to Crafting, Artistic and Social, all of which the pawn is very passionate about, but disables all other work. If you've allowed bronies to be violent via XML Extensions settings, pawns with this backstory can still fight.
+	* While this mod is enabled, the brony trait is patched so that it only gives +2 to Social instead of +6.
+* Core: The brony trait no longer conflicts with the abrasive trait.
+* Core: The brony trait no longer conflicts with the bloodlust trait.
+* Core: The brony trait no longer conflicts with the brawler trait.
+* Core: The brony trait no longer conflicts with the cannibal trait.
+* Core: The brony trait no longer conflicts with the shooting traits.
+* Core: Anti-bronies now have a -10 opinion of bronies (was -25).
+* Core: Bronies now have a +10 opinion of other bronies (was +25).
+* Core: NPC faction settlements should now buy and sell slaves.
+* Core: Fixed being unable to request bulk goods traders from the NPC faction.
+* Core: Fixed being unable to request weapon traders from the NPC faction.
+* Core: Pawns with the brony trait are no longer prevented from having extreme mental breaks such as murderous rage.
+* Core: Reduced the amount of raw food carried by NPC faction bulk goods traders to 1000-1500 (was 1500-2500).
+* Core: NPC faction bulk goods traders now have medicine in stock.
+* Core: Fixed plushie traders not stocking Spoiled Rich.
+* Core: Fixed the Super Speedy Cider Squeezy 6000 showing a 1x1 square when selected.
+* Royalty: Fixed plushie traders not stocking Aloe and Lotus.
+* Humanoid Alien Races: The brony trait now conflicts with the xenophobia trait.
+	* I'm not sure if it is possible to allow bronies to be xenophiles and not xenophobes; for now, they can't be either.
+
+Version 2.53.102 (September 9th 2022)
+
+* Core: Added Spoiled Rich (-25% to toxic sensitivity).
+* Core: Added the Super Speedy Cider Squeezy 6000.
+	* Like Nurse Redheart, it is only available as a quest reward.
+	* It's a big building, taking up a 4x2 area.
+	* Requires 500W of power to operate.
+	* Spawns 30 beer every 30 days.
+	* Flim and Flam not included.
+* Core: Added a recipe to obtain 5 glitterworld medicine from the Nightmare Moon statue.
+* Core: Researching Statues of the Evil Sisters can now be done at a simple research bench.
+* Core: Fixed incorrect description of plushie recycling research.
+* Core: Updated the description of the Nightmare Moon statue to show what you can get, and what research is needed.
+* Royalty: Anima trees and grass have been patched accordingly, and now have pony-themed names and descriptions. I was unable to patch the ritual for linking with the tree, however, as I couldn't seem to locate it in the game files.
+* Ideology: The patch for the Individualist meme now checks to see if the value it is trying to change has been edited already, thus preventing conflicts with other meme editing mods.
+* A RimWorld of Magic: Fixed error related to the now-removed Elements of Harmony and CMC recycling recipes.
+* RimPonk: All traits added by this mod now conflict with the Brony trait.
+* RimPonk Unique Pawns: All traits added by this mod now conflict with the Brony trait.
+* Changes related to Vanilla Achievements Expanded:
+	* Added an achievement to acquire the Super Speedy Cider Squeezy 6000.
+	* Achievements will now only be available if you are using RimWorld 1.2 or 1.3, as VAE only supports those. This may generate red errors if you are only using 1.1, so apologies in advance.
+	* Fixed the 'This Is Your Brain On Pony' achievement appearing when you didn't have the Royalty DLC enabled.
+	* Renamed the 'Power Of Love' achievement to 'Equestria Games Gold Medallist.'
+* XML Extensions: Added options to edit how much beer the SSCS6K spawns, and how often.
+* XML Extensions: Added options to edit how much chemfuel is required by recipes at the Daybreaker statue.
+* XML Extensions: Reduced maximum amount of medicine that Nurse Redheart can spawn to 30 (was 300). If you have it set to a value greater than 30 it should still work as it normally did.
+
+Version 2.47.90 (August 31st 2022)
+
+* Core: Nightmare Moon is now offering luciferium pills in lots of 5.
+	* As well as 175 chocolate, she also demands 10 each of smokeleaf joints, go-juice, wake-up and yayo.
+	* You will need to research drug production before this offering will become available.
+	* You cannot return luciferium pills to the statue.
+* Core: To thank you for your dedication, Nightmare Moon is now offering double the chocolate when returning things.
+* Core: Building Nightmare Moon and Daybreaker statues no longer requires plushies.
+* Core: Massively nerfed the Mudbriar, Quibble Pants, and Zephyr Breeze turrets.
+	* Doubled the material cost of building them (in Mudbriar's case, the wood cost has been tripled).
+	* They are now only 100% accurate at long range; at short/medium range, their accuracy is reduced to 25%, while they are only 10% accurate when firing at enemies within touching distance.
+	* Increased cooldown between shots to 3 seconds (was 0).
+	* Reduced speed of the 'projectile' fired by the turrets to 125 (was 250).
+	* Combat Extended: Reduced accuracy to 50%.
+	* These changes have been made because it was too easy to build a lot of these turrets and not worry about raiders, as they'd be too busy hitting them to pay any attention to your colonists.
+* Core: Fixed '... does not belong in <ThingDef> (defName="MLRP_ElementsOfHarmony")' error.
+* Core: Fixed '... does not belong in <ThingDef> (defName="PonyPlush_CutieMarkCrusaders")' error.
+* Core: Fixed 'Could not find a type named MyLittleRimPony.Thought_AntiBronyVsMLPRace' error.
+* Core: Fixed 'Could not find a type named MyLittleRimPony.ThoughtWorker_AntiBronyVsMLPRace' error.
+* Core: Fixed 'Config error in MLRP_ElementsOfHarmony: has duplicate thingCategory Pony_Plushies' error.
+* Core: Fixed 'Config error in PonyPlush_CutieMarkCrusaders: has duplicate thingCategory Pony_Plushies' error.
+* Core: Fixed 'Config error in MLRP_ScrewballGenerator: madeFromStuff but has a defined constructEffect' error.
+* Core: Fixed 'MLRP_PoisonJokePlant: Nutrition == 0 but preferability is RawBad instead of NeverForNutrition' error.
+* XML Extensions: Fixed formatting error.
+* RimPonk: The anti brony trait should now properly conflict with all traits added by this mod.
+* RimPonk Unique Pawns: The anti brony trait should now properly conflict with all traits added by this mod.
+
+Version 2.46.62 (August 6th 2022)
+
+* Core: Added a recipe to the Daybreaker statue which allows for the creation of 10 components at a time (uses 150 chemfuel).
+* Core: Added a recipe to the Daybreaker statue which allows for the creation of 10 advanced components at a time (uses 150 chemfuel).
+* Core: Added a patch, applied if Single Use Grenades N'at is enabled, that reduces the cost of making wife throwers to just 10 wood. It makes sense to do this because, well, 75 wood to make something that you only get to throw once is kinda expensive.
+* Core: You should now be able to make Rainbow Lasers using Elements of Harmony again. This seems kinda tempermental, so I'd like to apologise in advance if it turns out not to work.
+* Core: Combat Extended is no longer in the load order when using Rimworld 1.1 or 1.2 (since CE itself only supports 1.3).
+* Ideology: Added the Cult of Chaos as a precept ideoligion you can select when starting a new colony.
+	* Uses the Supremacist, Pain Is Virtue, Human Primacy and Proselytizer memes.
+* Ideology: Precept ideoligions added by this mod now have their own category. They can be found at the bottom of the list.
+* RimPonk: Removed the patch which would try to set the relation of the NPC faction with the Nightmare Moon and Changeling player colonies to -100. (I forgot to do it when I removed the one that made the NPC faction allied with colonies containing any of the Mane Six.)
+* RimPonk: Pawns added by this mod can no longer have the anti brony trait.
+
+Version 2.41.58 (July 15th 2022)
+
+* Core: Added 8 new backgrounds (requires Vanilla Backgrounds Expanded).
+	* Artists are credited in the Credits.txt file.
+	* No edits have been made to any of the art used.
+	* Anyone wishing for me to remove their work can contact me via Discord.
+* Core: Updated list of names for NPC and player factions (again).
+* Core: Fixed error related to the Brony Community scenario regarding Screwball generators not having a material assigned. 
+* Core: Increased Brony Community scenario starting wood count to 500 (was 300).
+* Core: Reduced Brony Community scenario starting silver to 500 (was 800).
+* Core: The Brony Community scenario now starts with plushies intended to make initial setup quicker.
+* Royalty: Fixed the harmony chip not reducing pain like plushies do.
+* Royalty: Changed the thought bronies get when they have a harmony chip installed.
+* Ideology: Fixed the Harmony precept not increasing the hacking speed of all your pawns.
+* Bulk Carrier: Big Macintosh now increases carrying capacity by 75kg (was 50).
+* Bulk Carrier: Fixed the harmony chip not increasing carrying capacity properly.
+* RimWorld War 2: Updated non-hostile patch to include the new Finnish factions.
+* RimWorld War 2: Fixed Kingdom of Italy and Soviet Russia (1939-1941) remaining hostile to NPC and player factions. Both factions may still be at -100 relations, but you are now able to improve those relations should you so wish.
+* XML Extensions: If you've allowed bronies to be violent, the description for the Brony Community scenario will be different.
+
+Version 2.33.44 (June 7th 2022)
+
+* RimPonk: Added a recipe to remove magical cake addiction.
+	* Requires 10 industrial medicine.
+	* Requires a Medicine skill level of at least 8.
+	* Does not require research.
+* NPC faction settlements should now buy meat.
+* Vastly reduced the amount of raw food stocked by NPC faction settlements.
+* Increased the variety of raw food stocked by NPC faction settlements.
+* Discord now increases global work speed by 50% (was 25).
+* Izzy Moonbow now increases opinions of others by 50% (was 25).
+* Anti bronies no longer get the mood bonus from having Izzy equipped.
+* Ideology: Zecora now increases pruning speed by 100% (was 50).
+* Fixed NPC faction settlements attempting to stock techprints without the Royalty DLC enabled.
+* NPC faction settlements will now have a maximum of 2 techprints in stock at any one time.
+* Updated list of names for NPC and player factions.
+	* The way they are generated has been changed; this MIGHT cause some issues. Apologies in advance if it does.
+* Updated list of names for NPC and player settlements.
+* Updated Callouts patches with a few new and updated entries.
+
+Version 2.32.32 (May 22nd 2022)
+
+* Added Daring Do (+10% dodge chance).
+* Vanilla Achievements Expanded: Added achievement to craft a Daring Do plushie.
+* Added a patch for [K4G] RimWorld War 2 which makes the Allied and Axis factions non-hostile to player and NPC brony factions.
+	* If you're loading an existing save, they may still hate you and/or the NPC faction, but they'll be neutral on a new colony.
+* Updated Callouts patches so that only pawns with the brony trait should be the ones saying any of the things it adds.
+* Royalty: Pawns with the Psychopath trait no longer get a mood bonus from having a harmony chip installed.
+* Fixed spelling mistake in poison joke plant crop.
+* Updated preview image (again again, but probably for the last time).
+
+Version 2.29.28 (May 14th 2022)
+
+* Added Mudbriar and Quibble Pants as alternatives to Zephyr Breeze.
+* Vanilla Achievements Expanded: Added achievements for building Mudbriar and Quibble Pants.
+* Added a medical procedure to cure poison joke addiction (requires 25 herbal medicine; must be researched first).
+* Added a patch, applied when the Callouts mod is enabled, that adds... well, callouts. There's not many of them, but hopefully I can think of some more as time goes on. (Feel free to submit your own, though!)
+* Added the ability to build Discord lamps using any kind of textile.
+* Added the ability to build Screwball generators using any kind of textile.
+* Added the ability to build Sweetie Bot turrets using any kind of textile.
+* Added the ability to build Zephyr Breeze turrets using any kind of textile.
+* Combat Extended: Added patches for the 'aggro turrets.'
+	* They now require being loaded with wooden bullets, made at a plushie bench.
+	* Each turret has a magazine size of 5000, with a one second reload time.
+	* Making ammo requires 100 wood, and makes 5000 rounds at a time.
+	* I haven't actually tested these patches, so PLEASE tell me if they break!
+* Overhauled research system to use tiers of Quick, Easy, Medium, Hard, and Very Hard.
+	* Quick research is exactly that, and can be done at a simple research bench. (Base cost: 500)
+	* Easy research costs more than quick research, and can also be done at a simple research bench. (Base cost: 1500)
+	* Medium research requires a hi-tech research bench. (Base cost: 3000)
+	* Hard research requires a hi-tech research bench and a multi-analyser. (Base cost: 4500)
+	* Very Hard research requires the Royalty DLC, a hi-tech research bench, a multi-analyser, and a techprint. (Base cost: 6000)
+	* As a result of this change, all research costs have been changed, and the harmony chip research now requires a techprint.
+* Statues of Daybreaker and Nightmare Moon no longer require steel, gold and advanced components to make.
+	* A Celestia/Luna plush is still required.
+	* The stone brick cost has been increased to 750.
+* Fixed research projects being spaced out so far on the research tab (for those of you not using mods to streamline it).
+* Recycling plushies and Elements of Harmony should no longer provide cloth all the time.
+* Removed recipe to recycle Elements of Harmony.
+* Removed recipe to recycle Cutie Mark Crusaders.
+* I was unable to find a fix for being unable to make Rainbow Lasers despite having all of the necessary materials, so I have changed the recipe a little bit. The Elements of Harmony are no longer used to make the weapon; instead, the recipe now requires 100 plasteel, 50 gold (was 75) and 2 advanced components.
+* Speaking of the Rainbow Laser, I've altered the parts of it that pawns can use in melee. It now has a barrel for poking people with, and a butt for smacking people with.
+* Combat Extended: Increased aiming accuracy of Sweetie Bot turrets to 45% (was 25%).
+* Combat Extended: Fixed error with Sweetie Bot patches.
+* Updated preview image (again).
+
+Version 2.18.16 (May 6th 2022)
+
+* Core: Added poison joke.
+	* When smoked, moving and manipulation are both improved by 25% for a while, but it reduces mood by 10.
+	* Needs to be planted first; it takes a long time to reach maturity, and requires at least 140% soil fertility.
+	* Harvested leaves will spoil in 7 days.
+	* Turned into joints at a drug lab; it takes 10 leaves to make 1 joint.
+* Royalty: Added the spa sisters, Aloe and Lotus (as a single plush)
+	* Increases meditation focus gain by 25%.
+	* Costs 1.5 times as many materials to make as a regular plush.
+* XML Extensions: Added three new settings.
+	* Customise attack range of Sweetie Bot turrets (max 100).
+	* Customise aggro range of Zephyr Breeze turrets (max 100).
+	* Customise health of Zephyr Breeze turrets (max 3000).
+* Added the ability to make plushies using any kind of textile. Yes, even human leather.
+	* Recycling plushies will still give cloth regardless of what material was used; this will hopefully be changed later.
+* Pony plushies now provide up to 2 degrees of protection against cold weather (depending on material).
+* Vanilla Achievements expanded: Added seven new achievements.
+	* Making each of the Mane Six using human leather.
+	* Making an Aloe and Lotus plushie.
+* Ideology: Fixed the issue which caused your starting pawns and items to vanish when starting a new game via the Brony Community scenario with the ideology system disabled. (Credit for this goes to Krazy4Games, creator of the RimWorld War 2 mod.)
+* Making the Elements of Harmony is now done using just textiles; the recipe which used plushies has been removed.
+* Making the Cutie Mark Crusaders is now done using just textiles; the recipe which used plushies has been removed.
+* Added a patch, applied if the Weeb Faction mod is enabled, that makes the Weeaboo Clan faction non-hostile to both the player-controlled and NPC brony factions.
+* The wife thrower can now be made at a crafting spot.
+* Increased the long range accuracy of the wife thrower to 70% (was 40%).
+* Increased the medium range accuracy of the wife thrower to 60% (was 50%).
+* Decreased the short range accuracy of the wife thrower to 50% (was 71%).
+* Decreased the touch range accuracy of the wife thrower to 40% (was 50%).
+
+Version 2.3.8 (April 24th 2022)
+
+* With 26 plushies added by this mod(1), there is a lot of choice involved; do you equip a Rainbow Dash to help with combat, or an Applejack to help with the harvest? Well, as long as you have the Royalty DLC, you no longer need to faff about with such inane decisions, thanks to... the Harmony Chip!
+	* When implanted into the brain, this marvellous piece of tech will grant the bonuses of every plushie at once (except for Starlight, because -100% psychic sensitivity isn't much use to a psycaster).
+	* Costs 350 each of steel, plasteel and uranium, 175 gold and 10 advanced components to make at a plushie bench.
+	* Requires research at a hi-tech research bench with multi-analyser.
+	* Can rarely be obtained from NPC faction settlements and combat suppliers.
+	* Requires 12 skill in Crafting to make.
+	* Requires 12 skill in Medicine to install.
+	* Has a market value of 17500 silver.
+	* Pawns with the brony trait will get +20 to mood if they have a chip installed.
+	* Pawns with the anti brony trait will get -20 to mood if they have a chip installed.
+	* All other pawns will get +10 to mood if they have a chip installed.
+	* Users of XML Extensions should be able to install it in any modded humanlike thanks to a patch.
+	* You can still equip plushies if you have a chip installed.
+	* Starlight isn't included in the bonuses because -100% to psychic sensitivity is of no use to psycasters.
+	* Slave suppression is also included, meaning you can put this in your slaves to improve their work. Ironic, I know.
+* Vanilla Achievements Expanded: Added an achievement to install a harmony chip in a pawn.
+* (Royalty) Added a patch which turns the anima tree into the Tree of Harmony.
+	* It only changes the name, description and texture.
+	* Doesn't change anima grass.
+	* May look a bit weird depending on whether other trees were near it.
+* Updated preview image.
+* Fixed incorrect description (it still had links to the old expansions and the CE patch).
+* Recipes to recycle the Elements of Harmony and Cutie Mark Crusaders no longer assume you want to recycle every one that you get; you can now specify how much durability they need to have before they are recycled. (You may need to check the bills and ensure that the item has a green tick next to it.)
+* Anti-bronies now have a -25 opinion of bronies (was -50).
+* Fixed Zephyr Breeze not increasing home area when constructed.
+* Fixed Zephyr Breeze not having 1000 maximum health as specified in earlier patch notes.
+* Sweetie Bot is reporting a 12.5% decrease in power usage with zero loss in efficiency (175W, down from 200W).
+* Fixed Sweetie Bot turrets exploding even though it says in the description that they don't.
+
+(1) 27 if you include the unicorn Twilight plush, which is added by a patch for A RimWorld of Magic. Also, fun fact, there are 22 plushies in the core mod, plus 1 for Royalty and 3 for Ideology.
+
+Version 2.0.0 (April 18th 2022)
+
+* All of the extensions for this mod have been removed from the Workshop and Github, and implemented within this one. Content will be loaded depending on the game version and expansions you are using; the Combat Extended patch is included in this as well.
+* Added a recipe to the plushie bench which allows you to recycle plushies.
+	* Requires research at a hi-tech research bench.
+	* Grants 60% of the cloth used to make them.
+	* Separate recipes exist for recycling the Elements of Harmony and Cutie Mark Crusaders; the former also returns 10% of the gold used.
+* Added hotkeys to buildings in the RimPony section of the Architect menu.
+* Made some changes to the wife thrower.
+	* Making one no longer requires a Cadence plush.
+	* Reduced the ranged cooldown of to 2 seconds (was 3).
+	* Increased the long range accuracy to 40% (was 32%).
+	* Reduced the amount of wood needed to make one to 75 (was 100).
+* The rainbow laser has also undergone some modifications.
+	* The damage has been increased to 25 (was 22).
+	* The touch accuracy has been increased to 30% (was 20).
+	* The short range accuracy has been increased to 40% (was 35).
+	* The ranged cooldown has been decreased to 2 seconds (was 2.5).
+	* The amount of gold required to make one has been increased to 75 (was 50).
+* Made some changes to patches for XML Extensions.
+	* If bronies are capable of violence, the trait will not conflict with the bloodlust, brawler, careful shooter and trigger-happy traits.
+	* If bronies are capable of violence, the market value reduction caused by the trait will be removed.
+	* Removed 'null' tooltips from the settings screen.
+* Users of this mod who don't have XML Extensions enabled should no longer be spammed with red errors on game startup.
+* Fixed 'Config error in PonyPlush_CutieMarkCrusaders: has a recipeMaker but no costList or costStuffCount' error.
+* Fixed 'Config error in MLRP_ElementsOfHarmony: has a recipeMaker but no costList or costStuffCount' error.
+* Fixed 'Config error in MLRP_Daybreaker: is haulable, but does not have an authored mass value' error.
+* Fixed 'Config error in MLRP_Daybreaker: is minifiable but not in any thing category' error.
+* Brony Community pawns no longer start with a random plushie in their inventory.
+* The brony trait now conflicts with traits related to shooting accuracy.
+* The brony trait now conflicts with traits related to drug desire.
+* Removed techprint requirement from Evil Sisters research.
+* Elite brony mercenaries no longer spawn with tech implants.
+* NPC faction pawns now carry packaged survival meals instead of simple/fine/lavish meals.
+* Pony plushies now reduce pain by 10% for as long as they are equipped.
+
+Version 1.159.268 (April 14th 2022)
+
+* Added Zephyr Breeze (building).
+	* Acts as a decoy, attracting raiders to attack him.
+	* Requires 300 cloth, 100 steel, 50 plasteel and 50 uranium to build.
+	* Available from game start with no research required.
+	* Extremely durable, with 1000 maximum health.
+* Vanilla Achievements Expanded: Added achievement to build Zephyr Breeze.
+	* If the achievement doesn't pop, try uninstalling and reinstalling the building.
+* Added 4 new recipes, seen if you have the Harvest Organs Post Mortem mod enabled, to the Nightmare Moon statue.
+	* Return heart: ((500/10) / 3 = 17 chocolate)
+	* Return lung: ((400/10) / 3 = 13 chocolate)
+	* Return kidney: ((250/10) / 3 = 8 chocolate)
+	* Return liver: ((500/10) / 3 = 17 chocolate)
+	* These recipes will become available once you complete the advanced autopsy research.
+* Added 2 new recipes to the Daybreaker statue which allow you to create 5 regular or advanced components.
+	* Each recipe requires the same items as it normally would, as well as the 75 chemfuel required by other Daybreaker bills. As a bonus, however, the process is significantly faster than using the fabrication bench; this allows you to save a lot of time when creating components.
+	* These recipes will only appear once you have researched the relevant manufacturing technologies.
+* Added a patch, applied if Vanilla Furniture Expanded - Production is enabled, which allows the plushie bench to benefit from being near tailor cabinets.
+* Added a patch, applied if A RimWorld of Magic is enabled, which makes the brony trait conflict with most of the traits added by that mod.
+	* It will not conflict with the 'Unaffected by death' trait.
+	* It will not conflict with the 'Empath' trait.
+	* It will not conflict with the 'Wanderer' trait.
+	* It will not conflict with the 'Priest' trait.
+	* It will not conflict with the 'Entertainer' trait.
+* Added nine additional patches, applied if certain class mods for AROW are enabled, which will make the brony trait conflict with that class.
+	* Alhoon
+	* Dread Necromancer
+	* Elemental Shaman
+	* Magitek Commander
+	* Movanic Deva
+	* Shadow Fiend
+	* Shadow Wight
+	* Way Of The Kensei Blade And Bow
+	* White Walker
+* Added a patch, applied if A RimWorld of Magic is enabled, which adds a unicorn version of Twilight to the game.
+	* Max Energy: +15%
+	* Energy Regen: +15%
+	* Ability Cooldown: -10%
+	* The patch also changes the name of the regular Twilight plush.
+* Some Nightmare Moon recipes now require research before they become available.
+	* Requesting bionic limbs requires bionic replacements research.
+	* Requesting healer mech serum requires hospital bed research (if you have MLRP Royalty, this is changed to healing factors).
+	* Requesting resurrector mech serum requires medicine production research (if you have MLRP Royalty, this is changed to healing factors).
+	* Requesting bionic wings (added by RimPonk) also requires bionic replacements research.
+	* Requesting or returning an AI persona requires machine persuasion research.
+* Researching how to build Daybreaker and Nightmare Moon now requires you to research both cocoa and biofuel refining instead of advanced fabrication.
+* Researching how to build Daybreaker and Nightmare Moon can now be done at a simple research bench.
+	* Techprints are still required.
+	* Research cost remains unchanged.
+* Changed the description of the Twilight Sparkle (alicorn) plush.
+* NPC faction settlements will now buy drugs. (I like to think that they're destroying them.)
+* Fixed plushie traders not stocking Maud Pie plushies.
+* You no longer hear pawns firing their Rainbow Lasers when the camera isn't focused on them.
+* Making Rainbow Lasers no longer requires advanced components.
+* Changed the texture of the Rainbow Laser to that of an actual weapon.
+* Fixed the texture for the plushie bench not rotating properly.
+* NPC faction settlements no longer sell plushies.
+
+Version 1.139.253 (April 5th 2022)
+
+* Moved all Royalty patches to My Little RimPony - Royalty.
+* Updated list of names used for NPC faction settlements.
+* Reduced the cost of the technology required to build Screwballs to 400 (was 600).
+
+Version 1.139.250 (March 31st 2022)
+
+* Added a patch which should allow the imperial faction to utilise NPC faction mercenaries for quests.
+	* This patch is only applied if the Royalty DLC is enabled.
+* Other Royalty patches now check to see if the DLC is enabled first.
+* All constructable buildings added by this mod have been put in their own category in the Architect menu to make finding them easier.
+* Added nine new bills to the Nightmare Moon statue.
+	* Bionic Tongue: ((565 / 3) * 1.5) = 282.5 chocolate (rounded to 283; total silver cost is 849)
+	* Bionic Ear: ((785 / 3) * 1.5) = 392.5 chocolate (rounded to 393; total silver cost is 1179)
+	* Bionic Stomach: ((785 / 3) * 1.5) = 392.5 chocolate (rounded to 393; total silver cost is 1179)
+	* Bionic Arm: ((1030 / 3) * 1.5) = 515 chocolate (total silver cost is 1545)
+	* Bionic Eye: ((1030 / 3) * 1.5) = 515 chocolate (total silver cost is 1545)
+	* Bionic Leg: ((1030 / 3) * 1.5) = 515 chocolate (total silver cost is 1545)
+	* Bionic Heart: ((1030 / 3) * 1.5) = 515 chocolate (total silver cost is 1545)
+	* Bionic Spine: ((1030 / 3) * 1.5) = 515 chocolate (total silver cost is 1545)
+	* Bionic Wing: ((1090 / 3) * 1.5) = 545 chocolate (total silver cost is 1635)
+	* You cannot return these items to the statue.
+	* Bionic wing recipe requires the RimPonk mod.
+	* Market values for base items were obtained from the RimWorld wiki.
+* Added five new bills to the Daybreaker statue.
+	* Convert 1000 silver into jade: 1000 silver has a market value of $1000; dividing this by 5 will give you 200 jade.
+	* Convert 1000 silver into steel: 1000 silver has a market value of $1000; dividing this by 1.9 will give you 526 steel.
+	* Convert 1000 silver into plasteel: 1000 silver has a market value of $1000; dividing this by 9 will give you 111 plasteel.
+	* Convert 1000 silver into uranium: 1000 silver has a market value of $1000; dividing this by 6 will give you 167 uranium.
+	* Convert 1000 silver into gold: 1000 silver has a market value of $1000; dividing this by 10 will give you 100 gold.
+	* You cannot convert these materials into silver; these bills are handy if you don't want to wait for mining or caravans.
+* Building a Nightmare Moon statue now requires 5 advanced components (was 10).
+* Building a Daybreaker statue now requires 5 advanced components (was 10).
+* Edited description of Sweetie Bot and moved what was originally there to the loading screen tips section.
+* Increased hitpoints of Sweetie Bot turrets from 250 to 380 in order to bring their durability in line with the autocannon and uranium slug turrets.
+* Increased range of Sweetie Bot turrets from 40 to 45.9 in order to bring them in line with the uranium slug turret.
+* Sweetie Bot turrets in need of rearming will now show the standard barrel image used by other turrets.
+* RimPonk: Commented out the patch which would start the NPC faction as allied if you created a new colony with any of the Mane Six in it.
+* RimPonk Unique Pawns: Commented out the patch which would start the NPC faction as allied if you created a new colony with Celestia in it.
+* Made some more changes to patches for XML Extensions.
+	* Configuring plushie crafting skill is now done with a slider.
+	* Configuring Sweetie Bot touch accuracy is now done with a slider.
+	* Configuring Sweetie Bot short range accuracy is now done with a slider.
+	* Configuring Sweetie Bot medium range accuracy is now done with a slider.
+	* Configuring Sweetie Bot long range accuracy is now done with a slider.
+	* Configuring brony trait commonality is now done with a slider.
+	* Configuring anti brony trait commonality is now done with a slider.
+	* Configuring how much medicine is spawned by Nurse Redheart is now done with a slider (max 300).
+	* Configuring how often medicine is spawned by Nurse Redheart is now done with a slider (max 60 days, equivalent to one in-game year).
+
+Version 1.123.232 (March 25th 2022)
+
+* Removed support for version 1.0 of RimWorld.
+	* A version of this mod which is compatible with it can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=2783974303
+	* Please note that many things will have been changed or removed in order to make it compatible.
+* Daybreaker wasn't working as a moisture pump, so she has undergone a massive transformation.
+	* She is now a statue, like Nightmare Moon; the building materials are the same, except you use a Celestia plush instead of a Luna plush.
+	* She will allow you to convert 100 of either jade, steel, plasteel, uranium or gold into whatever the equivalent market value is of another.
+		* Example #1: Convert steel into uranium. Steel has a market value of 1.9, and uranium has a market value of 6. 100 steel has a total market value of $190; dividing this by 6 means you will get 32 (rounded up) uranium for your 100 steel.
+		* Example #2: Convert 100 gold into jade. Gold has a market value of 10, and jade has a market value of 5. 100 gold has a total market value of $1000; dividing this by 5 means you will get 200 jade for your 100 gold.
+	* She will now emit the same amount of heat as a wood-fired generator, as well as give off a glow.
+	* Converting materials will also require 75 chemfuel.
+	* Pawns only need to be assigned to Basic work in order to use this building.
+	* The building is now referred to as 'Statue of Daybreaker' instead of just 'Daybreaker.'
+	* The building is a bit bigger now, at 2x2 instead of 1x1; if you had Daybreaker installed in a place where this new size would cause issues, you will find that she has been automatically uninstalled (and damaged) when you load your game.
+	* Please note that you will get red errors when trying to interact with the building after reinstalling it, but I've been told those are only a one-time thing and should go away once you save and reload. However, if they do persist for some reason, you can just destroy the old ones.
+* New recipes added to the Nightmare Moon statue.
+	* Request an elephant tusk for 40 chocolate. ((80 / 3) * 1.5) = 40 (for a total silver cost of 120)
+	* Return an elephant tusk for 3 chocolate. ((80/10) / 3 = 3 chocolate)
+* Made changes to the research for Nightmare Moon.
+	* It is now called 'Evil Sisters' and unlocks the ability to build both statues.
+	* Increased research cost to 7500 (was 5000).
+	* The defName has not been changed; if you already had the old tech researched, the game will ask you to complete the extra 2500 points of research that was added. Any techprints you had applied should still be available.
+* Fixed being unable to uninstall and reinstall statues of Daybreaker.
+* Fixed being unable to uninstall and reinstall statues of Nightmare Moon.
+* Fixed being unable to uninstall and reinstall plushie benches.
+* Vanilla Achievements Expanded: The achievement to build Daybreaker is now worth 50 points (was 25).
+* Vanilla Achievements Expanded: Renamed the achievement to craft a rainbow laser to Emphasis On 'Harm.'
+* RimPonk Unique Pawns: Fixed NPC Faction not starting as allied if you start a new colony with Celestia in it.
+
+Version 1.120.223 (March 20th 2022)
+
+* Made some changes to the Nightmare Moon statue.
+	* Added recipes which allow you to return exotic items to the statue, in exchange for 10% of the item's value in chocolate.
+		* AI Persona Core: ((4000/10) / 3 = 133 chocolate)
+		* Healer Mech Serum: ((1300/10) / 3 = 43 chocolate)
+		* Resurrector Mech Serum: ((1700/10) / 3 = 57 chocolate)
+		* Techprof Subpersona Core: ((1000/10) / 3 = 33 chocolate)
+		* Thrumbo Horn: ((800/10) / 3 = 27 chocolate)
+	* Added the ability to build statues using metallic stuff.
+	* The building is now referred to as 'Statue of Nightmare Moon' instead of just 'Nightmare Moon.'
+* NPC faction weapon traders now stock fewer wife throwers, and more rainbow lasers.
+* Daybreaker no longer requires chemfuel to build.
+* Daybreaker now requires 75 steel to build (was 30).
+* Daybreaker will now consume fuel properly.
+* The texture for the plushie bench no longer looks weird.
+* Addictol - Addiction Removal: Added a patch which allows NPC faction settlements and weapon traders to have it in stock.
+* RimPonk: Fixed changeling pawns being unable to use plushies.
+* RimPonk: Fixed gryphon pawns being unable to use plushies.
+* RimPonk: Fixed kirin pawns being unable to use plushies.
+* RimPonk Unique Pawns: Added a patch which will start the NPC faction as allied if you create a new colony with Celestia in it.
+* XML Extensions: Tidied up the settings window.
+
+Version 1.112.213 (March 17th 2022)
+
+* Added Daybreaker (building).
+	* She's basically a moisture pump that runs on chemfuel, thus eliminating the need to build power conduits all over the place.
+	* Requires a Celestia plush, 75 chemfuel, 4 components and 30 steel to construct.
+	* Unlocked when you research the standard moisture pump.
+* Added Nightmare Moon (building).
+	* Provides exotic items - persona cores, healer/resurrector mech serums, techprof cores and thrumbo horns - in exchange for chocolate.
+	* Requires 12 Construction skill, 500 stone blocks, a Luna plushie, 10 advanced components, 150 steel and 100 gold to construct.
+	* Can only be built on terrain which supports heavy structures.
+	* Pawns only need to be assigned to Basic work in order to use this building.
+	* The amount of chocolate required is worked out by taking the market value of the item you want, dividing it by the market value of chocolate (three silver), and then multiplying that figure by 1.5; if you then multiply the result by 3, it works out at a 50% increase in the price.
+		* AI Persona Core: ((4000 / 3) * 1.5) = 1999.5 (rounded to 2000, for a total silver cost of 6000)
+		* Healer Mech Serum: ((1300 / 3) * 1.5) = 649.5 (rounded to 650, for a total silver cost of 1950)
+		* Resurrector Mech Serum: ((1700 / 3) * 1.5) = 850.5 (rounded to 850, for a total silver cost of 2550)
+		* Techprof Subpersona Core: ((1000 / 3) * 1.5) = 499.5 (rounded to 500, for a total silver cost of 1500)
+		* Thrumbo Horn: ((800 / 3) * 1.5) = 400 (for a total silver cost of 1200)
+	* You will need to research this building before you can construct it.
+		* Requires a hi-tech research bench.
+		* Requires a multi-analyser.
+		* Requires three (very expensive) techprints.
+		* Requires advanced fabrication to be researched first.
+* Vanilla Achievements Expanded: Added achievement to build Daybreaker.
+* Vanilla Achievements Expanded: Added achievement to build Nightmare Moon.
+* Increased number of components stocked by NPC faction settlements to between 30 and 70 (was 20 and 70).
+* Increased number of advanced components stocked by NPC faction settlements to between 6 and 12 (was 1 and 6).
+* Updated list of names for NPC faction pawns.
+* Updated list of names for NPC faction settlements.
+
+Version 1.108.209 (March 14th 2022)
+
+* Added Maud Pie (+25% mining speed and yield).
+* Added more patches for the XML Extensions mod.
+	* Settings to determine the accuracy of Sweetie Bot turrets at all ranges (touch, short, medium and long).
+	* A setting to determine whether or not the cost of rearming Sweetie Bot turrets is affected by game difficulty.
+	* A setting to determine whether or not Nurse Redheart spawns glitterworld medicine instead of industrial.
+	* A setting to determine how much medicine Nurse Redheart spawns.
+	* A setting to determine how much often Nurse Redheart spawns medicine.
+* Vanilla Achievements Expanded: Added achievement to obtain Maud Pie.
+* Vanilla Achievements Expanded: Increased the point value of obtaining the 'Power Of Love' achievement to 25 (was 10).
+* XML Extensions Patches: Fixed a problem - the cause of which was my fault - preventing the amount of cloth needed to make plushies from being reset properly.
+
+Version 1.98.207 (March 12th 2022)
+
+* Added load check to ensure that this mod is loaded after XML Extensions (if enabled).
+* Added more patches for the XML Extensions mod.
+	* A setting to configure whether or not plushies become tainted if worn by a corpse.
+	* A setting to configure how common the brony trait is.
+	* A setting to configure how common the anti brony trait is.
+	* Patches for the alternate Elements of Harmony and Cutie Mark Crusaders recipes that will take into account the cloth value you set for individual plushies.
+* Made some changes to the patches for Vanilla Achievements Expanded.
+	* Renamed the achievement for making Apple Bloom to 'Blooming Marvellous.'
+	* Updated textures used for achievements with ones that aren't so blurry.
+* Fixed being able to make the Elements of Harmony with just 300 cloth.
+* Fixed plushie traders not stocking Elements of Harmony.
+* Fixed recipe for making the Elements of Harmony using plushies appearing in the bill list twice.
+* Fixed recipe for making the Cutie Mark Crusaders using plushies appearing in the bill list twice.
+* Fixed an error which caused you to earn the achievement for making a legendary rainbow laser after making a legendary tennis ball launcher.
+* Updated list of male names for NPC faction pawns.
+* Updated list of female names for NPC faction pawns.
+
+Version 1.93.198 (March 5th 2022)
+
+* If you have XML Extensions enabled, you can now access customisable settings for this mod by going to Options and clicking 'More Mod Settings.'
+	* Change how much cloth is needed to make plushies.
+	* Change the crafting skill needed to make plushies.
+	* Change the market value of plushies.
+	* Change whether or not bronies can be violent.
+* Fixed an error which caused you to earn the achievement for obtaining Nurse Redheart after making a Shining Armour plush.
+* Sweetie Belle now reduces food poison chance by 10% (was 5%).
+
+Version 1.89.196 (February 28th 2022)
+
+* Removed the multiplayer compatibility patch, as it turns out it's not required.
+* NPC faction bulk goods traders should now be stocking plant-based foods such as rice and corn.
+* NPC faction combat suppliers now have a 50% chance of stocking an Orbital Friendship Cannon.
+* Screwball now requires research before she can be built.
+	* Can be done at a simple research bench.
+	* Requires you to have researched Electricity first.
+	* Tech is Industrial level, with a cost of 600.
+* Screwball no longer requires components to build.
+* Building Screwballs now requires a minimum Construction skill of 3 (was 5).
+* Making wife throwers no longer requires you to research Gunsmithing first.
+* Nurse Redheart should no longer break down.
+* Nurse Redheart is no longer tradeable.
+* Changed the sound played when Nurse Redheart is destroyed.
+* Changed the amount of steel needed to build a plushie bench to 75 (was 50).
+* Plushie benches no longer require a minimum Construction skill to build.
+* Tweaked the description for the rainbow laser research.
+
+Version 1.89.183 (February 24th 2022)
+
+* Added compatibility for the multiplayer mod; it has NOT been tested, so please let me know if anything breaks.
+* Fixed 'Mod geodesicdragon.rimpony has multiple Verse.BuildableDefs named PlushieBench. Skipping.' error.
+* Fixed 'Mod geodesicdragon.rimpony has multiple Verse.ThingDefs named PlushieBench. Skipping.' error.
+* Fixed 'Mod geodesicdragon.rimpony has multiple RimWorld.TraderKindDefs named MLRP_PlushieTrader. Skipping.' error.
+* Fixed '...\RimWorld\Mods\MyLittleRimPony\Defs\TraderKindDefs/TraderKinds_BronyBase.xml: unknown parse failure' error.
+* Updated the texture used for the Shining Armour plush.
+
+Version 1.88.178 (February 22nd 2022)
+
+* Added an achievement to make ten Pinkie Pie plushies.
+* Tidied up the Patches folder by putting files into their relevant folders.
+* The creator of RimPonk has addressed the issue which made Nightmare Moon and batponies afraid of the dark, so I've removed the fixes for it from this mod.
+* Plushie benches no longer short circuit when exposed to rain.
+* Building a plushie bench no longer requires you to specify any stuff for it be made from.
+* Building a plushie bench no longer requires you to research complex clothing.
+* Plushie traders no longer stock weapons.
+* Plushie traders now stock one of each plush by default.
+* Plushie traders can now appear as orbital traders.
+* Increased silver carried by plushie traders to 2000 (was 1500).
+* Increased silver carried by NPC faction bulk goods traders to 2500 (was 500-1500).
+* Increased silver carried by NPC faction combat suppliers to 3000 (was 500-1500).
+* NPC faction weapon traders now have a slightly improved chance of stocking an Orbital Friendship Cannon.
+* Updated the texture used for the 'Power Of Love' achievement.
+* Updated the texture used for the 'Sssssssmokin'!' achievement.
+* Updated the texture used for the 'Nothing Stops The Friendship Train' achievement.
+* Updated list of random names used by NPC faction settlements.
+* Anti-bronies are back to having a -50 opinion of bronies (was -80).
+* Bronies now have a +25 opinion of other bronies (was +35).
+* Halved the number of RimPonk pony pawns that can appear as part of NPC faction groups.
+* Fixed RimPonk factions being unable to send plushie traders.
+* Tips added by this mod are no longer patched into the core tipset.
+
+How about that, then? Twenty-two changes made on Twosday.
+
+Version 1.87.157 (February 5th 2022)
+
+* Added Nurse Redheart (building).
+	* Requires 350W of power.
+	* Spawns 5 Medicine every 10 days.
+	* Only available as a quest reward.
+* Added achievement to obtain Nurse Redheart.
+
+Version 1.85.157 (January 30th 2022)
+
+* Added three new achievements.
+	* Craft a legendary quality wife thrower.
+	* Craft a legendary quality tennis ball launcher.
+	* Build ten Sweetie Bot turrets.
+* Fixed RimPonk pony pawns being unable to equip the Sweetie Belle plush.
+* Fixed RimPonk pony pawns being unable to equip the Shining Armour plush.
+* Fixed being able to make Rainbow Lasers before the research for it was completed.
+* Fixed job showing as 'Making Elements of Harmony' while a pawn was making the Cutie Mark Crusaders.
+* Fixed '[[MLP] My Little RimPony] Patch operation Verse.PatchOperationFindMod(RimPonk, [MLP] My Little RimPony - Ideology) failed' error.
+* Reduced combat power of brony mercenaries to 60 (was 160).
+* Reduced combat power of melee brony mercenaries to 60 (was 160).
+* Reduced combat power of elite brony mercenaries to 75 (was 200).
+* Made some adjustments to the maxPawnCostPerTotalPointsCurve for the NPC faction, which should increase the number of pawns they can utilise in combat.
+
+Version 1.82.147 (January 29th 2022)
+
+* Added Shining Armour as a plushie (+15% to blunt, heat and sharp armour ratings).
+* Added patches which are applied if Vanilla Achievements Expanded is enabled.
+	* 28 achievements to aquire each item added by the mod, as well as making a legendary Rainbow Laser.
+	* Adds 2 more achievements to make the Ideology plushies, if that mod is enabled as well.
+* Fixed the alternate recipe for the Elements of Harmony showing the finished result as a separate item.
+* Fixed the alternate recipe for the Cutie Mark Crusaders showing the finished result as a separate item.
+
+Version 1.51.145 (January 27th 2022)
+
+* Added patches which are applied if RimPonk is enabled.
+	* Pony pawns can equip plushies.
+	* Pony factions send plushie traders.
+	* Pony pawns can appear as part of the NPC faction.
+	* If you are playing the 'Banished Empress' scenario, the NPC faction will start as hostile.
+	* If you are playing the 'Rogue Changelings' scenario, the NPC faction will start as hostile.
+	* If you start a scenario with any of the Mane Six unique pawns, the NPC faction should start as allied.
+* Added patches which are applied if Irn-Bru And Other Scottish Delights is enabled.
+	* NPC faction settlements stock vegetarian haggis.
+	* NPC faction settlements stock Irn-Bru.
+	* NPC faction settlements stock Irn-Bru kegs.
+	* NPC faction settlements stock deep-fried chocolate.
+	* NPC faction settlements stock kilts.
+* Added a patch which is applied if Bulk Carrier is enabled.
+	* Big Macintosh: Increases carrying capacity by 50 (up from 25).
+* Fixed NPC faction settlements not selling plant-based foods such as rice and corn.
+	* You will need to wait for the settlement to restock before you see any of these items for sale.
+	* Minimum stock is 1500, maximum stock is 2500; perfect for when you're on the brink of starvation.
+* Increased amount of industrial medicine stocked by NPC faction settlements.
+* Increased amount of industrial medicine stocked by NPC faction weapon traders.
+* Increased the number of pawns in NPC faction groups, particularly for combat.
+	* I have the Factional War mod, and too many times I saw the NPC faction getting curbstomped in faction assaults, mostly due to being outnumbered.
+	* This also means more of them will raid you... I think.
+	* There are three kinds of combat group: mostly ranged with melee support, mostly melee with ranged support and entirely elite, for when names need to be taken.
+	* Settlements are now guarded by mostly elite units armed with rainbow lasers. Watch yourselves.
+* Sweetie Bot has received a bunch of software updates.
+	* Medium and long range accuracy have been increased to 80% (was 75%).
+	* Rearming cost is now affected by difficulty.
+	* Burst time reduced to 1.5 seconds (was 2).
+	* Now has a 70% chance of not exploding when damaged (was 60%).
+	* Now fires a burst of 5 shots (was 3).
+	* Now takes 30 ticks between burst shots (was 3).
+	* Maximum combat effectiveness has been increased to 100 (was 80).
+* Starlight Glimmer now reduces psychic sensitivity by 100% (Was 50%).
+	
+Version 1.39.133 (January 20th 2022)
+
+* Added: Load order check for the MLRP Combat Extended patch. The load order should be MLRP > MLRP Ideology (if enabled) > Combat Extended > MLRP CE Patch.
+* Fixed: 'Config error in MLRP_BronyPlayer: initial will is undefined for humanlike pawn kind' error.
+* Fixed: 'Config error in MLRP_BronyPlayer: initial resistance range is undefined for humanlike pawn kind' error.
+* Fixed: The Discord lamp no longer needs to be connected to a power grid in order to work, despite not actually using any power.
+* Changed: Work value of making rainbow laser to 18000 (was 900).
+* Changed: The Discord lamp now produces the amount of light it used to; the glow radius has been increased to 12 (was 8).
+
+Version 1.38.128 (January 16th 2022)
+
+* Added: Alternate recipes for making the Elements of Harmony and Cutie Mark Crusaders.
+	* Elements of Harmony: 1800 cloth and 100 gold.
+	* Cutie Mark Crusaders: 900 cloth.
+* Added: The Nurse Haywick plush now increases surgery success chance by 25% (on top of existing bonuses).
+* Changed: Naming rules for male and female pawns from the NPC faction.
+	* Female pawns will now use random female first and last names, though some may have the names of actual MLP characters.
+	* Male pawns will use random male first and last names but, given the lack of names available, will continue to use random female names as well.
+* Changed: Description of the Apple Bloom plush.
+* Changed: The Nurse Haywick plush now increases tend speed and quality by 25% (was 15%).
+* Changed: Pawns with the 'brony' trait now have a market value offset of -50%, making them either less profitable to sell or less expensive to buy.
+* Changed: Description of 'anti brony' trait.
+* Changed: Description of -80 opinion that anti bronies have of bronies (seen when mousing over a pawns name in the 'Social' tab).
+* Changed: The Applejack plush now gives a +25% bonus to plant work speed and yield (was 15%).
+* Changed: The Fluttershy plush now gives a +25% bonus to animal tame and train chance (was 15%).
+* Changed: The Pinkie Pie plush now improves social impact by 25% (was 20%).
+* Changed: The Rainbow Dash plush now increases move speed by 1 (was 0.5).
+* Changed: The Rarity plush now improves trade prices by 25% (was 20%).
+* Changed: The Twilight Sparkle plush now increases research speed by 25% (was 20%).
+* Changed: The Izzy Moonbow plush now increases opinions of others by 25% (was 10%).
+* Changed: The Apple Bloom plush now increases immunity gain speed by 50% (was 25%).
+* Changed: The Scootaloo plush now increases injury healing speed by 50% (was 25%).
+* Changed: The Celestia plush now reduces mental break threshold by 25% (was 20%).
+* Changed: The Cadence plush now reduces pain shock threshold by 25% (was 20%).
+* Changed: Pawns with the brony trait now have a +35 opinion of their fellow bronies (was +25).
+* Changed: The Discord lamp now requires 300 cloth to build, instead of a Discord plush.
+* Changed: The Discord lamp no longer requires power, but it now produces a little less light; the glow radius has been reduced to 8 (was 12).
+
+Version 1.35.107 (January 12th 2022)
+
+* Added: Starting pawns in the Brony Community scenario now have a chance to have a random plushie (excluding Rainbow Dash) in their inventory.
+* Added: Members of the NPC faction will now use MLP themed names.
+	* The names are chosen in one of two ways:
+		* A random first name followed by a random last name, which can lead to names such as 'Apple Dash' or 'Twilight Belle.'
+		* A random single name, such as 'Celestia' or 'Rarity.'
+	* There are 60 single names and 84 first/last names available for the game to choose from. Feel free to suggest more, but make sure you check the lists first to see what I've already got; you can find them in MyLittleRimPony\Languages\English\Strings\NameBanks.
+* Added: Custom bulk goods trader for the NPC faction.
+	* Stocks a lot of cloth and kibble.
+	* Sells farm animals and pets, and also buys exotic animals.
+	* Does not sell drugs, beer, raw meat or pemmican.
+* Added: Custom combat supplier for the NPC faction.
+	* Sells armour, wife throwers, tennis ball launchers and rainbow lasers.
+	* Has a chance to stock an Orbital Friendship Cannon.
+	* Buys drugs (the only brony trader to do so).
+* Added: The Brony Community scenario now starts with three (unbonded) horses.
+* Added: If you have Irn-Bru And Other Scottish Delights enabled, a patch allows the NPC faction to send Scottish goods traders.
+* Added: If you have Reverse Engineered Mechanoid Shields enabled, a patch allows the NPC faction to send mechanoid shield traders.
+* Fixed: Members of the NPC faction can not having the 'Brawler' trait.
+* Fixed: Scootaloo plush using incorrect texture.
+* Fixed: 'Faction [NAME] of def MLRP_NPC_Faction has no usable PawnGroupMakers for parms... etc' error.
+* Changed: Starting pawn clothing in the Brony Community scenario is now made of devilstrand.
+* Changed: Starting pawns in the Brony Community scenario should now be wearing flak armour by default.
+* Changed: Pawns with the 'anti brony' trait now have a -80 opinion of bronies (was -50).
+* Changed: Removed bedrolls from the Brony Community scenario.
+* Changed: Screwball now generates 250W of power (was 200).
+* Changed: Increased the starting silver for the Brony community scenario to 800 (was 500).
+* Changed: Reduced the starting steel for the Brony community scenario to 300 (was 500).
+* Changed: NPC faction villagers now spawn with normal quality gear.
+* Changed: NPC faction villagers now have 6-12 in non-combat skills (was 6-15).
+* Changed: The NPC faction is now capable of starting sieges.
+* Changed: NPC faction settlements should now be guarded by more elite mercenaries. Plan your attacks accordingly.
+* Removed patches for adding making modded factions friendly to the NPC faction; the latter has been set up so that it is not a natural enemy, so it should now be friendly towards everyone except for rough outlander, rough tribal, pirate and fierce tribal factions.
+
+Version 1.28.92 (January 6th 2022)
+
+* Added Anti-brony trait.
+	* -50 opinion of bronies. (Thanks again to Aelanna for both helping with the C# needed to make this work, and for being so damn patient.)
+	* -20 to mood if forced to carry a plushie.
+	* This trait is more common to find than the brony trait.
+* Added: Bronies now have a +25 opinion of other bronies. Let the magic of friendship grow!	
+* Added: Pawns with the brony trait now receive +10 to mood as long as they have a plushie equipped.
+	* Stacks with the bonus granted by the Izzy Moonblow plush for +20 total.
+* Pawns with the brony trait should no longer suffer the following mental breaks:
+	* Berserk
+	* Drug binge (extreme)
+	* Drug binge (major)
+	* Insulting spree
+	* Murderous rage
+	* Sadistic rage
+	* Slaughterer
+	* Targeted insulting spree
+* NPC Faction: Villagers no longer have a chance to spawn with implants or bionics.
+* NPC Faction: Now sends exotic goods trader caravans.
+* NPC Faction: Increased the number of people in trade caravans.
+* NPC Faction: Reduced the number of villagers and increased the number of mercenaries defending settlements.
+* NPC Faction: Mercenaries now have 'brony' in their names, to better distinguish them from any other mercenaries that might exist in your game.
+* NPC Faction: Reduced combat power of elite mercenaries to 200 (was 320).
+* NPC Faction: Villagers now spawn with awful quality gear.
+* NPC Faction: Elite mercenaries now spawn with excellent quality gear.
+* NPC Faction: Elite mercenaries are now armed solely with the rainbow laser. May Randy have mercy on your souls.
+* NPC Faction: Reduced shooting, melee and medicine skills of all mercenary types.
+	* Regular
+		* 6-12 Shooting (was 6-15)
+		* 3-5 Melee (was 6-15)
+		* 4-8 Medicine (was 4-12)
+	* Melee
+		* 7-12 Melee (was 8-15)
+		* 4-8 Medicine (was 4-12)
+	* Elite
+		* 10-15 Shooting (was 13-20)
+		* 10-15 Melee (was 13-20)
+		* 8-12 Medicine (was 8-16)
+* Removed the start up sound for the Brony Community scenario.
+
+Version 1.25.66 (January 4th 2022)
+
+* Added NPC brony faction.
+	* Can be added to the map before starting a new colony.
+	* Employs mercenaries for defense (or attack if you end up as hostile with them).
+		* Villager: They have very poor fighting skill, but are good at other things; they will not resist being arrested and have little resistance and will. They are usually armed with a wife thrower and equipped with a flak vest.
+		* Standard mercenary: Equipped with recon armour and uses assault rifles or advanced industrial level guns.
+		* Melee mercenary: Equipped with plate armour and uses decent/advanced medieval melee weapons, axes or longswords.
+		* Elite mercenary: Equipped with marine armour - though this is patched to cataphract if Royalty is installed - and uses heavy weapons, single use weapons, sniper rifles, spacer level guns or even the Rainbow Laser. Has exceptional fighting skill and a 30% chance to have implants of some kind.
+		* Villagers will have a Big Macintosh plush, while mercenaries will use Rainbow Dash. Mercenaries can also have good medical skills on top of their combat abilities, making them good soldiers to recruit for your own colony.
+	* Hostile to rough outlander, pirate and fierce/savage tribal factions.
+		* Made friendly towards the following modded factions via patches:
+			* Militaires Sans Frontiers (MSF)
+			* Elite Crew
+			* RimCraft factions
+			* These patches are only applied if the appropriate mod exists; let me know if you'd like other modded factions added to the 'friendly' list.
+	* Uses MLP themed names for factions and settlements; feel free to submit more via Discord.
+	* Settlements have a range of stock.
+		* Cloth and gold are abundant.
+		* Random plushies can be found at varying prices.
+		* Does not sell drugs or beer.
+		* Will never buy or sell slaves.
+		* Always has at least 1-3 wife throwers and tennis ball launchers and one Rainbow Laser in stock.
+		* Small chance to stock an Orbital Friendship Cannon.
+		* Also sells Screwballs, with at least 1 available on every restock.
+		* Does not sell meat; only stocks vegetarian meals.
+	* Probably needs to be tweaked to hell and back to balance things out; let me know via Discord.
+	* Thanks to Aelanna, Princess of Evil and UdderlyEvelyn from the official RimWorld Discord server for helping with XML.
+* Added Screwball (generates 200W of power).
+	* Will never break down.
+	* Ideal for powering deep mining drills.
+	* Requires 300 cloth and 2 components to build.
+	* Requires that you research Electricity first.
+* Added Sweetie Bot, a turret that shoots rainbow lasers.
+	* Accurate at medium to long range; fires a burst every three seconds.
+	* Requires that you research the Rainbow Laser first.
+	* 60% chance to not explode when damaged, though the explosion is quite large if she does (6 tiles).
+	* Requires 200W of power, 300 cloth, 2 components, 2 advanced components, 50 plasteel and 15+ Construction skill to build.
+	* Requires steel to refresh after firing.
+	* Sweetie Bot is an OC and has been used in this mod without permission; she can be removed if the genuine owner requests it via my Discord server.
+	* Thanks to Chaosi and Zephyr Moon from the UKBP Discord for giving me the idea to add her.
+* Added Apple Bloom (+25% to immunity gain speed).
+* Added Scootaloo (+25% to injury healing speed).
+* Added the Cutie Mark Crusaders.
+	* Made by combining Apple Bloom, Sweetie Belle and Scootaloo.
+	* Grants the bonuses of all three Crusaders.
+	* Market value of 900 silver.
+* Sweetie Belle no longer causes a mood debuff.
+* Brony Community scenario: You now start with two Screwballs to help power your turrets while you get your colony organised.
+* Brony Community scenario: Now uses the faction and settlement naming rules introduced with the NPC faction.
+* The plushie trader now has a chance of stocking a tennis ball launcher.
+* Weapons added by this mod should no longer be biocodable.
+* Increased market value of the Elements of Harmony to 2000 silver (was 1500).
+
+Version 1.19.60 (December 31st 2021)
+
+* Added Sweetie Belle (+20 to cooking speed, -5% chance of poisoning meals and -3 mood).
+* Fixed not being able to build the Discord lamp until Electricity was researched.
+* Made About.xml a bit smaller; two new files can be found in the About folder with information about what the mod does and where the art came from.
+
+Version 1.18.58 (December 27th 2021)
+
+* Added the Discord Lamp.
+	* It gives the same amount of light as a standalone lamp.
+	* Requires a Discord plush to build.
+	* Can be built without researching Electricity first.
+* The tennis ball launcher should no longer appear as a potential relic.
+
+Version 1.17.57 (December 17th 2021)
+
+* Added the Tennis Ball Launcher.
+	* It's basically a smoke launcher, except it looks like Izzy and the smoke bombs are tennis balls.
+	* Requires 75 steel, 4 components, an Izzy plush and 3 crafting to make at the plushie bench.
+	* Thanks to Chaosi and Swirly Fungus from the UKBP Discord for giving me the idea (possibly by accident).
+* The wife thrower is now made at the plushie bench.
+* Brony Community scenario: You should now start with the same level of technology as a crashlanded playthrough (in other words, you shouldn't need to research how to cut stones or build proper beds).
+* Brony Community scenario: Your starting bronies should now be wearing all cloth apparel.
+* Brony Community scenario: The Empire is no longer permanently hostile.
+* Fixed 'Config error in MLRP_EOH_Fire: Sounds with non-on-camera subsounds should use MapOnly context.' error.
+* Fixed 'Config error in MLRP_BronyFaction: raidLootValueFromPointsCurve must be defined' error.
+
+You can now download an expansion for this mod that adds items related to the Ideology DLC.
+Get it here: https://steamcommunity.com/sharedfiles/filedetails/?id=2684300411
+
+Version 1.16.51 (December 11th 2021)
+
+* Added Cheerilee (+50% to global learning factor).
+* Added plushie trader.
+	* Quite rare, but can be requested from the comms console.
+	* Sent by tribal, outlander and imperial factions.
+	* Buys and sells both cloth and plushies, with a small chance to also have a Rainbow Laser available.
+* Fixed 'Could not resolve cross-reference: No Verse.SoundDef named BronyScenario_StartSound found to give to Verse.ThingDef PonyPlush_RainbowDash (using undefined sound instead)' error.
+* Removed techprint requirement for researching the rainbow laser.
+* Reduced research cost of the rainbow laser to 5000 (was 6000).
+* The wife thrower should no longer appear as a potential relic.
+* The rainbow laser should no longer appear as a potential relic.
+
+Version 1.14.46 (October 3rd 2021)
+
+* Added Izzy Moonbow (+10 to mood and opinions of others boosted by 10%).
+* Added a weaponised version of the Elements of Harmony, called the Rainbow Laser, which - as the name implies - fires rainbows at your enemies.
+	* Requires 10 Crafting to make using 1 plush Element, 100 plasteel, 3 advanced components and 50 gold.
+	* Must research 'Rainbow Laser' first, which itself requires precision rifling, a techprint (obtainable from imperial and outlander factions), a hi-tech research bench and a multi-analyser.
+	* Can only be made at the plushie bench.
+	* Please let me know how it handles; I fear I might have made it a bit too overpowered.
+* Rainbow Dash now properly increases melee hit chance by 5% (was 0.5).
+* Rainbow Dash now properly increases shooting accuracy by 5% (was 0.5).
+* Fixed the Elements of Harmony providing incorrect bonuses (such as 10% plant yield instead of the 15% I updated it to on the AJ plush).
+* The secret item - okay, fine, the Orbital Friendship Cannon - can now be rearmed by using 100 gold. You still can't make it yourself, though.
+* Increased the volume of the sound played when aiming the Orbital Friendship Cannon.
+* Decreased the volume of the sound played when firing the Orbital Friendship Cannon.
+* Decreased the volume of the sound played when starting the 'Brony Community' scenario.
+* Added flak jackets and flak pants to the starting items for the 'Brony Community' scenario.
+
+Version 1.12.38 (September 14th 2021)
+
+* Added Discord (+25% global work speed).
+* Added 'Brony' trait.
+	* Incapable of violence.
+	* +6 to Social skill.
+	* Quite a rare trait to find.
+	* Does not suffer a mood penalty from being insulted.
+	* Doesn't think any less of pawns who are disfigured.
+	* Doesn't think any less of pawns who are physically unsightly or physically hideous.
+	* Doesn't think any less of pawns with an annoying voice.
+	* Doesn't think any less of pawns with creepy breathing.	
+	* Doesn't think any less of pawns who insult them.
+	* Can still go on insulting sprees if their mood is low enough.
+* Added 'Brony Community' scenario.
+	* Start with three people, chosen from eight.
+	* All starting pawns have the 'Brony' trait.
+	* Start with Gun Turret research already completed.
+	* Start with 500 silver, 15 components, 3 cloth bedrolls, 60 packaged survival meals, 4 steel mini turrets, 500 steel, 500 wood, 3 plasteel flak helmets and 3 flak vests.
+		* AUTHOR'S NOTE: Since your starting pawns are all pacifists, it only seems fair to give them armour.
+* Plushies no longer count as clothing for nudist pawns.
+* Replaced one of the sounds used by the secret item with something less horrible (though even that depends on your personal tastes).
+* Reduced tend speed granted by Nurse Haywick to 15% (was 20).
+* Nurse Haywick now increases tend quality by 15% on top of the tend speed bonus.
+* Applejack now increases plant work speed and yield by 15% (was 10).
+* Fluttershy now increases animal tame and train chances by 15% (was 10).
+
+Version 1.9.29 (July 11th 2021)
+
+* Mod is now compatible with the RimWorld 1.3 patch.
+* Added a super secret new item that cannot be made anywhere. Keep your eyes on traders and quest rewards!
+* Fixed incorrect preview image.
+* The wife thrower now uses an image of Shining Armour instead of Cadence.
+* Edited the description of the wife thrower.
+* Edited the description of Nurse Haywick.
+
+Version 1.8.25 (June 27th 2021)
+
+* Added Starlight Glimmer (-50% psychic sensitivity).
+* Added the Elements of Harmony.
+	* Created using one of each of the Mane Six plus 100 gold. 
+	* This item gives all of the bonuses of each Mane Six plush, allowing you to have all of the benefits of them at once.
+	* Making one requires a Crafting skill of at least 10.
+* Rainbow Dash now increases melee hit chance by 0.5 (was 0.2).
+* Rainbow Dash now increases shooting accuracy by 0.5 (was 0.2).
+* Corrected a minor error in the description for Princess Cadence.
+* Speaking of Cadence, you can now turn her into a weapon at a smithy.
+	* She has the same stats as the pila.
+	* Shining Armour not included.
+* Plushies should now become tainted if worn by a corpse.
+
+Version 1.5.21 (May 5th 2021)
+
+* Added Big Macintosh (+25kg to maximum carry weight).
+* Rainbow Dash now increases move speed by 0.5 (was 0.1).
+* Rainbow Dash now increases melee hit chance by 0.2 (was 0.1).
+* Rainbow Dash now increases shooting accuracy by 0.2 (was 0.1).
+
+Version 1.4.18 (March 20th 2021)
+
+* Fixed colonists being unable to use the plushie bench once bills were assigned.
+	* Thanks to New Mareland from my Discord server for bringing the issue to my attention.
+	* Thanks to Bradson from the RimWorld Discord for helping with XML.
+
+Version 1.4.17 (February 7th 2021)
+
+* Added the plushie bench; all plushies are now made here, thus reducing the amount of extra clutter at the tailoring bench.
+	* Costs 50 steel and 2 components to build.
+	* Requires 120W of power.
+	* Can operate without power at 50% reduced speed.
+	* Affected by tool chests.
+* Pinkie Pie now gives a 20% bonus to social impact.
+* Rarity now gives a 20% trade price improvement.
+* Increased the rest multiplier bonus given by Princess Luna to 50% (was 20%).
+	* AUTHOR'S NOTE: A 20% bonus was barely noticeable; by increasing it, it means that the plush effectively grants a better version of the 'Quick Sleeper' trait.
+
+Version 1.3.14 (January 25th 2021)
+
+* Added Princess Cadence (+20% pain shock threshold).
+* Reduced market value of all 9 plushies to 200 silver (was 500).
+* Rarity now gives a +10 bonus to pawn beauty and +10% to mining speed.
+
+Version 1.2.3 (January 6th 2021)
+
+* Added Princess Celestia (-20% mental break threshold).
+* Added Princess Luna (+20% rest rate multiplier).
+* Removed animal gather speed and gather yield from Fluttershy; tame chance and training chance have been increased by a further 5% each.
+* Flipped Haywick's image to be more in line with the others.
+
+Version 1.0.1 (January 3rd 2021)
+
+* Initial Release.

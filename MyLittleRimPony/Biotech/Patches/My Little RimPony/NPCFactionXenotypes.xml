@@ -1,0 +1,32 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="MLRP_NPC_Faction"]</xpath>
+		<value>
+			<xenotypeSet>
+				<xenotypeChances>
+					<Dirtmole>0.05</Dirtmole>
+					<Genie>0.05</Genie>
+					<Neanderthal>0.05</Neanderthal>
+					<Pigskin>0.05</Pigskin>
+					<Impid>0.05</Impid>
+					<Yttakin>0.05</Yttakin>
+					<Highmate>0.05</Highmate>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[@Name="MLRP_BronyKinds_EliteMercBase"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<Hussar>0.25</Hussar>
+				</xenotypeChances>
+				<warnIfTotalAbove1>false</warnIfTotalAbove1>
+			</xenotypeSet>
+		</value>
+	</Operation>
+
+</Patch>

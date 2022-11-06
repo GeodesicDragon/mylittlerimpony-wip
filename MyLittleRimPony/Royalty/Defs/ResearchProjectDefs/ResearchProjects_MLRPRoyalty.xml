@@ -1,0 +1,35 @@
+﻿<Defs>
+
+<!--VERY HARD RESEARCH BASE-->
+
+	<ResearchProjectDef Name="MLRP_VeryHardResearchBase" Abstract="True">
+		<baseCost>6000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>3</techprintCommonality>
+		<techprintMarketValue>2500</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+
+<!--HARMONY CHIP-->
+	
+	<ResearchProjectDef ParentName="MLRP_VeryHardResearchBase">
+		<defName>MLRP_HarmonyChipResearch</defName>
+		<label>Harmony chip</label>
+		<description>Allows you to create harmony chips, which grant the bonuses of all plushies (bar one) when installed in the brain.</description>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<tab>MLRP_ResearchTab</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

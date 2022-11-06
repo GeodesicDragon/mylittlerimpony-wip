@@ -1,0 +1,109 @@
+All art was sourced from Derpibooru (https://www.derpibooru.org), unless otherwise specified, and is used under a Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License; credit is followed by the Derpibooru image ID.
+
+If you are one of the artists listed below and want me to stop using your work, get in touch with me via my Discord server. Please be aware that you will need to prove that you are who you say you are before I will respond to your request.
+
+KEY
+
+* Source provided on Derpibooru was either missing or invalid.
+** I had to edit this image before I could use it.
+*** This image is used by an item which is only seen if a particular mod is enabled.
+
+CREDITS
+
+Apple Bloom: sketchmcreations (1553341)
+Applejack: CindyDreamLight (2450572)
+Big Macintosh: dashiesparkle (1167810)
+Cheerilee: juniberries (2527617)
+Daring Do: sketchmcreations (1215272)
+Daybreaker: drakizora (1442272)
+Discord (plush): chrzanek97 (2584926)
+Discord (lamp): cloudyglow (1372861)**
+Fleur de Lis: darkoverlords (2768057)
+Fluttershy: RainbowCrab (2508169)
+Maud Pie: thebosscamacho (2819795)
+Nightmare Moon: Unknown Artist (2773794)*
+Nurse Haywick: GraphiteSketch AKA Timsplosion (1852562)
+Nurse Redheart: drfatalchunk (1464636)*
+Izzy Moonbow (plush): inaactive (2561243)
+Izzy Moonbow (smoke launcher): ejlightning007arts (2718787)
+Pinkie Pie: flizzick (2490254)
+Princess Cadence: princesscaramelo (2115510)
+Princess Celestia: killagouge (2058026)
+Princess Luna: chrzanek97 (2124813)
+Rainbow Dash: TheMightyShizam (2501021)*
+Rarity: MoongazePonies (2734969)
+Screwball: vexorb (32017)
+Scootaloo: sketchmcreations (1551560)
+Spoiled Rich: jeatz-axl (1004463)
+Shining Armour (wife thrower): keanno (148650)
+Shining Armour (plush): 90sigma (626430)
+Starlight Glimmer: zacatron94/BrunoMilan13 (1426211)
+Sweetie Belle: sirwarluscake (1184509)*
+Sweetie Bot: weegeestareatyou (1180288)
+Twilight Sparkle (alicorn): andoanimalia (2521465)
+Twilight Sparkle (unicorn): redpandapony (2779548)***
+Elements of Harmony: spiritofthwwolf (sic) (63922)*
+Cutie Mark Crusaders: parclytaxel (1761090)*
+
+Aloe and Lotus: jennieoo (773287)
+Trixie: chrzanek97 (2584896)
+
+King Sombra: frownfactory (1907550)
+Queen Chrysalis: sketchmcreations (2496399)
+Zecora: uxyd (2560904)
+
+Button Mash: luckreza8 (1004070)
+
+Equestrian Flag: grabusz (1589868)
+Rainbow Laser: Vector-Brony (2493108 - attributed to someone else; original link in description)
+Mudbriar: cheezedoodle96 (1709144)
+Quibble Pants: outlaw4rc (1216860)
+Zephyr Breeze: 19crowbar19* (1740159)
+Tree Of Harmony: pridark (2780361)
+Poison Joke: 3luk (1686090)
+Super Speedy Cider Squeezy 6000: pirill (1628397)
+
+MAIN MENU BACKGROUNDS (Requires Vanilla Backgrounds Expanded)
+
+Canterlot From Above: plainoasis (1506617)
+Princess Twilight Reading: discordthege (2175730)
+Rarity As Princess Platinum: ifoldbooks (1046)
+Rainbow Dash In Cherry Blossom: discordthege (1663049)
+Applejack On The Farm: huussii (993609)
+Fluttershy And Her Animals: huussii (267391)
+Pinkie Pie At The Mirror Pool: huussii (411047)
+Sunny And Her Friends: silentwulv (2906225)
+Celestia The Watcher: yakovlev-vad (2129187)
+Luna In The Forest: plainoasis (2469257)
+
+ACHIEVEMENTS
+
+Since most achievements are earned by making or building things, they'll use the same image as the texture for that building or item; these are the exceptions, as they are for making something using a specific material.
+
+Soylent Sparkle - orschmann (2558210)
+Why, Darling?! - slb94 (1870978)
+20% Grosser - tizerfiction (900692)
+What In Tarnation - tardifice (1662705)
+That Wasn't Very Kind Of You - wissle (2719109)
+Did Somebody Say 'Cupcakes?' - mrkat7214 (1986994)
+Cluck Off! - besttubahorse (1713860)
+
+PROJECTILES
+
+Rainbow Laser: Made by me.
+Tennis ball: Taken from art by greenhoof (2560819)
+
+OTHER IMAGES
+
+Star image (used in some achievements): http://clipart-library.com/clipart/216.htm
+Harmony Chip: https://www.kindpng.com/imgv/wbxRhx_clip-art-clip-art-chips-computer-chip-clipart/
+MLP Logo (used in preview image): Artist Unknown (1411173)**
+
+Alicorn icon (Biotech): https://www.flaticon.com/free-icon/unicorn-horse-head-with-a-horn-and-wings_32717
+Earth Pony, Pegasus and Unicorn icons (Biotech): https://game-icons.net
+
+SOUNDS
+
+All sounds, unless otherwise specified below, are taken from the My Little Pony: Friendship is Magic TV series, and are used under Fair Use legislation. Sounds remain bound by the copyright of the owner; they are included in this mod for entertainment purposes only, and no profit is made from them.
+
+Rainbow Laser (firing): https://elements.envato.com/laser-shot-5-29H6P3L

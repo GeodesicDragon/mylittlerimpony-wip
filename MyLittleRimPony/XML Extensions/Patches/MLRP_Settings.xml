@@ -1,0 +1,1104 @@
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<!--PLUSHIES: STUFF REQUIRED-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId> <!--String that XML Extensions can identify your mod with-->
+			<key>MLRP_PlushiesCloth</key> <!--Key to identify the setting (only used internally, invisible to user)-->
+			<defaultValue>300</defaultValue> <!--What you want the default value of the setting to be-->
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="PonyPlushBase"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>{MLRP_PlushiesCloth}</costStuffCount>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--ELEMENTS OF HARMONY: STUFF REQUIRED-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushiesCloth</key>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable">
+					<value>{MLRP_PlushiesCloth}</value>
+					<value2>6</value2>
+					<operation>*</operation>
+					<storeIn>MLRP_EOH_NewClothValue</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_ElementsOfHarmony"]/costStuffCount</xpath>
+							<value>
+								<costStuffCount>{MLRP_EOH_NewClothValue}</costStuffCount>
+							</value>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--KID SIZED PLUSHIES: STUFF REQUIRED-->
+		<li Class="XmlExtensions.UseSetting" MayRequire="Ludeon.RimWorld.Biotech">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushiesCloth</key>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable">
+					<value>{MLRP_PlushiesCloth}</value>
+					<value2>2</value2>
+					<operation>/</operation>
+					<storeIn>MLRP_ChildPlush_NewStuffValue</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[@Name="PonyPlushChildBase"]/costStuffCount</xpath>
+							<value>
+								<costStuffCount>{MLRP_ChildPlush_NewStuffValue}</costStuffCount>
+							</value>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--CUTIE MARK CRUSADERS: STUFF REQUIRED-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushiesCloth</key>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable">
+					<value>{MLRP_PlushiesCloth}</value>
+					<value2>3</value2>
+					<operation>*</operation>
+					<storeIn>MLRP_CMC_NewClothValue</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="PonyPlush_CutieMarkCrusaders"]/costStuffCount</xpath>
+							<value>
+								<costStuffCount>{MLRP_CMC_NewClothValue}</costStuffCount>
+							</value>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--PLUSHIES: CRAFTING SKILL REQUIRED-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushieCraftingSkill</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="PonyPlushBase"]/recipeMaker/skillRequirements/Crafting</xpath>
+					<value>
+						<Crafting>{MLRP_PlushieCraftingSkill}</Crafting>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--KID PLUSHIES: CRAFTING SKILL REQUIRED-->
+		<li Class="XmlExtensions.UseSetting" MayRequire="Ludeon.RimWorld.Biotech">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushieCraftingSkill</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="PonyPlushChildBase"]/recipeMaker/skillRequirements/Crafting</xpath>
+					<value>
+						<Crafting>{MLRP_PlushieCraftingSkill}</Crafting>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--PLUSHIES: MARKET VALUE-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushieMarketValue</key>
+			<defaultValue>200</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="PonyPlushBase"]/statBases/MarketValue</xpath>
+					<value>
+						<MarketValue>{MLRP_PlushieMarketValue}</MarketValue>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--KID PLUSHIES: MARKET VALUE-->
+		<li Class="XmlExtensions.UseSetting" MayRequire="Ludeon.RimWorld.Biotech">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushieMarketValue</key>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable" MayRequire="Ludeon.RimWorld.Biotech">
+					<value>{MLRP_PlushieMarketValue}</value>
+					<value2>2</value2>
+					<operation>/</operation>
+					<storeIn>MLRP_ChildPlushieMarketValue</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+							<xpath>Defs/ThingDef[@Name="PonyPlushChildBase"]/statBases/MarketValue</xpath>
+							<value>
+								<MarketValue>{MLRP_ChildPlushieMarketValue}</MarketValue>
+							</value>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--PLUSHIES: TAINTED ON DEATH-->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_PlushiesTaintedOnDeath</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="PonyPlushBase"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>true</careIfWornByCorpse>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_ElementsOfHarmony"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>true</careIfWornByCorpse>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_CutieMarkCrusaders"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>true</careIfWornByCorpse>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="PonyPlushBase"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>false</careIfWornByCorpse>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_ElementsOfHarmony"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>false</careIfWornByCorpse>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_CutieMarkCrusaders"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>false</careIfWornByCorpse>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+
+		<!--BRONY TRAIT VIOLENCE CAPABILITY-->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_BroniesCanBeViolent</key>
+			<defaultValue>false</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/disabledWorkTags</xpath>
+					<value>
+						<disabledWorkTags></disabledWorkTags>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/conflictingTraits</xpath>
+					<value>
+						<conflictingTraits>
+							<li>DislikesMen</li>
+							<li>DislikesWomen</li>
+							<li>DrugDesire</li>
+							<li>Psychopath</li>
+							<li>MLRP_AntiBronyTrait</li>
+						</conflictingTraits>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/description</xpath>
+					<value>
+						<description>{PAWN_nameDef} has taken the lessons of My Little Pony: Friendship is Magic to heart; {PAWN_possessive} social skills have improved, and {PAWN_pronoun} will never judge others based on their appearance, voice or breathing. Also, insults have no effect on {PAWN_objective} whatsoever.\n\n{PAWN_pronoun} gets a mood bonus from equipping pony plushies, and has a positive attitude towards other bronies.</description>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/marketValueFactorOffset</xpath>
+					<value>
+						<marketValueFactorOffset>0</marketValueFactorOffset>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/disabledWorkTags</xpath>
+					<value>
+						<disabledWorkTags>Violent</disabledWorkTags>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/conflictingTraits</xpath>
+					<value>
+						<conflictingTraits>
+							<li>DislikesMen</li>
+							<li>DislikesWomen</li>
+							<li>DrugDesire</li>
+							<li>Psychopath</li>
+							<li>MLRP_AntiBronyTrait</li>
+						</conflictingTraits>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/description</xpath>
+					<value>
+						<description>{PAWN_nameDef} has taken the lessons of My Little Pony: Friendship is Magic to heart; {PAWN_possessive} social skills have improved, but {PAWN_pronoun} is against the idea of using violence.\n\n{PAWN_pronoun} will never judge others based on their appearance, voice or breathing, and insults have no effect on {PAWN_objective} whatsoever.\n\n{PAWN_pronoun} gets a mood bonus from equipping pony plushies, and has a positive attitude towards other bronies.</description>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/marketValueFactorOffset</xpath>
+					<value>
+						<marketValueFactorOffset>-0.5</marketValueFactorOffset>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+
+		<!--BRONY TRAIT COMMONALITY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_BronyTraitCommonality</key>
+			<defaultValue>0.1</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/commonality</xpath>
+					<value>
+						<commonality>{MLRP_BronyTraitCommonality}</commonality>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--ANTI BRONY TRAIT COMMONALITY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_AntiBronyTraitCommonality</key>
+			<defaultValue>0.2</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TraitDef[defName="MLRP_AntiBronyTrait"]/commonality</xpath>
+					<value>
+						<commonality>{MLRP_AntiBronyTraitCommonality}</commonality>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--SWEETIE BOT: RANGE-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_SweetieBotWeaponRange</key>
+			<defaultValue>46</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/verbs/li/range</xpath>
+					<value>
+						<range>{MLRP_SweetieBotWeaponRange}</range>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--SWEETIE BOT: TOUCH ACCURACY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_SweetieBotAccuracyTouch</key>
+			<defaultValue>0.3</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyTouch</xpath>
+					<value>
+						<AccuracyTouch>{MLRP_SweetieBotAccuracyTouch}</AccuracyTouch>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--SWEETIE BOT: SHORT RANGE ACCURACY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_SweetieBotAccuracyShort</key>
+			<defaultValue>0.4</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyShort</xpath>
+					<value>
+						<AccuracyShort>{MLRP_SweetieBotAccuracyShort}</AccuracyShort>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--SWEETIE BOT: MEDIUM RANGE ACCURACY-->
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_SweetieBotAccuracyMedium</key>
+			<defaultValue>0.8</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyMedium</xpath>
+					<value>
+						<AccuracyMedium>{MLRP_SweetieBotAccuracyMedium}</AccuracyMedium>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--SWEETIE BOT: LONG RANGE ACCURACY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_SweetieBotAccuracyLong</key>
+			<defaultValue>0.8</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyLong</xpath>
+					<value>
+						<AccuracyLong>{MLRP_SweetieBotAccuracyLong}</AccuracyLong>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/ShootingAccuracyTurret</xpath>
+					<value>
+						<ShootingAccuracyTurret>{MLRP_SweetieBotAccuracyLong}</ShootingAccuracyTurret>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--NURSE REDHEART: SPAWN GLITTERWORLD MEDICINE INSTEAD OF INDUSTRIAL-->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_NurseRedheartSpawnGlitterworldMedicine</key>
+			<defaultValue>false</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Spawner"]/thingToSpawn</xpath>
+					<value>
+						<thingToSpawn>MedicineUltratech</thingToSpawn>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+					<value>
+						<basePowerConsumption>700</basePowerConsumption>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Spawner"]/thingToSpawn</xpath>
+					<value>
+						<thingToSpawn>MedicineIndustrial</thingToSpawn>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+					<value>
+						<basePowerConsumption>350</basePowerConsumption>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+
+		<!--NURSE REDHEART: MEDICINE SPAWN AMOUNT-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_NurseRedheartMedicineSpawnAmount</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Spawner"]/spawnCount</xpath>
+					<value>
+						<spawnCount>{MLRP_NurseRedheartMedicineSpawnAmount}</spawnCount>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--NURSE REDHEART: MEDICINE SPAWN TIME-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_NurseRedheartMedicineSpawnTime</key>
+			<defaultValue>10</defaultValue>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable">
+					<value>{MLRP_NurseRedheartMedicineSpawnTime}</value>
+					<value2>60000</value2>
+					<operation>*</operation>
+					<storeIn>MLRP_NurseRedheartMedicineSpawnTicks</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Spawner"]/spawnIntervalRange</xpath>
+							<value>
+								<spawnIntervalRange><min>{MLRP_NurseRedheartMedicineSpawnTicks}</min><max>{MLRP_NurseRedheartMedicineSpawnTicks}</max></spawnIntervalRange>
+							</value>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--NURSE REDHEART: REPLACE DESCRIPTION-->
+		<li Class="XmlExtensions.UseSettings">
+			<modId>geodesicdragon.rimpony</modId>
+			<keys>
+				<li>MLRP_NurseRedheartMedicineSpawnAmount</li>
+				<li>MLRP_NurseRedheartMedicineSpawnTime</li>
+			</keys>
+			<defaultValues>
+				<li>5</li>
+				<li>10</li>
+			</defaultValues>
+			<brackets>{}</brackets>    
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/description</xpath>
+					<value>
+						<description>As a nurse, Redheart has seen it all; she knows that being prepared for any eventuality is of vital importance.\n\nGenerates {MLRP_NurseRedheartMedicineSpawnAmount} medicine every {MLRP_NurseRedheartMedicineSpawnTime} day(s).</description>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--NURSE REDHEART: REPLACE TIP-->
+		<li Class="XmlExtensions.UseSettings">
+			<modId>geodesicdragon.rimpony</modId>
+			<keys>
+				<li>MLRP_NurseRedheartMedicineSpawnAmount</li>
+				<li>MLRP_NurseRedheartMedicineSpawnTime</li>
+			</keys>
+			<defaultValues>
+				<li>5</li>
+				<li>10</li>
+			</defaultValues>
+			<brackets>{}</brackets>    
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_Tips"]/tips/li[42]</xpath>
+					<value>
+						<li>Nurse Redheart is a rare reward from quests; she will grant you {MLRP_NurseRedheartMedicineSpawnAmount} Medicine every {MLRP_NurseRedheartMedicineSpawnTime} days as long as she has 350W of power.</li>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--AGGRO TURRETS: RANGE-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_ZephyrBreezeAggroRange</key>
+			<defaultValue>10</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/verbs/li/range</xpath>
+					<value>
+						<range>{MLRP_ZephyrBreezeAggroRange}</range>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--AGGRO TURRETS: HEALTH-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_ZephyrBreezeHealth</key>
+			<defaultValue>1000</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/statBases/MaxHitPoints</xpath>
+					<value>
+						<MaxHitPoints>{MLRP_ZephyrBreezeHealth}</MaxHitPoints>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--AGGRO TURRETS: TOUCH ACCURACY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_AggroTurretAccuracyTouch</key>
+			<defaultValue>0.1</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyTouch</xpath>
+					<value>
+						<AccuracyTouch>{MLRP_AggroTurretAccuracyTouch}</AccuracyTouch>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--AGGRO TURRETS: SHORT RANGE ACCURACY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_AggroTurretAccuracyShort</key>
+			<defaultValue>0.25</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyShort</xpath>
+					<value>
+						<AccuracyShort>{MLRP_AggroTurretAccuracyShort}</AccuracyShort>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--AGGRO TURRETS: MEDIUM RANGE ACCURACY-->
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_AggroTurretAccuracyMedium</key>
+			<defaultValue>0.25</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyMedium</xpath>
+					<value>
+						<AccuracyMedium>{MLRP_AggroTurretAccuracyMedium}</AccuracyMedium>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--AGGRO TURRETS: LONG RANGE ACCURACY-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_AggroTurretAccuracyLong</key>
+			<defaultValue>1</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyLong</xpath>
+					<value>
+						<AccuracyLong>{MLRP_AggroTurretAccuracyLong}</AccuracyLong>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--AGGRO TURRETS: SHOTS PER BURST-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_AggroTurretBurstAmount</key>
+			<defaultValue>3</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/verbs/li/burstShotCount</xpath>
+					<value>
+						<burstShotCount>{MLRP_AggroTurretBurstAmount}</burstShotCount>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--SSCS6K: BEER SPAWN AMOUNT-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_SSCS6KBeerSpawnAmount</key>
+			<defaultValue>30</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_SSCS6K"]/comps/li[@Class="CompProperties_Spawner"]/spawnCount</xpath>
+					<value>
+						<spawnCount>{MLRP_SSCS6KBeerSpawnAmount}</spawnCount>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<!--SSCS6K: BEER SPAWN TIME-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_SSCS6KBeerSpawnTime</key>
+			<defaultValue>30</defaultValue>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable">
+					<value>{MLRP_SSCS6KBeerSpawnTime}</value>
+					<value2>60000</value2>
+					<operation>*</operation>
+					<storeIn>MLRP_MLRP_SSCS6KBeerSpawnTicks</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_SSCS6K"]/comps/li[@Class="CompProperties_Spawner"]/spawnIntervalRange</xpath>
+							<value>
+								<spawnIntervalRange><min>{MLRP_MLRP_SSCS6KBeerSpawnTicks}</min><max>{MLRP_MLRP_SSCS6KBeerSpawnTicks}</max></spawnIntervalRange>
+							</value>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--SSCS6K: REPLACE DESCRIPTION-->
+		<li Class="XmlExtensions.UseSettings">
+			<modId>geodesicdragon.rimpony</modId>
+			<keys>
+				<li>MLRP_SSCS6KBeerSpawnAmount</li>
+				<li>MLRP_SSCS6KBeerSpawnTime</li>
+			</keys>
+			<defaultValues>
+				<li>30</li>
+				<li>30</li>
+			</defaultValues>
+			<brackets>{}</brackets>    
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_SSCS6K"]/description</xpath>
+					<value>
+						<description>Unlike when Flim and Flam were using it, the Super Speedy Cider Squeezy 6000 will produce something just as good as cider, provided it has enough power.\n\nGenerates {MLRP_SSCS6KBeerSpawnAmount} Beer every {MLRP_SSCS6KBeerSpawnTime} days.</description>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--SSCS6K: REPLACE TIP-->
+		<li Class="XmlExtensions.UseSettings">
+			<modId>geodesicdragon.rimpony</modId>
+			<keys>
+				<li>MLRP_SSCS6KBeerSpawnAmount</li>
+				<li>MLRP_SSCS6KBeerSpawnTime</li>
+			</keys>
+			<defaultValues>
+				<li>30</li>
+				<li>30</li>
+			</defaultValues>
+			<brackets>{}</brackets>    
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_Tips"]/tips/li[43]</xpath>
+					<value>
+						<li>The Super Speedy Cider Squeezy 6000 is a rare reward from quests; it will grant you {MLRP_SSCS6KBeerSpawnAmount} Beer every {MLRP_SSCS6KBeerSpawnTime} days as long as it has 500W of power.</li>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--DAYBREAKER STATUE: REGULAR CHEMFUEL REQUIRED-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId> <!--String that XML Extensions can identify your mod with-->
+			<key>MLRP_DaybreakerChemfuel</key> <!--Key to identify the setting (only used internally, invisible to user)-->
+			<defaultValue>75</defaultValue> <!--What you want the default value of the setting to be-->
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_RegularChemfuel"]/ingredients/li/count</xpath>
+					<value>
+						<count>{MLRP_DaybreakerChemfuel}</count>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--DAYBREAKER STATUE: DOUBLE CHEMFUEL AMOUNT-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_DaybreakerChemfuel</key>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable">
+					<value>{MLRP_DaybreakerChemfuel}</value>
+					<value2>2</value2>
+					<operation>*</operation>
+					<storeIn>MLRP_DB_DoubleChemfuelValue</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_DoubleChemfuel"]/ingredients/li/count</xpath>
+							<value>
+								<count>{MLRP_DB_DoubleChemfuelValue}</count>
+							</value>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--RAINBOW DASH CHILD PLUSHIE: SAME BONUSES AS ADULT VERSION-->
+		<li Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_RainbowDashChildPlushUsesAdultStats</key>
+			<defaultValue>false</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_RainbowDash_Child"]/equippedStatOffsets</xpath>
+					<value>
+						<equippedStatOffsets>
+							<MoveSpeed>1</MoveSpeed>
+							<MeleeHitChance>5</MeleeHitChance>
+							<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+						</equippedStatOffsets>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_BiotechTips"]/li[7]</xpath>
+					<value>
+						<li>The child-equippable Rainbow Dash plushie grants the same bonuses as the adult version.</li>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_RainbowDash_Child"]/equippedStatOffsets</xpath>
+					<value>
+						<equippedStatOffsets>
+							<MoveSpeed>2</MoveSpeed>
+						</equippedStatOffsets>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_BiotechTips"]/tips/li[7]</xpath>
+					<value>
+						<li>The child-equippable Rainbow Dash plushie only affects a child's movement speed and not their combat prowess.</li>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+
+		<!--SETTINGS WINDOW-->
+		<li Class="XmlExtensions.CreateSettings">
+			<modId>geodesicdragon.rimpony</modId> <!--MUST be the same as the one entered earlier-->
+			<label>My Little RimPony</label> <!-- This is what displays as your mod's name-->
+			<settings> <!--This is where you define what settings are in the settings menu-->
+				<li Class="XmlExtensions.Setting.Text">
+					<text>IMPORTANT: You will need to restart RimWorld after changing any of these settings.</text>
+					<font>Medium</font>
+					<anchor>Middle</anchor>
+				</li>
+		
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Plushie Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Textbox">
+					<key>MLRP_PlushiesCloth</key>
+					<label>Amount Of Stuff Needed: </label>
+					<defaultValue>300</defaultValue>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap">
+					<spacing>8</spacing>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Textbox">
+					<key>MLRP_PlushieMarketValue</key>
+					<label>Market Value: </label>
+					<defaultValue>200</defaultValue>
+				</li>
+		
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_PlushieCraftingSkill</key>
+					<defaultValue>5</defaultValue>
+					<min>1</min>
+					<max>20</max>
+					<label>Crafting Skill Required: {MLRP_PlushieCraftingSkill}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
+					<text>This setting will also be applied to child-sized plushies.</text>
+					<font>Small</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_PlushiesTaintedOnDeath</key>
+					<label>Plushies become tainted if worn by a corpse</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Sweetie Bot Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_SweetieBotWeaponRange</key>
+					<defaultValue>46</defaultValue>
+					<min>10</min>
+					<max>100</max>
+					<label>Attack Range: {MLRP_SweetieBotWeaponRange}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_SweetieBotAccuracyTouch</key>
+					<defaultValue>0.3</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Touch Accuracy: {MLRP_SweetieBotAccuracyTouch}</label>
+					<decimals>1</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_SweetieBotAccuracyShort</key>
+					<defaultValue>0.4</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Short Range Accuracy: {MLRP_SweetieBotAccuracyShort}</label>
+					<decimals>1</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_SweetieBotAccuracyMedium</key>
+					<defaultValue>0.8</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Medium Range Accuracy: {MLRP_SweetieBotAccuracyMedium}</label>
+					<decimals>1</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_SweetieBotAccuracyLong</key>
+					<defaultValue>0.8</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Long Range Accuracy: {MLRP_SweetieBotAccuracyLong}</label>
+					<decimals>1</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Trait Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_BroniesCanBeViolent</key>
+					<label>Bronies are capable of violence</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_BronyTraitCommonality</key>
+					<defaultValue>0.1</defaultValue>
+					<min>0</min>
+					<max>1</max>
+					<label>Brony Trait Commonality: {MLRP_BronyTraitCommonality}</label>
+					<decimals>1</decimals>
+				</li>
+						
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_AntiBronyTraitCommonality</key>
+					<defaultValue>0.2</defaultValue>
+					<min>0</min>
+					<max>1</max>
+					<label>Anti Brony Trait Commonality: {MLRP_AntiBronyTraitCommonality}</label>
+					<decimals>1</decimals>
+				</li>
+							
+				<li Class="XmlExtensions.Setting.Gap"/>
+
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Nurse Redheart Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_NurseRedheartSpawnGlitterworldMedicine</key>
+					<label>Spawn glitterworld medicine</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Spawning glitterworld medicine will make the building consume twice as much power.</text>
+					<font>Small</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_NurseRedheartMedicineSpawnAmount</key>
+					<defaultValue>5</defaultValue>
+					<min>1</min>
+					<max>30</max>
+					<label>Amount of medicine to spawn: {MLRP_NurseRedheartMedicineSpawnAmount}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_NurseRedheartMedicineSpawnTime</key>
+					<defaultValue>10</defaultValue>
+					<min>1</min>
+					<max>90</max>
+					<label>Medicine Spawn Time (days): {MLRP_NurseRedheartMedicineSpawnTime}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Aggro Turret Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_ZephyrBreezeAggroRange</key>
+					<defaultValue>10</defaultValue>
+					<min>10</min>
+					<max>100</max>
+					<label>Aggro Range: {MLRP_ZephyrBreezeAggroRange}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_ZephyrBreezeHealth</key>
+					<defaultValue>1000</defaultValue>
+					<min>100</min>
+					<max>3000</max>
+					<label>Health: {MLRP_ZephyrBreezeHealth}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_AggroTurretAccuracyTouch</key>
+					<defaultValue>0.1</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Touch Accuracy: {MLRP_AggroTurretAccuracyTouch}</label>
+					<decimals>2</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_AggroTurretAccuracyShort</key>
+					<defaultValue>0.25</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Short Range Accuracy: {MLRP_AggroTurretAccuracyShort}</label>
+					<decimals>2</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_AggroTurretAccuracyMedium</key>
+					<defaultValue>0.25</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Medium Range Accuracy: {MLRP_AggroTurretAccuracyMedium}</label>
+					<decimals>2</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_AggroTurretAccuracyLong</key>
+					<defaultValue>1</defaultValue>
+					<min>0.1</min>
+					<max>1</max>
+					<label>Long Range Accuracy: {MLRP_AggroTurretAccuracyLong}</label>
+					<decimals>2</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_AggroTurretBurstAmount</key>
+					<defaultValue>3</defaultValue>
+					<min>3</min>
+					<max>15</max>
+					<label>Shots Per Burst: {MLRP_AggroTurretBurstAmount}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Super Speedy Cider Squeezy 6000 Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+								
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_SSCS6KBeerSpawnAmount</key>
+					<defaultValue>30</defaultValue>
+					<min>1</min>
+					<max>100</max>
+					<label>Amount of beer to spawn: {MLRP_SSCS6KBeerSpawnAmount}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_SSCS6KBeerSpawnTime</key>
+					<defaultValue>30</defaultValue>
+					<min>1</min>
+					<max>90</max>
+					<label>Beer Spawn Time (days): {MLRP_SSCS6KBeerSpawnTime}</label>
+					<decimals>0</decimals>
+				</li>
+
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Daybreaker Statue Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_DaybreakerChemfuel</key>
+					<defaultValue>75</defaultValue>
+					<min>1</min>
+					<max>150</max>
+					<label>Amount of chemfuel required: {MLRP_DaybreakerChemfuel}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>This amount will be doubled for the recipes to acquire 10 regular/advanced components.</text>
+					<font>Small</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap" MayRequire="Ludeon.RimWorld.Biotech"/>
+				
+				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
+					<text>Biotech Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Biotech">
+					<key>MLRP_RainbowDashChildPlushUsesAdultStats</key>
+					<label>Child-equippable Rainbow Dash plushie has the same bonuses as the adult version</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap">
+					<spacing>8</spacing>
+				</li>
+										
+				<li Class="XmlExtensions.Setting.GapLine"/>
+				
+				<li Class="XmlExtensions.Setting.ResetSettings"/>
+			</settings>
+		</li>
+	</operations>
+</Operation>
+
+</Patch>
