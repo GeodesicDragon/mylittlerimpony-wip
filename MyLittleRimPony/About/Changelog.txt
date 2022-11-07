@@ -1,4 +1,4 @@
-Version 3.13.7 (November 6th 2022)
+Version 3.14.9 (November 6th 2022)
 
 * Biotech: Added child-equippable Rainbow Dash plushie (+2 to movement speed; does not affect melee hit chance or shooting accuracy).
 * Biotech: Added child-equippable Starlight Glimmer plushie.
@@ -16,12 +16,17 @@ Version 3.13.7 (November 6th 2022)
 * Biotech: Added a recipe to the Nightmare Moon statue which lets you request a high subcore. Doing so requires 2250 silver, 750 chocolate and 15 hemogen packs, but you won't be forced to sacrifice a pawn or prisoner, thus avoiding the associated mood debuffs.
 * Biotech: The NPC faction has welcomed various xenotypes into the fold. They are now 65% baseliner and 5% each of dirtmoles, pigskins, imps, yttakin, genies, neanderthals and highmates. Hussars, meanwhile, still only have a chance of appearing as elite mercenaries, while sanguophages and wasters will not appear at all (they refused to partake in all of the fun and magic, the miserable gits).
 * Combat Extended: Added bulk and worn bulk for child-equippable plushies.
+* Vanilla Backgrounds Expanded: Added one new background.
 * XML Extensions: Added option to allow the child-equippable Rainbow Dash plushie to give the same bonuses as the adult version.
-* Core: Fixed 'Generated pawn incapable of violence' error.
+(NOT YET FIXED) * Core: Fixed 'Generated pawn incapable of violence' error.
+* Core: NPC faction leaders are now equipped with marine armour (cataphract if Royalty is enabled) and rainbow lasers.
+* Core: NPC faction pawns who used ranged weapons should no longer spawn with the 'Brawler' trait.
 * Core: Nightmare Moon now demands both 125 chocolate and 10 industrial medicine before she will give you any glitterworld medicine.
 * Core: Increased amount of random names for NPC faction pawns, though you may see some weird combinations as a result.
 * Royalty: Updated 'request detoxifier stomach' recipe to reflect the fact it is now called a 'sterilising stomach.'
+* Royalty: Fixed the Harmony chip not increasing bandwidth.
 * Royalty: Fixed recipe to request a reprocessor stomach using the wrong item name in the bill list.
+* Ideology: The patch which applies plushie bonuses to the harmony chip now checks to see if Royalty is enabled first.
 * Biotech: Fixed plushie trader not stocking child-equippable plushies.
 * RimPonk: Removed patches which add pawns from this mod to the NPC faction.
 

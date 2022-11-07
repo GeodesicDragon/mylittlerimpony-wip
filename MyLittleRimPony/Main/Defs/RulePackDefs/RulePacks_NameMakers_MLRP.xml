@@ -11,8 +11,6 @@
                 <li>name->[PonyLastName] [PonyFirstName]</li>
                 <li>name->[MaleFirstName] [MaleLastName]</li>
                 <li>name->[MaleLastName] [MaleFirstName]</li>
-                <li>name->[PonyLastName] [MaleLastName]</li>
-                <li>name->[PonyFirstName] [MaleLastName]</li>
                 <li>name->[MaleSingleName]</li>
 				<!--Use what few male names we DO have where possible-->
                 <li>name->Hitch Trailblazer</li>
