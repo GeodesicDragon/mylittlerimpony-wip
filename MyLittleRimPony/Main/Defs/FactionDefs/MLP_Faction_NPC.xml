@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+﻿<Defs>
 
   <FactionDef ParentName="FactionBase">
     <defName>MLRP_NPC_Faction</defName>
@@ -39,15 +38,6 @@
         <commonality>0.05</commonality>
       </li>
     </backstoryFilters>
-	<!--<backstoryFilters>
-      <li>
-        <categories>
-          <li>Outlander</li>
-          <li>Outsider</li>
-          <li>Tribal</li>
-        </categories>
-      </li>
-    </backstoryFilters>-->
     <geneticVariance>0.8</geneticVariance>
     <apparelStuffFilter>
       <stuffCategoriesToAllow>
