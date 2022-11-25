@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName = "LargeMechGestator"]/recipes</xpath>
+      <value>
+          <li>MLRP_GestateSweetieBot</li>
+      </value>
+  </Operation>
+</Patch>

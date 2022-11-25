@@ -10,6 +10,8 @@
                 <li>name->[PonyFirstName] [PonyLastName]</li>
                 <li>name->[PonyLastName] [PonyFirstName]</li>
                 <li>name->[MaleFirstName] [MaleLastName]</li>
+                <li>name->[RandomWord] [MaleLastName]</li>
+                <li>name->[MaleFirstName] [RandomWord]</li>
                 <li>name->[MaleLastName] [MaleFirstName]</li>
 				<li>name->[RandomWord] [RandomWord]</li> <!--Will more than likely generate some weird combinations-->
                 <li>name->[MaleSingleName]</li>
@@ -79,7 +81,9 @@
         <rulePack>
             <rulesStrings><!--r_name(p=12)-->
                 <li>name->[FemaleFirstName] [FemaleLastName]</li>
+                <li>name->[FemaleFirstName] [RandomWord]</li>
                 <li>name->[FemaleLastName] [FemaleFirstName]</li>
+                <li>name->[RandomWord] [FemaleLastName]</li>
                 <li>name->[PonyFirstName] [FemaleLastName]</li>
                 <li>name->[FemaleFirstName] [PonyLastName]</li>
 				<li>name->[RandomWord] [RandomWord]</li> <!--Will more than likely generate some weird combinations-->

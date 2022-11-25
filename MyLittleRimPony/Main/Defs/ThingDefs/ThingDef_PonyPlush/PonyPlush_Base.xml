@@ -45,6 +45,9 @@
 	<!--<costList>
       <Cloth>300</Cloth>
     </costList>-->
+    <tradeTags>
+      <li>MLRP_Plushie</li>
+    </tradeTags>
     <comps>
 		<li Class="CompProperties_Forbiddable" />
 		<li Class="CompProperties_CauseHediff_Apparel">

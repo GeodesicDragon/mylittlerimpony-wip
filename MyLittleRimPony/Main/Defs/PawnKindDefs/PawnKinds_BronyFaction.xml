@@ -1,4 +1,5 @@
-﻿<Defs>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
 
   <PawnKindDef Name="MLRP_BronyKinds" Abstract="True">
     <race>Human</race>
@@ -16,8 +17,8 @@
     <invNutrition>2</invNutrition>
     <invFoodDef>MealSurvivalPack</invFoodDef>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <minGenerationAge>19</minGenerationAge>
-    <maxGenerationAge>50</maxGenerationAge>
+    <minGenerationAge>16</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
     <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
     <combatEnhancingDrugsCount>
       <min>0</min>
@@ -33,9 +34,24 @@
     </disallowedTraits>
     <nameMaker>NamerBrony</nameMaker>
     <nameMakerFemale>NamerBronyFemale</nameMakerFemale>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
   
-  <!--I probably don't need these bases, but I'll create them anyway-->
+<PawnKindDef ParentName="MLRP_BronyKinds" Name="MLRP_BronyKinds_LeaderBase" Abstract="True">
+	<itemQuality>Excellent</itemQuality>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
   
   <PawnKindDef ParentName="MLRP_BronyKinds" Name="MLRP_BronyKinds_VillagerBase" Abstract="True">
 	<itemQuality>Normal</itemQuality>
@@ -48,14 +64,15 @@
         <skill>Melee</skill>
         <range>1</range>
       </li>
+	  <li>
+        <skill>Social</skill>
+        <range>8~12</range>
+      </li>	
     </skills>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MLRP_BronyKinds" Name="MLRP_BronyKinds_MercBase" Abstract="True">
 	<itemQuality>Good</itemQuality>
-	<disallowedTraits>
-		<li>Brawler</li>
-	</disallowedTraits>
 	<skills>
       <li>
         <skill>Shooting</skill>
@@ -63,9 +80,9 @@
       </li>
 	  <li>
         <skill>Melee</skill>
-        <range>3~5</range>
+        <range>0</range>
       </li>
-	 </skills>
+    </skills>
   </PawnKindDef>
   
   <PawnKindDef ParentName="MLRP_BronyKinds" Name="MLRP_BronyKinds_MeleeMercBase" Abstract="True">
@@ -82,17 +99,11 @@
         <skill>Melee</skill>
         <range>7~12</range>
       </li>
-    </skills>
+	</skills>
   </PawnKindDef>
   
 <PawnKindDef ParentName="MLRP_BronyKinds" Name="MLRP_BronyKinds_EliteMercBase" Abstract="True">
     <itemQuality>Excellent</itemQuality>
-	<!--<forcedTraits>
-		<li>
-			<def>ShootingAccuracy</def>
-			<degree>1</degree>
-		</li>
-	</forcedTraits>-->
 	<skills>
       <li>
         <skill>Shooting</skill>
@@ -102,10 +113,10 @@
         <skill>Melee</skill>
         <range>10~15</range>
       </li>
-    </skills>
+	</skills>
   </PawnKindDef>
   
-<PawnKindDef ParentName="MLRP_BronyKinds_VillagerBase">
+<PawnKindDef ParentName="MLRP_BronyKinds_LeaderBase">
     <defName>Brony_Leader</defName>
 	<factionLeader>true</factionLeader>
     <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
@@ -121,7 +132,7 @@
     <apparelTags>
       <li>SpacerMilitary</li>
     </apparelTags>
-	<apparelRequired><!--Patched to use cataphract armour if Royalty is installed-->
+   <apparelRequired><!--Patched to use cataphract armour if Royalty is installed-->
 		<li>Apparel_PowerArmor</li>
 		<li>Apparel_PowerArmorHelmet</li>
 		<li>PonyPlush_RainbowDash</li>
@@ -141,6 +152,9 @@
     </weaponTags>
 	<acceptArrestChanceFactor>0.25</acceptArrestChanceFactor>
 	<isFighter>false</isFighter>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
 </PawnKindDef>
   
 <PawnKindDef ParentName="MLRP_BronyKinds_VillagerBase">
@@ -252,6 +266,49 @@
 	  <li>IndustrialGunAdvanced</li>
     </weaponTags>
 	<isFighter>true</isFighter>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="MLRP_BronyKinds_MercBase">
+    <defName>Brony_Mercenary_Grenadier</defName>
+    <baseRecruitDifficulty>0.3</baseRecruitDifficulty>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~7</initialResistanceRange>
+    <label>brony mercenary grenadier</label>
+	<labelPlural>brony mercenary grenadiers</labelPlural>
+    <combatPower>70</combatPower>
+    <gearHealthRange>
+      <min>1</min>
+      <max>1</max>
+    </gearHealthRange>
+    <apparelTags>
+	  <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+	<apparelRequired>
+		<li>Apparel_FlakVest</li>
+		<li>Apparel_FlakPants</li>
+		<li>PonyPlush_RainbowDash</li>
+		<li>Apparel_AdvancedHelmet</li>
+	</apparelRequired>
+    <apparelMoney>
+      <min>2000</min>
+      <max>3500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>420</min>
+      <max>650</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>GrenadeDestructive</li>
+    </weaponTags>
+	<isFighter>true</isFighter>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
 </PawnKindDef>
   
 <PawnKindDef ParentName="MLRP_BronyKinds_MeleeMercBase">
@@ -308,7 +365,7 @@
     <apparelTags>
 	  <li>SpacerMilitary</li>
     </apparelTags>
-	<apparelRequired> <!--Patched to use cataphract armour if Royalty is installed-->
+	<apparelRequired><!--Patched to use cataphract armour if Royalty is installed-->
 		<li>Apparel_PowerArmor</li>
 		<li>Apparel_PowerArmorHelmet</li>
 		<li>PonyPlush_RainbowDash</li>
@@ -326,6 +383,13 @@
     <weaponTags>
 	  <li>Rainbow_Laser</li>
     </weaponTags>
+    <!--Adding this trait causes an error; commenting this part out until the bug is fixed-->
+	<!--<forcedTraits>
+      <li>
+        <def>ShootingAccuracy</def>
+        <degree>1</degree>
+      </li>
+    </forcedTraits>-->
 	<isFighter>true</isFighter>
 </PawnKindDef>
 

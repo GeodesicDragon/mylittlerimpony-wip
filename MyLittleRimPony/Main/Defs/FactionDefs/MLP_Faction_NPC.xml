@@ -1,10 +1,11 @@
-﻿<Defs>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
 
   <FactionDef ParentName="FactionBase">
     <defName>MLRP_NPC_Faction</defName>
     <label>brony community</label>
     <categoryTag>Outlander</categoryTag>
-    <description>A colony of people who are united by their love of My Little Pony: Friendship is Magic.\n\nThey are open to trading with pretty much anyone, but will not hesitate to employ mercenaries against those who would do them harm.</description>
+    <description>A colony of people who are united by their love of My Little Pony: Friendship is Magic.\n\nThey are willing to trade with just about anybody, but will not hesitate to deploy mercenaries against those who would do them harm.</description>
 	<naturalEnemy>false</naturalEnemy>
     <pawnSingular>brony</pawnSingular>
     <pawnsPlural>bronies</pawnsPlural>
@@ -21,21 +22,15 @@
     <settlementNameMaker>MLRP_BronySettlementNames</settlementNameMaker>
     <allowedCultures>
 		<li>Astropolitan</li>
-		<li>Rustican</li>
 	</allowedCultures>
     <techLevel>Industrial</techLevel>
-	<backstoryFilters>
+    <backstoryFilters>
       <li>
         <categories>
           <li>Outlander</li>
+          <li>Outsider</li>
+          <li>Tribal</li>
         </categories>
-        <commonality>0.95</commonality>
-      </li>
-      <li>
-        <categories>
-          <li>Offworld</li>
-        </categories>
-        <commonality>0.05</commonality>
       </li>
     </backstoryFilters>
     <geneticVariance>0.8</geneticVariance>
@@ -72,11 +67,13 @@
     <raidLootMaker>MLRP_BronyLoot</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
-        <li>(0,35)</li>
-        <li>(70, 50)</li>
-        <li>(700, 100)</li>
-        <li>(1300, 150)</li>
-        <li>(100000, 10000)</li>
+        <li>(500, 100)</li>
+        <li>(1000, 150)</li>
+        <li>(2000, 250)</li>
+        <li>(3000, 10000)</li>
+        <li>(5000, 15000)</li>
+        <li>(7500, 20000)</li>
+        <li>(10000, 30000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
@@ -96,14 +93,17 @@
           <Brony_Mercenary>6</Brony_Mercenary>
           <Brony_Mercenary_Melee>4</Brony_Mercenary_Melee>
           <Brony_Mercenary_Elite>2</Brony_Mercenary_Elite>
+          <Brony_Mercenary_Grenadier>1</Brony_Mercenary_Grenadier>
         </guards>
       </li>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <Brony_Villager>10</Brony_Villager>
-          <Brony_Mercenary>5</Brony_Mercenary>
-          <Brony_Mercenary_Melee>3</Brony_Mercenary_Melee>
+          <Brony_Villager>1</Brony_Villager>
+          <Brony_Mercenary>10</Brony_Mercenary>
+          <Brony_Mercenary_Melee>5</Brony_Mercenary_Melee>
+          <Brony_Mercenary_Elite>2</Brony_Mercenary_Elite>
+		  <Brony_Mercenary_Grenadier>1</Brony_Mercenary_Grenadier>
         </options>
       </li>
       <li>        
@@ -113,6 +113,16 @@
           <Brony_Mercenary>20</Brony_Mercenary>
           <Brony_Mercenary_Melee>5</Brony_Mercenary_Melee>
           <Brony_Mercenary_Elite>10</Brony_Mercenary_Elite>
+        </options>
+      </li>
+      <li>        
+        <kindDef>Combat</kindDef> <!--Breaching-->
+        <commonality>5</commonality>
+        <options>
+          <Brony_Mercenary>10</Brony_Mercenary>
+          <Brony_Mercenary_Melee>10</Brony_Mercenary_Melee>
+          <Brony_Mercenary_Elite>5</Brony_Mercenary_Elite>
+		  <Brony_Mercenary_Grenadier>10</Brony_Mercenary_Grenadier>
         </options>
       </li>
       <li>

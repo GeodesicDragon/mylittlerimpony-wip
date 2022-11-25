@@ -1,15 +1,10 @@
 ﻿// Huge thanks to Aelanna from the official RimWorld Discord server for helping me out with this thing.
 // And also for being so damn patient with me while my slow brain figured it all out.
-using System;
+// IMPORTANT: This version of the DLL is only compatible with RimWorld 1.4 and above.
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using Unity.Jobs;
 using RimWorld;
 using Verse;
-using Verse.AI;
 
 namespace MyLittleRimPony
 {

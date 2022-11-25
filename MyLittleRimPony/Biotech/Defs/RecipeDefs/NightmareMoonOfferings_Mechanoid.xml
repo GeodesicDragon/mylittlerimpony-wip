@@ -2,8 +2,12 @@
 
 <!--BASES-->
 
-	<RecipeDef Name="NMM_SignalChipRecipeBase" Abstract="True"><!--Market Value of Signal Chip: 500 silver-->
-		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+	<RecipeDef Name="NMM_MechanitorOnlyRecipe" Abstract="True">
+		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="NMM_MechanitorOnlyRecipe" Name="NMM_SignalChipRecipeBase" Abstract="True">
+		<!--Market Value of Signal Chip: 500 silver-->
 		<ingredients>
 			<li>
 				<filter>
@@ -24,8 +28,8 @@
 		</ingredients>
 	</RecipeDef>
 	
-	<RecipeDef Name="NMM_PowerfocusChipRecipeBase" Abstract="True"><!--Market Value of Powerfocus Chip: 1000 silver-->
-		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+	<RecipeDef ParentName="NMM_MechanitorOnlyRecipe" Name="NMM_PowerfocusChipRecipeBase" Abstract="True">
+		<!--Market Value of Powerfocus Chip: 1000 silver-->
 		<ingredients>
 			<li>
 				<filter>
@@ -46,8 +50,8 @@
 		</ingredients>
 	</RecipeDef>
 	
-	<RecipeDef Name="NMM_NanostructuringChipRecipeBase" Abstract="True"><!--Market Value of Nanostructuring Chip: 1500 silver-->
-		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+	<RecipeDef ParentName="NMM_MechanitorOnlyRecipe" Name="NMM_NanostructuringChipRecipeBase" Abstract="True">
+		<!--Market Value of Nanostructuring Chip: 1500 silver-->
 		<ingredients>
 			<li>
 				<filter>
@@ -293,7 +297,7 @@
 					<li>HemogenPack</li>
 				</thingDefs>
 			</filter>
-			<count>15</count>
+			<count>25</count>
 		</li>
 	</ingredients>
 	<products>
