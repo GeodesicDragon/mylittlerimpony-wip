@@ -843,6 +843,12 @@
 					<anchor>Left</anchor>
 				</li>
 				
+				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
+					<text>IMPORTANT: These settings will not be applied to the mechanoid version of Sweetie Bot.</text>
+					<font>Small</font>
+					<anchor>Left</anchor>
+				</li>
+				
 				<li Class="XmlExtensions.Setting.Slider">
 					<key>MLRP_SweetieBotWeaponRange</key>
 					<defaultValue>46</defaultValue>

@@ -26,7 +26,7 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef Name="MLRP_TimeConsumingResearchBase" Abstract="True">
-		<baseCost>35000</baseCost>
+		<baseCost>30000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>

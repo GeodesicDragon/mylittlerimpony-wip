@@ -1,4 +1,7 @@
-﻿// Huge thanks to Aelanna from the official RimWorld Discord server for helping me out with this thing.
+﻿// My Little RimPony - A RimWorld Mod
+// Created by GeodesicDragon
+// MLP is property of Hasbro.
+// Huge thanks to Aelanna from the official RimWorld Discord server for helping me out with this thing.
 // And also for being so damn patient with me while my slow brain figured it all out.
 // IMPORTANT: This version of the DLL is only compatible with RimWorld 1.4 and above.
 using System.Collections.Generic;
@@ -12,9 +15,13 @@ namespace MyLittleRimPony
 
     public static class MyDefOf
     {
+        public static ThingDef MLRP_MagicMirrorGenerator;
         public static TraitDef MLRP_BronyTrait;
         public static TraitDef MLRP_AntiBronyTrait;
         public static ThoughtDef MLRP_PonyPlushEquippedAntiBrony;
+        public static RoomRoleDef MLRP_PortalRoom;
+        [MayRequireRoyalty]
+        public static ThoughtDef MLRP_HarmonyChipInstalledAntiBrony;
 
         static MyDefOf()
         {
@@ -32,6 +39,19 @@ namespace MyLittleRimPony
         {
             this.defaultLabel = "Anti brony has plushie";
             this.defaultExplanation = "A pawn with the anti brony trait has a pony plushie equipped, causing a mood penalty.";
+        }
+    }
+
+    // ANTI BRONY HARMONY CHIP ALERT
+
+    public class Alert_AntiBronyHasHarmonyChip : Alert_Thought
+    {
+        protected override ThoughtDef Thought => MyDefOf.MLRP_HarmonyChipInstalledAntiBrony;
+
+        public Alert_AntiBronyHasHarmonyChip()
+        {
+            this.defaultLabel = "Anti brony has harmony chip";
+            this.defaultExplanation = "You have installed a harmony chip in a pawn with the anti brony trait. This will cause a mood penalty until it is removed.";
         }
     }
 
@@ -126,7 +146,6 @@ namespace MyLittleRimPony
     {
         protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
         {
-            //List<Hediff> hediffs3 = pawn.health.hediffSet.GetHediffs<Hediff>().ToList();
             List<Hediff> MLRP_HediffsToCheck = pawn.health.hediffSet.hediffs.ToList();
             foreach (Hediff hediff in MLRP_HediffsToCheck)
             {
@@ -149,6 +168,23 @@ namespace MyLittleRimPony
                         break;
                 }
             }
+        }
+    }
+
+    // PORTAL ROOM
+
+    public class RoomRoleWorker_PortalRoom : RoomRoleWorker
+    {
+        public override float GetScore(Room room)
+        {
+            int num = 0;
+            List<Thing> andAdjacentThings = room.ContainedAndAdjacentThings;
+            for (int index = 0; index < andAdjacentThings.Count; ++index)
+            {
+                if (andAdjacentThings[index].def == MyDefOf.MLRP_MagicMirrorGenerator)
+                    ++num;
+            }
+            return 50f * (float)num;
         }
     }
 }

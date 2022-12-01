@@ -34,17 +34,17 @@
       <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
     </building>
     <costList>
-      <ComponentIndustrial>100</ComponentIndustrial>
-      <ComponentSpacer>50</ComponentSpacer>
-      <Plasteel>1500</Plasteel>
-      <Steel>1500</Steel>
-      <Uranium>1500</Uranium>
+      <ComponentIndustrial>75</ComponentIndustrial>
+      <ComponentSpacer>25</ComponentSpacer>
+      <Plasteel>1000</Plasteel>
+      <Steel>1000</Steel>
+      <Uranium>1000</Uranium>
 	  <PonyPlush_SunsetShimmer>1</PonyPlush_SunsetShimmer>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlant</compClass>
-        <basePowerConsumption>-25000</basePowerConsumption>
+        <basePowerConsumption>-15000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Flickable" />

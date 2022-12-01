@@ -1,53 +1,15 @@
 <Defs>
 
-<!--BASES
-
-<ThingDef Name="BaseProjectileHarmony" Abstract="True">
-    <category>Projectile</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <thingClass>Bullet</thingClass>
-    <label>rainbow</label>
-    <useHitPoints>False</useHitPoints>
-    <neverMultiSelect>True</neverMultiSelect>
-    <graphicData>
-      <shaderType>Transparent</shaderType>
-    </graphicData>
-	<projectile>
-		<damageDef>Bullet</damageDef>
-		<speed>30</speed>
-      <armorPenetrationBase>0.8</armorPenetrationBase>
-	</projectile>
-  </ThingDef>-->
-  
-<!--PROJECTILE
-
-<ThingDef ParentName="BaseProjectileHarmony">
-	<defName>Projectile_HarmonyRainbow</defName>
-	<label>rainbow laser</label>
-	<graphicData>
-		<texPath>Things/Projectiles/RainbowLaser</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1</drawSize>
-	</graphicData>
-	<projectile>
-		<damageAmountBase>25</damageAmountBase>
-		<stoppingPower>1.5</stoppingPower>
-	</projectile>
-</ThingDef>-->
-  
-<!--WEAPON-->
-
     <ThingDef ParentName="BaseGun">
     <defName>MLRP_ElementsOfHarmonyWeaponised_Mechanoid</defName>
     <label>Rainbow Laser (mechanoid)</label>
-    <description>This rainbow laser has been designed to be attached to Sweetie Bot combat mechs.</description>
+    <description>This rainbow laser has been designed for use with Sweetie Bot combat mechs.</description>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <graphicData>
       <texPath>Things/Weapons/RainbowLaser</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(0.5,0.5)</drawSize>
+	  <drawSize>(0.1,0.1)</drawSize>
     </graphicData>
     <uiIconScale>1</uiIconScale>
 	<relicChance>0</relicChance>

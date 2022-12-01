@@ -49,6 +49,7 @@ Cutie Mark Crusaders: parclytaxel (1761090)*
 Aloe and Lotus: jennieoo (773287)
 Trixie: chrzanek97 (2584896)
 
+Flim and Flam: sollace (1838589)
 King Sombra: frownfactory (1907550)
 Queen Chrysalis: sketchmcreations (2496399)
 Zecora: uxyd (2560904)
@@ -104,9 +105,13 @@ MLP Logo (used in preview image): Artist Unknown (1411173)**
 
 Alicorn icon (Biotech): https://www.flaticon.com/free-icon/unicorn-horse-head-with-a-horn-and-wings_32717
 Earth Pony, Pegasus and Unicorn icons (Biotech): https://game-icons.net
+Heart icon (Biotech): https://game-icons.net/1x1/zeromancer/heart-minus.html
+Shield icon (Biotech): https://game-icons.net/1x1/sbed/shield.html
+Broken Wall icon (Biotech): https://game-icons.net/1x1/delapouite/broken-wall.html
 
 SOUNDS
 
 All sounds, unless otherwise specified below, are taken from the My Little Pony: Friendship is Magic TV series, and are used under Fair Use legislation. Sounds remain bound by the copyright of the owner; they are included in this mod for entertainment purposes only, and no profit is made from them.
 
 Rainbow Laser (firing): https://elements.envato.com/laser-shot-5-29H6P3L
+Sweetie Bot (mechanoid): https://mixkit.co and https://elements.envato.com

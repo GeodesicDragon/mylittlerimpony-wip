@@ -82,12 +82,12 @@
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
-<!--SKILLTRAINERS-->
+<!--MAKE BEER AT DAYBREAKER STATUE-->
 
 	<ResearchProjectDef ParentName="MLRP_MediumResearchBase">
 		<defName>MLRP_MakeBeerAtDB</defName>
 		<label>Chemfuel-based beer brewing</label>
-		<description>Daybreaker will brew a large quantity of beer for you, though it will cost chemfuel as per usual.</description>
+		<description>Unlock the ability to create a large quantity of beer at the Daybreaker statue.</description>
 		<prerequisites>
 			<li>Brewing</li>
 		</prerequisites>
