@@ -21,9 +21,16 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_BiotechTips"]/tips/li[8]</xpath>
+					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_BiotechTips"]/tips/li[@Name="NightmareMoonHemogenPack"]</xpath>
 					<value>
-						<li>Requesting blood packs from Nightmare Moon should only be done as a last resort, as her price for this service is quite high.</li>
+						<li Name="NightmareMoonHemogenPack">Requesting blood packs from Nightmare Moon should only be done as a last resort, as her price for this service is quite high.</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="MLRP_NMM_DeathrestCapacitySerum"]/description</xpath>
+					<value>
+						<description>Offer silver and blood in exchange for a deathrest capacity serum.</description>
 					</value>
 				</li>
 			</operations>

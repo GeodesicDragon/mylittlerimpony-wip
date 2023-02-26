@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>MLRP_PlushieTrader</defName>
+		<label>plushie trader</label>
+		<commonality>0.2</commonality>
+		<orbital>true</orbital>
+		<requestable>true</requestable>
+		<stockGenerators>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Pony_Plushies</categoryDef>
+				<thingDefCountRange>99~99</thingDefCountRange>
+				<totalPriceRange>200~250</totalPriceRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PonyPlushBase" Name="PonyPlushChildBase" Abstract="True">
+    <statBases>
+		<MarketValue>100</MarketValue>
+	</statBases>
+	<costStuffCount>150</costStuffCount>
+    <apparel>
+		<developmentalStageFilter>Child</developmentalStageFilter>
+    </apparel>
+	<graphicData>
+      <drawSize>(0.5,0.5)</drawSize>
+    </graphicData>
+  </ThingDef> 
+</Defs>
