@@ -74,7 +74,7 @@
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>MLRP_Buildings</designationCategory>
-    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <building>
       <combatPower>45</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>

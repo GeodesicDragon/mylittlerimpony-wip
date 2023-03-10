@@ -1,9 +1,32 @@
-Version 3.91.103 (March 1st 2023)
+Version 3.93.115 (March 9th 2023)
 
-(NYI) * Core: Fixed letter spam when loading saved games.
+* Vanilla Outposts Expanded: Added the plushie factory.
+	* Each pawn requires at least 5 crafting skill.
+	* Produces ((100*Total Skill) + (50*Number of Pawns)) silver every 3 days.
+	* Takes about a day to set up.
+* Some Things Float: Added support for this mod, though only plushies are affected.
+* Core: The negative effect of poison joke on a pawn's consciousness now sets it to 1%, which should eliminate the chance of instant death.
+* Core: Reduced the Construction skill needed to build Sweetie Bot turrets to 10. (1)
+* Core: Reduced the Construction skill needed to build magic mirrors to 10. (1)
+* Royalty: Reduced the Crafting skill needed to make harmony chips to 10. (1)
+* Royalty: Reduced the Medical skill needed to install harmony chips to 10. (1)
+* Biotech: Sweetie Bot mechanoids now have their own custom body type; no more will they have their 'fingers' blown off.
+* Biotech: Sweetie Bot mechanoids should now make use of all four legs and hooves in melee combat.
+* Biotech: Sweetie Bot mechanoids can now stab with their horns in melee combat.
+* Reinforced Mechanoid 2: Fixed letters not being sent when researching Weather Controller, Climate Adjuster and Sun Blocker. (2)
+* MedPod: Fixed letter not being sent when researching Accelerated Cellular Regeneration. (2)
+* Replimat: Fixed letter not being sent when researching Molecular Nutrient Resequencing. (2)
+
+1. This change was made in order to allow Biotech mechanoids to perform the task as well.
+2. Worked in testing, but the whole letter system seems to be a bit tempermental; sometimes you'll get them, other times you won't.
+
+Version 3.91.104 (March 1st 2023)
+
+* Core: Fixed letter spam when loading saved games. It will happen one more time when you load a save, but should stop once you save again.
 * Core: Fixed incorrect letter being sent after researching Fabrication.
 * Core: Fixed incorrect letter being sent after researching Advanced Fabrication.
-* Core: Fixed missing letter not being sent after researching Devilstrand.
+* Core: Fixed a letter not being sent after researching Devilstrand.
+* Core: Fixed recipes at the Fabric Exchange using the wrong sound.
 
 Version 3.91.99 (February 26th 2023)
 

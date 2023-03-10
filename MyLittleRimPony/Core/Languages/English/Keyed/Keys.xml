@@ -16,7 +16,7 @@
 	<MLRP_RecipeUnlockedLetterText_DB>New recipe(s) available at the Daybreaker statue.</MLRP_RecipeUnlockedLetterText_DB>
 	<MLRP_RecipeUnlockedLetterText_FE>New recipe(s) available at the Fabric Exchange.</MLRP_RecipeUnlockedLetterText_FE>
 	
-	<!--C# ROYALTY-->
+	<!--C# ROYALTY DLC-->
 	
 	<MLRP_AntiBronyHasHarmonyChipAlert MayRequire="Ludeon.RimWorld.Royalty">Anti brony has harmony chip</MLRP_AntiBronyHasHarmonyChipAlert>
 	<MLRP_AntiBronyHasHarmonyChipExplanation MayRequire="Ludeon.RimWorld.Royalty">You have installed a harmony chip in a pawn with the anti brony trait. This will cause a -10 penalty to their mood until it is removed.</MLRP_AntiBronyHasHarmonyChipExplanation>
