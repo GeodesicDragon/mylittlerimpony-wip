@@ -1,4 +1,4 @@
-All art was sourced from Derpibooru (https://www.derpibooru.org), unless otherwise specified, and is used under a Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License; credit is followed by the Derpibooru image ID.
+All art was sourced from Derpibooru (https://www.derpibooru.org), unless otherwise specified, and is used under a Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License; artist credit is followed by the Derpibooru image ID.
 
 If you are one of the artists listed below and want me to stop using your work, get in touch with me via my Discord server. Please be aware that you will need to prove that you are who you say you are before I will respond to your request.
 
@@ -68,6 +68,9 @@ Poison Joke (item): Me, using a very badly edited version of https://game-icons.
 Super Speedy Cider Squeezy 6000: pirill (1628397)
 Magic Mirror: nano23823 (2462765)
 Miss Pommel: chainchomp2 (964470)
+Derpy Hooves: starryshineviolet (2944310)
+Party Cannon: benpictures1 (2756837)
+Marble Pie: littlejurnalina (2824560)**
 
 MAIN MENU BACKGROUNDS (Requires Vanilla Backgrounds Expanded)
 
@@ -93,12 +96,16 @@ Why, Darling?! - slb94 (1870978)
 What In Tarnation - tardifice (1662705)
 That Wasn't Very Kind Of You - wissle (2719109)
 Did Somebody Say 'Cupcakes?' - mrkat7214 (1986994)
-Cluck Off! - besttubahorse (1713860)
 
 PROJECTILES
 
 Rainbow Laser: Made by me.
 Tennis ball: Taken from art by greenhoof (2560819)
+
+STORYTELLERS
+
+Sunny Starscout (background): Unknown Artist (3106126)
+Sunny Starscout (tiny): Unknown Artist (2700716)
 
 OTHER IMAGES
 
@@ -106,11 +113,15 @@ Star image (used in some achievements): http://clipart-library.com/clipart/216.h
 Harmony Chip: https://www.kindpng.com/imgv/wbxRhx_clip-art-clip-art-chips-computer-chip-clipart/
 MLP Logo (used in preview image): Artist Unknown (1411173)**
 
-Alicorn icon (Biotech): https://www.flaticon.com/free-icon/unicorn-horse-head-with-a-horn-and-wings_32717
-Earth Pony, Pegasus and Unicorn icons (Biotech): https://game-icons.net
+Alicorn icon (Biotech): https://www.flaticon.com/free-icon/unicorn-horse-head-with-a-horn-and-wings_32717 **
+Earth Pony icon (Biotech): https://game-icons.net/1x1/delapouite/horse-head.html
+Unicorn icon (Biotech): https://game-icons.net/1x1/delapouite/unicorn.html
+Pegasus icon (Biotech): https://game-icons.net/1x1/skoll/pegasus.html
 Heart icon (Biotech): https://game-icons.net/1x1/zeromancer/heart-minus.html
 Shield icon (Biotech): https://game-icons.net/1x1/sbed/shield.html
 Broken Wall icon (Biotech): https://game-icons.net/1x1/delapouite/broken-wall.html
+Horseshoe icon (Biotech): https://game-icons.net/1x1/delapouite/horseshoe.html
+Insect jaws icon (Biotech): https://game-icons.net/1x1/lorc/insect-jaws.html
 
 SOUNDS
 
@@ -118,3 +129,4 @@ All sounds, unless otherwise specified below, are taken from the My Little Pony:
 
 Rainbow Laser (firing): https://elements.envato.com/laser-shot-5-29H6P3L
 Sweetie Bot (mechanoid): https://mixkit.co and https://elements.envato.com
+Party Cannon: https://www.myinstants.com/en/instant/pinkie-pie-party-cannon-52569/

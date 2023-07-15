@@ -8,7 +8,7 @@
 		<xpath>Defs/ThingDef[@Name="PonyPlushBase"]</xpath>
 		<value>
 			<li Class="SomeThingsFloat.FloatingThing_ModExtension">
-				<floatingValue>0.5</floatingValue>
+				<floatingValue>0.2</floatingValue>
 			</li>
 		</value>
 	</match>

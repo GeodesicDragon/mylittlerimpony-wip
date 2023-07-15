@@ -1,26 +1,8 @@
 <Defs>
 
   <BodyPartGroupDef>
-    <defName>MLRP_FL_SweetieBotHoof</defName>
-    <label>front left hoof</label>
-    <labelShort>hoof</labelShort>
-  </BodyPartGroupDef>
-  
-  <BodyPartGroupDef>
-    <defName>MLRP_FR_SweetieBotHoof</defName>
-    <label>front right hoof</label>
-    <labelShort>hoof</labelShort>
-  </BodyPartGroupDef>
-  
-  <BodyPartGroupDef>
-    <defName>MLRP_RL_SweetieBotHoof</defName>
-    <label>rear left hoof</label>
-    <labelShort>hoof</labelShort>
-  </BodyPartGroupDef>
-  
-  <BodyPartGroupDef>
-    <defName>MLRP_RR_SweetieBotHoof</defName>
-    <label>rear right hoof</label>
+    <defName>MLRP_SweetieBotHoof</defName>
+    <label>Sweetie Bot hoof</label>
     <labelShort>hoof</labelShort>
   </BodyPartGroupDef>
 
@@ -28,7 +10,7 @@
     <defName>MLRP_SweetieBotMech</defName>
     <label>Sweetie Bot</label>
     <corePart>
-      <def>MechanicalThorax</def>
+      <def>MechanicalThoraxCanManipulate</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <parts>
@@ -109,7 +91,7 @@
             </li>
           </parts>
         </li>
-        <li>
+        <!--<li>
           <def>MechanicalLeg</def>
           <customLabel>rear left leg</customLabel>
           <coverage>0.18</coverage>
@@ -134,7 +116,7 @@
               <coverage>0.5</coverage>
             </li>
           </parts>
-        </li>
+        </li>-->
         <li>
           <def>Reactor</def>
           <coverage>0.06</coverage>

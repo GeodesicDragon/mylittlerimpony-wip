@@ -8,12 +8,25 @@
 						<li>Chemfuel</li>
 					</thingDefs>
 				</filter>
-				<count>75</count>
+				<count>50</count>
 			</li>
 		</ingredients>
 	</RecipeDef>
 	
 	<RecipeDef Name="DaybreakerRecipes_DoubleChemfuel" Abstract="True">
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+	</RecipeDef>
+	
+	<RecipeDef Name="DaybreakerRecipes_TripleChemfuel" Abstract="True">
 		<ingredients>
 			<li>
 				<filter>

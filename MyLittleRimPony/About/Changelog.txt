@@ -1,24 +1,244 @@
-Version 3.93.115 (March 9th 2023)
+Version 4.2.21 (July 15th 2023)
 
+* Core: Added Sunny Starscout as a storyteller.
+	* More frequent quests, traders and visitors.
+	* 30 days between threats, and (hopefully) less of them.
+	* Caravans should not face any big threats.
+* Core: Bronies no longer care about awful, dull or mediocre portal rooms.
+* Biotech: Made some changes to the Brony Xenotypes scenario.
+	* Now starts with a changeling as well as the other four xenotypes.
+	* Reduced starting meal count to 50 (was 80).
+	* Reduced starting medicine count to 20 (was 40).
+	* Increased starting flak helmet count to 5 (was 4).
+	* Increased starting horse count to 5 (was 4).
+	* Added Discord to the list of starting plushies.
+	* Replaced Maud Pie with Rarity.
+	* Added 5 units of go-juice and 5 units of wake-up, which will help your unicorns and pegasi while you get production set up. Also, remember that pawns might have their required drug as part of their starting possessions.
+* Biotech: Alicorns, earth ponies, unicorns and pegasi no longer hate changelings, and vice versa.
+* Biotech: Increased the mood loss anti bronies get from being turned into a pony xenotype to -40 (was -20).
+* Biotech: Changelings can now come in a variety of colours.
+* Combat Extended: The Brony Xenotypes scenario should now start with 600 rounds of turret ammo.
+
+Version 4.1.7 (June 4th 2023)
+
+* Biotech: Added the Changeling Drone xenotype.
+	* Acid Spray
+	* High cold resistance
+	* Pyrophobia
+	* High libido
+	* Fertile
+	* Very ugly
+	* Grey eyes
+	* Bald
+	* No beard
+	* Insect voice
+	* Facial ridges
+	* Ink black skin
+	* Robust digestion
+	* Pollution stimulus
+	* Great construction skill
+	* Great crafting skill
+	* Terrible mining skill
+	* Terrible cooking skill
+	* Terrible plants skill
+	* Terrible animals skill
+	* Terrible artistic skill
+	* Terrible medicine skill
+	* Terrible social skill
+	* Terrible intellectual skill
+	* -25 opinion of alicorns, earth ponies, unicorns and pegasi
+	* These xenotypes also have a -25 opinion of changelings
+	* Pawns with the brony trait will still get a +10 opinion of them (even if they're a pony xenotype)
+* Core: Made some changes to the magical mirror power increase research.
+	* Renamed it to 'magical power increase.'
+	* Researching it now requires you to have unlocked Screwballs.
+	* Screwballs now benefit from the research, increasing their power output to 400W.
+* Biotech: Fixed pink square appearing around children with plushies equipped.
+* Combat Extended: Fixed a few patch errors. Thanks to BBLKepling for pointing out these problems and providing the fixes.
+	* Daring Do plushie now provides a 10% melee dodge chance regardless of indoor/outdoor light conditions.
+	* The tennis ball launcher is now using the correct smoke type.
+	* The Sweetie Bot mechanoid patch now refers to the correct body type.
+
+Version 4.0.0 - The Xenotypes Update (May 14th 2023)
+
+* Core: Added Marble Pie's Stone Exchange.
+	* Allows you to buy 100 of each stone block type in exchange for silver, at a rate of 1 silver per block.
+	* She'll also give you 500 of everything at once, provided you bring her something special...
+	* Requires 150W of power and stonecutting research.
+	* Can be built using wood, metals or stone.
+	* Why am I not using Limestone for this? Because I don't like her, that's why. :P
+* Biotech: Added earth pony, unicorn, pegasus and alicorn xenotypes.
+	* EARTH PONY
+		* Robust
+		* Unstoppable
+		* Great animals skill
+		* Great plants skill
+		* Great mining skill
+		* Awful art skill
+		* Awful crafting skill
+		* Awful intellectual skill
+		* Awful medical skill
+		* Large appetites
+		* Horse voice
+	* UNICORN
+		* Super clotting
+		* Super psy-sensitive
+		* Dead calm
+		* Fast learning
+		* Great intellectual skill
+		* Great medical skill
+		* Awful construction skill
+		* Awful animals skill
+		* Awful mining skill
+		* Awful plants skill
+		* Wake-up dependency
+		* Horse voice
+	* PEGASUS
+		* Very fast move speed
+		* Hyper aggressive
+		* Strong melee damage
+		* Dark vision
+		* Great shooting skills
+		* Great melee skills
+		* Poor skills in everything else
+		* Awful social skills
+		* Go-juice dependency
+		* Horse voice
+	* ALICORN
+		* Beautiful
+		* Superfast immunity gain
+		* Superfast wound healing
+		* Excellent social skill
+		* Excellent art skill
+		* Poor skill in everything else
+		* Delicate
+		* Shrewd negotiator
+		* Horse voice
+	* The NPC faction is now 33% earth pony, 33% unicorn, 33% pegasus, and 1% alicorn.
+	* The old earth pony, unicorn and pegasus genes still exist, but their costs have not changed.
+	* The alicorn gene has been renamed to shrewd negotiator and can be implanted to grant the ability of the same name.
+	* I know, pegasi and alicorns don't have wings, but that's only because I couldn't find a decent graphic.
+	* Bronies have a +10 opinion towards these xenotypes, but anti bronies have a -20 opinion.
+	* Turning an anti brony into one of these xenotypes will give them a permanent -20 mood debuff.
+	* Xenotypes have a +5 opinion towards each other.
+* Biotech: Added the Brony Xenotypes scenario.
+	* Starts with four pawns, one of each xenotype above, and four unbonded horses.
+	* Starts with slightly more resources than the standard brony community scenario.
+	* Starts with six mini turrets and three Screwballs.
+	* Starts with a Rainbow Dash plushie as well as Applejack, Maud and Twilight.
+* Device Standby: Added support for this mod to the plushie bench and fabric exchange.
+* [Ry]Rimcraft Metals: Added six new recipes to the Daybreaker statue.
+	* Each one allows you to convert 500 of each ore into the respective number of bars.
+	* Requires three times the amount of chemfuel a normal recipe uses (150 if you didn't change it using XML Extensions).
+	* Does not require any specific crafting level.
+	* Dark iron bars are only made in batches of 100, as they require 8 ores each.
+	* Hardened adamantite bars are only made in batches of 50, as they require 10 adamantite bars each, but the recipe only uses double the fuel.
+* Vanilla Achievements Expanded: Added an achievement to build the Stone Exchange.
+* Vanilla Achievements Expanded: Added an achievement to build the Stone Exchange using marble blocks.
+* Core: The party cannon no longer affects the mood of prisoners or visitors.
+* Core: Plushies no longer hog the utility slot. You can now equip a plushie and a shield belt (or whatever) at the same time!
+* Core: The letter that is sent after researching Statues of the Evil Sisters no longer says you'll get a letter when new recipes are unlocked.
+* Core: The brony trait no longer conflicts with the misogynist trait. (1)
+* Core: The brony trait no longer conflicts with the misandrist trait. (1)
+* Core: The brony trait no longer conflicts with the chemical fascination trait.
+* Core: The brony trait no longer conflicts with the chemical interest trait.
+* Core: Having a bunch of Screwballs in one room now designates it as a 'Screwball Room.' (Dancing is optional.)
+* Core: The thought bronies have regarding portal rooms is now permanent, providing a -3 to +6 mood change depending on its impressiveness. Be advised that the -3 mood will be applied even if you don't actually have a portal room (I couldn't figure out a way to prevent that).
+* Core: NPC faction settlements now sell drugs. (You may need to wait for a restock before you see them.)
+* Core: NPC faction weapon traders now sell drugs.
+* Core: NPC faction exotic goods traders now sell drugs.
+* Core: Fixed incorrect description on the fabric exchange.
+* Ideology: Zecora now increases pruning speed by 500% (was 100%).
+* Ideology: Applejack now provides a 100% boost to pruning speed on top of her usual bonuses.
+* Biotech: Changed alicorn icon to white to make it a bit more visible.
+* Hooligan Faction: The NPC brony community will now send drug dealer caravans your way.
+* Hooligan Faction: The NPC brony community and the NPC hooligan faction are now hostile to each other.
+* Vanilla Achievements Expanded: Split achievements into separate categories for easy reference.
+* XML Extensions: The description for the Brony Community scenario is now altered if you have allowed bronies to be violent.
+
+1. Just because someone is a brony, it doesn't mean they can't be a terrible person.
+
+Version 3.140.142 (April 22nd 2023)
+
+* Core: Removed the research tracker because - according to Dubs Performance Analyser - it was causing some performance issues. Plus there's the fact it very rarely worked to begin with, so all the more reason to remove it.
+* Core: Added the Party Cannon, a rare artifact which works in a similar way to the pyschic soothe pulser. When activated, it will apply a +15 mood bonus to most pawns. Bronies, however, will get a +20 bonus, while anti bronies will only get a +5 bonus. Babies are not affected.
+* Core: Added a recipe to the Nightmare Moon statue to request 100 neutroamine. Requires medicine production. This request is a lot more expensive than the other ones, as the silver cost is equal to three times the market value of the product.
+* Biotech: Sweetie Bots will now start to accompany mechanoid bosses after a certain point.
+* Mechanoid Modifications: Sweetie Bots can now benefit from upgrades added by this mod.
+* Muzzle Flash: Added support for this mod to the Rainbow Laser.
+* Vanilla Achievements Expanded: Added an achievement to obtain the Party Cannon.
+* Vanilla Factions Expanded - Vikings: Added a recipe to the Nightmare Moon statue to request a psychic cornucopia. Requires advanced fabrication.
+* Vanilla Factions Expanded - Vikings: Added four new recipes to the Fabric Exchange.
+	* Purchase fenrirskin (1680 silver)
+	* Purchase lothurr leather (1370 silver)
+	* Purchase njorunfur (1050 silver)
+	* Purchase cow wool (290 silver)
+* Vanilla Achievements Expanded: Removed the 'Friendship is Magic' achievement.
+* Vanilla Achievements Expanded: Removed the 'Cluck Off!' achievement.
+* Callouts: Updated patch to also check for the 1.4 version uploaded by Profligate.
+* Callouts: Updated patch with some new and updated entries.
+
+Version 3.129.137 (March 27th 2023)
+
+* Core: Added Derpy Hooves as an alternative to the transport pod.
+	* Can carry twice as much cargo as a regular pod.
+	* Requires 300 fabric/leather/metal/wood to build.
+	* Can carry pawns as well, but they won't rest as effectively while inside.
+	* Unlocked once the transport pod is researched; she can be found in the 'RimPony' section of the Architect menu.
+	* If you have XML Extensions, you can configure how much mass is carried in the settings, up to a maximum of 1200kg. Whatever mass you set it to will also be how much stuff you need to build it.
+* Core: Miss Pommel has changed how the Fabric Exchange conducts business. Instead of swapping one material for another, she is now selling all available materials in batches of 100 for a 5% markup.
+	* Added 29 new recipes.
+	* Removed all existing recipes; this may cause some one-time red errors on game load.
+	* Only materials that exist in the base game are sold; if you have a mod that adds custom ones, let me know and I'll create a patch.
+* Royalty: Added three new recipes to the Nightmare Moon statue which let you request archotech arms, legs and eyes.
+	* Each recipe requires 5600 silver, 1000 gold and 10 equivalent bionics.
+	* Recipes are locked behind extensive research.
+	* Research is locked behind three rare and costly (5000 silver each) techprints, carried by imperial and outlander factions.
+* Some Things Float: Added support for this mod, though only plushies are affected.
+* Vanilla Achievements Expanded: Added an achievement for building 100 Derpys.
+* Vanilla Achievements Expanded: Added an achievement for building a Derpy out of gold.
 * Vanilla Outposts Expanded: Added the plushie factory.
-	* Each pawn requires at least 5 crafting skill.
+	* Each pawn requires at least 5 skill (or whatever you might have changed it to via XML Extensions) in Crafting.
 	* Produces ((100*Total Skill) + (50*Number of Pawns)) silver every 3 days.
 	* Takes about a day to set up.
-* Some Things Float: Added support for this mod, though only plushies are affected.
-* Core: The negative effect of poison joke on a pawn's consciousness now sets it to 1%, which should eliminate the chance of instant death.
-* Core: Reduced the Construction skill needed to build Sweetie Bot turrets to 10. (1)
-* Core: Reduced the Construction skill needed to build magic mirrors to 10. (1)
-* Royalty: Reduced the Crafting skill needed to make harmony chips to 10. (1)
-* Royalty: Reduced the Medical skill needed to install harmony chips to 10. (1)
-* Biotech: Sweetie Bot mechanoids now have their own custom body type; no more will they have their 'fingers' blown off.
-* Biotech: Sweetie Bot mechanoids should now make use of all four legs and hooves in melee combat.
+* XML Extensions: Added an option to mute the call sound of Sweetie Bot mechanoids. Handy if you're like me and have 30+ of them hanging around.
+* Core: Sweetie Bot turrets now have a market value of 2500 silver.
+* Core: NPC faction settlements and weapon traders now carry a stock of 5 Sweetie Bot turrets ranging in price from 2200-2800 silver.
+* Core: The negative effect of poison joke on a pawn's consciousness now sets it to 1%, thus eliminating the chance of instant death.
+* Core: All of the negative effects of poison joke now come with a warning letter when a pawn is afflicted by one.
+* Core: The 'high on poison joke' hediff no longer increases manipulation and moving.
+* Core: Poison joke addiction cure kits now require 6 Crafting to make, instead of 6 Medical.
+* Core: Poison joke addiction cure kits can now be made at the plushie bench as well as the drug lab.
+* Core: Sweetie Bot turrets no longer break down, but now consume an additional 50W of power.
+* Core: Fixed plushie traders not carrying any silver.
+* Core: Massively increased the amount of silver carried by plushie traders.
+* Core: Fixed plushie traders not carrying any textiles.
+* Core: Plushie traders now stock between one and three of each plushie.
+* Core: NPC faction settlements and traders no longer have price ranges on the majority of their wares.
+* Core: Discord lamps can now be built using metals and wood.
+* Core: Reduced the amount of chemfuel needed for Daybreaker recipes to 50/100 (was 75/150).
+* Core: Pony plushies no longer have a set market value. (1)
+* Core: The Elements of Harmony no longer have a set market value. (1)
+* Core: Reduced the Construction skill needed to build Sweetie Bot turrets to 10. (2)
+* Core: Reduced the Construction skill needed to build magic mirrors to 10. (2)
+* Royalty: Reduced the Crafting skill needed to make harmony chips to 10. (2)
+* Royalty: Reduced the Medical skill needed to install harmony chips to 10. (2)
+* Biotech: Sweetie Bot mechanoids now have their own body type; no more will they have their 'fingers' blown off.
 * Biotech: Sweetie Bot mechanoids can now stab with their horns in melee combat.
-* Reinforced Mechanoid 2: Fixed letters not being sent when researching Weather Controller, Climate Adjuster and Sun Blocker. (2)
-* MedPod: Fixed letter not being sent when researching Accelerated Cellular Regeneration. (2)
-* Replimat: Fixed letter not being sent when researching Molecular Nutrient Resequencing. (2)
+* Biotech: Increased sharp armour of Sweetie Bot mechanoids to 80% (was 30). (3)
+* Biotech: Changed the allegiance overlay graphic used by Sweetie Bot mechanoids.
+* Biotech: Reduced the time required to take control of Sweetie Bot mechanoids to 6 seconds (was 12).
+* Biotech: Sweetie Bot mechanoids now use the same random naming system as female NPC faction colonists.
+* Biotech: Reduced caravan riding speed of Sweetie Bot mechanoids to 160% (was 200%).
+* Biotech: Gestating Sweetie Bot mechanoids now requires some quick research, requiring both high mechtech and the rainbow laser.
+* Reinforced Mechanoid 2: Fixed letters not being sent when researching Weather Controller, Climate Adjuster and Sun Blocker.
+* MedPod: Fixed letter not being sent when researching Accelerated Cellular Regeneration.
+* Replimat: Fixed letter not being sent when researching Molecular Nutrient Resequencing.
+* Vanilla Achievements Expanded: Changed the texture of the Equestrian Girl Power achievement to one that isn't so stretchy.
 
-1. This change was made in order to allow Biotech mechanoids to perform the task as well.
-2. Worked in testing, but the whole letter system seems to be a bit tempermental; sometimes you'll get them, other times you won't.
+1. I noticed that plushies made out of cloth and hyperweave both had a market value of 152 silver (based on my settings and difficulty level). RimWorld will now calculate the market value for you, and - having seen this in action - I can safely say that there will be some HUGE price changes. Not only is it more expensive to buy plushies, it's also more profitable to sell any that you've made. Also, users of XML Extensions will find that they now have an unused key called MLRP_PlushieMarketValue left over; this can be safely removed, as it is no longer needed.
+2. This change was made in order to allow Biotech mechanoids to perform the task as well.
+3. I'm hoping that this will make them somewhat less prone to killing each other with friendly fire, especially in large groups.
 
 Version 3.91.104 (March 1st 2023)
 

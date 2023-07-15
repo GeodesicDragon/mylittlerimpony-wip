@@ -1,15 +1,17 @@
 ﻿// My Little RimPony - A RimWorld Mod
 // Created by GeodesicDragon
-// MLP is property of Hasbro.
+// All aspects of MLP (except for Nurse Haywick) are property of Hasbro.
 // Huge thanks to users of the official RimWorld Discord server for helping me with code.
 // And also for being so damn patient with me while my slow brain figured it all out.
 // I am always happy to accept updates to this code, especially if you have a better way of doing something I've done.
 // Contact me via my Discord server and we'll talk! (Invite Code: BGKnpza)
 
+using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace MyLittleRimPony
@@ -17,10 +19,6 @@ namespace MyLittleRimPony
     [DefOf]
     public static class MyDefOf
     {
-        // Game related stuff because I don't know how to access the DefDatabase
-        public static HediffDef FibrousMechanites;
-        public static HediffDef SensoryMechanites;
-        // Mod related stuff
         public static HediffDef MLRP_PoisonJokeIncreasedConsciousness;
         public static HediffDef MLRP_PoisonJokeReducedConsciousness;
         public static HediffDef MLRP_PoisonJokeSuperSpeedy;
@@ -41,20 +39,24 @@ namespace MyLittleRimPony
         public static HediffDef MLRP_PoisonJokeReducedBloodFiltration;
         public static HediffDef MLRP_PoisonJokeIncreasedBloodPumping;
         public static HediffDef MLRP_PoisonJokeReducedBloodPumping;
+        public static RoomRoleDef MLRP_PortalRoom;
         public static ThingDef MLRP_MagicMirrorGenerator;
+        public static ThingDef MLRP_ScrewballGenerator;
+        public static ThoughtDef MLRP_PonyPlushEquippedAntiBrony;
+        public static ThoughtDef MLRP_PartyCannonBoostRegularPawn;
+        public static ThoughtDef MLRP_PartyCannonBoostBrony;
+        public static ThoughtDef MLRP_PartyCannonBoostAntiBrony;
         public static TraitDef MLRP_BronyTrait;
         public static TraitDef MLRP_AntiBronyTrait;
-        public static ThoughtDef MLRP_PonyPlushEquippedAntiBrony;
-        public static RoomRoleDef MLRP_PortalRoom;
         [MayRequireRoyalty]
         public static ThoughtDef MLRP_HarmonyChipInstalledAntiBrony;
 
         static MyDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(MyDefOf));
-            var version = Assembly.GetExecutingAssembly().GetName().Version;
+            var MLRP_Version = Assembly.GetExecutingAssembly().GetName().Version;
 
-            Log.Message("[" + "MLRP_ModName".Translate() + "] v" + version.ToString(3) + " " + "MLRP_ModIntro".Translate());
+            Log.Message("[" + "MLRP_ModName".Translate() + "] v" + MLRP_Version.ToString(3) + " " + "MLRP_ModIntro".Translate());
 
             if (ModsConfig.IsActive("CETeam.CombatExtended"))
             {
@@ -307,7 +309,7 @@ namespace MyLittleRimPony
                     affliction = "poor blood pumping";
                     break;
             }
-            if (n == 12 || n == 16 || n == 20)
+            if (n == 2 || n == 4 || n == 6 || n == 8 || n == 10 || n == 12 || n == 14 || n == 16 || n == 18 || n == 20)
             {
                 LetterDef MLRP_PoisonJokeAfflictionLetter = LetterDefOf.ThreatSmall;
                 string title = "MLRP_PoisonJokeLetterTitle".Translate();
@@ -342,7 +344,6 @@ namespace MyLittleRimPony
     }
 
     // PORTAL ROOM IMPRESSIVENESS
-
     public class ThoughtWorker_PortalRoomImpressiveness : ThoughtWorker_RoomImpressiveness
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
@@ -350,7 +351,51 @@ namespace MyLittleRimPony
             if (!p.IsColonist)
                 return ThoughtState.Inactive;
             ThoughtState thoughtState = base.CurrentStateInternal(p);
-            return thoughtState.Active && p.GetRoom().Role == MyDefOf.MLRP_PortalRoom ? thoughtState : ThoughtState.Inactive;
+            return thoughtState.Active && p.GetRoom().Role == MyDefOf.MLRP_PortalRoom ? thoughtState : ThoughtState.ActiveDefault;
+        }
+    }
+	
+    // PARTY CANNON
+
+    public class MLRP_PartyCannonMoodBoost : CompTargetEffect
+    {
+        public override void DoEffectOn(Pawn user, Thing target)
+        {
+            Pawn pawn = (Pawn)target;
+            if (pawn.Dead || pawn.needs == null || pawn.needs.mood == null)
+                return;
+            if (pawn.IsColonist)
+            {
+                if (!pawn.story.traits.HasTrait(MyDefOf.MLRP_BronyTrait) && !pawn.story.traits.HasTrait(MyDefOf.MLRP_AntiBronyTrait)) // Pawn has neither the brony or anti brony trait
+                {
+                    pawn.needs.mood.thoughts.memories.TryGainMemory((Thought_Memory)ThoughtMaker.MakeThought(MyDefOf.MLRP_PartyCannonBoostRegularPawn));
+                }
+                if (pawn.story.traits.HasTrait(MyDefOf.MLRP_BronyTrait) && !pawn.story.traits.HasTrait(MyDefOf.MLRP_AntiBronyTrait)) // Pawn has the brony trait
+                {
+                    pawn.needs.mood.thoughts.memories.TryGainMemory((Thought_Memory)ThoughtMaker.MakeThought(MyDefOf.MLRP_PartyCannonBoostBrony));
+                }
+                if (!pawn.story.traits.HasTrait(MyDefOf.MLRP_BronyTrait) && pawn.story.traits.HasTrait(MyDefOf.MLRP_AntiBronyTrait)) // Pawn has the anti brony trait
+                {
+                    pawn.needs.mood.thoughts.memories.TryGainMemory((Thought_Memory)ThoughtMaker.MakeThought(MyDefOf.MLRP_PartyCannonBoostAntiBrony));
+                }
+            }
+        }
+    }
+
+    // SCREWBALL ROOM
+
+    public class RoomRoleWorker_ScrewballRoom : RoomRoleWorker
+    {
+        public override float GetScore(Room room)
+        {
+            int num = 0;
+            List<Thing> andAdjacentThings = room.ContainedAndAdjacentThings;
+            for (int index = 0; index < andAdjacentThings.Count; ++index)
+            {
+                if (andAdjacentThings[index].def == MyDefOf.MLRP_ScrewballGenerator)
+                    ++num;
+            }
+            return 10f * (float)num;
         }
     }
 }

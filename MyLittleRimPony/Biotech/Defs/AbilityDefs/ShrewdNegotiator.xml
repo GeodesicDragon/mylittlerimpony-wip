@@ -7,13 +7,14 @@
 	<AbilityDef>
 		<defName>MLRP_ShrewdNegotiator</defName>
 		<label>Shrewd Negotiator</label>
-		<description>Tap into the power of your alicorn genes to improve your social skills by a substantial amount for 60 seconds.</description>
+		<description>Improves your social skills by a substantial amount for 60 seconds.</description>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<iconPath>UI/Abilities/ShrewdNegotiator</iconPath>
 		<stunTargetWhileCasting>False</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<!--<showGizmoOnWorldView>True</showGizmoOnWorldView>--> <!--Doesn't actually cast. Need to figure that out at some point.-->
 		<groupDef>MLRP_GeneAbilities</groupDef>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<hotKey>Misc12</hotKey>
