@@ -1,10 +1,127 @@
-Version 4.2.21 (July 15th 2023)
+Version 4.22.66 (September 12th 2023)
+
+IMPORTANT NOTICE: I have moved several textures to other folders, so they'll only be loaded when certain DLCs or mods are enabled. I highly doubt that this will have even the slightest impact on performance, but it's still something I've been wanting to do for a while. If you are updating the mod manually, you will need to delete the 'MyLittleRimPony' folder before extracting this update.
+
+* Core: Added two new recipes to the Daybreaker statue which let you convert 1000 silver into 833 wood and vice versa.
+	* Market value of wood is 1.2 silver (Source: RimWorld Wiki). 1000/1.2 = 833.333333333...etc.
+	* Recipes are available from game start and, unlike other Daybreaker recipes, do not require any chemfuel.
+* Vanilla Factions Expanded - Deserters: Added Spitfire (building).
+	* Provides 50 regular intel or 10 critical intel in exchange for silver (at +50% of market value), medicine and 'pony-friendly foodstuffs.'
+	* The Workshop page for VFED says regular intel is valued at 100 silver and critical intel is valued at 1000 silver.
+	* Request regular intel: 7500 silver, 25 industrial medicine and 500 food.
+	* Request critical intel: 15000 silver, 25 glitterworld medicine and 750 food.
+	* Each bill takes 60 seconds to complete, similar to extracting intel from imperial buildings.
+	* Your visibility is not affected in any way by performing either of these recipes, so the high cost helps to keep things balanced.
+* Vanilla Achievements Expanded: Added an achievement to build Spitfire.
+* XML Extensions: Added the ability to set how much stuff is required to build statues of Nightmare Moon and Daybreaker.
+	* Minimum amount of stuff is 100.
+	* Maximum amount of stuff is 1000.
+	* Default amount of stuff is 750.
+* Core: Removed NPC faction slave trader caravan since they never sold any slaves to begin with.
+	* This may cause a one-time red error on game/save load.
+	* Settlements should still buy and sell slaves if you find yourself needing to acquire or offload any.
+* Core: The Brony Community scenario now starts with Screwball research already unlocked.
+* Core: The Brony Community scenario no longer starts with Gun Turrets research already unlocked.
+* Core: NPC faction weapon traders now stock Mudbriar, Quibble Pants and Zephyr Breeze turrets.
+* Core: The market value of Sweetie Bot turrets is now determined by the game. Expect some major price changes!
+* Core: Sweetie Belle plushies now reduce food poisoning chance by 25% (was 10%).
+* Core: Mudbriar is now locked behind gun turrets research.
+* Core: Quibble Pants is now locked behind gun turrets research.
+* Core: Zephyr Breeze is now locked behind gun turrets research.
+* Core: Fixed NPC faction settlements refusing to buy herbal medicine.
+* Core: NPC faction settlements now stock 25-75 industrial medicine (was 50-200).
+* Core: NPC faction settlements now buy items tagged as 'ExoticMisc.'
+* Core: Prisoners and slaves now get a small mood bonus whenever a party cannon is fired.
+	* Like anti bronies, the effect is not much; it is only +3 for a single day, and it only stacks once.
+	* If your prisoners and/or slaves have the brony or anti brony traits, they will be ignored.
+* Biotech: The Brony Xenotypes scenario now starts with Screwball research already unlocked.
+* Biotech: The Brony Xenotypes scenario no longer starts with Gun Turrets research already unlocked.
+* Biotech: Diamond dog clans should no longer send you quests.
+* Biotech: Diamond dog clans now get along with each other.
+* RimPonk: Fixed a texture error related to earth ponies. Thanks to Sunlight Swift for bringing this to my attention.
+* Vanilla Achievements Expanded: Reduced the amount of points awarded for the 'It All Starts Here' achievement to 10 (was 25).
+* Vanilla Achievements Expanded: Reduced the amount of points awarded for the 'Beep Boop' achievement to 100 (was 250).
+* Vanilla Achievements Expanded: Reduced the amount of points awarded for the 'Special Delivery!' achievement to 50 (was 75).
+* Vanilla Achievements Expanded: Reduced the amount of points awarded for the 'Sssssssmokin'!' achievement to 25 (was 50).
+* Vanilla Achievements Expanded: Reduced the amount of points awarded for the 'Nothing Stops The Friendship Train' achievement to 25 (was 50).
+* Vanilla Achievements Expanded: Reduced the amount of points awarded for the 'Hellooooooo, Nurse!' achievement to 25 (was 30).
+* Vanilla Achievements Expanded: Reduced the amount of points awarded for the 'You've Got Opportunity' achievement to 25 (was 30).
+* Vanilla Backstories Expanded: Fixed the 'MLP Obsessive' backstory not showing up, but it no longer gives passions.
+* XML Extensions: If you have allowed bronies to be violent, the Brony Community and Xenotypes scenarios will now start with enough weapons to equip all of your starting colonists. The number of starting turrets will also be affected.
+	* Brony Community: 2 autopistols, a plasteel knife and 2 turrets (down from 4)
+	* Brony Xenotypes: 3 autopistols, 2 plasteel knives and 3 turrets (down from 6).
+
+Version 4.17.38 (August 18th 2023)
+
+* Core: Added 8 new recipes to the Daybreaker statue which allow for the rapid creation of 100 drugs at a time, provided you have the right materials.
+	* Flake: 400 psychoid leaves
+	* Go-juice: 200 neutroamine and 100 yayo
+	* Penoxycyline: 200 neutroamine
+	* Poison joke joint: 800 poison joke leaves
+	* Psychite tea: 400 psychoid leaves
+	* Smokeleaf joint: 400 smokeleaf leaves
+	* Wake-up: 200 neutroamine
+	* Yayo: 800 psychoid leaves
+	* Each of these recipes requires half the standard amount of chemfuel (25, or half of whatever you set it to in XML Extensions; value will be rounded down to the nearest whole number to prevent any issues with recipes requiring x.5 chemfuel).
+* Biotech: Added the Diamond Dog xenotype.
+	* Strong stomach
+	* Super strong immunity
+	* Psychically deaf
+	* High cold resistance
+	* High heat resistance
+	* Mild UV sensitivity
+	* Extremely aggressive
+	* Low sleep
+	* Furry tail
+	* Floppy ears
+	* Roar voice
+	* Standard body
+	* Hulk body
+	* Dark vision
+	* Furskin
+	* Terrible shooting
+	* Terrible crafting
+	* Terrible medicine
+	* Remarkable mining
+	* Poison joke dependency
+* Biotech: Added the Diamond Dog faction.
+	* Permanently hostile.
+	* Only uses melee fighters.
+	* Incapable of laying siege.
+	* Drops minerals as loot.
+	* A maximum of three separate factions can be added to a new game.
+* Better Kibble: Added a patch which reduces the cost of requesting kibble from Nightmare Moon to 60 silver (to compensate for the lower market value).
+* Vanilla Achievements Expanded: Added an achievement to make a Fleur De Lis plushie using thrumbofur. (1)
+* Vanilla Achievements Expanded: Re-added the 'Cluck Off!' achievement. (1)
+* Core: Fixed plushie traders not selling cloth.
+* Core: Reduced the cost of requesting 500 kibble from Nightmare Moon to 600 silver (was 850).
+	* This works out at just under 10% above market value (500 x 1.1 = 550 * 1.1 = 605).
+* Core: Requesting neutroamine from Nightmare Moon now requires you to research drug production (was medicine production).
+* Core: Starlight Glimmer now reduces psychic sensitivity by 300% in order to eliminate the larger mood penalties suffered by psychically hypersensitive pawns.
+* Core: Pawns now have a chance of possessing five poison joke joints when creating a new colony.
+* Core: Screwballs can now be built using stone.
+* Royalty: Fixed the 'Request neurocalculator' recipe at the Nightmare Moon statue having the wrong label. Thanks to Wheat Tail for bringing this to my attention.
+
+(1) It's a bit of a pain to unlock, but what worked for me was saving the game just before the item was made and then reloading it.
+
+Version 4.4.31 (July 23rd 2023)
 
 * Core: Added Sunny Starscout as a storyteller.
 	* More frequent quests, traders and visitors.
-	* 30 days between threats, and (hopefully) less of them.
-	* Caravans should not face any big threats.
-* Core: Bronies no longer care about awful, dull or mediocre portal rooms.
+	* More days between threats, and (hopefully) less of them.
+	* Feedback on her performance would be greatly appreciated!
+* Ideology: Added patches which turn the Christmas tree into a Hearth's Warming tree.
+* Alpha Genes: Added a patch, applied if this mod is enabled, that will add wings to alicorns and pegasi.
+	* Only newly spawned alicorns and pegasi will be affected; you will need to manually add the gene to existing ones.
+	* Thanks to CTH2004 for the suggestion.
+* Core: The mood of bronies is no longer affected by portal room impressiveness. (It wasn't working the way I wanted it to.)
+* Core: Smoking poison joke now has a chance of afflicting pawns with the Cutie Pox.
+* Core: Updated the information window for poison joke joints to show you all the different ways they can affect your pawns.
+* Core: Reduced the amount of work needed to make plushies to 3000 (was 6000).
+* Core: Reduced the number of leaves needed to make poison joke joints to 8 (was 10).
+* Core: Poison joke now takes 7 days to grow to maturity (was 14).
+* Core: The 'reduced consciousness' effect of poison joke joints now sets the pawn's consciousness to 10% (was 1%).
+* Core: Magic mirrors can no longer break down.
 * Biotech: Made some changes to the Brony Xenotypes scenario.
 	* Now starts with a changeling as well as the other four xenotypes.
 	* Reduced starting meal count to 50 (was 80).
@@ -17,7 +134,10 @@ Version 4.2.21 (July 15th 2023)
 * Biotech: Alicorns, earth ponies, unicorns and pegasi no longer hate changelings, and vice versa.
 * Biotech: Increased the mood loss anti bronies get from being turned into a pony xenotype to -40 (was -20).
 * Biotech: Changelings can now come in a variety of colours.
+* Biotech: The NPC faction is now made up of 25% each of earth ponies, unicorns and pegasi, 20% changelings, and 5% alicorns.
+* Biotech: Child-equippable plushies now require half as much work to make as their adult counterparts.
 * Combat Extended: The Brony Xenotypes scenario should now start with 600 rounds of turret ammo.
+* MedPod: Fixed pawns not seeking treatment for negative poison joke effects.
 
 Version 4.1.7 (June 4th 2023)
 

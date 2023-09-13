@@ -14,9 +14,9 @@
       <li Class="StorytellerCompProperties_OnOffCycle">
         <category>ThreatBig</category>
         <minDaysPassed>30</minDaysPassed>
-        <onDays>30.0</onDays>
-        <offDays>30.0</offDays>
-        <numIncidentsRange>1~1</numIncidentsRange>
+        <onDays>29</onDays>
+        <offDays>31</offDays>
+        <numIncidentsRange>0.1~1</numIncidentsRange>
         <forceRaidEnemyBeforeDaysPassed>30</forceRaidEnemyBeforeDaysPassed>
         <disallowedTargetTags>
           <li>Map_RaidBeacon</li>
@@ -28,9 +28,9 @@
         </allowedTargetTags>
         <parms>
           <allowedThreats>Raids</allowedThreats>
-          <onDays>30</onDays>
-          <offDays>30</offDays>
-          <minSpacingDays>30</minSpacingDays>
+          <onDays>29</onDays>
+          <offDays>31</offDays>
+          <minSpacingDays>25</minSpacingDays>
           <numIncidentsRange>1~1</numIncidentsRange>
           <minThreatPoints>5000</minThreatPoints>
         </parms>
