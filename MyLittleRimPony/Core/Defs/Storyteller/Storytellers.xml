@@ -16,7 +16,8 @@
         <minDaysPassed>30</minDaysPassed>
         <onDays>29</onDays>
         <offDays>31</offDays>
-        <numIncidentsRange>0.1~1</numIncidentsRange>
+		<minSpacingDays>3</minSpacingDays>
+        <numIncidentsRange>1~1</numIncidentsRange>
         <forceRaidEnemyBeforeDaysPassed>30</forceRaidEnemyBeforeDaysPassed>
         <disallowedTargetTags>
           <li>Map_RaidBeacon</li>
@@ -30,17 +31,17 @@
           <allowedThreats>Raids</allowedThreats>
           <onDays>29</onDays>
           <offDays>31</offDays>
-          <minSpacingDays>25</minSpacingDays>
+          <minSpacingDays>3</minSpacingDays>
           <numIncidentsRange>1~1</numIncidentsRange>
           <minThreatPoints>5000</minThreatPoints>
         </parms>
       </li>
       <li Class="StorytellerCompProperties_OnOffCycle">
         <category>ThreatSmall</category>
-        <minDaysPassed>30.0</minDaysPassed>
-        <onDays>30.0</onDays>
-        <offDays>30.0</offDays>
-        <numIncidentsRange>0.1~0.5</numIncidentsRange>
+        <minDaysPassed>30</minDaysPassed>
+        <onDays>29</onDays>
+        <offDays>31</offDays>
+        <numIncidentsRange>1~1</numIncidentsRange>
         <acceptPercentFactorPerThreatPointsCurve>
           <points>
             <li>(400, 1)</li>
@@ -70,7 +71,7 @@
       <li Class="StorytellerCompProperties_FactionInteraction">
         <incident>RaidFriendly</incident>
         <baseIncidentsPerYear>30</baseIncidentsPerYear>
-        <minSpacingDays>0.1</minSpacingDays>
+        <minSpacingDays>3</minSpacingDays>
         <fullAlliesOnly>true</fullAlliesOnly>
         <minDanger>High</minDanger>
       </li>
