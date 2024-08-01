@@ -1,0 +1,13 @@
+<Patch>
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+		<xpath>/Defs/QuestScriptDef/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+		<value>
+			<li>
+				<factionDef>MLRP_DiamondDog_Faction</factionDef>
+				<pawnKinds>
+					<li>DiamondDogSoldier</li>
+				</pawnKinds>
+			</li>  
+		</value>
+    </Operation>
+</Patch>

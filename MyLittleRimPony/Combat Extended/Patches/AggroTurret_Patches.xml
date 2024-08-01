@@ -8,9 +8,9 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases</xpath>
 		<value>
-			<AimingAccuracy>0.5</AimingAccuracy>
+			<AimingAccuracy>0.25</AimingAccuracy>
 		</value>
 	</Operation>
 	
@@ -19,8 +19,8 @@
     <statBases>
       <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
       <SightsEfficiency>1</SightsEfficiency>
-      <ShotSpread>0</ShotSpread>
-      <SwayFactor>0</SwayFactor>
+      <ShotSpread>0.1</ShotSpread>
+      <SwayFactor>0.8</SwayFactor>
       <Bulk>15.00</Bulk>
     </statBases>
     <Properties>
@@ -30,12 +30,15 @@
       <defaultProjectile>MLRP_WeaponisedArrogance</defaultProjectile>
       <warmupTime>0</warmupTime>
       <range>40</range>
-      <ticksBetweenBurstShots>125</ticksBetweenBurstShots>
-      <burstShotCount>0</burstShotCount>
+      <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+      <burstShotCount>9</burstShotCount>
+      <!--<soundCast>MLRP_EOH_Fire</soundCast>
+      <soundCastTail>GunTail_Light</soundCastTail>-->
+      <muzzleFlashScale>9</muzzleFlashScale>
       <recoilPattern>Mounted</recoilPattern>
     </Properties>
     <AmmoUser>
-      <magazineSize>5000</magazineSize>
+      <magazineSize>300</magazineSize>
       <reloadTime>3</reloadTime>
       <ammoSet>AmmoSet_WoodenBullets</ammoSet>
     </AmmoUser>
@@ -45,4 +48,5 @@
       <noSingleShot>true</noSingleShot>
     </FireModes>
   </Operation>
+  
 </Patch>

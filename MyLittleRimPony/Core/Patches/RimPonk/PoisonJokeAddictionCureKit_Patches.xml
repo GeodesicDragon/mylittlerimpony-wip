@@ -1,25 +1,15 @@
 <Patch>
 
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>RimPonk</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="MLRP_PoisonJokeAddictionCureKit"]/label</xpath>
-				<value>
-					<label>Equestrian Addiction Removal Kit</label>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="MLRP_PoisonJokeAddictionCureKit"]/description</xpath>
-				<value>
-					<description>A herbal remedy specially formulated to remove addictions of an Equestrian nature.\n\nWorks on poison joke and magical cake.</description>
-				</value>
-			</li>
-		</operations>
-	</match>
-</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimPonk</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="MLRP_PoisonJokeAddictionCureKit"]/description</xpath>
+			<value>
+				<description>Originally intended as a way of removing poison joke addiction, it soon became apparent that this Equestrian herbal remedy was also strong enough to cure a range of other afflictions.\n\nCures flu, malaria, food poisoning, poison joke adddiction, poison joke tolerance, magical cake addiction and magical cake tolerance. It can also cure the Cutie Pox, though the chances of it doing so are quite slim.</description>
+			</value>
+		</match>
+	</Operation>
 
 </Patch>

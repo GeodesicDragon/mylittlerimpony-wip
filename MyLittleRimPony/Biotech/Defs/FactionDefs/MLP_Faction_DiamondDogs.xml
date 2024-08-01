@@ -6,14 +6,15 @@
     <label>diamond dog clan</label>
     <categoryTag>Outlander</categoryTag>
     <description>A colony of people who have undergone xenotype implantation to become Diamond Dogs. They have a zero tolerance approach to outsiders, and will attack anyone who is not one of them. In combat, they rely solely on large numbers of melee combatants wearing plate armour.</description>
-	<permanentEnemyToEveryoneExcept>
-		<li>MLRP_DiamondDog_Faction</li> <!--If you have more than one clan, they will get along with each other and nobody else.-->
-	</permanentEnemyToEveryoneExcept>
+	<permanentEnemy>true</permanentEnemy>
     <pawnSingular>Diamond Dog</pawnSingular>
     <pawnsPlural>Diamond Dogs</pawnsPlural>
     <settlementGenerationWeight>2</settlementGenerationWeight>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <maxCountAtGameStart>3</maxCountAtGameStart>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <maxCountAtGameStart>0</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
     <canSiege>false</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>alpha</leaderTitle>
@@ -43,7 +44,6 @@
 		<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 	</disallowedMemes>
 	<requiredMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
@@ -51,7 +51,7 @@
     <structureMemeWeights>
       <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
     </structureMemeWeights>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <backstoryFilters>
       <li>
         <categories>
@@ -67,7 +67,7 @@
       </stuffCategoriesToAllow>
     </apparelStuffFilter>
     <allowedArrivalTemperatureRange>-60~60</allowedArrivalTemperatureRange>
-    <settlementTexturePath>World/WorldObjects/DiamondDogSettlement</settlementTexturePath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <colorSpectrum>
       <li>(1, 0, 0)</li>
       <li>(0, 1, 0)</li>
@@ -108,8 +108,6 @@
 		</options>
       </li>
     </pawnGroupMakers>
-    <maxConfigurableAtWorldCreation>3</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>70</configurationListOrderPriority>
   </FactionDef>
 
   <ThingSetMakerDef>
@@ -119,10 +117,12 @@
         <filter>
           <thingDefs>
             <li>Gold</li>
+            <li>Jade</li>
 			<li>Plasteel</li>
 			<li>Silver</li>
 			<li>Steel</li>
 			<li>Uranium</li>
+			<li>PonyPlush_Ruined</li>
           </thingDefs>
         </filter>
       </fixedParams>

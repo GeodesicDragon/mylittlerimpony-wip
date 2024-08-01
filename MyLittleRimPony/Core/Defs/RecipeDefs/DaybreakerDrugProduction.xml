@@ -142,7 +142,7 @@
 	<defName>MLRP_DB_MakePsychiteTea</defName>
 	<label>Make 100 psychite tea</label>
 	<description>Convert 400 psychoid leaves into 100 psychite tea, using chemfuel to accelerate the process.</description>
-	<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+	<researchPrerequisite>PsychoidBrewing</researchPrerequisite>
     <jobString>Making psychite tea</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>

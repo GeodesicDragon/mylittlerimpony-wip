@@ -17,28 +17,6 @@
 			</apply>
 		</li>
 		
-		<!--TWO PONY PLUSHIES: STUFF REQUIRED-->
-		<li Class="XmlExtensions.UseSetting">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_PlushiesCloth</key>
-			<apply>
-				<Operation Class="XmlExtensions.CreateVariable">
-					<value>{MLRP_PlushiesCloth}</value>
-					<value2>1.5</value2>
-					<operation>*</operation>
-					<storeIn>MLRP_TwoPonyPlushieStuffValue</storeIn>
-					<apply>
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[@Name="DoublePonyPlushBase"]/costStuffCount</xpath>
-							<value>
-								<costStuffCount>{MLRP_TwoPonyPlushieStuffValue}</costStuffCount>
-							</value>
-						</Operation>
-					</apply>
-				</Operation>
-			</apply>
-		</li>
-		
 		<!--ELEMENTS OF HARMONY: STUFF REQUIRED-->
 		<li Class="XmlExtensions.UseSetting">
 			<modId>geodesicdragon.rimpony</modId>
@@ -72,11 +50,18 @@
 					<operation>/</operation>
 					<storeIn>MLRP_ChildPlush_NewStuffValue</storeIn>
 					<apply>
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[@Name="PonyPlushChildBase"]/costStuffCount</xpath>
-							<value>
-								<costStuffCount>{MLRP_ChildPlush_NewStuffValue}</costStuffCount>
-							</value>
+						<Operation Class="XmlExtensions.CreateVariable">
+							<value>{MLRP_ChildPlush_NewStuffValue}</value>
+							<operation>roundup</operation>
+							<storeIn>MLRP_DB_ChildPlushStuffValueRounded</storeIn>
+							<apply>
+								<Operation Class="PatchOperationReplace">
+									<xpath>Defs/ThingDef[@Name="PonyPlushChildBase"]/costStuffCount</xpath>
+									<value>
+										<costStuffCount>{MLRP_DB_ChildPlushStuffValueRounded}</costStuffCount>
+									</value>
+								</Operation>
+							</apply>
 						</Operation>
 					</apply>
 				</Operation>
@@ -117,14 +102,6 @@
 						<Crafting>{MLRP_PlushieCraftingSkill}</Crafting>
 					</value>
 				</Operation>
-				
-				<!--VANILLA OUTPOSTS EXPANDED-->
-				<Operation Class="PatchOperationReplace" MayRequire="vanillaexpanded.outposts">
-					<xpath>/Defs/WorldObjectDef[defName="MLRP_Plushie_Outpost"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/RequiredSkills/Crafting</xpath>
-					<value>
-						<Crafting>{MLRP_PlushieCraftingSkill}</Crafting>
-					</value>
-				</Operation>
 			</apply>
 		</li>
 
@@ -150,221 +127,25 @@
 				</Operation>
 			</caseFalse>
 		</li>
-
-		<!--BRONY TRAIT VIOLENCE CAPABILITY-->
-		<li Class="XmlExtensions.OptionalPatch">
+		
+		<!--PLUSHIES: PIPP IS SHORT-->
+		<li Class="XmlExtensions.OptionalPatch" MayRequire="Dubwise.DubsBadHygiene">
 			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_BroniesCanBeViolent</key>
-			<defaultValue>false</defaultValue>
+			<key>MLRP_DubsBadHygiene_PippIsShort</key>
+			<defaultValue>true</defaultValue>
 			<caseTrue>
 				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/disabledWorkTags</xpath>
+					<xpath>Defs/ThingDef[defName="PonyPlush_PippPetals"]/graphicData/drawSize</xpath>
 					<value>
-						<disabledWorkTags></disabledWorkTags>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/description</xpath>
-					<value>
-						<description>{PAWN_nameDef} has taken the lessons of My Little Pony: Friendship is Magic to heart; {PAWN_possessive} social skills have improved, and {PAWN_pronoun} will never judge others based on their appearance, voice or breathing. Also, insults have no effect on {PAWN_objective} whatsoever.\n\n{PAWN_pronoun} gets a mood bonus from equipping pony plushies, and has a positive attitude towards other bronies.</description>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/marketValueFactorOffset</xpath>
-					<value>
-						<marketValueFactorOffset>0</marketValueFactorOffset>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/description</xpath>
-					<value>
-						<description>Your group has been wandering these lands for a while now, and you've finally decided to settle down and build a home.\n\nYou are all from different walks of life, but you have one thing in common: you all love a show about cartoon ponies, and have taken its lessons to heart.\n\nYou'll need to work fast in order to secure your new home, though; your starting weapons are very basic and you are in posession of a lot of valuable items, thus making you tempting targets for raiders.</description>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/scenario/parts/li[@Name="MLRP_CoreScenario_RangedWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_CoreScenario_RangedWeapons" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>Gun_Autopistol</thingDef>
-							<count>2</count>
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/scenario/parts/li[@Name="MLRP_CoreScenario_MeleeWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_CoreScenario_MeleeWeapons" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>MeleeWeapon_Knife</thingDef>
-							<count>1</count>
-							<stuff>Plasteel</stuff>
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/scenario/parts/li[@Name="MLRP_CoreScenario_Turrets"]</xpath>
-					<value>
-						<li Name="MLRP_CoreScenario_Turrets" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>Turret_MiniTurret</thingDef>
-							<count>2</count>
-							<stuff>Steel</stuff>
-						</li>
-					</value>
-				</Operation>
-								
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/description</xpath>
-					<value>
-						<description>Your group has been wandering these lands for a while now, and you've finally decided to settle down and build a home.\n\nYou are all from different walks of life, but you have one thing in common: you are so passionate about My Little Pony, you each underwent xenotype implentation to transform yourselves into your favourite pony race.\n\nYou'll need to work fast in order to secure your new home, though; your starting weapons are very basic and you are in posession of a lot of valuable items, thus making you tempting targets for raiders.</description>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_RangedWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_BiotechScenario_RangedWeapons" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>Gun_Autopistol</thingDef>
-							<count>3</count>
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_MeleeWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_BiotechScenario_MeleeWeapons" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>MeleeWeapon_Knife</thingDef>
-							<count>2</count>
-							<stuff>Plasteel</stuff>
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_Turrets"]</xpath>
-					<value>
-						<li Name="MLRP_BiotechScenario_Turrets" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>Turret_MiniTurret</thingDef>
-							<count>3</count>
-							<stuff>Steel</stuff>
-						</li>
+						<drawSize>0.5</drawSize>
 					</value>
 				</Operation>
 			</caseTrue>
 			<caseFalse>
 				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/disabledWorkTags</xpath>
+					<xpath>Defs/ThingDef[defName="PonyPlush_PippPetals"]/graphicData/drawSize</xpath>
 					<value>
-						<disabledWorkTags>Violent</disabledWorkTags>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/description</xpath>
-					<value>
-						<description>{PAWN_nameDef} has taken the lessons of My Little Pony: Friendship is Magic to heart; {PAWN_possessive} social skills have improved, but {PAWN_pronoun} is against the idea of using violence.\n\n{PAWN_pronoun} will never judge others based on their appearance, voice or breathing, and insults have no effect on {PAWN_objective} whatsoever.\n\n{PAWN_pronoun} gets a mood bonus from equipping pony plushies, and has a positive attitude towards other bronies.</description>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/TraitDef[defName="MLRP_BronyTrait"]/degreeDatas/li/marketValueFactorOffset</xpath>
-					<value>
-						<marketValueFactorOffset>-0.5</marketValueFactorOffset>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/description</xpath>
-					<value>
-						<description>Your group has been wandering these lands for a while now, and you've finally decided to settle down and build a home.\n\nYou are all from different walks of life, but you have one thing in common: you all love a show about cartoon ponies, and have taken its lessons to heart.\n\nYou'll need to work fast in order to secure your new home, though; since you are all against violence, you are tempting targets for raiders.</description>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/scenario/parts/li[@Name="MLRP_CoreScenario_RangedWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_CoreScenario_RangedWeapons" Class="ScenPart_StartingThing_Defined">
-							<!--<def>StartingThing_Defined</def>
-							<thingDef>Gun_Autopistol</thingDef>
-							<count>2</count>-->
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/scenario/parts/li[@Name="MLRP_CoreScenario_MeleeWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_CoreScenario_MeleeWeapons" Class="ScenPart_StartingThing_Defined">
-							<!--<def>StartingThing_Defined</def>
-							<thingDef>MeleeWeapon_Knife</thingDef>
-							<count>1</count>
-							<stuff>Plasteel</stuff>-->
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario"]/scenario/parts/li[@Name="MLRP_CoreScenario_Turrets"]</xpath>
-					<value>
-						<li Name="MLRP_CoreScenario_Turrets" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>Turret_MiniTurret</thingDef>
-							<count>4</count>
-							<stuff>Steel</stuff>
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/description</xpath>
-					<value>
-						<description>Your group has been wandering these lands for a while now, and you've finally decided to settle down and build a home.\n\nYou are all from different walks of life, but you have one thing in common: you are so passionate about My Little Pony, you each underwent xenotype implentation to transform yourselves into your favourite pony race.\n\nYou'll need to work fast in order to secure your new home, though; since you are all against violence, you are tempting targets for raiders.</description>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_RangedWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_BiotechScenario_RangedWeapons" Class="ScenPart_StartingThing_Defined">
-							<!--<def>StartingThing_Defined</def>
-							<thingDef>Gun_Autopistol</thingDef>
-							<count>3</count>-->
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_MeleeWeapons"]</xpath>
-					<value>
-						<li Name="MLRP_BiotechScenario_MeleeWeapons" Class="ScenPart_StartingThing_Defined">
-							<!--<def>StartingThing_Defined</def>
-							<thingDef>MeleeWeapon_Knife</thingDef>
-							<count>2</count>
-							<stuff>Plasteel</stuff>-->
-						</li>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_Turrets"]</xpath>
-					<value>
-						<li Name="MLRP_BiotechScenario_Turrets" Class="ScenPart_StartingThing_Defined">
-							<def>StartingThing_Defined</def>
-							<thingDef>Turret_MiniTurret</thingDef>
-							<count>6</count>
-							<stuff>Steel</stuff>
-						</li>
+						<drawSize>1</drawSize>
 					</value>
 				</Operation>
 			</caseFalse>
@@ -413,6 +194,55 @@
 					</value>
 				</Operation>
 			</apply>
+		</li>		
+
+		<!--DISCORD LAMP: STUFF REQUIRED-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId> <!--String that XML Extensions can identify your mod with-->
+			<key>MLRP_DiscordLampStuffRequired</key> <!--Key to identify the setting (only used internally, invisible to user)-->
+			<defaultValue>300</defaultValue> <!--What you want the default value of the setting to be-->
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="DiscordLampBase"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>{MLRP_DiscordLampStuffRequired}</costStuffCount>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--DISCORD LAMP: BRIGHTNESS-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId> <!--String that XML Extensions can identify your mod with-->
+			<key>MLRP_DiscordLampBrightness</key> <!--Key to identify the setting (only used internally, invisible to user)-->
+			<defaultValue>8</defaultValue> <!--What you want the default value of the setting to be-->
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="DiscordLampBase"]/comps</xpath>
+					<value>
+						<comps>
+							<li Class="CompProperties_Glower">
+								<glowRadius>{MLRP_DiscordLampBrightness}</glowRadius>
+							</li>
+						</comps>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--SCREWBALL: STUFF REQUIRED-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>geodesicdragon.rimpony</modId> <!--String that XML Extensions can identify your mod with-->
+			<key>MLRP_ScrewballStuffRequired</key> <!--Key to identify the setting (only used internally, invisible to user)-->
+			<defaultValue>300</defaultValue> <!--What you want the default value of the setting to be-->
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_ScrewballGenerator"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>{MLRP_ScrewballStuffRequired}</costStuffCount>
+					</value>
+				</Operation>
+			</apply>
 		</li>
 		
 		<!--SWEETIE BOT: RANGE-->
@@ -436,11 +266,28 @@
 			<key>MLRP_SweetieBotAccuracyTouch</key>
 			<defaultValue>0.3</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyTouch</xpath>
-					<value>
-						<AccuracyTouch>{MLRP_SweetieBotAccuracyTouch}</AccuracyTouch>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_SweetieBotAccuracyTouch}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyTouch</xpath>
+							<value>
+								<AccuracyTouch>{MLRP_SweetieBotAccuracyTouch}</AccuracyTouch>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -451,11 +298,28 @@
 			<key>MLRP_SweetieBotAccuracyShort</key>
 			<defaultValue>0.4</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyShort</xpath>
-					<value>
-						<AccuracyShort>{MLRP_SweetieBotAccuracyShort}</AccuracyShort>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_SweetieBotAccuracyShort}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyShort</xpath>
+							<value>
+								<AccuracyShort>{MLRP_SweetieBotAccuracyShort}</AccuracyShort>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -467,11 +331,28 @@
 			<key>MLRP_SweetieBotAccuracyMedium</key>
 			<defaultValue>0.8</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyMedium</xpath>
-					<value>
-						<AccuracyMedium>{MLRP_SweetieBotAccuracyMedium}</AccuracyMedium>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_SweetieBotAccuracyMedium}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyMedium</xpath>
+							<value>
+								<AccuracyMedium>{MLRP_SweetieBotAccuracyMedium}</AccuracyMedium>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -482,18 +363,35 @@
 			<key>MLRP_SweetieBotAccuracyLong</key>
 			<defaultValue>0.8</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyLong</xpath>
-					<value>
-						<AccuracyLong>{MLRP_SweetieBotAccuracyLong}</AccuracyLong>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/ShootingAccuracyTurret</xpath>
-					<value>
-						<ShootingAccuracyTurret>{MLRP_SweetieBotAccuracyLong}</ShootingAccuracyTurret>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_SweetieBotAccuracyLong}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyLong</xpath>
+							<value>
+								<AccuracyLong>{MLRP_SweetieBotAccuracyLong}</AccuracyLong>
+							</value>
+						</Operation>
+						
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/ShootingAccuracyTurret</xpath>
+							<value>
+								<ShootingAccuracyTurret>{MLRP_SweetieBotAccuracyLong}</ShootingAccuracyTurret>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -510,26 +408,12 @@
 						<thingToSpawn>MedicineUltratech</thingToSpawn>
 					</value>
 				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
-					<value>
-						<basePowerConsumption>700</basePowerConsumption>
-					</value>
-				</Operation>
 			</caseTrue>
 			<caseFalse>
 				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Spawner"]/thingToSpawn</xpath>
 					<value>
 						<thingToSpawn>MedicineIndustrial</thingToSpawn>
-					</value>
-				</Operation>
-				
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
-					<value>
-						<basePowerConsumption>350</basePowerConsumption>
 					</value>
 				</Operation>
 			</caseFalse>
@@ -611,7 +495,7 @@
 				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_Tips"]/tips/li[@Name="NurseRedheart"]</xpath>
 					<value>
-						<li Name="NurseRedheart">Nurse Redheart is a rare reward from quests; she will grant you {MLRP_NurseRedheartMedicineSpawnAmount} Medicine every {MLRP_NurseRedheartMedicineSpawnTime} days as long as she has 350W of power.</li>
+						<li Name="NurseRedheart">Nurse Redheart is a rare reward from quests; she will grant you {MLRP_NurseRedheartMedicineSpawnAmount} Medicine every {MLRP_NurseRedheartMedicineSpawnTime} days as long as she has enough power.</li>
 					</value>
 				</Operation>
 			</apply>
@@ -624,7 +508,7 @@
 			<defaultValue>10</defaultValue>
 			<apply>
 				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/verbs/li/range</xpath>
+					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/verbs/li/range</xpath>
 					<value>
 						<range>{MLRP_ZephyrBreezeAggroRange}</range>
 					</value>
@@ -653,11 +537,28 @@
 			<key>MLRP_AggroTurretAccuracyTouch</key>
 			<defaultValue>0.1</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyTouch</xpath>
-					<value>
-						<AccuracyTouch>{MLRP_AggroTurretAccuracyTouch}</AccuracyTouch>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_AggroTurretAccuracyTouch}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyTouch</xpath>
+							<value>
+								<AccuracyTouch>{MLRP_AggroTurretAccuracyTouch}</AccuracyTouch>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -668,11 +569,28 @@
 			<key>MLRP_AggroTurretAccuracyShort</key>
 			<defaultValue>0.25</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyShort</xpath>
-					<value>
-						<AccuracyShort>{MLRP_AggroTurretAccuracyShort}</AccuracyShort>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_AggroTurretAccuracyShort}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyShort</xpath>
+							<value>
+								<AccuracyShort>{MLRP_AggroTurretAccuracyShort}</AccuracyShort>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -684,11 +602,28 @@
 			<key>MLRP_AggroTurretAccuracyMedium</key>
 			<defaultValue>0.25</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyMedium</xpath>
-					<value>
-						<AccuracyMedium>{MLRP_AggroTurretAccuracyMedium}</AccuracyMedium>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_AggroTurretAccuracyMedium}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyMedium</xpath>
+							<value>
+								<AccuracyMedium>{MLRP_AggroTurretAccuracyMedium}</AccuracyMedium>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -699,11 +634,28 @@
 			<key>MLRP_AggroTurretAccuracyLong</key>
 			<defaultValue>1</defaultValue>
 			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyLong</xpath>
-					<value>
-						<AccuracyLong>{MLRP_AggroTurretAccuracyLong}</AccuracyLong>
-					</value>
+				<Operation Class="XmlExtensions.FindMod">
+					<mods>
+						<li>CETeam.CombatExtended</li>
+					</mods>
+					<packageId>true</packageId>
+					<logic>and</logic>
+					<caseTrue> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
+							<value>
+								<AimingAccuracy>{MLRP_AggroTurretAccuracyLong}</AimingAccuracy>
+							</value>
+						</Operation>
+					</caseTrue>
+					<caseFalse> 
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyLong</xpath>
+							<value>
+								<AccuracyLong>{MLRP_AggroTurretAccuracyLong}</AccuracyLong>
+							</value>
+						</Operation>
+					</caseFalse>
 				</Operation>
 			</apply>
 		</li>
@@ -715,7 +667,7 @@
 			<defaultValue>3</defaultValue>
 			<apply>
 				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/verbs/li/burstShotCount</xpath>
+					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/verbs/li/burstShotCount</xpath>
 					<value>
 						<burstShotCount>{MLRP_AggroTurretBurstAmount}</burstShotCount>
 					</value>
@@ -799,7 +751,7 @@
 				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_Tips"]/tips/li[@Name="SSCS6K"]</xpath>
 					<value>
-						<li Name="SSCS6K">The Super Speedy Cider Squeezy 6000 is a rare reward from quests; it will grant you {MLRP_SSCS6KBeerSpawnAmount} Beer every {MLRP_SSCS6KBeerSpawnTime} days as long as it has 500W of power.</li>
+						<li Name="SSCS6K">The Super Speedy Cider Squeezy 6000 is a rare reward from quests; it will grant you {MLRP_SSCS6KBeerSpawnAmount} Beer every {MLRP_SSCS6KBeerSpawnTime} days as long as it has enough power.</li>
 					</value>
 				</Operation>
 			</apply>
@@ -899,7 +851,7 @@
 					<apply>
 						<Operation Class="XmlExtensions.CreateVariable">
 							<value>{MLRP_DB_HalfChemfuelValue}</value>
-							<operation>rounddown</operation>
+							<operation>roundup</operation>
 							<storeIn>MLRP_DB_HalfChemfuelValueRounded</storeIn>
 							<apply>
 								<Operation Class="PatchOperationReplace">
@@ -909,6 +861,28 @@
 									</value>
 								</Operation>
 							</apply>
+						</Operation>
+					</apply>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--DAYBREAKER STATUE: QUINTUPLE CHEMFUEL AMOUNT-->
+		<li Class="XmlExtensions.UseSetting" MayRequire="Ludeon.RimWorld.Anomaly">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_DaybreakerChemfuel</key>
+			<apply>
+				<Operation Class="XmlExtensions.CreateVariable">
+					<value>{MLRP_DaybreakerChemfuel}</value>
+					<value2>5</value2>
+					<operation>*</operation>
+					<storeIn>MLRP_DB_QuintupleChemfuelValue</storeIn>
+					<apply>
+						<Operation Class="PatchOperationReplace">
+							<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_QuintupleChemfuel"]/ingredients/li/count</xpath>
+							<value>
+								<count>{MLRP_DB_QuintupleChemfuelValue}</count>
+							</value>
 						</Operation>
 					</apply>
 				</Operation>
@@ -928,7 +902,16 @@
 							<MoveSpeed>1</MoveSpeed>
 							<MeleeHitChance>5</MeleeHitChance>
 							<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+							<ReloadSpeed MayRequire="CETeam.CombatExtended">0.05</ReloadSpeed>
+							<NightVisionEfficiency_Apparel MayRequire="CETeam.CombatExtended">0.1</NightVisionEfficiency_Apparel>
 						</equippedStatOffsets>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_RainbowDash_Child"]/description</xpath>
+					<value>
+						<description>It goes without saying that Rainbow 'Danger' Dash is the very ponification of speed.\n\nCarrying her makes you feel fast, as well as more confident in your combat abilities.</description>
 					</value>
 				</Operation>
 				
@@ -950,11 +933,108 @@
 				</Operation>
 				
 				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_RainbowDash_Child"]/description</xpath>
+					<value>
+						<description>It goes without saying that Rainbow 'Danger' Dash is the very ponification of speed.\n\nCarrying her makes you feel faster on your feet.</description>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/TipSetDef[defName="MyLittleRimPony_BiotechTips"]/tips/li[@Name="ChildRainbowDash"]</xpath>
 					<value>
 						<li Name="ChildRainbowDash">The child-equippable Rainbow Dash plushie only affects a child's movement speed and not their combat prowess.</li>
 					</value>
 				</Operation>
+			</caseFalse>
+		</li>
+		
+		<!--ROYALTY: PATCH ANIMA TREE-->
+		<li Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Royalty">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_TurnAnimaTreeIntoTreeOfHarmony</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationSequence">
+					<operations>
+					
+						<!--ANIMA TREE-->
+					
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/label</xpath>
+							<value>
+								<label>Tree of Harmony</label>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/description</xpath>
+							<value>
+								<description>The Tree of Harmony is a magical tree that once held the Elements of Harmony. Nobody knows how it ended up on the rim, but many people suspect that science was involved.\n\nIf a person (psycaster or not) meditates near the tree, it will grow harmony grass around its base. Once enough grass is grown, it becomes possible to carry out a psychic linking ritual with the tree and upgrade a person's psychic powers. Only tribal peoples know the secret of this ritual. Tribal psycasters are also able to draw psyfocus from the Tree of Harmony while meditating at it.\n\nThe tree's psychic properties are weakened if artificial structures are placed nearby. They refuse to be caged or studied, and must remain part of nature.\n\nMost tribes believe that these trees are not simply trees, but are rather the physical extremities of a single world spirit, while bronies believe them to be a physical extension of their beliefs.</description>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/comps/li[4]/enoughPlantsLetterLabel</xpath>
+							<value>
+								<enoughPlantsLetterLabel>About: Linking with the Tree of Harmony</enoughPlantsLetterLabel>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/comps/li[4]/enoughPlantsLetterText</xpath>
+							<value>
+								<enoughPlantsLetterText>The Tree of Harmony now has {0} harmony grass around it. This is enough for a tribal person to begin their first linking ritual!\n\nThe linking ritual gives a level of psylink and the ability to use psychic powers. Upgrading to a higher level requires 20 grass.\n\nThe harmony grass requirements for linking rituals to upgrade psycasters are:\n\n{1}\n\nNote: Only those with the nature focus type can meditate to or link with the Tree of Harmony. You can see a person's focus types by looking at their info card with the 'i' button.</enoughPlantsLetterText>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/graphicData/texPath</xpath>
+							<value>
+								<texPath>Things/TreeOfHarmony</texPath>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/graphicData/graphicClass</xpath>
+							<value>
+								<graphicClass>Graphic_Single</graphicClass>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/graphicData</xpath>
+							<value>
+								<drawSize>(2,2)</drawSize>
+							</value>
+						</li>
+								
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/comps/li[5]/message</xpath>
+							<value>
+								<message>The Tree of Harmony has died and emitted a disturbing psychic scream.</message>
+							</value>
+						</li>
+						
+						<!--ANIMA GRASS-->
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]/label</xpath>
+							<value>
+								<label>harmony grass</label>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]/description</xpath>
+							<value>
+								<description>A grass infused with luminous microorganisms. Tribal peoples find that this grass grows around the base of the Tree of Harmony as they meditate. It seems to reflect some kind of strengthening of the tree's psychic power.\n\nAnimals refuse to eat anima grass, which tribal stories say is done out of respect.\n\nBronies believe that the grass is a physical extension of the tree's power, and that it holds the key to opening a link to Equestria, but the grass degenerates into normal plant matter when observed too closely.</description>
+							</value>
+						</li>
+					</operations>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<!--If the option is false, do nothing.-->
 			</caseFalse>
 		</li>
 		
@@ -1087,16 +1167,92 @@
 			</caseFalse>
 		</li>
 		
-		<!--RIM WAR SETTINGS-->
+		<!--RIM WAR: NPC FACTION-->
 		<li Class="XmlExtensions.UseSetting" MayRequire="Torann.RimWar">
-			<modId>geodesicdragon.rimpony</modId> <!--String that XML Extensions can identify your mod with-->
-			<key>MLRP_NPCFactionRimWarBehaviour</key> <!--Key to identify the setting (only used internally, invisible to user)-->
-			<defaultValue>Cautious</defaultValue> <!--What you want the default value of the setting to be-->
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_NPCFactionRimWarBehaviour</key>
+			<defaultValue>Cautious</defaultValue>
 			<apply>
 				<Operation Class="PatchOperationReplace">
-					<xpath>/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[2]/behavior</xpath>
+					<xpath>/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[@Name="RimWar_MLRP_NPCFaction"]/behavior</xpath>
 					<value>
 						<behavior>{MLRP_NPCFactionRimWarBehaviour}</behavior>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--RIM WAR: DIAMOND DOG FACTION-->
+		<li Class="XmlExtensions.UseSetting" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_DiamondDogFactionRimWarBehaviour</key>
+			<defaultValue>Aggressive</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[@Name="RimWar_MLRP_DiamondDogFaction"]/behavior</xpath>
+					<value>
+						<behavior>{MLRP_DiamondDogFactionRimWarBehaviour}</behavior>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--RIM WAR: BATPONY FACTION-->
+		<li Class="XmlExtensions.UseSetting" MayRequire="Torann.RimWar, sarg.alphagenes">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_BatponyFactionRimWarBehaviour</key>
+			<defaultValue>Expansionist</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[@Name="RimWar_MLRP_BatponyFaction"]/behavior</xpath>
+					<value>
+						<behavior>{MLRP_BatponyFactionRimWarBehaviour}</behavior>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+		
+		<!--RAINBOW LASER: ELEMENTS OF HARMONY REQUIRED-->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_RainbowLaserRequiresEOH</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_ElementsOfHarmonyWeaponised"]/costList</xpath>
+					<value>
+						<costList>
+							<Plasteel>100</Plasteel>
+							<Gold>5</Gold>
+							<MLRP_ElementsOfHarmony>1</MLRP_ElementsOfHarmony>
+						</costList>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_ElementsOfHarmonyWeaponised"]/costList</xpath>
+					<value>
+						<costList>
+							<Plasteel>100</Plasteel>
+							<Gold>5</Gold>
+							<ComponentSpacer>3</ComponentSpacer>
+						</costList>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+		
+		<!--ANOMALY: STUFF REQUIRED TO BUILD THINGPONE-->
+		<li Class="XmlExtensions.UseSetting" MayRequire="Ludeon.RimWorld.Anomaly">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_ThingponeStuffRequired</key>
+			<defaultValue>250</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Thingpone"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>{MLRP_ThingponeStuffRequired}</costStuffCount>
 					</value>
 				</Operation>
 			</apply>
@@ -1132,10 +1288,13 @@
 					</rightCol>
 				</li>
 				
-				<li Class="XmlExtensions.Setting.Textbox">
+				<li Class="XmlExtensions.Setting.Slider">
 					<key>MLRP_PlushiesCloth</key>
-					<label>Amount Of Stuff Needed: </label>
 					<defaultValue>300</defaultValue>
+					<min>2</min>
+					<max>500</max>
+					<label>Amount Of Stuff Needed: {MLRP_PlushiesCloth}</label>
+					<decimals>0</decimals>
 				</li>
 				
 				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
@@ -1160,6 +1319,30 @@
 					<label>Plushies become tainted if worn by a corpse</label>
 				</li>
 				
+				<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Dubwise.DubsBadHygiene">
+					<key>MLRP_DubsBadHygiene_PippIsShort</key>
+					<label>[Dubs Bad Hygiene] Pipp is short</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Rainbow Laser Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_RainbowLaserRequiresEOH</key>
+					<label>Weapon requires Elements of Harmony to craft</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
+					<text>If you set this value to false, making a rainbow laser will require 3 advanced components instead of the Elements.</text>
+					<font>Small</font>
+					<anchor>Left</anchor>
+				</li>
+				
 				<li Class="XmlExtensions.Setting.Gap"/>
 				
 				<li Class="XmlExtensions.Setting.Text">
@@ -1173,21 +1356,58 @@
 					<defaultValue>750</defaultValue>
 					<min>100</min>
 					<max>1000</max>
-					<label>Stuff Required: {MLRP_EvilSistersStuffRequired}</label>
+					<label>Building either sister requires {MLRP_EvilSistersStuffRequired} stuff</label>
 					<decimals>0</decimals>
 				</li>
 				
 				<li Class="XmlExtensions.Setting.Gap"/>
 				
 				<li Class="XmlExtensions.Setting.Text">
-					<text>Sweetie Bot Settings</text>
+					<text>Discord Lamp Settings</text>
 					<font>Medium</font>
 					<anchor>Left</anchor>
 				</li>
 				
-				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
-					<text>IMPORTANT: These settings will only be applied to the turret version.</text>
-					<font>Small</font>
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_DiscordLampStuffRequired</key>
+					<defaultValue>300</defaultValue>
+					<min>100</min>
+					<max>1000</max>
+					<label>Building a Discord lamp requires {MLRP_DiscordLampStuffRequired} stuff</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_DiscordLampBrightness</key>
+					<defaultValue>8</defaultValue>
+					<min>1</min>
+					<max>20</max>
+					<label>Brightess: {MLRP_DiscordLampBrightness}</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Screwball Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider">
+					<key>MLRP_ScrewballStuffRequired</key>
+					<defaultValue>300</defaultValue>
+					<min>100</min>
+					<max>1000</max>
+					<label>Building Screwballs requires {MLRP_ScrewballStuffRequired} stuff</label>
+					<decimals>0</decimals>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Sweetie Bot Turret Settings</text>
+					<font>Medium</font>
 					<anchor>Left</anchor>
 				</li>
 				
@@ -1244,11 +1464,6 @@
 					<anchor>Left</anchor>
 				</li>
 				
-				<li Class="XmlExtensions.Setting.Checkbox">
-					<key>MLRP_BroniesCanBeViolent</key>
-					<label>Bronies are capable of violence</label>
-				</li>
-				
 				<li Class="XmlExtensions.Setting.Slider">
 					<key>MLRP_BronyTraitCommonality</key>
 					<defaultValue>0.1</defaultValue>
@@ -1280,8 +1495,8 @@
 					<label>Spawn glitterworld medicine</label>
 				</li>
 				
-				<li Class="XmlExtensions.Setting.Text">
-					<text>Spawning glitterworld medicine will make the building consume twice as much power.</text>
+				<li Class="XmlExtensions.Setting.Text" MayRequire="geodesicdragon.rimpony.medieval">
+					<text>IMPORTANT: This setting will be ignored because you are using the Medieval Overhaul patches.</text>
 					<font>Small</font>
 					<anchor>Left</anchor>
 				</li>
@@ -1411,15 +1626,15 @@
 				
 				<li Class="XmlExtensions.Setting.Slider">
 					<key>MLRP_DaybreakerChemfuel</key>
-					<defaultValue>75</defaultValue>
-					<min>1</min>
+					<defaultValue>50</defaultValue>
+					<min>2</min>
 					<max>150</max>
 					<label>Amount of chemfuel required: {MLRP_DaybreakerChemfuel}</label>
 					<decimals>0</decimals>
 				</li>
 				
 				<li Class="XmlExtensions.Setting.Text">
-					<text>This amount will be doubled for the recipes to acquire 10 regular/advanced components.</text>
+					<text>This amount will be halved, doubled, tripled or quintupled where necessary.</text>
 					<font>Small</font>
 					<anchor>Left</anchor>
 				</li>
@@ -1448,15 +1663,28 @@
 				</li>
 				
 				<li Class="XmlExtensions.Setting.Text">
-					<text>This will also be how much stuff is required to build one.</text>
+					<text>This will also determine how much stuff is required to build one.</text>
 					<font>Small</font>
 					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap" MayRequire="Ludeon.RimWorld.Royalty"/>
+				
+				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Royalty">
+					<text>Royalty DLC Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology">
+					<key>MLRP_TurnAnimaTreeIntoTreeOfHarmony</key>
+					<label>Turn the anima tree into the Tree of Harmony</label>
 				</li>
 				
 				<li Class="XmlExtensions.Setting.Gap" MayRequire="Ludeon.RimWorld.Ideology"/>
 				
 				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology">
-					<text>Ideology Settings</text>
+					<text>Ideology DLC Settings</text>
 					<font>Medium</font>
 					<anchor>Left</anchor>
 				</li>
@@ -1469,7 +1697,7 @@
 				<li Class="XmlExtensions.Setting.Gap" MayRequire="Ludeon.RimWorld.Biotech"/>
 				
 				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
-					<text>Biotech Settings</text>
+					<text>Biotech DLC Settings</text>
 					<font>Medium</font>
 					<anchor>Left</anchor>
 				</li>
@@ -1488,11 +1716,28 @@
 					<key>MLRP_SweetieBotMechanoidsAreQuiet</key>
 					<label>Mute Sweetie Bot mechanoid call sound</label>
 				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap" MayRequire="Ludeon.RimWorld.Anomaly"/>
+				
+				<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Anomaly">
+					<text>Anomaly DLC Settings</text>
+					<font>Medium</font>
+					<anchor>Left</anchor>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Slider" MayRequire="Ludeon.RimWorld.Anomaly">
+					<key>MLRP_ThingponeStuffRequired</key>
+					<defaultValue>250</defaultValue>
+					<min>100</min>
+					<max>750</max>
+					<label>Building Thingpone requires {MLRP_ThingponeStuffRequired} stuff.</label>
+					<decimals>0</decimals>
+				</li>
 							
 				<li Class="XmlExtensions.Setting.Gap" MayRequire="sumghai.medpod"/>
 				
 				<li Class="XmlExtensions.Setting.Text" MayRequire="sumghai.medpod">
-					<text>MedPod Settings</text>
+					<text>Mod Settings: MedPod</text>
 					<font>Medium</font>
 					<anchor>Left</anchor>
 				</li>
@@ -1505,7 +1750,7 @@
 				<li Class="XmlExtensions.Setting.Gap" MayRequire="Torann.RimWar"/>
 				
 				<li Class="XmlExtensions.Setting.Text" MayRequire="Torann.RimWar">
-					<text>Rim War Settings</text>
+					<text>Mod Settings: Rim War</text>
 					<font>Medium</font>
 					<anchor>Left</anchor>
 				</li>
@@ -1526,6 +1771,82 @@
 						<li Class="XmlExtensions.Setting.RadioButtons" MayRequire="Torann.RimWar">
 							<key>MLRP_NPCFactionRimWarBehaviour</key>
 							<defaultValue>Cautious</defaultValue>
+							<buttons>
+							<li>
+								<value>Aggressive</value>
+								<label>Aggressive</label>
+							</li>
+							<li>
+								<value>Cautious</value>
+								<label>Cautious</label>
+								</li>
+							<li>
+								<value>Expansionist</value>
+								<label>Expansionist</label>
+							</li>
+							<li>
+								<value>Merchant</value>
+								<label>Merchant</label>
+							</li>
+							<li>
+								<value>Warmonger</value>
+								<label>Warmonger</label>
+							</li>
+							</buttons>
+						</li>
+					</rightCol>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.SplitColumn" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
+					<leftCol>
+						<li Class="XmlExtensions.Setting.Text" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
+							<text>Diamond Dog Faction Behaviour: </text>
+							<font>Small</font>
+							<anchor>Left</anchor>
+						</li>
+					</leftCol>
+					<rightCol>
+						<li Class="XmlExtensions.Setting.RadioButtons" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
+							<key>MLRP_DiamondDogFactionRimWarBehaviour</key>
+							<defaultValue>Aggressive</defaultValue>
+							<buttons>
+							<li>
+								<value>Aggressive</value>
+								<label>Aggressive</label>
+							</li>
+							<li>
+								<value>Cautious</value>
+								<label>Cautious</label>
+								</li>
+							<li>
+								<value>Expansionist</value>
+								<label>Expansionist</label>
+							</li>
+							<li>
+								<value>Merchant</value>
+								<label>Merchant</label>
+							</li>
+							<li>
+								<value>Warmonger</value>
+								<label>Warmonger</label>
+							</li>
+							</buttons>
+						</li>
+					</rightCol>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.SplitColumn" MayRequire="Torann.RimWar, sarg.alphagenes">
+					<leftCol>
+						<li Class="XmlExtensions.Setting.Text" MayRequire="Torann.RimWar, sarg.alphagenes">
+							<text>Batpony Faction Behaviour: </text>
+							<font>Small</font>
+							<anchor>Left</anchor>
+						</li>
+					</leftCol>
+					<rightCol>
+						<li Class="XmlExtensions.Setting.RadioButtons" MayRequire="Torann.RimWar, sarg.alphagenes">
+							<key>MLRP_BatponyFactionRimWarBehaviour</key>
+							<defaultValue>Expansionist</defaultValue>
 							<buttons>
 							<li>
 								<value>Aggressive</value>

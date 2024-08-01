@@ -34,23 +34,10 @@
     </disallowedTraits>
     <nameMaker>NamerBrony</nameMaker>
     <nameMakerFemale>NamerBronyFemale</nameMakerFemale>
-    <requiredWorkTags>
-      <li>Violent</li>
-    </requiredWorkTags>
   </PawnKindDef>
   
 <PawnKindDef ParentName="MLRP_BronyKinds" Name="MLRP_BronyKinds_LeaderBase" Abstract="True">
 	<itemQuality>Excellent</itemQuality>
-	<skills>
-      <li>
-        <skill>Shooting</skill>
-        <range>12</range>
-      </li>
-	  <li>
-        <skill>Melee</skill>
-        <range>12</range>
-      </li>
-    </skills>
   </PawnKindDef>
   
   <PawnKindDef ParentName="MLRP_BronyKinds" Name="MLRP_BronyKinds_VillagerBase" Abstract="True">
@@ -150,7 +137,7 @@
 	  <li>Rainbow_Laser</li>
     </weaponTags>
 	<acceptArrestChanceFactor>0.25</acceptArrestChanceFactor>
-	<isFighter>false</isFighter>
+	<isFighter>true</isFighter>
 	<disallowedTraits>
 		<li>Brawler</li>
 	</disallowedTraits>
@@ -188,7 +175,7 @@
       <max>1000</max>
     </apparelMoney>
 	<acceptArrestChanceFactor>1</acceptArrestChanceFactor>
-	<isFighter>false</isFighter>
+	<isFighter>true</isFighter>
 </PawnKindDef>
 
 <PawnKindDef ParentName="MLRP_BronyKinds_VillagerBase">
@@ -197,7 +184,7 @@
     <initialResistanceRange>3~5</initialResistanceRange>
     <label>trader</label>
 	<labelPlural>traders</labelPlural>
-    <combatPower>45</combatPower>
+    <combatPower>20</combatPower>
     <gearHealthRange>
       <min>1</min>
       <max>1</max>
@@ -224,7 +211,7 @@
       <max>1000</max>
     </apparelMoney>
 	<acceptArrestChanceFactor>1</acceptArrestChanceFactor>
-	<isFighter>false</isFighter>
+	<isFighter>true</isFighter>
 	<trader>true</trader>
 </PawnKindDef>
 
@@ -234,7 +221,7 @@
     <initialResistanceRange>5~7</initialResistanceRange>
     <label>brony mercenary</label>
 	<labelPlural>brony mercenaries</labelPlural>
-    <combatPower>60</combatPower>
+    <combatPower>40</combatPower>
     <gearHealthRange>
       <min>1</min>
       <max>1</max>
@@ -273,7 +260,7 @@
     <initialResistanceRange>5~7</initialResistanceRange>
     <label>brony mercenary grenadier</label>
 	<labelPlural>brony mercenary grenadiers</labelPlural>
-    <combatPower>70</combatPower>
+    <combatPower>40</combatPower>
     <gearHealthRange>
       <min>1</min>
       <max>1</max>
@@ -312,7 +299,7 @@
     <initialResistanceRange>7~9</initialResistanceRange>
     <label>melee brony mercenary</label>
 	<labelPlural>melee brony mercenaries</labelPlural>
-    <combatPower>60</combatPower>
+    <combatPower>40</combatPower>
     <gearHealthRange>
       <min>1</min>
       <max>1</max>
@@ -350,7 +337,7 @@
     <initialResistanceRange>9~12</initialResistanceRange>
     <label>elite brony mercenary</label>
 	<labelPlural>elite brony mercenaries</labelPlural>
-    <combatPower>75</combatPower>
+    <combatPower>50</combatPower>
     <gearHealthRange>
       <min>1</min>
       <max>1</max>
@@ -376,13 +363,6 @@
     <weaponTags>
 	  <li>Rainbow_Laser</li>
     </weaponTags>
-    <!--Adding this trait causes an error; commenting this part out until the bug is fixed-->
-	<!--<forcedTraits>
-      <li>
-        <def>ShootingAccuracy</def>
-        <degree>1</degree>
-      </li>
-    </forcedTraits>-->
 	<isFighter>true</isFighter>
 </PawnKindDef>
 

@@ -36,27 +36,14 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>400</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>MLRP_MagicMirrorExtraPowerResearch</researchProject>
+            <factor>0.75</factor>
+          </li>
+        </powerUpgrades>
       </li>
       <li Class="CompProperties_Flickable"/>
-      <!--<li Class="CompProperties_Refuelable">
-        <fuelLabel>Combat effectiveness</fuelLabel>
-        <fuelGizmoLabel>Combat effectiveness (%)</fuelGizmoLabel>
-        <outOfFuelMessage>ERROR: Repairs needed</outOfFuelMessage>
-        <fuelFilter>
-			<thingDefs>
-				<li>Steel</li>
-			</thingDefs>
-		</fuelFilter>
-        <fuelCapacity>100</fuelCapacity>
-        <fuelMultiplier>0.8</fuelMultiplier>
-        <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.3</autoRefuelPercent>
-        <showFuelGizmo>true</showFuelGizmo>
-        <minimumFueledThreshold>1</minimumFueledThreshold>
-        <factorByDifficulty>true</factorByDifficulty>
-        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
-      </li>-->
     </comps>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -74,6 +61,7 @@
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>MLRP_Buildings</designationCategory>
+	<uiOrder>85</uiOrder>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <building>
       <combatPower>45</combatPower>

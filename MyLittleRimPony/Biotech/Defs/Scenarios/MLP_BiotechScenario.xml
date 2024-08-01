@@ -4,7 +4,7 @@
 <ScenarioDef>
     <defName>MLRP_Scenario_Xenos</defName>
     <label>Brony Xenotypes</label>
-    <description>Your group has been wandering these lands for a while now, and you've finally decided to settle down and build a home.\n\nYou are all from different walks of life, but you have one thing in common: you are so passionate about My Little Pony, you each underwent xenotype implentation to transform yourselves into your favourite pony race.\n\nYou'll need to work fast in order to secure your new home, though; since you are all against violence, you are tempting targets for raiders.</description>
+    <description>Your group has been wandering these lands for a while now, and you've finally decided to settle down and build a home.\n\nYou are all from different walks of life, but you have one thing in common: you are so passionate about My Little Pony, you each underwent xenotype implentation to transform yourselves into your favourite pony race.\n\nYou'll need to work fast in order to secure your new home, though; your starting equipment is quite basic and you own a lot of valuable items, making you tempting targets for raiders.</description>
     <scenario>
 		<summary>A group comprised of one of each pony xenotype attempts to carve out a new existence. Difficult.</summary>
 		<playerFaction>
@@ -87,28 +87,21 @@
 			<li Class="ScenPart_StartingResearch">
 				<def>StartingResearch</def>
 				<project>MLRP_ScrewballResearch</project>
-			</li>
+			</li>		
 			
-			<li Class="ScenPart_ForcedTrait">
-				<def>ForcedTrait</def>
-				<chance>1</chance>
-				<context>PlayerStarter</context>
-				<trait>MLRP_BronyTrait</trait>
-			</li>			
+			<!-- Player starting weapons-->
 			
-			<!-- Player starting weapons (Requires XML Extensions)-->
-			
-			<li Name="MLRP_BiotechScenario_RangedWeapons" Class="ScenPart_StartingThing_Defined">
-				<!--<def>StartingThing_Defined</def>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
 				<thingDef>Gun_Autopistol</thingDef>
-				<count>3</count>-->
+				<count>3</count>
 			</li>
 			
-			<li Name="MLRP_BiotechScenario_MeleeWeapons" Class="ScenPart_StartingThing_Defined">
-				<!--<def>StartingThing_Defined</def>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
 				<thingDef>MeleeWeapon_Knife</thingDef>
 				<count>2</count>
-				<stuff>Plasteel</stuff>-->
+				<stuff>Plasteel</stuff>
 			</li>
 			
 			<!-- Player starting things-->	
@@ -151,7 +144,7 @@
 			
 			<!-- Flak helmets because I couldn't figure out how to get pawns wearing them by default -->
 			
-			<li Class="ScenPart_StartingThing_Defined">
+			<li Name="MLRP_BiotechScenario_Helmets" Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
 				<thingDef>Apparel_AdvancedHelmet</thingDef>
 				<count>5</count>
@@ -183,10 +176,10 @@
 			
 			<!-- Starting buildings -->
 			
-			<li Name="MLRP_BiotechScenario_Turrets" Class="ScenPart_StartingThing_Defined">
+			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
 				<thingDef>Turret_MiniTurret</thingDef>
-				<count>6</count>
+				<count>3</count>
 				<stuff>Steel</stuff>
 			</li>
 			
@@ -194,7 +187,7 @@
 				<def>StartingThing_Defined</def>
 				<thingDef>MLRP_ScrewballGenerator</thingDef>
 				<count>3</count>
-				<stuff>Cloth</stuff>
+				<stuff>WoodLog</stuff>
 			</li>
 			
 			<!-- Starting plushies -->

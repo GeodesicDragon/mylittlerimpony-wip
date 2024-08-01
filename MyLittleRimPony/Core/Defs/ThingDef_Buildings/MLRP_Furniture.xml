@@ -22,6 +22,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <designationCategory>MLRP_Buildings</designationCategory>
+	<uiOrder>5</uiOrder>
     <rotatable>false</rotatable>
     <uiIconOffset>(0, 0.03)</uiIconOffset>
     <thingCategories>
@@ -39,7 +40,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToBuild>300</WorkToBuild>
+      <WorkToBuild>150</WorkToBuild>
       <Flammability>1</Flammability>
     </statBases>
   </ThingDef>
@@ -54,11 +55,11 @@
       <li>Fabric</li>
       <li>Leathery</li>
       <li>Metallic</li>
+      <li>Stony</li>
       <li>Woody</li>
     </stuffCategories>
     <statBases>
       <Mass>4</Mass>
-      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
     </statBases>
     <comps>
       <li Class="CompProperties_Glower">

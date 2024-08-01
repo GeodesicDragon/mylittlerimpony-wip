@@ -1,10 +1,555 @@
-Version 4.22.66 (September 12th 2023)
+Version 6.0.0 (July 29th 2024)
+
+NOTE TO SELF: Check for and delete empty files.
+
+* Core: Removed support for version 1.4 of RimWorld.
+* Core: Added ruined plushies.
+	* Made of various materials.
+	* Anti bronies have a chance of having up to two among their possessions.
+	* Can be recycled to recover 75 of whatever material it is made from (once the research is complete).
+	* Can be looted from tribals, outlanders, imperials (Royalty) and Diamond Dogs (Biotech).
+	* If you have my Hooligans faction mod enabled, they'll drop them as well.
+	* I know the texture is crap; it's just a placeholder until I can find something better.
+* Core: The plushie recycling recipe has been updated to work with ruined plushies; you can no longer use it to recycle intact ones.
+* Core: The research tracker has been moved to the main DLL file; as a result, Harmony is now required to use this mod.
+* Core: Removed Manifest.xml file.
+* Core: Reduced the number of times thought effects from party cannons can be stacked to 1 (was 3).
+* Core: Reduced the pain reduction of plushies to 5% (was 10).
+* Core: Nightmare Moon is no longer accepting item returns.
+(NYT) * Core: Fixed an issue which could cause a pawn to have both the brony and anti brony traits at once.
+* Core: Fixed the bulk psychite tea recipe at the Daybreaker statue not being unlocked when the relevant research was completed.
+* Anomaly: All Thingpone recipes now require half the amount of twisted meat as they do silver, since I felt it was too easy to get stuff.
+	* Deadlife shell: 30 silver and 15 twisted meat.
+	* Voidsight serum: 90 silver and 45 twisted meat.
+	* Metalblood serum: 300 silver and 150 twisted meat.
+	* Juggernaut serum: 300 silver and 150 twisted meat.
+	* Mind-numb serum: 120 silver and 60 twisted meat.
+	* Ghoul resurrection serum: 90 silver and 45 twisted meat.
+* Anomaly: Increased twisted meat cost of acquiring a shard from Thingpone to 500 (was 250).
+* Combat Extended: Updated a few patches.
+	* Aggro turrets: Removed recoil.
+	* Rainbow Laser: Added recoil.
+	* Sweetie Bot mechanoid: Removed duplicate patches.
+	* Sweetie Bot turret: Removed recoil.
+	* Tennis ball launcher: Added recoil.
+	* Tennis ball launcher: Izzy's horn now has poking capabilities.
+	* Wife thrower: Removed recoil.
+* Harmony: Fixed letter not being sent when researching drug production.
+* Harmony: Fixed letter not being sent when researching psychite refining.
+* Harmony: Fixed letter not being sent when researching psychoid brewing.
+* Harmony: Fixed letter not being sent when researching wake-up production.
+* Harmony: Fixed letter not being sent when researching go-juice production.
+* Harmony: Fixed letter not being sent when researching penoxycyline production.
+* Ponies of the Rim: Fixed typo in anti brony trait description.
+
+Version 5.42.72 (June 23rd 2024)
+
+* Core: Added a recipe to the Nightmare Moon statue to request 1000 units of rice at a cost of 1200 silver.
+* Ponies of the Rim: Added some new compatibility patches, which aren't actually working at the moment because they were built around an updated version of POTR which hasn't been released yet. Once it does, I'll update this mod again.
+	* Core: Made the 'pony lover' and 'pony hater' traits conflict with the brony and anti brony traits.
+	* Ideology: Made the thoughts related to precepts about loving and hating ponies conflict with the brony and anti brony traits.
+	* Biotech: Made the POTR horse voice gene incompatible with the one added by this mod.
+* Alpha Genes: Added a patch which makes the 'disgusting colonist' thought no longer apply to bronies.
+* Vanilla Achievements Expanded: Added six new achievements (RimWorld 1.5 only).
+	* A New Equestria (requires Biotech)
+	* Gift Of The Gab (requires Biotech)
+	* Spay And Neuter (requires Biotech)
+	* As The Void Intended (requires Anomaly)
+	* Aren't Bats Protected? (Requires Alpha Genes)
+	* Utterly Batty (Requires Alpha Genes)
+* Vanilla Recycling Expanded: Added a recipe to the Daybreaker statue to allow for the bulk creation of trashbricks.
+	* Upside: No toxic gas will be released during production.
+	* Downside: The recipe requires the regular amount of chemfuel.
+	* The recipe will be unlocked when you research complex recycling.
+* Rim War: Added behaviour settings for the Diamond Dog faction.
+* Rim War: Added behaviour settings for the batpony faction.
+* XML Extensions/Rim War: Added ability to change behaviour of the Diamond Dog faction.
+* XML Extensions/Rim War: Added ability to change behaviour of the batpony faction.
+* Core: Updated description of the Brony Community scenario to reflect recent changes to the brony trait.
+* Biotech: Updated description of the Brony Xenotypes scenario to reflect recent changes to the brony trait.
+* Biotech: The Renegade Alicorn scenario now includes 250 units of chemfuel, a steel Daybreaker statue and a steel Nightmare Moon statue.
+* Alpha Genes: The imperial faction is no longer permanently hostile to the NPC batpony faction.
+* Alpha Genes: Hopefully reduced the chance of your first batpony raider being an elite mercenary, as it seems kinda unfair, especially on a tribal run.
+* Harmony: Fixed letter not being sent when researching request skilltrainers.
+* Harmony: Fixed error seen when the Bandwidth Enhancer mod wasn't active.
+* Harmony: Fixed incorrect letter being sent when researching certain Royalty technologies.
+* Harmony: Fixed incorrect letter being sent when researching certain Biotech technologies.
+* Harmony/MedPod: Fixed incorrect letter being sent when researching advanced celluar regeneration.
+* Harmony/Replimat: Fixed incorrect letter being sent when researching molecular nutrient resequencing.
+* Harmony/Bandwidth Enhancer: Fixed incorrect letter being sent when researching advanced bandwidth enhancer.
+* XML Extensions: Resetting values to default now correctly sets the chemfuel requirement of Daybreaker recipes to 50 instead of 75.
+* XML Extensions: Increased minimum chemfuel requirement of Daybreaker recipes to 2 (was 1).
+* XML Extensions: Fixed 'Verse.PatchOperationReplace(xpath="/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[2]/behavior"): Failed to find a node with the given xpath' error seen when Rim War was enabled.
+	* Thanks to A Kirin's Hoof from the Ponies of the Rim Discord server for bringing the issue to my attention.
+
+Version 5.26.57 (April 29th 2024)
+
+* Biotech: Added five new child-equippable plushies.
+	* Izzy Moonbow: +10 to mood and opinions of others boosted by 100%.
+	* Princess Cadence: +75% to pain shock threshold.
+	* Princess Celestia: -50% to mental break threshold.
+	* Princess Luna: +100% to rest rate multiplier.
+	* Spoiled Rich: +50% toxic resistance.
+* Ponies of the Rim: Added four new recipes to the Nightmare Moon statue.
+	* Request bionic wing: 1300 silver.
+	* Request bionic horn: 1300 silver.
+	* Request archotech horn: 2800 silver, 500 gold and 5 bionic horns.
+	* Request archotech wing: 2800 silver, 500 gold and 5 bionic wings.
+* Ponies of the Rim: Pawns with the brony trait now have a +20 opinion of pawns added by this mod.
+* Ponies of the Rim: Pawns with the anti-brony trait now have a -120 opinion of pawns added by this mod. They hate MLP, so it stands to reason they would hate actual ponies as well. The opinion is -120 in order to negate the +20 'physically appealing' opinion boost.
+* Core: The ability to request archotech items from Nightmare Moon no longer requires the Royalty DLC, though the research cost remains the same.
+* Core: Reduced the silver cost of requesting archotech items to 2800 (was 5600).
+* Core: Reduced the gold cost of requesting archotech items to 500 (was 1000).
+* Core: Reduced the bionic cost of requesting archotech items to 5 (was 10).
+* Core: Maud Pie now increases drilling speed by 25% on top of her usual bonuses.
+* Biotech: Reduced bandwidth cost of Sweetie Bot mechanoids to 2 (was 3).
+* Biotech: Sweetie Bot mechanoids can now be gestated using a standard subcore instead of a high subcore.
+* Biotech: Sweetie Bot mechanoids now require 1 cycle for gestation (was 2).
+* Harmony: Fixed not having certain DLCs or mods enabled triggering errors when completing research projects.
+* Reinforced Mechanoid 2: Since this mod has been discontinued, all patches and recipes related to it have been removed. This may cause some one-time red errors on load for anyone still using it in version 1.4 of RimWorld.
+
+Version 5.17.45 (April 22nd 2024)
+
+* Core 1.5: Good news, Harmony users, the research tracker is back! And this time, it won't eat up all your TPS!
+	* Makes use of a Harmony patch to monitor your completed research and send a letter informing you of new recipes when certain projects are completed.
+	* Harmony is not required to use MLRP now; thanks to LoadFolders.xml, the tracker DLL is only loaded if Harmony is active.
+	* Many thanks to SoundOfSpouting and order_without_power from the Harmony Discord server for their assistance.
+* Core 1.5/Ponies of the Rim: Added a recipe to the Fabric Exchange which allows you to convert 100 pony fur into cloth.
+* Core: The brony trait no longer renders pawns incapable of violence.
+	* This means you don't need to use XML Extensions to make them capable of fighting.
+	* XML Extensions users will now have an unused setting - MLRP_BroniesCanBeViolent - that can be safely removed.
+* Anomaly: Fixed incomplete description on Thingpone research.
+* Anomaly: Fixed being unable to research Thingpone. The ability to do so is now unlocked after you first encounter fleshbeasts.
+* Core 1.5/Humanoid Alien Races: Fixed 'Could not resolve cross-reference to RimWorld.TraitDef named Xenophobia (wanter=conflictingTraits)' error.
+* Core 1.5/Ponies of the Rim: Ponies added by this mod should no longer spawn with the brony trait.
+* Core 1.5/Ponies of the Rim: Ponies added by this mod should no longer spawn with the anti brony trait.
+
+Version 5.15.39 (April 19th 2024)
+
+Changes marked as just 'Core' apply to both version 1.4 and 1.5 of the game.
+
+* Core: Added a recipe to the Nightmare Moon statue which allows you to request 50 herbal medicine in exchange for 250 units of raw (vegetarian) food. Handy if you've got a surplus of food, you keep getting raided, and your single farmer only has a Plants skill of 7. (I might be speaking from experience here.)
+* Anomaly: Added Thingpone, the loveable eldritch horror who is ready and willing to grant you items from the void in exchange for silver.
+	* Requires 250 stuff to build.
+	* Must be researched first; costs 25 knowledge, and is a basic project.
+	* Also requires 250W of power, but this will be halved after completing magical power efficiency research.
+	* With one exception, silver costs are 50% more than the market value of the requested item.
+* Anomaly: Added seven new recipes, accessible only from Thingpone.
+	* Request deadlife shell: 30 silver.
+		* Requires deadlife dust research.
+		* The price is based on the value of the bioferrite needed to make a single shell. Bioferrite has a market value defined in the game code as 0.75 silver, and you need 25 to make a single shell. 25 x 0.75 = 18.75 x 1.5 = 28.125, rounded up to 30.
+	* Request voidsight serum: 90 silver. Requires serum synthesis research.
+	* Request metalblood serum: 300 silver. Requires metalblood serum research.
+	* Request juggernaut serum: 300 silver. Requires juggernaut serum research.
+	* Request mind-numb serum: 120 silver. Requires mind-numb serum research.
+	* Request ghoul resurrection serum: 90 silver. Requires ghoul resurrection research.
+	* Request shard: 1000 silver and 250 twisted meat (this is the exception). Available from beginning.
+	* Prices may be changed if I receive any feedback on whether or not they are too low.
+* Anomaly: Added a recipe to the Fabric Exchange which allows you to purchase 100 dread leather for 370 silver.
+* Anomaly: Added two new recipes to the Daybreaker statue.
+	* Convert silver to bioferrite: Converts 1000 silver into 1333 bioferrite.
+	* Convert bioferrite to silver: Converts 1333 bioferrite into 1000 silver.
+	* Unlocking these recipes requires you to research bioferrite shaping first.
+	* These recipes require 250 chemfuel (or five times whatever you set your default amount to in XML Extensions).
+* Vanilla Achievements Expanded: Added achievement to build Thingpone.
+* XML Extensions: Added the ability to configure how much stuff is needed to build Thingpone.
+	* Minimum is 100.
+	* Maximum is 750.
+	* Default is 250.
+* Core 1.5: NPC faction settlements now sell fanfiction.
+* Core 1.5: NPC faction bulk goods traders now sell fanfiction.
+* Core: Fixed formatting error in letter sent when a pawn is rendered unable to speak after smoking poison joke.
+* Core: Fixed formatting error in letter sent when a pawn receives increased consciousness after smoking poison joke.
+* Core: Adjusted layout of research tab so that it looks less cluttered. Only applies if you aren't using a mod to change the look of the research window.
+* Ideology: Fixed Elements of Harmony not improving hacking speed.
+* Anomaly: The Twilight Sparkle plushie now increases entity study rate by 10% when equipped.
+* Anomaly: Pawns with the Cutie Pox now have 10% increased entity study rate.
+* Anomaly: The harmony chip now increases entity study rate by 10% when installed (requires Royalty DLC).
+* XML Extensions: Values that are divided by two are now rounded up instead of down in order to prevent some recipes requiring 0 of an item.
+* XML Extensions: The amount of cloth needed to make plushies is now set by a slider, with a minimum of 2 and a maximum of 500. Default is 300.
+
+The 'Pawn started 10 jobs in 1 tick error' you got when forbidding fanfiction from being stored in bookshelves appears to have been fixed by a game update.
+
+Version 5.1.28 (April 12th 2024)
+
+* Core 1.5: Added MLP fanfiction.
+	* Horse words are now on the rim!
+	* Title and author are shown in the label.
+	* Anti bronies will read these books as well, mostly because I can't stop them, but they will not suffer any penalties for it.
+	* The description is the same for every book. I tried to have different descriptions based on the quality, but I couldn't figure out how to do it.
+	* There is a limited selection of titles right now; let me know of your favourite fanfics and I'll add them to the list! However, since I don't want to risk getting into any bother, I am only going to add fics that are rated either Everyone or Teen.
+	* Fanfiction can be stored in bookcases, but if you have any stored and forbid storing more, you'll be spammed with 'Pawn started 10 jobs in 1 tick' errors. I'm not sure why this happens, so I am currently unable to fix it.
+* Core 1.5: Poison joke is once again playing jokes on smokers. (1)
+* Core 1.5: Herbal cure kits now work as intended. (1)
+* Core 1.5: The recipes which used herbal cure kits have been removed from the Health tab. This may cause some one-time errors when loading a save.
+* Core 1.5/MedPod: Fixed red error spam.
+* Core: Herbal cure kits now have a 10% chance of curing the Cutie Pox when used.
+* Core: Changed the texture of the herbal cure kit.
+* Core: Herbal cure kits no longer make a sound when used.
+* Combat Extended: Big Macintosh now increases bulk capacity by 20 (was 15).
+* Vanilla Backstories Expanded: Updated LoadFolders.xml to load correct files based on game version.
+
+1. Thanks to Thekiborg from the official RimWorld Discord server for their help.
+
+Version 5.0.0 (March 15th 2024)
+
+NOTE 1: There may be issues with patches or features related to other mods; please report them ASAP if you encounter any!
+NOTE 2: Changes marked as just 'Core' apply to both version 1.4 and 1.5 of the game.
+
+* Mod is now compatible with the RimWorld 1.5 update.
+* Core 1.5: Added the ability to request bionic jaws from Nightmare Moon.
+	* Costs 1000 silver.
+	* Requires bionics research.
+* Vanilla Recycling Expanded: Added two new recipes to the Stone Exchange related to trashbricks.
+	* Buy trashbricks: Buy 100 trashbricks for just 20 silver.
+	* Sell trashbricks: Sell 100 trashbricks to get 20 silver back.
+	* It doesn't seem like much, I know, but it might be handy if you're doing a lot of recycling.
+	* Vanilla Recycling Expanded states the market value of the bricks to be 0.2 silver each.
+* Core 1.5: Poison joke no longer plays tricks on those who smoke it. (1)
+* Core 1.5: Instead of pawns using herbal cure kits themselves, the kit is now an ingredient in several new bills that can be accessed via the Health tab. (1)
+* Core 1.5: Pawns without the brony trait no longer have plushies as part of their possessions when starting a new colony.
+* Core 1.5: Bronies now have a 20% chance of starting a new colony with Elements of Harmony in their possession.
+* Core 1.5: Bronies also have a 1% chance of starting a new colony with a rainbow laser in their possession.
+* Core: Fixed not being able to trade with NPC faction stonemasons.
+* Core: Researching herbal cure kits can now be done at a simple research bench.
+* Core: Daybreaker statues can now be built using wood.
+* Core: Nightmare Moon statues can now be built using wood.
+* Core: Poison joke joints can now be made at the plushie bench.
+* Combat Extended: Fixed the Elements of Harmony not granting the reload speed and night vision improvements of the Rainbow Dash plushie.
+* Combat Extended: Fixed the harmony chip not granting the same armour improvements as the Shining Armour plushie.
+
+1. Changes to the RimWorld API in 1.5 that I don't quite understand means these items don't work as they used to, hence these changes.
+
+Version 4.60.236 (March 9th 2024)
+
+* [SYR] Trait Value: Added values for the brony and anti brony traits.
+	* Brony trait has a value of +10 because of the boost to social skills.
+	* Anti brony trait has a value of 0 because it only affects how the pawn interacts with bronies.
+* Combat Extended: Added research which unlocks the ability to craft Cadence javelins, tennis balls, harmony lasers and wooden bullets.
+	* Can be done at a simple research bench.
+	* Does not require you to research anything else first.
+	* Handy if you get hold of a weapon before you can actually craft it yourself.
+* Mechanitor Command Range Extenders: Added two new recipes to the Nightmare Moon statue.
+	* Request command uplink: 1000 silver and 6 components. Unlocked once standard mechtech is researched.
+	* Request command uplink (high): 2000 silver, 3 components and 3 advanced components. Unlocked once high mechtech is researched.
+* XML Extensions: Added an option to set whether or not the anima tree is turned into the tree of harmony. Set to true by default. (1)
+* XML Extensions: Added the ability to set how much stuff is required to build Screwballs.
+	* Minimum amount of stuff is 100.
+	* Maximum amount of stuff is 1000.
+	* Default amount of stuff is 300.
+	* Does not affect how much power is generated.
+* Core: Miss Pommel no longer sells human leather. Instead, the recipe has been changed to let you convert 100 human leather into the market value equivalent of cloth.
+* Core: Renamed 'magical power increase' research to 'magical power efficiency.'
+* Core: Screwballs will now output 50% more power once you research magical power efficiency (was 25%).
+* Core: Researching magical power efficiency will now affect the power consumption of other buildings.
+	* Plushie bench: 50% less power.
+	* Fabric Exchange: 50% less power.
+	* Stone Exchange: 50% less power.
+	* Sweetie Bot turret: 25% less power.
+	* Nurse Redheart: 25% less power.
+	* Super Speedy Cider Squeezy 6000: 25% less power.
+* Core: Unlocking the ability to request resurrector mech serums from Nightmare Moon no longer requires research, but the price has been doubled.
+* Core: You are no longer required to have the NPC faction present when starting a new colony. (2)
+* Core: Tweaked the large portrait of Sunny Starscout so that it no longer looks stretched.
+* Core: Replaced the small portrait of Sunny Starscout with a new one.
+* Ideology: Fixed the texture on the villain statue not displaying correctly.
+* Biotech: Reduced the time needed for a mechanitor to take control of Sweetie Bot mechanoids to 3 seconds (was 6).
+* Biotech: The Empire is no longer permanently hostile to the renegade alicorn faction.
+* Biotech: The Renegade Alicorn scenario now starts with Screwball research already unlocked.
+* Biotech: The Renegade Alicorn scenario now starts with Evil Sisters research already unlocked.
+* Biotech: You are no longer required to have the diamond dog faction present when starting a new colony. (2)
+* Alpha Genes: You are no longer required to have the batpony faction present when starting a new colony. (2)
+* Combat Extended: Fixed Sweetie Bot mechanoids showing as not having any armour.
+
+1. The anima tree has returned to normal; it will only be changed if you have XML Extensions and keep the option enabled.
+2. If you want this faction in your game, you will have to add it manually during map generation.
+
+Special thanks to Le_Me from the Steam Workshop for suggesting both of the above changes.
+
+Version 4.53.215 (February 4th 2024)
+
+* Biotech: Added three new recipes to the Nightmare Moon statue to request signal, powerfocus and nano structuring chips in exchange for silver.
+	* Signal Chip: 1000 silver, unlocked once standard mechtech is researched.
+	* Powerfocus Chip: 2000 silver, unlocked once high mechtech is researched.
+	* Nanostructuring Chip: 3000 silver, unlocked once ultra mechtech is researched.
+	* Recipes can only be performed by a mechanitor.
+	* The silver cost is twice the items market value (as per the RimWorld wiki).
+* Bandwidth Enhancer: Added a new recipe to the Nightmare Moon statue to request advanced bandwidth enhancers.
+	* Costs 19000 silver, 12 components, 5 advanced components, and a basic bandwidth enhancer.
+	* Recipes are unlocked once the relevant research has been completed.
+	* Reminder that the silver cost is twice the value of the required chips.
+* Biotech: Added child-equippable Sweetie Belle plushie.
+	* Increases cooking speed by 40.
+	* Reduces food poisoning chance by 50%.
+* Core: Updated the description of the Izzy Moonbow plushie to better explain what she does. (1)
+* Core: Plushies are no longer immune to deterioration.
+* Core: The Shining Armour plushie now increases blunt/sharp/heat armour by a flat amount, rather than increasing whatever the pawn already had. So, for example, if you had 15% blunt, 10% sharp and 5% heat, equipping him should increase that to 30/25/20, instead of 17.25/11.5/5.75.
+* Biotech: The child-equippable Shining Armour plushie now increases blunt/sharp/heat armour by a flat amount, rather than increasing whatever the pawn already had. So, for example, if you had 15% blunt, 10% sharp and 5% heat, equipping him should increase that to 45/40/35, instead of 17.25/11.5/5.75.
+* Royalty: Removed duplicate words from the description of the Trixie plushie. (1)
+* Combat Extended: Fixed Sweetie Bot mechanoids not refilling their ammo. (2)
+* Combat Extended: Reduced the number of rounds needed to earn the 'Splinters, Splinters Everywhere' achievement to 3000 (was 50000).
+* Combat Extended: Fixed the 'Splinters, Splinters Everywhere' achievement not tracking your stock of wooden bullets.
+* Combat Extended: Updated the description for the Sweetie Bot turret to reflect the fact it cannot fire if behind cover.
+* Combat Extended: Fixed Sweetie Bot mechanoids only firing one shot at a time instead of three.
+* Combat Extended: Increased the firing range of Sweetie Bot mechanoids to 40 (was 14).
+* Combat Extended: Fixed aggro turrets not working properly.
+* Combat Extended: Reduced mass of wooden bullets to 0.
+* Combat Extended: Reduced bulk of wooden bullets to 0.
+* Combat Extended: Reduced magazine capacity of aggro turrets to 150 (was 5000). Any you had loaded over this amount will remain.
+* Combat Extended: Reduced number of wooden bullets you can make at a time to 300 (was 500).
+* Combat Extended: Reduced wood cost of making wooden bullets to 6 (was 100).
+* Combat Extended: Reduced wood cost of making wooden bullets to 6 (was 100).
+* Combat Extended: Spoiled Rich now provides 25% protection against smoke inhalation on top of her usual bonus.
+* Combat Extended: Rainbow Dash plushies now improve night vision by 10%.
+* Combat Extended: Increased sharp and blunt armour bonus of Shining Armour plushies to 1 (was 0.15).
+* Combat Extended: Increased sharp and blunt armour bonus of child-equippable Shining Armour plushies to 2 (was 0.3).
+* Combat Extended: Child-equippable Big Macintosh plushies now increase bulk carrying capacity by 30.
+* XML Extensions: Fixed reload speed not being affected if you had changed the setting to make child-sized Rainbow Dash plushies provide the same bonuses as the adult version and were using Combat Extended.
+
+1. Thanks to Kittamaru for suggesting the change and for pointing out the mistake.
+2. Thanks to Samael from the CE Discord for helping with this.
+
+Version 4.48.191 (January 30th 2024)
+
+* Combat Extended: Added patches for the Sweetie Bot mechanoid.
+	* She now requires harmony lasers as ammunition.
+	* Blunt armour rating of 3.
+	* Sharp armour rating of 6.
+	* 50 carry weight.
+	* 20 bulk capacity.
+	* 10% melee dodge chance.
+	* 5% melee crit chance.
+	* 5% melee parry chance.
+	* 700 armour durability.
+* Core: Reduced the amount of work needed to make the wife thrower to 3600 (was 7000).
+* Core: Princess Cadence now increases pain shock threshold by 50% (was 25%). Equipping her should completely counter the 'Wimp' trait.
+* Core: Many C# translation keys have been updated to be a single string, instead of two or more stuck together.
+* Core: Renamed the poison joke addiction cure kit to 'herbal cure kit.'
+* Core: The herbal cure kit can now remove flu, malaria and food poisoning on a pawn, though it will not work on animals, plague or the Cutie Pox.
+* Core: Crafting a herbal cure kit now requires at least 6 Intellectual on top of 6 Crafting.
+* Core: Crafting a herbal cure kit no longer requires neutroamine, but the herbal medicine cost has been increased to 25 (was 15).
+* Core: Lowered the tech level of the herbal cure kit to Industrial (was Ultra).
+* Core: Lowered the mood buff of party cannons on non brony/anti-brony colonists to 10 (was 15).
+* Core: Added 150 more random words as potential names for NPC faction pawns.
+* Core: Fixed NPC faction settlements not selling drugs (for real this time).
+* Core: Fixed NPC faction settlements not selling raw food.
+* Core: Fixed NPC faction settlements not selling textiles.
+* Core: Fixed NPC faction settlements not selling raw resources.
+* Core: Fixed NPC faction bulk goods traders not selling raw food.
+* Core: Fixed NPC faction bulk goods traders not selling textiles.
+* Core: Fixed NPC faction bulk goods traders not selling drugs.
+* Core: Fixed NPC faction weapon traders not selling drugs.
+* Core: Fixed NPC faction exotic goods traders not selling drugs.
+* Core: Changed how poison joke affliction letters are worded.
+* Biotech: Added 15 more words as Diamond Dog surname prefixes.
+* Biotech: Added 3 more words as Diamond Dog surname suffixes.
+* Biotech: Added 30 more words as potential first names for male Diamond Dogs.
+* Biotech: Added 50 more words as potential first names for female Diamond Dogs.
+* Biotech: Reduced the maximum number of Diamond Dog factions you can have at game start to 1 (was 3).
+* Biotech: Halved the effects of the shrewd negotiator ability, as it could get a little bit overpowered at times.
+* Combat Extended: If you've allowed bronies to be violent, the Brony Community and Xenotypes scenarios will now start with some .45 ACP (FMJ) ammunition for the autopistols (requires XML Extensions).
+* Combat Extended: Reduced the bulk value of plushies to 0.1 (was 1).
+* Combat Extended: Big Macintosh now increases bulk capacity by 15.
+* Combat Extended: Rainbow Dash now increases reload speed by 5%.
+* Combat Extended: Fixed Cadence javelins being categorised as more advanced ammunition than they actually are.
+* Combat Extended: Cadence javelins can now be made at a crafting spot.
+* Combat Extended: Wooden bullets can now be made at a crafting spot.
+* Combat Extended: Cadence javelins can now be made at the loading bench.
+* Combat Extended: Harmony lasers can now be made at the loading bench.
+* Combat Extended: Tennis balls can now be made at the loading bench.
+* Combat Extended: Wooden bullets can now be made at the loading bench.
+* Combat Extended: Increased the number of Cadence javelins made at a time to 100 (was 50).
+* Combat Extended: Reduced the cost of making Cadence javelins to 10 wood (was 25).
+* Combat Extended: Reduced the amount of work needed to craft Cadence javelins to 60 (was 1900).
+* Combat Extended: Reduced the amount of work needed to craft Harmony lasers to 60 (was 3800).
+* Combat Extended: Reduced the amount of work needed to craft tennis balls to 60 (was 1900).
+* Combat Extended: Reduced the amount of work needed to craft wooden bullets to 60 (was 600).
+* Combat Extended: Fixed being unable to draft pawns equipped with a wife thrower.
+* Combat Extended: Fixed being unable to unforbid wife throwers that had been dropped by a pawn.
+* Combat Extended: Fixed having to research pulse-charged munitions in order to make wooden bullets.
+* Combat Extended: Reduced the number of 5.56x45mm NATO (FMJ) rounds the Brony Community scenario starts with to 300 (was 400).
+* Combat Extended: Reduced the number of 5.56x45mm NATO (FMJ) rounds the Brony Xenotypes scenario starts with to 300 (was 600).
+* Combat Extended: Increased the steel cost of making harmony lasers to 40 (was 20).
+* Combat Extended: Making harmony lasers no longer costs plasteel or components.
+* Combat Extended: Making harmony lasers now requires you to have researched the Rainbow Laser first.
+* Combat Extended: NPC faction settlements now sell ammo, FSX and Prometheum.
+* Combat Extended: NPC faction bulk goods traders now sell ammo, FSX and Prometheum.
+* Combat Extended: NPC faction combat suppliers now sell ammo, FSX and Prometheum.
+* Combat Extended: Increased the sharp armour penetration of harmony lasers to 25mm RHA (was 8). For such an advanced ammunition, it sure did suck against mechanoids. At least colonists armed with a rainbow laser, as well as Sweetie Bot turrets, should actually be able to harm the damn things now.
+* Combat Extended: Reduced the blunt armour penetration of harmony lasers to 35 (was 70).
+* Combat Extended: Reduced the base damage of harmony lasers to 20 (was 25).
+* Combat Extended: Increased the sight efficiency of the rainbow laser to 100% (was 80%).
+* Combat Extended: Reduced the shot spread of the rainbow laser to 0.07 (was 0.15).
+* Combat Extended: Reduced the sway factor of the rainbow laser to 1.33 (was 2).
+* Combat Extended: Increased the mass of the rainbow laser to 3 (was 2).
+* Combat Extended: Increased the bulk of the rainbow laser to 7.5 (was 3).
+* Combat Extended: Reduced the base damage of the wife thrower to 15 (was 25).
+* Combat Extended: Fixed 'MakeThing error: Apparel_AdvancedHelmet is not madeFromStuff but stuff=Plasteel. Setting to null.' red message seen when starting either the Brony Community or Brony Xenotypes scenarios.
+* Combat Extended: Changed the criteria for the 'A Whole Lotta Love' achievement to stockpile Cadence javelins. (1)
+* Combat Extended: Changed the criteria for the 'Wimbledon This Ain't' achievement to stockpile tennis balls. (1)
+* Combat Extended: Changed the criteria for the 'Hazardous Harmonious Materials' achievement to stockpile Harmony lasers. (1)
+* Combat Extended: Changed the criteria for the 'Splinters, Splinters Everywhere' achievement to stockpile wooden bullets. (1)
+* Combat Extended: Reduced the number of rounds needed to earn the 'Splinters, Splinters Everywhere' achievement to 50000 (was 100000).
+
+1. If you're loading a saved game, you will need to regenerate your achievements using dev mode in order for these to be tracked properly, otherwise VAE will continue to track how many times you perform the recipes to make them, instead of tracking how many you have.
+
+Version 4.47.122 (January 20th 2024)
+
+* XML Extensions: Added the ability to set how much stuff is required to build Discord lamps.
+	* Minimum amount of stuff is 100.
+	* Maximum amount of stuff is 1000.
+	* Default amount of stuff is 300.
+* XML Extensions: Added the ability to set the brightness of Discord lamps.
+	* Minimum brightness is 1.
+	* Maximum brightness is 20.
+	* Default brightness is 8.
+* Core: NPC faction settlements should now sell drugs (you will need to wait for them to restock).
+* Biotech: Fixed 'Could not resolve cross-reference: No RimWorld.XenotypeDef named MLRP_Xeno_Batpony found to give to RimWorld.XenotypeChance RimWorld.XenotypeChance' error, seen when Alpha Genes wasn't active.
+* Combat Extended: Reduced points awarded by the 'Wimbledon This Ain't' achievement to 50 (was 75).
+* Combat Extended: Reduced points awarded by the 'Hazardous Harmonious Materials' achievement to 50 (was 100).
+* Combat Extended: Reduced points awarded by the 'Splinters, Splinters Everywhere' achievement to 50 (was 100).
+* Combat Extended: Fixed 'Could not resolve cross-reference: No Verse.ThingDef named BlindSmoke found to give to CombatExtended.ProjectilePropertiesCE CombatExtended.ProjectilePropertiesCE' error.
+* Combat Extended: Fixed 'Verse.PatchOperationReplace(xpath="Defs/ThingDef[defName="MLRP_SweetieBotTurret"]/statBases/AccuracyTouch"): Failed to find a node with the given xpath' seen when XML Extensions was enabled.
+* Combat Extended: Fixed 'Verse.PatchOperationReplace(xpath="Defs/ThingDef[defName="MLRP_Weaponless"]/statBases/AccuracyTouch"): Failed to find a node with the given xpath' seen when XML Extensions was enabled.
+* Dubs Bad Hygiene: Changed the texture of the Pipp Petals plushie.
+* Dubs Bad Hygiene: Changed the texture of the 'Pipp, Pipp, Hooray!' achievement.
+* Vanilla Factions Expanded - Deserters: Halved the cost of acquiring intel from Spitfire, as well as how much you get.
+* Vanilla Factions Expanded - Deserters: Fixed being unable to acquire intel from Spitfire despite having the required items.
+	* Thanks to Wheat Tail for bringing this issue to my attention.
+* XML Extensions: Changing Nurse Redheart to spawn glitterworld medicine no longer increases her power consumption.
+
+Version 4.45.109 (December 4th 2023)
+
+* Core: Added Miss Harshwhinny.
+	* Works in the same way as a passive cooler.
+	* Uses wood as fuel, but consumes twice as much.
+	* Requires passive cooler research before she can be built.
+	* Capable of reducing the temperature of a room to freezing (hence the double fuel usage).
+* Core: Plushies have been given some additional apparel tags.
+	* PonyPlush_Combat: Daring Do, Princess Cadence, Rainbow Dash, Shining Armour
+	* PonyPlush_Health: Apple Bloom, Nurse Haywick, Scootaloo
+	* PonyPlush_Ideology: Flim and Flam
+	* PonyPlush_Misc: Fleur de Lis
+	* PonyPlush_Psycaster: Aloe and Lotus and Trixie
+	* PonyPlush_Slavery: King Sombra and Queen Chrysalis
+	* PonyPlush_Social: Izzy Moonbow, Pinkie Pie
+	* PonyPlush_Special: Cutie Mark Crusaders and Elements of Harmony.
+	* PonyPlush_Utility: Big Macintosh, Princess Celestia, Princess Luna, Rarity, Spoiled Rich, Starlight Glimmer, Button Mash, Pipp Petals, Zecora
+	* PonyPlush_Work: Applejack, Cheerilee, Discord, Fluttershy, Maud Pie, Sweetie Belle, Twilight Sparkle
+	* Tags are not applied to child-sized plushies.
+* Biotech: Added the Renegade Alicorn scenario.
+	* Starts with one alicorn and three baseliners.
+	* Starts with 15000 silver... and nothing else.
+	* Relations with the NPC faction are not affected (batponies will still start out hostile).
+* Core: Made some changes to Sunny Starscout.
+	* The 'Config error in MLRP_Storyteller_Sunny: minSpacingDays too high compared to max number of incidents' red error you would often see on startup has finally been fixed. (Thanks to Jamaican Castle and erdelf from the RimWorld Discord for helping with this.)
+	* Since you can't have it too easy - this IS RimWorld, after all - disease outbreaks will now occur on average every 15 days (was 30).
+* Core: Poison joke plants now require at least 70% soil fertility (was 140%).
+* Core: Poison joke joints no longer affect blood filtration.
+* Core: Poison joke joints no longer affect blood pumping.
+* Core: Increased the base hitpoints of Screwballs to 200 (was 100). Any that you've built will need to be repaired as a result of this change.
+* Core: Increased heat output of Daybreaker to 9 per second (was 6).
+* Core: Daybreaker should now act as a heater, warming rooms to to roughly 25°C (77°F).
+* Royalty: Aloe and Lotus now require 300 stuff to make (was 450).
+* Ideology: Flim and Flam now require 300 stuff to make (was 450).
+* Biotech: Fixed child-sized Starlight Glimmer plush not providing the same level of protection as the adult version.
+
+Version 4.33.98 (October 17th 2023)
+
+* Alpha Genes: Added the Batpony xenotype. (Requires Alpha Genes because that's where most of the important genes come from.)
+	* Intense UV sensitivity
+	* Night owl trait
+	* Fertility in darkness
+	* Bat wings
+	* Human ears
+	* Red or grey eyes
+	* No beards
+	* Human nose
+	* Human jawline
+	* Human headbone
+	* Horse voice
+	* Standard or thin bodies
+	* Mid/dark/ink black hair
+	* Brony trait
+	* Dark vision
+	* Human hands
+	* Great medical skill
+	* Terrible social skill
+* Alpha Genes: Added the batpony faction.
+	* Starts out hostile, but can be allied with.
+	* Works much like the main NPC faction, but is 100% batpony.
+	* Uses the same pawnkinds as the NPC faction (because I was too lazy to make new ones).
+	* Uses the same traders as the NPC faction (because I was too lazy to make new ones).
+	* I'll try not to add any more new factions (for now).
+* XML Extensions: Added a setting for the rainbow laser that lets you decide whether or not you need the Elements of Harmony to make it.
+	* Option is enabled by default.
+	* Disabling it will change the recipe for the rainbow laser to require 3 advanced components instead of the Elements.
+* Core: NPC faction pawns can now spawn with leather apparel.
+* Core: Reduced combat power of brony traders to 20 (was 45).
+* Core: Reduced combat power of regular brony mercenaries to 40 (was 60).
+* Core: Reduced combat power of melee brony mercenaries to 40 (was 60).
+* Core: Reduced combat power of elite brony mercenaries to 50 (was 75).
+* Core: Reduced combat power of brony mercenary grenadiers to 40 (was 70).
+* Core: Updated the description of the wife thrower so that it actually explains what it does.
+* Core: Reduced the wood cost of the wife thrower to 70 (was 75).
+* Core: Reduced the wood cost of the Mudbriar turret to 200 (was 300).
+* Core: Removed a lot of conversion recipes from the Daybreaker statue.
+	* The only ones left are [Silver <=> Material] and [Gold => Material].
+	* It was often better to convert materials to silver first, and then convert that silver to what you needed.
+	* This may cause a ton of one-time red errors when starting the game or loading a save, but you should be able to ignore them.
+* Royalty: Brony mercenary grenadiers can now be used by the Empire for some quests.
+* Biotech: Diamond Dog soldiers can now be used by the Empire for some quests.
+* Biotech: Diamond Dog clans should no longer send you quests. (For real this time.)
+* Biotech: As a result of the above, Diamond Dog clans no longer get along with each other.
+* Biotech: Changed tech level of the Diamond Dog faction to Medieval (was Neolithic).
+* Dubs Bad Hygiene: Fixed the harmony chip not granting pawns the bonus applied by the Pipp Petals plushie.
+
+Version 4.30.82 (October 2nd 2023)
+
+NOTE: If you are installing this update manually, you will need to go into MyLittleRimPony/Core/Languages/French/Keyed and then delete the extra 'Keyed' folder once you have extracted it, in order to remove the extra localisation file (which is in the wrong place due to my own mistake).
+
+* Vanilla Outposts Expanded: Added the 'pony weapon factory' outpost, which will send you weapons every 7.5 days. You can choose to make wife throwers, tennis ball launchers or rainbow lasers, though each requires a minimum cumulative crafting skill.
+	* Wife thrower requires at least 10 crafting.
+	* Tennis ball launcher requires at least 50 crafting.
+	* Rainbow Laser requires at least 100 crafting.
+	* You will get one weapon for each pawn in the outpost.
+* Dubs Bad Hygiene: Added Pipp Petals (-10% hygiene loss).
+	* Vanilla Achievements Expanded: Added an achievement to craft a Pipp plushie.
+	* XML Extensions: Added a setting to change whether or not Pipp is short (set to true by default).
+* Mod: Fixed C# keys not being translated into French properly.
+* Core: Fixed a rare error in which faction bases weren't being spawned properly during the setup of a new colony.
+* Core: Discord lamps can now be built using stone.
+* Core: Reduced the amount of work needed to build Discord lamps to 150 (was 300).
+* Core: The Brony Community scenario now starts with 3 steel mini-turrets (was 4).
+* Core: The Brony Community scenario now starts with wooden Screwballs (was cloth).
+* Biotech: Diamond Dogs are no longer sensitive to sunlight. This will only affect newly spawned ones; any you might have will need to have the gene removed somehow. Dev mode is probably the easiest method, but there are no doubt mods you can use.
+* Biotech: Diamond Dogs now have their own names, instead of those of the yttakin. Again, this will only apply to newly spawned ones.
+* Biotech: MLP xenotype pawns that spawn with both the brony and anti brony traits should now have the latter suppressed.
+* Biotech: The Brony Xenotypes scenario now starts with 3 steel mini-turrets (was 6).
+* Biotech: The Brony Xenotypes scenario now starts with wooden Screwballs (was cloth).
+* XML Extensions: The number of turrets you start with in the Brony Community/Xenotypes scenarios is no longer affected by whether or not pawns with the brony trait are capable of violence. It has now been set to 3 regardless.
+* Vanilla Outposts Expanded: Plushie factories now generate 150 silver per level of crafting skill assigned pawns have (was 100). This means that a pawn with 20 crafting will now generate 3000 silver, which is on par with plushies made of more expensive materials.
+* Vanilla Outposts Expanded: Plushie factories now generate silver every 5 days (was 3).
+* Vanilla Outposts Expanded: The crafting skill required by plushie factories is no longer set to whatever you changed the crafting skill requirement to in XML Extensions. I was getting reports of some weird stuff happening, so best to remove it altogether.
+
+Version 4.26.68 (September 16th 2023)
+
+* Mod: Added French localisation for C# keys.
+* Mod: Added German localisation for C# keys.
+* XML Extensions: Fixed 'Cannot read data' error when selecting the Brony Community and Brony Xenotypes scenarios.
+	* Error was only seen if XML Extensions was not enabled.
+	* Thanks to Lunysha for bringing the issue to my attention.
+
+Version 4.24.66 (September 15th 2023)
 
 IMPORTANT NOTICE: I have moved several textures to other folders, so they'll only be loaded when certain DLCs or mods are enabled. I highly doubt that this will have even the slightest impact on performance, but it's still something I've been wanting to do for a while. If you are updating the mod manually, you will need to delete the 'MyLittleRimPony' folder before extracting this update.
 
 * Core: Added two new recipes to the Daybreaker statue which let you convert 1000 silver into 833 wood and vice versa.
 	* Market value of wood is 1.2 silver (Source: RimWorld Wiki). 1000/1.2 = 833.333333333...etc.
 	* Recipes are available from game start and, unlike other Daybreaker recipes, do not require any chemfuel.
+* Core: Added translation keys for poison joke afflictions.
+* Biotech: Added a new gene which gives pawns the Brony trait.
+	* Alicorns, earth ponies, unicorns, pegasi and changelings now have it by default. (Only applies to newly spawned ones.)
 * Vanilla Factions Expanded - Deserters: Added Spitfire (building).
 	* Provides 50 regular intel or 10 critical intel in exchange for silver (at +50% of market value), medicine and 'pony-friendly foodstuffs.'
 	* The Workshop page for VFED says regular intel is valued at 100 silver and critical intel is valued at 1000 silver.
@@ -629,7 +1174,7 @@ Version 3.0.0 (October 27th 2022)
 * Core: The poison joke addiction cure kit should now be working again.
 * Core: Sweetie Bot turrets have undergone a few more upgrades, chief among them being the fact they no longer require rearming.
 	* To compensate for this, the power consumption has been increased to 350W (was 175).
-	* Furthermore, the construction cost has increased to to 600 stuff, 5 advanced components and 250 plasteel.
+	* Furthermore, the construction cost has increased to 600 stuff, 5 advanced components and 250 plasteel.
 	* You can now build Sweetie Bots out of metals such as steel and uranium.
 	* Lowered required construction skill to 12 (was 15).
 	* Increased mass to 35 (was 8).
@@ -1337,7 +1882,7 @@ Version 1.82.147 (January 29th 2022)
 * Added Shining Armour as a plushie (+15% to blunt, heat and sharp armour ratings).
 * Added patches which are applied if Vanilla Achievements Expanded is enabled.
 	* 28 achievements to aquire each item added by the mod, as well as making a legendary Rainbow Laser.
-	* Adds 2 more achievements to make the Ideology plushies, if that mod is enabled as well.
+	* Adds 2 more achievements to make the Ideology plushies, if that DLC is enabled as well.
 * Fixed the alternate recipe for the Elements of Harmony showing the finished result as a separate item.
 * Fixed the alternate recipe for the Cutie Mark Crusaders showing the finished result as a separate item.
 

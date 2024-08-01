@@ -5,8 +5,8 @@ If you are one of the artists listed below and want me to stop using your work, 
 KEY
 
 * Source provided on Derpibooru was either missing or invalid.
-** I had to edit this image before I could use it.
-*** This image is used by an item or building which is only seen if a particular mod is enabled.
+** I had to make some minor edits to this image before I could use it.
+*** This image is used by an item or building which is only seen if a particular mod or game version is enabled.
 
 CREDITS
 
@@ -27,6 +27,7 @@ Nurse Redheart: drfatalchunk (1464636)*
 Izzy Moonbow (plush): inaactive (2561243)
 Izzy Moonbow (smoke launcher): ejlightning007arts (2718787)
 Pinkie Pie: flizzick (2490254)
+Pipp Petals: ejlightning007arts (2762024)***
 Princess Cadence: princesscaramelo (2115510)
 Princess Celestia: killagouge (2058026)
 Princess Luna: chrzanek97 (2124813)
@@ -57,6 +58,8 @@ Villain Statue: prixy05 (2999547)
 
 Button Mash: luckreza8 (1004070)
 
+Thingpone: dvixie (2640948)** - Image flipped horizontally
+
 Equestrian Flag: grabusz (1589868)
 Rainbow Laser: Vector-Brony (2493108 - attributed to someone else; original link in description)
 Mudbriar: cheezedoodle96 (1709144)
@@ -72,6 +75,11 @@ Derpy Hooves: starryshineviolet (2944310)
 Party Cannon: benpictures1 (2756837)
 Marble Pie: littlejurnalina (2824560)**
 Spitfire: fikrieka (2094942)***
+Miss Harshwhinny: brony-works (1416923)
+Herbal Cure Kit: the smiling pony (3064108)
+Fanfiction (closed): Unknown Artist (280765)*** - 1.5 only
+Fanfiction (open): Unknown Artist (280756)*** - 1.5 only
+Fanfiction (shelved): Me, making full use of my -20 art skill*** - 1.5 only
 
 MAIN MENU BACKGROUNDS (Requires Vanilla Backgrounds Expanded)
 
@@ -98,6 +106,10 @@ What In Tarnation - tardifice (1662705)
 That Wasn't Very Kind Of You - wissle (2719109)
 Did Somebody Say 'Cupcakes?' - mrkat7214 (1986994)
 
+Tombstone Icon: https://game-icons.net/1x1/sbed/tombstone.html **
+Talking Icon: https://game-icons.net/1x1/skoll/talk.html
+Bat Icon: https://game-icons.net/1x1/skoll/bat.html
+
 PROJECTILES
 
 Rainbow Laser: Made by me.
@@ -106,7 +118,7 @@ Tennis ball: Taken from art by greenhoof (2560819)
 STORYTELLERS
 
 Sunny Starscout (background): Unknown Artist (3106126)
-Sunny Starscout (tiny): Unknown Artist (2700716)
+Sunny Starscout (tiny): cheezedoodle96 (2809795)
 
 OTHER IMAGES
 
@@ -124,8 +136,11 @@ Broken Wall icon (Biotech): https://game-icons.net/1x1/delapouite/broken-wall.ht
 Horseshoe icon (Biotech): https://game-icons.net/1x1/delapouite/horseshoe.html
 Insect jaws icon (Biotech): https://game-icons.net/1x1/lorc/insect-jaws.html
 Diamond Dog xenotype icon (Biotech): https://game-icons.net/1x1/lorc/diamond-hard.html
-Diamond Dog settlement icon (Biotech): https://game-icons.net/1x1/lorc/bone-gnawer.html
 Diamond Dog faction icon (Biotech): https://game-icons.net/1x1/lorc/cut-diamond.html
+Batpony xenotype icon (Biotech): https://game-icons.net/1x1/lorc/batwing-emblem.html
+Batpony xenotype faction icon (Biotech): https://game-icons.net/1x1/delapouite/bat.html
+
+Destroyed plushie: https://game-icons.net/1x1/delapouite/ball-pyramid.html
 
 SOUNDS
 

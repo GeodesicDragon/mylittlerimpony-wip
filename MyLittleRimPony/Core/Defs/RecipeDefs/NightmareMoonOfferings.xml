@@ -70,7 +70,6 @@
 	<defName>MLRP_NMM_MechSerumResurrector</defName>
 	<label>request resurrector mech serum</label>
 	<description>Offer silver in exchange for a resurrector mech serum.</description>
-	<researchPrerequisite>MedicineProduction</researchPrerequisite>
     <jobString>Making an offering to Nightmare Moon</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
@@ -88,7 +87,7 @@
 					<li>Silver</li>
 				</thingDefs>
 			</filter>
-			<count>213</count>
+			<count>426</count>
 		</li>
 	</ingredients>
 	<products>
@@ -258,7 +257,7 @@
 <RecipeDef>
 	<defName>MLRP_NMM_GlitterworldMedicine</defName>
 	<label>request glitterworld medicine x 5</label>
-	<description>Offer silver and 10 units of industrial medicine in exchange for 5 units of glitterworld medicine.</description>
+	<description>Offer silver and industrial medicine in exchange for glitterworld medicine.</description>
 	<researchPrerequisite>MedicineProduction</researchPrerequisite>
     <jobString>Making an offering to Nightmare Moon</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -435,5 +434,71 @@
 		<Neutroamine>100</Neutroamine>
 	</products>
 </RecipeDef>
-  
+
+<!--REQUEST HERBAL MEDICINE-->
+
+<RecipeDef>
+	<defName>MLRP_NMM_MedicineHerbal</defName>
+	<label>request 50 herbal medicine</label>
+	<description>Offer your surplus food in exchange for herbal medicine.</description>
+    <jobString>Making an offering to Nightmare Moon</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>300</workAmount>
+	<recipeUsers>
+		<li>MLRP_NightmareMoon</li>
+	</recipeUsers>
+    <ingredients>
+		<li>
+			<filter>
+			  <customSummary>pony-friendly foodstuffs</customSummary>
+			  <categories>
+				<li>PlantFoodRaw</li>
+			  </categories>
+			</filter>
+			<count>250</count>
+		</li>
+	</ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+	<products>
+		<MedicineHerbal>50</MedicineHerbal>
+	</products>
+</RecipeDef>
+
+<!--REQUEST 1000 RICE-->
+
+<RecipeDef>
+	<defName>MLRP_NMM_Rice</defName>
+	<label>request 1000 rice</label>
+	<description>Offer silver in exchange for 1000 rice.</description>
+    <jobString>Making an offering to Nightmare Moon</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>300</workAmount>
+	<recipeUsers>
+		<li>MLRP_NightmareMoon</li>
+	</recipeUsers>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>120</count>
+		</li>
+	</ingredients>
+	<products>
+		<RawRice>1000</RawRice>
+	</products>
+</RecipeDef>
+
 </Defs>
