@@ -501,4 +501,36 @@
 	</products>
 </RecipeDef>
 
+<!--REQUEST REINFORCED BARREL-->
+
+<RecipeDef>
+	<defName>MLRP_NMM_ReinforcedBarrel</defName>
+	<label>request reinforced barrel</label>
+	<description>Offer silver in exchange for a reinforced barrel.</description>
+	<researchPrerequisite>Mortars</researchPrerequisite>
+    <jobString>Making an offering to Nightmare Moon</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>300</workAmount>
+	<recipeUsers>
+		<li>MLRP_NightmareMoon</li>
+	</recipeUsers>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>90</count>
+		</li>
+	</ingredients>
+	<products>
+		<ReinforcedBarrel>1</ReinforcedBarrel>
+	</products>
+</RecipeDef>
+
 </Defs>

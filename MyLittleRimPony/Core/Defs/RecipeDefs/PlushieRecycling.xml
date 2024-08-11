@@ -2,7 +2,7 @@
 
 <RecipeDef>
 	<defName>MLRP_RecyclePlushies</defName>
-	<label>Recycle destroyed plushie</label>
+	<label>recycle destroyed plushie</label>
 	<description>Recycle a destroyed plushie, reclaiming some of the material originally used to make it.</description>
 	<researchPrerequisite>MLRP_PlushieRecycling</researchPrerequisite>
     <jobString>Recycling destroyed plushies</jobString>
@@ -13,7 +13,7 @@
     <allowMixingIngredients>false</allowMixingIngredients>
 	<requiredGiverWorkType>Tailoring</requiredGiverWorkType>
 	<workerClass>MyLittleRimPony.Recipe_RecyclePlushie</workerClass>
-    <workAmount>500</workAmount>
+    <workAmount>600</workAmount>
 	<recipeUsers>
 		<li>PlushieBench</li>
 	</recipeUsers>

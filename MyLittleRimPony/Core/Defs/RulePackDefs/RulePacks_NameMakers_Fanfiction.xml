@@ -17,6 +17,8 @@
 				<li>title->Princess Celestia Gets Mugged by BronyWriter</li>
 				<li>title->Letters From A Disgruntled Friendship Student by milesprower06</li>
 				<li>title->Fire and Rain by Ruirik</li>
+				<li>title->Erasure by 6-D Pegasus</li>
+				<li>title->My Little Pony Figure by Buck Swisher</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -25,7 +27,7 @@
 		<defName>Description_MLP_Fanfiction</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>desc->This work of pony fanfiction was written nearly three and a half millenia ago[book_quality]</li>
+				<li>desc->This work of pony fanfiction was written over three thousand years ago ago[book_quality]</li>
 				
 				<li>book_quality(quality[greater_than]5)->, and is in superior condition for its age.</li>
 				<li>book_quality(quality[less_than]2)->, and is barely readable due to extensive damage.</li>

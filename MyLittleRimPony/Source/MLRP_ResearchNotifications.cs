@@ -62,6 +62,16 @@ namespace MLRP_ResearchTracker
                 string text = "MLRP_NewRecipeUnlockedTextFE".Translate();
                 Find.LetterStack.ReceiveLetter(title, text, MLRP_NewFERecipe);
             }
+			
+			// STONE EXCHANGE: VANILLA RECYCLING EXPANDED MOD
+
+            if (ModsConfig.IsActive("VanillaExpanded.Recycling") && proj == DefDatabase<ResearchProjectDef>.GetNamed("VRecyclingE_ComplexRecycling"))
+            {
+                LetterDef MLRP_NewSERecipe = LetterDefOf.PositiveEvent;
+                string title = "MLRP_NewRecipeUnlockedTitle".Translate();
+                string text = "MLRP_NewRecipeUnlockedTextSE".Translate();
+                Find.LetterStack.ReceiveLetter(title, text, MLRP_NewSERecipe);
+            }
 
             // NIGHTMARE MOON: CORE
 

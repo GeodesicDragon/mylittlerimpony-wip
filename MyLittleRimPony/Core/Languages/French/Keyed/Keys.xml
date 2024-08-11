@@ -36,15 +36,13 @@
 	<MLRP_AntiBronyHasHarmonyChipAlert MayRequire="Ludeon.RimWorld.Royalty">Anti brony utilisant harmony chip</MLRP_AntiBronyHasHarmonyChipAlert>
 	<MLRP_AntiBronyHasHarmonyChipExplanation MayRequire="Ludeon.RimWorld.Royalty">Un pion ayant le trait anti-brony a une puce d'harmonie installée. Cette puce inflige une pénalité de -10 à son humeur jusqu'à ce qu'elle soit retirée.</MLRP_AntiBronyHasHarmonyChipExplanation>
 	
-	<!--C# BIOTECH-->
+	<!--RESEARCH TRACKER-->
 	
-	<MLRP_AboutSweetieBotMechLetterHeader MayRequire="Ludeon.RimWorld.Biotech">Mécanoïdes Sweetie Bot</MLRP_AboutSweetieBotMechLetterHeader>
-	<MLRP_AboutSweetieBotMechLetterText MayRequire="Ludeon.RimWorld.Biotech">Les méchanoïdes Sweetie Bot se déplacent rapidement et sont dotés d'une bonne armure, mais ils sont vulnérables lorsqu'ils sont engagés dans un combat au corps à corps. Ils conviennent mieux pour attaquer les flancs de l'ennemi, se précipiter et faire feu avant de se retirer à bonne distance. Ils peuvent également être utilisés comme montures dans les caravanes.</MLRP_AboutSweetieBotMechLetterText>
-	
-	<!--C# MODS-->
-	
-	<MLRP_XMLExtensionsDetected MayRequire="imranfish.xmlextensions">[Mon petit RimPony] XML Extensions a été détecté.</MLRP_XMLExtensionsDetected>
-	<MLRP_CEDetected MayRequire="CETeam.CombatExtended">[Mon petit RimPony] Combat Extended a été détecté.</MLRP_CEDetected>
-	<MLRP_MOPatchesDetected MayRequire="geodesicdragon.rimpony.medieval">[My Little RimPony] Des correctifs de révision médiévale ont été appliqués.</MLRP_MOPatchesDetected>
+	<MLRP_NewRecipeUnlockedTitle>Nouvelle recette(s) débloquée</MLRP_NewRecipeUnlockedTitle>
+	<MLRP_NewRecipeUnlockedTextDB>Nouvelle recette(s) disponible à la statue Daybreaker.</MLRP_NewRecipeUnlockedTextDB>
+	<MLRP_NewRecipeUnlockedTextFE>Nouvelle recette(s) disponible à la échange de tissus.</MLRP_NewRecipeUnlockedTextFE>
+	<MLRP_NewRecipeUnlockedTextSE>Nouvelle recette(s) disponible à la échange de pierres.</MLRP_NewRecipeUnlockedTextSE>
+	<MLRP_NewRecipeUnlockedTextNMM>Nouvelle recette(s) disponible à la statue Nightmare Moon.</MLRP_NewRecipeUnlockedTextNMM>
+	<MLRP_NewRecipeUnlockedTextTP MayRequire="Ludeon.RimWorld.Anomaly">Nouvelle recette(s) disponible à la Thingpone.</MLRP_NewRecipeUnlockedTextTP>
 	
 </LanguageData>

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+﻿<Defs>
 
 <!--SCREWBALL-->
 
@@ -64,7 +63,7 @@
 		<researchViewX>4</researchViewX>
 		<researchViewY>0</researchViewY>
 		<discoveredLetterTitle>About Nightmare Moon and Daybreaker</discoveredLetterTitle>
-		<discoveredLetterText>Nightmare Moon allows you to request many exotic items using silver, though it does work out to be more expensive than acquiring them normally, while Daybreaker lets you convert materials using chemfuel.\n\nPlease note that some recipes at these buildings are locked behind research; check back often to see if anything new is available.</discoveredLetterText>
+		<discoveredLetterText>Nightmare Moon allows you to request many exotic items using silver, though it does work out to be more expensive than acquiring them normally, while Daybreaker lets you convert materials using chemfuel.\n\nMany recipes at these buildings are locked behind research; you will receive a letter when new items become available.</discoveredLetterText>
 	</ResearchProjectDef>
 	
 <!--SKILLTRAINERS-->
@@ -86,13 +85,13 @@
 	<ResearchProjectDef ParentName="MLRP_TimeConsumingResearchBase">
 		<defName>MLRP_MagicMirrorResearch</defName>
 		<label>Magic mirror</label>
-		<description>Unlock the secrets of the magic mirror which connects Equestria to a whole other world.</description>
+		<description>Unlock the secrets of the magic mirror which once connected Equestria to a whole other world.</description>
 		<tab>MLRP_ResearchTab</tab>
 		<researchViewX>6</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
-<!--POWER INCREASE-->
+<!--POWER ADJUSTMENTS-->
 
 	<ResearchProjectDef ParentName="MLRP_HardResearchBase">
 		<defName>MLRP_MagicMirrorExtraPowerResearch</defName>

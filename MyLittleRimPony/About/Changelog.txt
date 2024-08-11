@@ -1,15 +1,28 @@
-Version 6.0.0 (July 29th 2024)
+Version 6.0.0 - The Localisation Update (August 8th 2024)
 
 NOTE TO SELF: Check for and delete empty files.
 
+* Added full French localisation. Ajout de la localisation complète en français.
 * Core: Removed support for version 1.4 of RimWorld.
+* Core: Removed character quotes from the lists of tips.
 * Core: Added ruined plushies.
 	* Made of various materials.
 	* Anti bronies have a chance of having up to two among their possessions.
 	* Can be recycled to recover 75 of whatever material it is made from (once the research is complete).
-	* Can be looted from tribals, outlanders, imperials (Royalty) and Diamond Dogs (Biotech).
+	* Can be looted from tribals, outlanders, pirates, imperials (Royalty) and Diamond Dogs (Biotech).
 	* If you have my Hooligans faction mod enabled, they'll drop them as well.
 	* I know the texture is crap; it's just a placeholder until I can find something better.
+* Core: Added a recipe to the Nightmare Moon statue which lets you request reinforced barrels.
+	* Costs 900 silver.
+	* Becomes available once you research mortars.
+* Core: Added a recipe to the Daybreaker statue which lets you bulk manufacture wort.
+	* Makes 25 wort at the cost of 125 hops.
+	* Does not require chemfuel.
+	* Unlocked when brewing is researched.
+* Core: Added some more names to the list for NPC brony faction pawns.
+* Biotech: Added Diamond Dog archers.
+	* Equipped with plate armour, like their melee counterparts.
+	* Armed with a greatbow if Anomaly isn't enabled; if it is, they will use nerve spikers instead.
 * Core: The plushie recycling recipe has been updated to work with ruined plushies; you can no longer use it to recycle intact ones.
 * Core: The research tracker has been moved to the main DLL file; as a result, Harmony is now required to use this mod.
 * Core: Removed Manifest.xml file.
@@ -18,6 +31,9 @@ NOTE TO SELF: Check for and delete empty files.
 * Core: Nightmare Moon is no longer accepting item returns.
 (NYT) * Core: Fixed an issue which could cause a pawn to have both the brony and anti brony traits at once.
 * Core: Fixed the bulk psychite tea recipe at the Daybreaker statue not being unlocked when the relevant research was completed.
+* Core: Fixed incorrect description for the request rice recipe at the Nightmare Moon statue.
+* Core: Fixed incorrect description on the convert uranium to silver recipe.
+* Core: Fixed incorrect label on the purchasing bluefur recipe.
 * Anomaly: All Thingpone recipes now require half the amount of twisted meat as they do silver, since I felt it was too easy to get stuff.
 	* Deadlife shell: 30 silver and 15 twisted meat.
 	* Voidsight serum: 90 silver and 45 twisted meat.
@@ -41,6 +57,9 @@ NOTE TO SELF: Check for and delete empty files.
 * Harmony: Fixed letter not being sent when researching go-juice production.
 * Harmony: Fixed letter not being sent when researching penoxycyline production.
 * Ponies of the Rim: Fixed typo in anti brony trait description.
+* Ponies of the Rim: Ponies added by this mod can no longer spawn with any of the xenotypes added by MLRP, nor any of the genes. Any pawns that already exist in your colony with either will remain as they are.
+* Vanilla Recycling Expanded: Fixed being able to make trashbricks at Daybreaker before researching complex recycling.
+* Vanilla Recycling Expanded: Buying and selling trashbricks at the Stone Exchange now requires you to research complex recycling.
 
 Version 5.42.72 (June 23rd 2024)
 

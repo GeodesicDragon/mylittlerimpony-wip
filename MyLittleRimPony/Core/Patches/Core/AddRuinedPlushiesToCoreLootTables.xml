@@ -1,7 +1,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingSetMakerDef[defName="OutlanderRaidLootMaker" or defName="TribeRaidLootMaker" or defName="PirateRaidLootMaker"]/fixedParams/filter/thingDefs</xpath>
+		<xpath>Defs/ThingSetMakerDef[defName="OutlanderRaidLootMaker" or defName="TribeRaidLootMaker" or defName="PirateRaidLootMaker"]/root/fixedParams/filter/thingDefs</xpath>
 		<value>
 			<li>PonyPlush_Ruined</li>
 		</value>

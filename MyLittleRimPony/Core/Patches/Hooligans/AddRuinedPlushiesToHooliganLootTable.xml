@@ -5,7 +5,7 @@
 			<li>Hooligan Faction</li>
 		</mods>	
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingSetMakerDef[defName="Geo_HooliganLoot"]/fixedParams/filter/thingDefs</xpath>
+			<xpath>Defs/ThingSetMakerDef[defName="Geo_HooliganLoot"]/root/fixedParams/filter/thingDefs</xpath>
 			<value>
 				<li>PonyPlush_Ruined</li>
 			</value>

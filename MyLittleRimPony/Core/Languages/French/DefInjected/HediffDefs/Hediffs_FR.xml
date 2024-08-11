@@ -1,0 +1,15 @@
+<LanguageData>
+
+	<!--EN: Cutie Pox-->
+	<MLRP_CutiePox.label>vérole mignonne</MLRP_CutiePox.label>
+	
+	<!--EN: An infection of Equestrian origin which improves a person's skills, but causes pain and requires a lot of time and medicine to treat.\n\nPawns who smoke poison joke have a chance of being afflicted with the disease.-->
+	<MLRP_CutiePox.description>Une infection d'origine équestre qui améliore les compétences d'une personne, mais qui provoque des douleurs et nécessite beaucoup de temps et de médicaments pour être soignée.\n\nLes pions qui fument de la blague empoisonnée ont une chance d'être atteints par la maladie.</MLRP_CutiePox.description>
+	
+	<!--EN: pony plushie-->
+	<MLRP_PonyPlushEquipped.label>peluche poney</MLRP_PonyPlushEquipped.label>
+	
+	<!--EN: Holding the plushie makes pain a little more bearable.-->
+	<MLRP_PonyPlushEquipped.description>Tenir la peluche rend la douleur un peu plus supportable.</MLRP_PonyPlushEquipped.description>
+
+</LanguageData>
