@@ -1199,6 +1199,43 @@
 				</Operation>
 			</apply>
 		</li>
+		
+		<!--TWILIGHT SPARKLE: USE OLD TEXTURE-->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony</modId>
+			<key>MLRP_UseOldTwilightTexture</key>
+			<defaultValue>false</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_TwilightSparkle"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/PonyPlush/TwilightSparkle_OLD</texPath>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace" MayRequire="vanillaexpanded.achievements">
+					<xpath>Defs/AchievementsExpanded.AchievementDef[defName="MLRP_Achievement_TwilightSparkle"]/texPath</xpath>
+					<value>
+						<texPath>Achievements/BookHorse_OLD</texPath>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_TwilightSparkle"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/PonyPlush/TwilightSparkle</texPath>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace" MayRequire="vanillaexpanded.achievements">
+					<xpath>Defs/AchievementsExpanded.AchievementDef[defName="MLRP_Achievement_TwilightSparkle"]/texPath</xpath>
+					<value>
+						<texPath>Achievements/BookHorse</texPath>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
 
 		<!--SETTINGS WINDOW-->
 		<li Class="XmlExtensions.CreateSettings">
@@ -1259,6 +1296,11 @@
 				<li Class="XmlExtensions.Setting.Checkbox">
 					<key>MLRP_PlushiesTaintedOnDeath</key>
 					<label>Plushies become tainted if worn by a corpse</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_UseOldTwilightTexture</key>
+					<label>Use old Twilight Sparkle texture</label>
 				</li>
 				
 				<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Dubwise.DubsBadHygiene">

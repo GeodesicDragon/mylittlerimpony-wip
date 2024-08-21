@@ -34,7 +34,7 @@
 	<MLRP_SE_OneHundredVanillaBlocks.label>acheter 500 de chaque</MLRP_SE_OneHundredVanillaBlocks.label>
 	
 	<!--EN: Purchase 500 each of granite, limestone, marble, sandstone and slate blocks.-->
-	<MLRP_SE_OneHundredVanillaBlocks.description></MLRP_SE_OneHundredVanillaBlocks.description>
+	<MLRP_SE_OneHundredVanillaBlocks.description>Acheter 500 blocs de granit, de calcaire, de marbre, de grès et d'ardoise.</MLRP_SE_OneHundredVanillaBlocks.description>
 	
 	<!--EN: Purchasing materials-->
 	<MLRP_SE_GraniteBlocks.jobString>Achat de blocs de pierre</MLRP_SE_GraniteBlocks.jobString>
