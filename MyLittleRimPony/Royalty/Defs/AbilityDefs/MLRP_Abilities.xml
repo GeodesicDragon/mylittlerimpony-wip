@@ -31,7 +31,7 @@
   <HediffDef ParentName = "PsycastHediffBase">
     <defName>MLRP_GIPsycastUsed</defName>
     <label>dazed and confused</label>
-    <description>A reaction to being psychically compelled into being more friendly.</description>
+    <description>This person is wandering in a state of mild confusion, a common side effect of the improve relations psycast.</description>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_Disorientation">

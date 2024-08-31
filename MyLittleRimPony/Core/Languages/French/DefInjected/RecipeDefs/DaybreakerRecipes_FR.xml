@@ -1,9 +1,5 @@
 <LanguageData>
 
-	<!---  --->
-	<!--BEER-->
-	<!---  --->
-
 	<!--EN: create wort x 25-->
 	<MLRP_DB_CreateTwentyFiveWort.label>créer 25 moûts</MLRP_DB_CreateTwentyFiveWort.label>
 	
@@ -15,10 +11,6 @@
 	
 	<!--EN: Create 250 bottles of beer, using chemfuel to accelerate the process.-->
 	<MLRP_DB_CreateTwoHundredFiftyBeer.description>Créer 250 bouteilles de bière, en utilisant chemfuel pour accélérer le processus.</MLRP_DB_CreateTwoHundredFiftyBeer.description>
-	
-	<!------  ------>
-	<!--COMPONENTS-->
-	<!------  ------>
 
 	<!--EN: create component x 5-->
 	<MLRP_DB_CreateComponentIndustrial.label>créer 5 composants</MLRP_DB_CreateComponentIndustrial.label>
@@ -43,10 +35,6 @@
 	
 	<!--EN: Create 10 advanced components, using chemfuel to accelerate the process.-->
 	<MLRP_DB_CreateComponentSpacerTen.description>Créer 10 composants avancés, en utilisant chemfuel pour accélérer le processus.</MLRP_DB_CreateComponentSpacerTen.description>
-	
-	<!---- ---->
-	<!--DRUGS-->
-	<!---- ---->
 
 	<!--EN: make 100 flake-->
 	<MLRP_DB_MakeFlake.label>faire 100 flake</MLRP_DB_MakeFlake.label>
@@ -95,10 +83,6 @@
 	
 	<!--EN: Convert 800 psychoid leaves into 100 yayo, using chemfuel to accelerate the process.-->
 	<MLRP_DB_MakeYayo.description>Convertir 800 feuilles psychoïdes en 100 yayo, en utilisant du chemfuel pour accélérer le processus.</MLRP_DB_MakeYayo.description>
-	
-	<!----------- ----------->
-	<!--MATERIAL CONVERSION-->
-	<!----------- ----------->
 	
 	<!--EN: convert gold to jade-->
 	<MLRP_DB_ConvertGoldIntoJade.label>conversion de l'or en jade</MLRP_DB_ConvertGoldIntoJade.label>

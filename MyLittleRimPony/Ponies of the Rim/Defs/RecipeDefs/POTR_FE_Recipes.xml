@@ -3,8 +3,8 @@
 	<RecipeDef ParentName="MLRP_FE_RecipeBase">
 		<defName>MLRP_POTR_FE_PonyFur</defName>
 		<label>exchange pony fur</label>
-		<jobString>Exchanging materials</jobString>
 		<description>Convert 100 pony fur into the market value equivalent of cloth.</description>
+		<jobString>Exchanging materials</jobString>
 		<ingredients>
 			<li>
 				<filter>

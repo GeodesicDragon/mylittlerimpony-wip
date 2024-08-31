@@ -7,28 +7,23 @@
 // Contact me via my Discord server and we'll talk! (Invite Code: BGKnpza)
 
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using UnityEngine;
 using Verse;
 
 namespace MyLittleRimPony
 {
-    [DefOf]
-    public static class MyDefOf
+
+    // GAME STARTUP
+
+    [StaticConstructorOnStartup]
+    public static class MLRP_Startup
     {
-
-        public static HediffDef MLRP_CutiePox; // Not actually needed, but if I don't have something here the welcome message doesn't appear in the log.
-        static MyDefOf()
+        static MLRP_Startup()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(MyDefOf));
             var MLRP_Version = Assembly.GetExecutingAssembly().GetName().Version.ToString(3);
-
             Log.Message("MLRP_WelcomeMessage".Translate(MLRP_Version));
-            Log.Message("MLRP_HarmonyEnabled".Translate());
-
         }
     }
 

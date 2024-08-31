@@ -1,11 +1,5 @@
 <LanguageData>
 
-	<!--EN: plushies-->
-	<Pony_Plushies.label>peluche de poney</Pony_Plushies.label>
-	
-	<!--EN: ruined plushies-->
-	<Pony_Plushie_Ruined.label>peluche poney en ruine</Pony_Plushie_Ruined.label>
-
 	<!--EN: Elements of Harmony-->
 	<MLRP_ElementsOfHarmony.label>Éléments d'harmonie</MLRP_ElementsOfHarmony.label>
 	
@@ -77,18 +71,6 @@
 	
 	<!--EN: Izzy Moonbow is a lively unicorn who is very keen to make new friends in new places.\n\nCarrying her makes you feel a bit happier, as well as more welcoming towards others.\n\n(When equipped, she will apply a hediff to the pawn that will improve their mood by 5, and boost their opinion of other pawns by 50%.)-->
 	<PonyPlush_IzzyMoonbow.description>Izzy Moonbow est une licorne pleine de vie qui a envie de se faire de nouveaux amis dans de nouveaux endroits.\n\nEn la portant, vous vous sentirez un peu plus heureux et plus accueillant envers les autres.\n\n(Lorsqu'elle est équipée, elle applique un hediff au pion qui améliore leur humeur de 5, et augmente leur opinion des autres pions de 50 %).</PonyPlush_IzzyMoonbow.description>
-
-	<!--EN: Izzy Moonbow plush-->
-	<MLRP_IzzyPlush.label>peluche de Izzy Moonbow</MLRP_IzzyPlush.label>
-	
-	<!--EN: You feel a lot happier.-->
-	<MLRP_IzzyPlush.description>Vous vous sentez beaucoup plus heureux.</MLRP_IzzyPlush.description>
-
-	<!--EN: Izzy Moonbow plush-->
-	<MLRP_IzzyThought.stages.Izzy_Moonbow_plush.label>peluche de Izzy Moonbow</MLRP_IzzyThought.stages.Izzy_Moonbow_plush.label>
-	
-	<!--EN: Izzy's smile is infectious.-->
-	<MLRP_IzzyThought.stages.Izzy_Moonbow_plush.description>Le sourire d'Izzy est contagieux.</MLRP_IzzyThought.stages.Izzy_Moonbow_plush.description>
 
 	<!--EN: Maud Pie-->
 	<PonyPlush_MaudPie.label>Maud Pie</PonyPlush_MaudPie.label>

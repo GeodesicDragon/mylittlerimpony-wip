@@ -2,7 +2,6 @@
 
 	<!--C# CORE-->
 	<MLRP_WelcomeMessage>[My Little RimPony] v{0} loaded. Remember, friendship is magic!</MLRP_WelcomeMessage><!--Shown in the log when the game loads to the main menu. {0} is the current version, and is obtained automatically.-->
-	<MLRP_HarmonyEnabled>[My Little RimPony] Harmony patches applied.</MLRP_HarmonyEnabled>
 	<MLRP_PawnCured>{0} has been cured of {1}.</MLRP_PawnCured> <!--Shown at the top of the screen when a pawn is cured using the herbal cure kit. {0} is the pawn's name and {1} is what they were cured of.-->
 	<MLRP_CureFailed>Failed to cure {0} of {1}.</MLRP_CureFailed> <!--Shown at the top of the screen when an attempt to cure a pawn using the herbal cure kit fails. Only applies to attempts to cure the Cutie Pox.-->
 	<MLRP_NothingToCure>[My Little RimPony] Warning: Attempted to cure non-existent hediff(s) on {0}.</MLRP_NothingToCure> <!--Shown in log when a poison joke cure kit is used by a pawn not suffering from an affliction it can cure. {0} is the pawn's name.-->

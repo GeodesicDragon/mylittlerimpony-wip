@@ -47,5 +47,23 @@
 	
 	<!--EN: I feel a bit better, but it doesn't change the fact that I'm being held captive.-->
 	<MLRP_PartyCannonBoostPrisoner.stages.party_cannon_effect.description>Je me sens un peu mieux, mais cela ne change rien au fait que je suis retenu en captivité.</MLRP_PartyCannonBoostPrisoner.stages.party_cannon_effect.description>
+	
+	<!--EN: poison joke withdrawal-->
+	<MLRP_PoisonJokeWithdrawalThought.stages.poison_joke_withdrawal.label>retrait de la blague sur le poison</MLRP_PoisonJokeWithdrawalThought.stages.poison_joke_withdrawal.label>
+	
+	<!--EN: I don't care what it does to me, I just need my fix!-->
+	<MLRP_PoisonJokeWithdrawalThought.stages.poison_joke_withdrawal.description>Je me fiche de ce que cette chose pourrait me faire, j'ai juste besoin de ma dose!</MLRP_PoisonJokeWithdrawalThought.stages.poison_joke_withdrawal.description>
+	
+	<!--EN: Izzy Moonbow plush-->
+	<MLRP_IzzyThought.stages.Izzy_Moonbow_plush.label>peluche de Izzy Moonbow</MLRP_IzzyThought.stages.Izzy_Moonbow_plush.label>
+	
+	<!--EN: Izzy's smile is infectious.-->
+	<MLRP_IzzyThought.stages.Izzy_Moonbow_plush.description>Le sourire d'Izzy est contagieux.</MLRP_IzzyThought.stages.Izzy_Moonbow_plush.description>
+	
+	<!--EN: anti brony dislikes bronies-->
+	<AntiBronyVsBrony.stages.anti_brony_dislikes_bronies.label>anti brony n'aime pas les bronies</AntiBronyVsBrony.stages.anti_brony_dislikes_bronies.label>
+	
+	<!--EN: fellow brony-->
+	<BronyLikesBrony.stages.fellow_brony.label>est aussi un brony</BronyLikesBrony.stages.fellow_brony.label>
 
 </LanguageData>

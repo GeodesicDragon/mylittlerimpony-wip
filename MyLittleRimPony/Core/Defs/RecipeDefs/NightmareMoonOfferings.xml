@@ -452,7 +452,6 @@
     <ingredients>
 		<li>
 			<filter>
-			  <customSummary>pony-friendly foodstuffs</customSummary>
 			  <categories>
 				<li>PlantFoodRaw</li>
 			  </categories>

@@ -2,16 +2,15 @@
 
 	<!--C# CORE-->
 	<MLRP_WelcomeMessage>[Mon petit RimPony] v{0} chargé. N'oubliez pas que l'amitié est magique!</MLRP_WelcomeMessage><!--Afficher dans le journal lorsque le jeu se charge dans le menu principal. {0} est la version actuelle et est obtenue automatiquement.-->
-	<MLRP_HarmonyEnabled>[Mon petit RimPony] Application des correctifs d'harmonie.</MLRP_HarmonyEnabled>
 	<MLRP_PawnCured>{0} a été guéri de {1}.</MLRP_PawnCured> <!--S'affiche en haut de l'écran lorsqu'un pion est soigné à l'aide du kit de guérison des blagues sur le poison. {0} est le nom du pion et {1} ce dont il a été guéri.-->
-	<MLRP_CureFailed>N'a pas réussi à guérir {0} de {1}.</MLRP_CureFailed> <!--S'affiche en haut de l'écran lorsque la tentative de guérison d'un pion à l'aide de la trousse de soins échoue. Ne s'applique qu'aux tentatives de guérison de la variole de la cutie.-->
+	<MLRP_CureFailed>Échec de la recherche hediffs curables sur {0}.</MLRP_CureFailed> <!--S'affiche en haut de l'écran lorsque la tentative de guérison d'un pion à l'aide de la trousse de soins échoue. Ne s'applique qu'aux tentatives de guérison de la variole de la cutie.-->
 	<MLRP_NothingToCure>[Mon petit RimPony] Avertissement : Tentative de guérison de hediff(s) inexistant(s).</MLRP_NothingToCure> <!--Shown in log when poison joke cure kit is used on a pawn not suffering from a poison joke and/or magical cake addiction.-->
 	<MLRP_AntiBronyHasPlushieAlert>Anti brony utilisant la peluche</MLRP_AntiBronyHasPlushieAlert> <!--Shown at side of screen when a pawn with the anti brony trait has a plushie equipped.-->
 	<MLRP_AntiBronyHasPlushieExplanation>Un pion avec le trait anti brony a une peluche de poney équipée, ce qui causera une pénalité d'humeur jusqu'à ce qu'elle soit abandonnée. Il pourrait être intéressant d'attribuer aux anti-bronys une tenue distincte afin d'éviter cela.</MLRP_AntiBronyHasPlushieExplanation>
 	<MLRP_PoisonJokeLetterTitle>Affliction de la blague du poison</MLRP_PoisonJokeLetterTitle> <!--Title of letter received after a pawn smokes poison joke.-->
-	<MLRP_PoisonJokeLetterText>Fumer une blague du poison a donné à {0} ce qui suit: {1}</MLRP_PoisonJokeLetterText> <!--Text of letter received after a pawn smokes poison joke. {0} is the pawn's name and {1} is what they were afflicted with; translations for afflictions are below.-->
+	<MLRP_PoisonJokeLetterText>Fumer une blague du poison a donné à {0} ce qui suit: {1}</MLRP_PoisonJokeLetterText> <!--Texte de la lettre reçue après qu'un pion a fumé une blague empoisonnée. {0} est le nom du pion et {1} ce dont il a été affligé ; les traductions des afflictions sont ci-dessous.-->
 	
-	<!--POISON JOKE AFFLICTIONS: MUST BE LOWER CASE UNLESS OTHERWISE SPECIFIED-->
+	<!--POISON JOKE AFFLICTIONS-->
 	
 	<MLRP_PoisonJokeGoodConsciousness>Fumer une blague du poison a donné à {0} ce qui suit: accrue de l'état de conscience</MLRP_PoisonJokeGoodConsciousness>
 	<MLRP_PoisonJokeBadConsciousness>Fumer une blague du poison a donné à {0} ce qui suit: diminution de l'état de conscience</MLRP_PoisonJokeBadConsciousness>

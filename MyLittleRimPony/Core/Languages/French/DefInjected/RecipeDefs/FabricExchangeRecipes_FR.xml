@@ -1,16 +1,5 @@
 <LanguageData>
 
-	<!---  --->
-	<!--BASE-->
-	<!---  --->
-
-	<!--EN: Purchasing materials-->
-	<!--<RecipeDef.MLRP_FE_RecipeBase.jobString>Achats de textiles</RecipeDef.MLRP_FE_RecipeBase.jobString>-->
-	
-	<!----- ----->
-	<!--RECIPES-->
-	<!----- ----->
-
 	<!--EN: purchase alpaca wool-->
 	<MLRP_FE_WoolAlpaca.label>acheter de la laine d'alpaga</MLRP_FE_WoolAlpaca.label>
 	

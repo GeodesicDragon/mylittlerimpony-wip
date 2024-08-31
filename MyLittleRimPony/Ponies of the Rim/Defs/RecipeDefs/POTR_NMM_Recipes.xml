@@ -5,6 +5,7 @@
 		<defName>MLRP_POTR_NMM_BionicWing</defName>
 		<label>request bionic wing</label>
 		<description>Offer silver in exchange for a bionic wing.</description>
+		<jobString>Making an offering to Nightmare Moon</jobString>
 		<ingredients>
 			<li>
 				<filter>

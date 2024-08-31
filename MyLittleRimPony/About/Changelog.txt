@@ -1,7 +1,5 @@
 Version 6.0.0 (August 8th 2024)
 
-NOTE TO SELF: Check for and delete empty files.
-
 * Added French localisation. Ajout de la localisation en français.
 * Core: Removed support for version 1.4 of RimWorld.
 * Core: Removed character quotes from the lists of tips.
@@ -66,7 +64,7 @@ NOTE TO SELF: Check for and delete empty files.
 * Harmony: Fixed letter not being sent when researching go-juice production.
 * Harmony: Fixed letter not being sent when researching penoxycyline production.
 * Ponies of the Rim: Fixed typo in anti brony trait description.
-* Ponies of the Rim: Ponies added by this mod can no longer spawn with any of the xenotypes added by MLRP, nor any of the genes. Any pawns that already exist in your colony with either will remain as they are.
+* Ponies of the Rim: Ponies added by this mod can no longer spawn as any of the xenotypes added by MLRP, nor with any of the genes. Any pawns that already exist in your colony with either will remain as they are.
 * Vanilla Recycling Expanded: Fixed being able to make trashbricks at Daybreaker before researching complex recycling.
 * Vanilla Recycling Expanded: Buying and selling trashbricks at the Stone Exchange now requires you to research complex recycling.
 

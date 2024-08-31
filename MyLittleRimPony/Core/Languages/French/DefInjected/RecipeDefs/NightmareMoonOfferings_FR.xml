@@ -1,9 +1,5 @@
 <LanguageData>
 
-	<!--------->
-	<!--ITEMS-->
-	<!--------->
-
 	<!--EN: request persona core-->
 	<MLRP_NMM_AIPersonaCore.label>requête noyau IA de personnalité</MLRP_NMM_AIPersonaCore.label>
 	
@@ -82,9 +78,6 @@
 	<!--EN: Offer your surplus food in exchange for herbal medicine.-->
 	<MLRP_NMM_MedicineHerbal.description>Offrez vos surplus de nourriture en échange de plantes médicinales.</MLRP_NMM_MedicineHerbal.description>
 	
-	<!--EN: pony-friendly foodstuffs-->
-	<MLRP_NMM_MedicineHerbal.ingredients.li.filter.customSummary>aliments adaptés aux poneys</MLRP_NMM_MedicineHerbal.ingredients.li.filter.customSummary>
-
 	<!--EN: request 1000 rice-->
 	<MLRP_NMM_Rice.label>requête 1000 riz</MLRP_NMM_Rice.label>
 	
@@ -97,10 +90,6 @@
 	<!--EN: Offer silver in exchange for a reinforced barrel.-->
 	<MLRP_NMM_ReinforcedBarrel.description>Offrez de l'argent en échange pour un canon renforcé.</MLRP_NMM_ReinforcedBarrel.description>
 	
-	<!------------->
-	<!--ARCHOTECH-->
-	<!------------->
-
 	<!--EN: request archotech arm-->
 	<MLRP_NMM_ArchotechArm.label>requête bras archotech</MLRP_NMM_ArchotechArm.label>
 	
@@ -118,10 +107,6 @@
 	
 	<!--EN: Offer many expensive items in exchange for an archotech leg.-->
 	<MLRP_NMM_ArchotechLeg.description>Offrir de nombreux objets coûteux en échange d'un jambe archotech.</MLRP_NMM_ArchotechLeg.description>
-	
-	<!----------->
-	<!--BIONICS-->
-	<!----------->
 
 	<!--EN: request bionic eye-->
 	<MLRP_NMM_BionicEye.label>requête œil bionique</MLRP_NMM_BionicEye.label>
@@ -176,11 +161,7 @@
 	
 	<!--EN: Offer silver in exchange for a bionic jaw.-->
 	<MLRP_NMM_BionicJaw.description>Offrez de l'argent en échange pour un mâchoire bionique</MLRP_NMM_BionicJaw.description>
-	
-	<!----------------->
-	<!--SKILLTRAINERS-->
-	<!----------------->
-	
+		
 	<!--I couldn't find the proper translated names for these items.-->
 	<!--Je n'ai pas pu trouver les noms traduits appropriés pour ces articles.-->
 
