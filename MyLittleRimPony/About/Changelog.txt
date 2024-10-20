@@ -1,6 +1,67 @@
-Version 6.0.0 (August 8th 2024)
+Version 6.5.43 (October 12th 2024)
+
+* Core: Herbal cure kits now have a 10% chance of curing the plague.
+* Core: Split the Daybreaker tip into two separate entries, as the original was too long to be displayed properly.
+* Core: Fixed being able to make poison joke joints before researching drug production.
+* Core: Increased the number of herbal cure kits produced at a time to 2 (was 1).
+* Biotech: Researching how to gestate Sweetie Bot mechanoids now requires standard mechtech (was high). This is a change I forgot to make when I changed their gestation recipe to use standard subcores instead of high subcores.
+* Biotech: Requesting deathrest capacity serums from Nightmare Moon no longer requires hemogen, but the silver cost is now 1750 (was 1250).
+* Combat Extended: Rainbow Dash now reduces suppressability by 5% on top of her other bonuses.
+* Combat Extended: Fixed 'Config error in MLRP_WeaponisedArrogance: is a bullet but has no damageDef' error.
+* Combat Extended: Increased sharp piercing of harmony lasers to 32 (was 25). (1)
+* Combat Extended: Increased blunt piercing of harmony lasers to 58 (was 35). (1)
+* Combat Extended: Harmony lasers now have a speed rating of 151. (1)
+* Combat Extended: NPC faction settlements, bulk goods traders and combat suppliers are now guaranteed to stock between 5 and 25 Cadence javelins.
+* Combat Extended: NPC faction settlements, bulk goods traders and combat suppliers are now guaranteed stock between 30 and 120 harmony lasers.
+* Combat Extended: NPC faction settlements, bulk goods traders and combat suppliers are now guaranteed stock between 1 and 10 tennis balls.
+* Combat Extended: NPC faction settlements, bulk goods traders and combat suppliers are now guaranteed stock between 100 and 500 wooden bullets.
+* Combat Extended/Vanilla Achievements Expanded: Updated the texture of the 'A Whole Lotta Love' achievement to be less blurry.
+* Combat Extended/Vanilla Achievements Expanded: Updated the texture of the 'Wimbledon This Ain't' achievement to be less blurry.
+* Combat Extended/Vanilla Achievements Expanded: Updated the texture of the 'Hazardous Harmonious Materials' achievement to be less blurry.
+* Combat Extended/Vanilla Achievements Expanded: Updated the texture of the 'Splinters, Splinters Everywhere' achievement to be less blurry.
+* Vanilla Achievements Expanded: Changed the texture of the 'Special Delivery!' achievement.
+
+1. This change should put harmony lasers on par with AP charged rifle ammo.
+
+Version 6.5.23 (October 11th 2024)
+
+* Higher Power: Added a patch which will increase the power output of Screwballs by an additional 10% once advanced power is researched.
+* Combat Extended: Added a recipe to the Nightmare Moon statue which lets you request 100 units of FSX in exchange for 1130 silver.
+* Combat Extended: Added a recipe to the Nightmare Moon statue which lets you request 100 units of prometheum in exchange for 900 silver.
+* Vanilla Backstories Expanded: Added French localisation.
+* XML Extensions: Added the ability to configure how many materials are given when recycling destroyed plushies.
+	* Minimum: 75
+	* Maximum: 150
+	* Default: 75
+* Core: Fixed some C# keys not being localised into German properly.
+* Core: Plushie traders now carry up to 3 ruined plushies.
+* Core: Ruined plushies are now flammable.
+* Core: Researching the ability to request archotech items from Nightmare Moon now requires you to have researched bionic replacements first.
+* Core: Fixed duplicate word in fanfiction quality description.
+* Core: The texture for the Daybreaker statue now remains the same regardless of which direction it is rotated.
+* Core: The texture for the Nightmare Moon statue now remains the same regardless of which direction it is rotated.
+* Core: The texture for the Fabric Exchange now remains the same regardless of which direction it is rotated.
+* Core: The texture for the Stone Exchange now remains the same regardless of which direction it is rotated.
+* Biotech: Fixed ruined plushies not being dropped by Diamond Dogs.
+* Biotech: Ruined plushies are now exclusively dropped by Diamond Dogs.
+* Biotech: Diamond Dogs no longer drop jade, plasteel, steel and uranium.
+* Combat Extended: Fixed Sweetie Bot turrets not firing properly.
+* Combat Extended: Fixed a rare bug which would prevent you from building or reinstalling Sweetie Bot turrets.
+* Combat Extended: Fixed missing ammo in the Brony Community scenario.
+* Combat Extended: Patched the request antigrain warhead recipe at the Nightmare Moon statue to use mod-relevant terminology.
+* Combat Extended: Increased the amount of blunt/sharp/heat protection provided by the Shining Armour plushie to 5/5/0.3 (was 1/1/0.15).
+* Combat Extended: The Shining Armour plushie now provides protection to the torso as well as the waist.
+* Combat Extended: Fixed wooden bullets showing as not being patched. They have a base damage of 1, and a sharp AP rating of 3.
+* Combat Extended/Biotech: Increased the amount of blunt/sharp/heat protection provided by the child Shining Armour plushie to 10/10/0.6 (was 2/2/0.3).
+* Combat Extended/Biotech: The child Shining Armour plushie now provides protection to the torso as well as the waist.
+* Combat Extended/Biotech: Fixed missing ammo in the Brony Xenotypes scenario.
+* Vanilla Factions Expanded - Deserters: Reduced the amount of standard intel given by the request intel recipe to 10 (was 25). The cost is unchanged.
+
+Version 6.0.0 (August 31st 2024)
 
 * Added French localisation. Ajout de la localisation en français.
+	* Les traductions ont été effectuées via DeepL. Si elles sont incorrectes, merci de me le faire savoir via mon serveur Discord.
+	* Thanks to Thrawn, IL Whisperer from the official RimWorld server for helping me fix some localisation issues.
 * Core: Removed support for version 1.4 of RimWorld.
 * Core: Removed character quotes from the lists of tips.
 * Core: Added ruined plushies.

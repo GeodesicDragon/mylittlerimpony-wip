@@ -43,7 +43,6 @@
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
-			<!--<li>CE_AutoEnableCrafting_FabricationBench</li>-->
 		</tradeTags>
 		<thingCategories>
 			<li>MLRP_Ammo</li>
@@ -53,6 +52,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<ammoClass>ArmorPiercing</ammoClass>
+		<tradeability>Sellable</tradeability>
+		<destroyOnDrop>False</destroyOnDrop>
 	</ThingDef>
 
 	<!-- Projectile is already defined elsewhere -->

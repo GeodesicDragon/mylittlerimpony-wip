@@ -20,7 +20,7 @@
 					<count>1000</count>
 				</tracker>
 				
-				<texPath>Things/AmmoBox/Ammo_CadenceJavelins</texPath>
+				<texPath>Achievements/AWholeLottaLove</texPath>
 				<points>50</points>
 			</AchievementsExpanded.AchievementDef>
 			
@@ -35,7 +35,7 @@
 					<count>1000</count>
 				</tracker>
 				
-				<texPath>Things/AmmoBox/Ammo_TennisBalls</texPath>
+				<texPath>Achievements/WimbledonThisAint</texPath>
 				<points>50</points>
 			</AchievementsExpanded.AchievementDef>
 			
@@ -50,7 +50,7 @@
 					<count>10000</count>
 				</tracker>
 				
-				<texPath>Things/AmmoBox/Ammo_HarmonyLaser</texPath>
+				<texPath>Achievements/HazardousHarmoniousMaterials</texPath>
 				<points>50</points>
 			</AchievementsExpanded.AchievementDef>
 			
@@ -65,7 +65,7 @@
 					<count>3000</count>
 				</tracker>
 				
-				<texPath>Things/AmmoBox/Ammo_WoodenBullets</texPath>
+				<texPath>Achievements/SplintersSplintersEverywhere</texPath>
 				<points>50</points>
 			</AchievementsExpanded.AchievementDef>
 		</value>
