@@ -71,4 +71,28 @@
     </FireModes>
   </Operation>
   
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_Weaponless"]/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>1.5</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<requireLineOfSight>false</requireLineOfSight>
+					<defaultProjectile>MLRP_WeaponisedArrogance</defaultProjectile>
+					<warmupTime>0</warmupTime>
+					<range>10</range>
+					<burstShotCount>3</burstShotCount>
+					<ticksBetweenBurstShots>250</ticksBetweenBurstShots>
+					<targetParams>
+						<canTargetLocations>false</canTargetLocations>
+					</targetParams>
+					<consumeFuelPerShot>1</consumeFuelPerShot>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+  
 </Patch>

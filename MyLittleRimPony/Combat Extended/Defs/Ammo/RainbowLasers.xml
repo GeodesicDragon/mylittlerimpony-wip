@@ -27,6 +27,7 @@
 		<label>Harmony Lasers</label>
 		<ammoTypes>
 			<Ammo_HarmonyLaser>Projectile_HarmonyRainbow</Ammo_HarmonyLaser>
+			<Ammo_HarmonyLaser_Sabot>Projectile_HarmonyRainbow_Sabot</Ammo_HarmonyLaser_Sabot>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -34,8 +35,8 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
 		<defName>Ammo_HarmonyLaser</defName>
-		<label>Harmony lasers</label>
-		<description>Ammo for the Rainbow Laser and Sweetie Bot turret.\n\nVery bright and colourful.</description>
+		<label>Harmony lasers (AP)</label>
+		<description>Ammo for the Rainbow Laser and Sweetie Bot turret.\n\nVery bright and colourful, but also quite deadly.</description>
 		<statBases>
 			<Mass>0.025</Mass>
 			<Bulk>0.02</Bulk>
@@ -62,9 +63,9 @@
 
 	<RecipeDef ParentName="ChargeAmmoRecipeBase">
 		<defName>MakeAmmo_HarmonyLaser</defName>
-		<label>make Harmony lasers x500</label>
-		<description>Craft 500 shots' worth of Harmony lasers.</description>
-		<jobString>Making harmony lasers.</jobString>
+		<label>make Harmony lasers (AP) x500</label>
+		<description>Craft 500 Harmony lasers (AP).</description>
+		<jobString>Making harmony lasers (AP).</jobString>
 		<workAmount>60</workAmount>
 		<recipeUsers>
 			<li>PlushieBench</li>

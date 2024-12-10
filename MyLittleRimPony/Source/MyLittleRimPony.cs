@@ -7,12 +7,10 @@
 // Contact me via my Discord server and we'll talk! (Invite Code: BGKnpza)
 
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Verse;
-using Verse.AI;
 
 namespace MyLittleRimPony
 {
@@ -140,100 +138,6 @@ namespace MyLittleRimPony
         }
     }
 
-    // BRONIES LOVE ACTUAL PONIES
-
-    public class ThoughtWorker_BronyLovesPony : ThoughtWorker
-    {
-        protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
-        {
-            if (ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
-            {
-                if (!p.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_BronyTrait")))
-                {
-                    return false;
-                }
-                if (otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pegasus") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Unicorn"))
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-    }
-
-    public class Thought_BronyLovesPony : Thought_SituationalSocial
-    {
-        public override float OpinionOffset()
-        {
-            if (!ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
-            {
-
-            }
-            else
-            {
-                if (ThoughtUtility.ThoughtNullified(pawn, def))
-                {
-                    return 0f;
-                }
-                if (pawn.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_BronyTrait")))
-                {
-                    if (otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pegasus") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Unicorn"))
-                    {
-                        return 20f;
-                    }
-                }
-            }
-            return 0f;
-        }
-    }
-
-    // ANTI BRONIES HATE ACTUAL PONIES
-
-    public class ThoughtWorker_AntiBronyHatesPony : ThoughtWorker
-    {
-        protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
-        {
-            if (ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
-            {
-                if (!p.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_AntiBronyTrait")))
-                {
-                    return false;
-                }
-                if (otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pegasus") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Unicorn"))
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-    }
-
-    public class Thought_AntiBronyHatesPony : Thought_SituationalSocial
-    {
-        public override float OpinionOffset()
-        {
-            if (!ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
-            {
-
-            }
-            else
-            {
-                if (ThoughtUtility.ThoughtNullified(pawn, def))
-                {
-                    return 0f;
-                }
-                if (pawn.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_AntiBronyTrait")))
-                {
-                    if (otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pegasus") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Unicorn"))
-                    {
-                        return -120f; // Needs to be this high in order to negate the +20 bonus from the fact that ponies are seen by all as physically appealing.
-                    }
-                }
-            }
-            return 0f;
-        }
-    }
-
     // CURE POISON JOKE ADDICTION
 
     public class PoisonJokeAddictionCure : IngestionOutcomeDoer
@@ -296,6 +200,10 @@ namespace MyLittleRimPony
                         Messages.Message("MLRP_PawnCured".Translate(pawn, hediff.Label), MessageTypeDefOf.TaskCompletion, historical: false);
                         break;
                     case "MagicalCakeTolerance": // RimPonk
+                        pawn.health.RemoveHediff(hediff);
+                        Messages.Message("MLRP_PawnCured".Translate(pawn, hediff.Label), MessageTypeDefOf.TaskCompletion, historical: false);
+                        break;
+                    case "Diarrhea": // Dubs Bad Hygiene
                         pawn.health.RemoveHediff(hediff);
                         Messages.Message("MLRP_PawnCured".Translate(pawn, hediff.Label), MessageTypeDefOf.TaskCompletion, historical: false);
                         break;

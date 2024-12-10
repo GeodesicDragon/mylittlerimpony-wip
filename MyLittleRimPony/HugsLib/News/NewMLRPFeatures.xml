@@ -8,6 +8,24 @@
 	</HugsLib.UpdateFeatureDef>
 	
 	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
+		<defName>MLRP_Version_63993</defName>
+		<assemblyVersion>6.39.93</assemblyVersion>
+		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Core: Letters sent by the research tracker now tell you what recipes have been unlocked.\n- Core: Added a new recipe to the Daybreaker statue which lets you convert 100 gold into 833 wood.\n- Royalty: Added two new recipes to the Nightmare Moon statue which let you request psychic readers and psychic harmonisers.\n- Biotech: Added a new recipe to the Daybreaker statue which allows you to safely dispose of toxic waste, 250 at a time.\n- Alpha Genes: Added a new recipe to the Fabric Exchange which allows you to purchase 100 ultima fabric for 500 silver.\n\n&lt;b&gt;WHAT'S CHANGED?&lt;/b&gt;\n\n- Core: Renamed the 'plushie workbench' to the 'pony workbench.'\n- Biotech: The Princess Cadence plushie now increases fertility by 25% on top of her usual bonus. ;)\n- Dubs Bad Hygiene: The recipe to make chemfuel from fecal sludge is now unlocked after researching biofuel refining.\n- Higher Power: Increased the power output bonus given to Screwballs after researching advanced power to 50% (was 10%).\n\nPlease refer to the changelog for more info!</content>
+	</HugsLib.UpdateFeatureDef>
+	
+	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
+		<defName>MLRP_Version_63382</defName>
+		<assemblyVersion>6.33.82</assemblyVersion>
+		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Core: Starlight Glimmer plushies can now be equipped in their very own apparel slot.\n- Royalty: You can now request psychic harmonizers from Nightmare Moon (once you complete the newly added research project).\n- Allergies: Added Meadowbrook (-25% allergic sensitivity).\n- Dubs Bad Hygiene: You can now create 700 chemfuel using 1500 fecal sludge at the Daybreaker statue (once you research septic tanks).\n- Ponies of the Rim: Bronies now suffer mood penalties if they wear pony fur apparel or eat pony meat.\n- Ponies of the Rim: Anti bronies now gain mood bonuses if they wear pony fur apparel or eat pony meat.\n- Ponies of the Rim: More compatibility patches have been added.\n- Vanilla Achievements Expanded: Four new achievements have been added (one is for making the new plush added with the Allergies mod).\n\n&lt;b&gt;WHAT'S CHANGED?&lt;/b&gt;\n\n- Core: Raiders will no longer target your Discord lamps.\n- Royalty: Requesting psychic neuroformers from Nightmare Moon now requires you to complete the aforementioned newly added research.\n- Vanilla Achievements Expanded: Some achievements have had their points value nerfed.\n\nPlease refer to the changelog for more info!</content>
+	</HugsLib.UpdateFeatureDef>
+	
+	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
+		<defName>MLRP_Version_6956</defName>
+		<assemblyVersion>6.9.56</assemblyVersion>
+		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Core: Herbal cure kits are now made in batches of 2, and have a 10% chance of curing the plague.\n- Combat Extended: Harmony lasers now come in Sabot form.\n- Dubs Bad Hygiene: You can now request bionic bladders and hygiene enhancers from Nightmare Moon once you complete the hygiene bionics research.\n- Combat Extended: Rainbow Dash now reduces suppressability by 5%.\n\n&lt;b&gt;WHAT'S CHANGED?&lt;/b&gt;\n\n- Biotech: Requesting deathrest capacity serums from Nightmare Moon no longer requires hemogen, but the silver cost has gone up to compensate.\n- Combat Extended: Armour piercing harmony lasers have had their sharp and blunt piercing damage increased.\n\nPlease refer to the changelog for more info!</content>
+	</HugsLib.UpdateFeatureDef>
+	
+	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
 		<defName>MLRP_Version_600</defName>
 		<assemblyVersion>6.0.0</assemblyVersion>
 		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\nThe mod is now available in French.\n\n- Core: Support for RimWorld 1.4 has been removed.\n- Core: You can now request reinforced barrels from Nightmare Moon once you research mortars.\n- Core: Enemies now have a chance to drop ruined plushies, which you can recycle at the plushie bench to get some materials.\n- Core: Nightmare Moon is no longer accepting item returns.\n- Core: Once you've researched brewing, Daybreaker will be able to help you make wort.\n- Biotech: The Diamond Dogs have learned archery.\n- Anomaly: All Thingpone recipes now require twisted meat as well as silver.\n- Ponies of the Rim: Ponies will no longer spawn with the xenotypes and/or genes added by My Little RimPony.\n\nRefer to the changelog for full details on all the changes! (There's a lot.)</content>
@@ -22,25 +40,25 @@
 	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
 		<defName>MLRP_Version_445109</defName>
 		<assemblyVersion>4.45.109</assemblyVersion>
-		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Core: Added Miss Harshwhinny, a passive cooler that can freeze a room at twice the fuel cost\n- Biotech: Added the Renegade Alicorn scenario\n\n&lt;b&gt;WHAT'S CHANGED?&lt;/b&gt;\n\n- Core: Poison joke plants now require 70% soil fertility (was 140%)\n- Core: Doubled the hitpoints of Screwballs\n\nPlease refer to the changelog for more info!</content>
+		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Core: Added Miss Harshwhinny, a passive cooler that can freeze a room at twice the fuel cost.\n- Biotech: Added the Renegade Alicorn scenario.\n\n&lt;b&gt;WHAT'S CHANGED?&lt;/b&gt;\n\n- Core: Poison joke plants now require 70% soil fertility (was 140%).\n- Core: Doubled the hitpoints of Screwballs.\n\nPlease refer to the changelog for more info!</content>
 	</HugsLib.UpdateFeatureDef>
 	
 	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
 		<defName>MLRP_Version_43398</defName>
 		<assemblyVersion>4.33.98</assemblyVersion>
-		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Biotech: Added the batpony xenotype and faction (requires Alpha Genes)\n- Removed many of the conversion recipes from the Daybreaker statue\n- Reduced combat power of NPC faction pawns to hopefully allow more to spawn during raids or other events\n\nPlease refer to the changelog for more info!</content>
+		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Biotech: Added the batpony xenotype and faction (requires Alpha Genes).\n- Removed many of the conversion recipes from the Daybreaker statue.\n- Reduced combat power of NPC faction pawns to hopefully allow more to spawn during raids or other events.\n\nPlease refer to the changelog for more info!</content>
 	</HugsLib.UpdateFeatureDef>
 	
 	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
 		<defName>MLRP_Version_41738</defName>
 		<assemblyVersion>4.17.38</assemblyVersion>
-		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Added a bunch of recipes to the Daybreaker statue which allow you to synthesise drugs in batches of 100, using half the regular amount of chemfuel\n- Biotech: Added the Diamond Dog xenotype and faction\n\nPlease refer to the changelog for more info!</content>
+		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- Added a bunch of recipes to the Daybreaker statue which allow you to synthesise drugs in batches of 100, using half the regular amount of chemfuel.\n- Biotech: Added the Diamond Dog xenotype and faction.\n\nPlease refer to the changelog for more info!</content>
 	</HugsLib.UpdateFeatureDef>
 	
 	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
 		<defName>MLRP_Version_4431</defName>
 		<assemblyVersion>4.4.31</assemblyVersion>
-		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- New Storyteller: Sunny Starscout (more friends and less enemies)\n- Biotech: The Brony Xenotypes scenario now includes a changeling\n- All of the pony xenotypes now get along with each other\n- Changelings can now come in a variety of colours\n- Poison joke now has a chance of giving pawns the Cutie Pox\n- Added Alpha genes patch for alicorns and pegasi which will give newly spawned ones a shiny pair of wings\n\nPlease refer to the changelog for more info!</content>
+		<content>&lt;b&gt;WHAT'S NEW?&lt;/b&gt;\n\n- New Storyteller: Sunny Starscout (more friends and less enemies).\n- Biotech: The Brony Xenotypes scenario now includes a changeling.\n- All of the pony xenotypes now get along with each other.\n- Changelings can now come in a variety of colours.\n- Poison joke now has a chance of giving pawns the Cutie Pox.\n- Added Alpha genes patch for alicorns and pegasi which will give newly spawned ones a shiny pair of wings.\n\nPlease refer to the changelog for more info!</content>
 	</HugsLib.UpdateFeatureDef>
 	
 	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
@@ -51,7 +69,7 @@
 	<HugsLib.UpdateFeatureDef ParentName="MLRP_UpdateNewsBase">
 		<defName>MLRP_Version_400</defName>
 		<assemblyVersion>4.0.0</assemblyVersion>
-		<content>&lt;b&gt;Welcome to the Xenotypes Update!&lt;/b&gt;\n\n&lt;i&gt;What's New?&lt;/i&gt;\n\n- New Building: Marble Pie's Rock Exchange\n- Plushies now have their own item slot\n- Biotech: Four new pony based xenotypes\n- Biotech: New xenotypes scenario</content>
+		<content>&lt;b&gt;Welcome to the Xenotypes Update!&lt;/b&gt;\n\n&lt;i&gt;What's New?&lt;/i&gt;\n\n- New Building: Marble Pie's Rock Exchange.\n- Plushies now have their own item slot.\n- Biotech: Four new pony based xenotypes.\n- Biotech: New xenotypes scenario.</content>
 	</HugsLib.UpdateFeatureDef>
 	
 </Defs>

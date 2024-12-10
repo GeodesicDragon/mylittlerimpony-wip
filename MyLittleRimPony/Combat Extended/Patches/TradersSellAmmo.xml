@@ -43,8 +43,8 @@
 					<max>250</max>
 				</countRange>
 				<thingDefCountRange>
-					<min>4</min>
-					<max>4</max>
+					<min>5</min>
+					<max>5</max>
 				</thingDefCountRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">

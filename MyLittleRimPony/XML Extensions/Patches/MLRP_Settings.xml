@@ -14,6 +14,13 @@
 						<costStuffCount>{MLRP_PlushiesCloth}</costStuffCount>
 					</value>
 				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>{MLRP_PlushiesCloth}</costStuffCount>
+					</value>
+				</Operation>
 			</apply>
 		</li>
 		
@@ -61,8 +68,16 @@
 										<costStuffCount>{MLRP_DB_ChildPlushStuffValueRounded}</costStuffCount>
 									</value>
 								</Operation>
+								
+								<Operation Class="PatchOperationReplace">
+									<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer_Child"]/costStuffCount</xpath>
+									<value>
+										<costStuffCount>{MLRP_DB_ChildPlushStuffValueRounded}</costStuffCount>
+									</value>
+								</Operation>
 							</apply>
 						</Operation>
+		
 					</apply>
 				</Operation>
 			</apply>
@@ -102,6 +117,20 @@
 						<Crafting>{MLRP_PlushieCraftingSkill}</Crafting>
 					</value>
 				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer"]/recipeMaker/skillRequirements/Crafting</xpath>
+					<value>
+						<Crafting>{MLRP_PlushieCraftingSkill}</Crafting>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+					<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer_Child"]/recipeMaker/skillRequirements/Crafting</xpath>
+					<value>
+						<Crafting>{MLRP_PlushieCraftingSkill}</Crafting>
+					</value>
+				</Operation>
 			</apply>
 		</li>
 
@@ -117,10 +146,38 @@
 						<careIfWornByCorpse>true</careIfWornByCorpse>
 					</value>
 				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>true</careIfWornByCorpse>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+					<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer_Child"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>true</careIfWornByCorpse>
+					</value>
+				</Operation>
 			</caseTrue>
 			<caseFalse>
 				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[@Name="PonyPlushBase"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>false</careIfWornByCorpse>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer"]/apparel/careIfWornByCorpse</xpath>
+					<value>
+						<careIfWornByCorpse>false</careIfWornByCorpse>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+					<xpath>Defs/ThingDef[defName="PonyPlush_StarlightGlimmer_Child"]/apparel/careIfWornByCorpse</xpath>
 					<value>
 						<careIfWornByCorpse>false</careIfWornByCorpse>
 					</value>
@@ -478,22 +535,7 @@
 				</Operation>
 			</apply>
 		</li>
-		
-		<!--AGGRO TURRETS: RANGE-->
-		<li Class="XmlExtensions.UseSetting">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_ZephyrBreezeAggroRange</key>
-			<defaultValue>10</defaultValue>
-			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/verbs/li/range</xpath>
-					<value>
-						<range>{MLRP_ZephyrBreezeAggroRange}</range>
-					</value>
-				</Operation>
-			</apply>
-		</li>
-		
+			
 		<!--AGGRO TURRETS: HEALTH-->
 		<li Class="XmlExtensions.UseSetting">
 			<modId>geodesicdragon.rimpony</modId>
@@ -504,150 +546,6 @@
 					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/statBases/MaxHitPoints</xpath>
 					<value>
 						<MaxHitPoints>{MLRP_ZephyrBreezeHealth}</MaxHitPoints>
-					</value>
-				</Operation>
-			</apply>
-		</li>
-
-		<!--AGGRO TURRETS: TOUCH ACCURACY-->
-		<li Class="XmlExtensions.UseSetting">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_AggroTurretAccuracyTouch</key>
-			<defaultValue>0.1</defaultValue>
-			<apply>
-				<Operation Class="XmlExtensions.FindMod">
-					<mods>
-						<li>CETeam.CombatExtended</li>
-					</mods>
-					<packageId>true</packageId>
-					<logic>and</logic>
-					<caseTrue> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
-							<value>
-								<AimingAccuracy>{MLRP_AggroTurretAccuracyTouch}</AimingAccuracy>
-							</value>
-						</Operation>
-					</caseTrue>
-					<caseFalse> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyTouch</xpath>
-							<value>
-								<AccuracyTouch>{MLRP_AggroTurretAccuracyTouch}</AccuracyTouch>
-							</value>
-						</Operation>
-					</caseFalse>
-				</Operation>
-			</apply>
-		</li>
-
-		<!--AGGRO TURRETS: SHORT RANGE ACCURACY-->
-		<li Class="XmlExtensions.UseSetting">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_AggroTurretAccuracyShort</key>
-			<defaultValue>0.25</defaultValue>
-			<apply>
-				<Operation Class="XmlExtensions.FindMod">
-					<mods>
-						<li>CETeam.CombatExtended</li>
-					</mods>
-					<packageId>true</packageId>
-					<logic>and</logic>
-					<caseTrue> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
-							<value>
-								<AimingAccuracy>{MLRP_AggroTurretAccuracyShort}</AimingAccuracy>
-							</value>
-						</Operation>
-					</caseTrue>
-					<caseFalse> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyShort</xpath>
-							<value>
-								<AccuracyShort>{MLRP_AggroTurretAccuracyShort}</AccuracyShort>
-							</value>
-						</Operation>
-					</caseFalse>
-				</Operation>
-			</apply>
-		</li>
-
-		<!--AGGRO TURRETS: MEDIUM RANGE ACCURACY-->
-
-		<li Class="XmlExtensions.UseSetting">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_AggroTurretAccuracyMedium</key>
-			<defaultValue>0.25</defaultValue>
-			<apply>
-				<Operation Class="XmlExtensions.FindMod">
-					<mods>
-						<li>CETeam.CombatExtended</li>
-					</mods>
-					<packageId>true</packageId>
-					<logic>and</logic>
-					<caseTrue> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
-							<value>
-								<AimingAccuracy>{MLRP_AggroTurretAccuracyMedium}</AimingAccuracy>
-							</value>
-						</Operation>
-					</caseTrue>
-					<caseFalse> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyMedium</xpath>
-							<value>
-								<AccuracyMedium>{MLRP_AggroTurretAccuracyMedium}</AccuracyMedium>
-							</value>
-						</Operation>
-					</caseFalse>
-				</Operation>
-			</apply>
-		</li>
-
-		<!--AGGRO TURRETS: LONG RANGE ACCURACY-->
-		<li Class="XmlExtensions.UseSetting">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_AggroTurretAccuracyLong</key>
-			<defaultValue>1</defaultValue>
-			<apply>
-				<Operation Class="XmlExtensions.FindMod">
-					<mods>
-						<li>CETeam.CombatExtended</li>
-					</mods>
-					<packageId>true</packageId>
-					<logic>and</logic>
-					<caseTrue> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AimingAccuracy</xpath>
-							<value>
-								<AimingAccuracy>{MLRP_AggroTurretAccuracyLong}</AimingAccuracy>
-							</value>
-						</Operation>
-					</caseTrue>
-					<caseFalse> 
-						<Operation Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/statBases/AccuracyLong</xpath>
-							<value>
-								<AccuracyLong>{MLRP_AggroTurretAccuracyLong}</AccuracyLong>
-							</value>
-						</Operation>
-					</caseFalse>
-				</Operation>
-			</apply>
-		</li>
-		
-		<!--AGGRO TURRETS: SHOTS PER BURST-->
-		<li Class="XmlExtensions.UseSetting">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_AggroTurretBurstAmount</key>
-			<defaultValue>3</defaultValue>
-			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze" or defName="MLRP_Weaponless"]/verbs/li/burstShotCount</xpath>
-					<value>
-						<burstShotCount>{MLRP_AggroTurretBurstAmount}</burstShotCount>
 					</value>
 				</Operation>
 			</apply>
@@ -1109,52 +1007,7 @@
 				</Operation>
 			</caseFalse>
 		</li>
-		
-		<!--RIM WAR: NPC FACTION-->
-		<li Class="XmlExtensions.UseSetting" MayRequire="Torann.RimWar">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_NPCFactionRimWarBehaviour</key>
-			<defaultValue>Cautious</defaultValue>
-			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[@Name="RimWar_MLRP_NPCFaction"]/behavior</xpath>
-					<value>
-						<behavior>{MLRP_NPCFactionRimWarBehaviour}</behavior>
-					</value>
-				</Operation>
-			</apply>
-		</li>
-		
-		<!--RIM WAR: DIAMOND DOG FACTION-->
-		<li Class="XmlExtensions.UseSetting" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_DiamondDogFactionRimWarBehaviour</key>
-			<defaultValue>Aggressive</defaultValue>
-			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[@Name="RimWar_MLRP_DiamondDogFaction"]/behavior</xpath>
-					<value>
-						<behavior>{MLRP_DiamondDogFactionRimWarBehaviour}</behavior>
-					</value>
-				</Operation>
-			</apply>
-		</li>
-		
-		<!--RIM WAR: BATPONY FACTION-->
-		<li Class="XmlExtensions.UseSetting" MayRequire="Torann.RimWar, sarg.alphagenes">
-			<modId>geodesicdragon.rimpony</modId>
-			<key>MLRP_BatponyFactionRimWarBehaviour</key>
-			<defaultValue>Expansionist</defaultValue>
-			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>/Defs/RimWar.RimWarDef[defName="RimWar_MLRP_FactionBehavior"]/defDatas/li[@Name="RimWar_MLRP_BatponyFaction"]/behavior</xpath>
-					<value>
-						<behavior>{MLRP_BatponyFactionRimWarBehaviour}</behavior>
-					</value>
-				</Operation>
-			</apply>
-		</li>
-		
+			
 		<!--RAINBOW LASER: ELEMENTS OF HARMONY REQUIRED-->
 		<li Class="XmlExtensions.OptionalPatch">
 			<modId>geodesicdragon.rimpony</modId>
@@ -1535,16 +1388,7 @@
 					<font>Medium</font>
 					<anchor>Left</anchor>
 				</li>
-				
-				<li Class="XmlExtensions.Setting.Slider">
-					<key>MLRP_ZephyrBreezeAggroRange</key>
-					<defaultValue>10</defaultValue>
-					<min>10</min>
-					<max>100</max>
-					<label>Aggro Range: {MLRP_ZephyrBreezeAggroRange}</label>
-					<decimals>0</decimals>
-				</li>
-				
+							
 				<li Class="XmlExtensions.Setting.Slider">
 					<key>MLRP_ZephyrBreezeHealth</key>
 					<defaultValue>1000</defaultValue>
@@ -1554,50 +1398,6 @@
 					<decimals>0</decimals>
 				</li>
 				
-				<li Class="XmlExtensions.Setting.Slider">
-					<key>MLRP_AggroTurretAccuracyTouch</key>
-					<defaultValue>0.1</defaultValue>
-					<min>0.1</min>
-					<max>1</max>
-					<label>Touch Accuracy: {MLRP_AggroTurretAccuracyTouch}</label>
-					<decimals>2</decimals>
-				</li>
-				
-				<li Class="XmlExtensions.Setting.Slider">
-					<key>MLRP_AggroTurretAccuracyShort</key>
-					<defaultValue>0.25</defaultValue>
-					<min>0.1</min>
-					<max>1</max>
-					<label>Short Range Accuracy: {MLRP_AggroTurretAccuracyShort}</label>
-					<decimals>2</decimals>
-				</li>
-				
-				<li Class="XmlExtensions.Setting.Slider">
-					<key>MLRP_AggroTurretAccuracyMedium</key>
-					<defaultValue>0.25</defaultValue>
-					<min>0.1</min>
-					<max>1</max>
-					<label>Medium Range Accuracy: {MLRP_AggroTurretAccuracyMedium}</label>
-					<decimals>2</decimals>
-				</li>
-				
-				<li Class="XmlExtensions.Setting.Slider">
-					<key>MLRP_AggroTurretAccuracyLong</key>
-					<defaultValue>1</defaultValue>
-					<min>0.1</min>
-					<max>1</max>
-					<label>Long Range Accuracy: {MLRP_AggroTurretAccuracyLong}</label>
-					<decimals>2</decimals>
-				</li>
-				
-				<li Class="XmlExtensions.Setting.Slider">
-					<key>MLRP_AggroTurretBurstAmount</key>
-					<defaultValue>3</defaultValue>
-					<min>3</min>
-					<max>15</max>
-					<label>Shots Per Burst: {MLRP_AggroTurretBurstAmount}</label>
-					<decimals>0</decimals>
-				</li>
 				
 				<li Class="XmlExtensions.Setting.Gap"/>
 				
@@ -1754,132 +1554,6 @@
 				<li Class="XmlExtensions.Setting.Checkbox" MayRequire="sumghai.medpod">
 					<key>MLRP_MedPodsDoNotCureCutiePox</key>
 					<label>Prevent MedPods from curing the Cutie Pox</label>
-				</li>
-				
-				<li Class="XmlExtensions.Setting.Gap" MayRequire="Torann.RimWar"/>
-				
-				<li Class="XmlExtensions.Setting.Text" MayRequire="Torann.RimWar">
-					<text>Mod Settings: Rim War</text>
-					<font>Medium</font>
-					<anchor>Left</anchor>
-				</li>
-
-				<li Class="XmlExtensions.Setting.Gap" MayRequire="Torann.RimWar">
-					<spacing>24</spacing>
-				</li>
-			
-				<li Class="XmlExtensions.Setting.SplitColumn" MayRequire="Torann.RimWar">
-					<leftCol>
-						<li Class="XmlExtensions.Setting.Text" MayRequire="Torann.RimWar">
-							<text>NPC Faction Behaviour: </text>
-							<font>Small</font>
-							<anchor>Left</anchor>
-						</li>
-					</leftCol>
-					<rightCol>
-						<li Class="XmlExtensions.Setting.RadioButtons" MayRequire="Torann.RimWar">
-							<key>MLRP_NPCFactionRimWarBehaviour</key>
-							<defaultValue>Cautious</defaultValue>
-							<buttons>
-							<li>
-								<value>Aggressive</value>
-								<label>Aggressive</label>
-							</li>
-							<li>
-								<value>Cautious</value>
-								<label>Cautious</label>
-								</li>
-							<li>
-								<value>Expansionist</value>
-								<label>Expansionist</label>
-							</li>
-							<li>
-								<value>Merchant</value>
-								<label>Merchant</label>
-							</li>
-							<li>
-								<value>Warmonger</value>
-								<label>Warmonger</label>
-							</li>
-							</buttons>
-						</li>
-					</rightCol>
-				</li>
-				
-				<li Class="XmlExtensions.Setting.SplitColumn" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
-					<leftCol>
-						<li Class="XmlExtensions.Setting.Text" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
-							<text>Diamond Dog Faction Behaviour: </text>
-							<font>Small</font>
-							<anchor>Left</anchor>
-						</li>
-					</leftCol>
-					<rightCol>
-						<li Class="XmlExtensions.Setting.RadioButtons" MayRequire="Torann.RimWar, Ludeon.RimWorld.Biotech">
-							<key>MLRP_DiamondDogFactionRimWarBehaviour</key>
-							<defaultValue>Aggressive</defaultValue>
-							<buttons>
-							<li>
-								<value>Aggressive</value>
-								<label>Aggressive</label>
-							</li>
-							<li>
-								<value>Cautious</value>
-								<label>Cautious</label>
-								</li>
-							<li>
-								<value>Expansionist</value>
-								<label>Expansionist</label>
-							</li>
-							<li>
-								<value>Merchant</value>
-								<label>Merchant</label>
-							</li>
-							<li>
-								<value>Warmonger</value>
-								<label>Warmonger</label>
-							</li>
-							</buttons>
-						</li>
-					</rightCol>
-				</li>
-				
-				<li Class="XmlExtensions.Setting.SplitColumn" MayRequire="Torann.RimWar, sarg.alphagenes">
-					<leftCol>
-						<li Class="XmlExtensions.Setting.Text" MayRequire="Torann.RimWar, sarg.alphagenes">
-							<text>Batpony Faction Behaviour: </text>
-							<font>Small</font>
-							<anchor>Left</anchor>
-						</li>
-					</leftCol>
-					<rightCol>
-						<li Class="XmlExtensions.Setting.RadioButtons" MayRequire="Torann.RimWar, sarg.alphagenes">
-							<key>MLRP_BatponyFactionRimWarBehaviour</key>
-							<defaultValue>Expansionist</defaultValue>
-							<buttons>
-							<li>
-								<value>Aggressive</value>
-								<label>Aggressive</label>
-							</li>
-							<li>
-								<value>Cautious</value>
-								<label>Cautious</label>
-								</li>
-							<li>
-								<value>Expansionist</value>
-								<label>Expansionist</label>
-							</li>
-							<li>
-								<value>Merchant</value>
-								<label>Merchant</label>
-							</li>
-							<li>
-								<value>Warmonger</value>
-								<label>Warmonger</label>
-							</li>
-							</buttons>
-						</li>
-					</rightCol>
 				</li>
 				
 				<li Class="XmlExtensions.Setting.Gap">

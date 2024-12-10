@@ -21,6 +21,13 @@
 	</value>
 </Operation>
 
+<Operation Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName="Projectile_HarmonyRainbow"]/label</xpath>
+	<value>
+		<label>harmony laser (AP)</label>
+	</value>
+</Operation>
+
 <!--PATCH THE TOOLS-->
 
 <Operation Class="PatchOperationReplace">
