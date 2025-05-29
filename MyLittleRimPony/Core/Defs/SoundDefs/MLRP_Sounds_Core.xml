@@ -1,0 +1,20 @@
+<Defs>
+  
+	<SoundDef>
+		<defName>MLRP_EquipRainbowDash</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Plushies/RainbowDash</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50~50</volumeRange>      
+				<pitchRange>1~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+  
+</Defs>

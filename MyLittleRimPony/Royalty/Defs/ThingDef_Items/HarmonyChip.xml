@@ -51,6 +51,7 @@
 			<painOffset>-0.1</painOffset>
 			<opinionOfOthersFactor>1.5</opinionOfOthersFactor>
 			<statOffsets>
+				<!--CORE/ROYALTY-->
 				<PlantWorkSpeed>0.25</PlantWorkSpeed>
 				<PlantHarvestYield>0.25</PlantHarvestYield>
 				<TameAnimalChance>0.25</TameAnimalChance>
@@ -84,6 +85,25 @@
 				<ArmorRating_Heat>0.15</ArmorRating_Heat>
 				<MeleeDodgeChance>10</MeleeDodgeChance>
 				<ToxicEnvironmentResistance>-0.25</ToxicEnvironmentResistance>
+				<!--IDEOLOGY-->
+				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</ConversionPower>
+				<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</SuppressionPower>
+				<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+				<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">5</PruningSpeed>
+				<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.25</HackingSpeed>
+				<!--BIOTECH-->
+				<MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">2</MechBandwidth>
+				<Fertility MayRequire="Ludeon.RimWorld.Biotech">0.25</Fertility>
+				<!--ANOMALY-->
+				<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.1</EntityStudyRate>
+				<!--MODS-->
+				<HygieneRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-0.1</HygieneRateMultiplier>
+				<P42_AllergicSensitivity MayRequire="phil42.allergies">-0.25</P42_AllergicSensitivity>
+				<CarryBulk MayRequire="CETeam.CombatExtended">15</CarryBulk>
+				<ReloadSpeed MayRequire="CETeam.CombatExtended">0.05</ReloadSpeed>
+				<NightVisionEfficiency MayRequire="CETeam.CombatExtended">0.1</NightVisionEfficiency>
+				<SmokeSensitivity MayRequire="CETeam.CombatExtended">-0.25</SmokeSensitivity>
+				<Suppressability MayRequire="CETeam.CombatExtended">-0.05</Suppressability>
 			</statOffsets>
 		</li>
 	</stages>
@@ -99,14 +119,13 @@
 		<li>RewardStandardLowFreq</li>
 	</thingSetMakerTags>
     <costList>
-		<Steel>350</Steel>
-		<Plasteel>350</Plasteel>
-		<Uranium>350</Uranium>
+		<Steel>500</Steel>
+		<Plasteel>500</Plasteel>
+		<Uranium>500</Uranium>
 		<Gold>15</Gold>
 		<ComponentSpacer>10</ComponentSpacer>
     </costList>
 	<statBases>
-		<MarketValue>10000</MarketValue>
 		<MaxHitPoints>100</MaxHitPoints>
 		<Mass>1</Mass>
 	</statBases>
