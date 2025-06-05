@@ -11,8 +11,5 @@
 			<MeleeHitChance>5</MeleeHitChance>
 			<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<apparel>
-			<soundWear>MLRP_EquipRainbowDash</soundWear>
-		</apparel>
 	</ThingDef>
 </Defs>

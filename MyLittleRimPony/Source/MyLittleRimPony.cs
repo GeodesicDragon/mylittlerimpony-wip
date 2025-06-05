@@ -53,7 +53,7 @@ namespace MyLittleRimPony
         {
             get
             {
-                if (!ModsConfig.RoyaltyActive)
+                if (!ModsConfig.IsActive("Ludeon.RimWorld.Royalty"))
                 {
                     return null; // Prevents alert logic from running
                 }

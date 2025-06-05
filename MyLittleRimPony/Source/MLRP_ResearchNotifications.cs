@@ -159,6 +159,20 @@ namespace MLRP_ResearchTracker
                 Find.LetterStack.ReceiveLetter(LetterTitle, PBLetterText, MLRP_NewRecipeUnlocked);
             }
 
+            if (proj == DefDatabase<ResearchProjectDef>.GetNamed("Gunsmithing"))
+            {
+                PBRecipeUnlocked = DefDatabase<ThingDef>.GetNamed("Izzy_SmokeLauncher").label;
+                string PBLetterText = "MLRP_PBLetterText".Translate(PBRecipeUnlocked);
+                Find.LetterStack.ReceiveLetter(LetterTitle, PBLetterText, MLRP_NewRecipeUnlocked);
+            }
+
+            if (proj == DefDatabase<ResearchProjectDef>.GetNamed("MLRP_WeaponisedElementsResearch"))
+            {
+                PBRecipeUnlocked = DefDatabase<ThingDef>.GetNamed("MLRP_ElementsOfHarmonyWeaponised").label;
+                string PBLetterText = "MLRP_PBLetterText".Translate(PBRecipeUnlocked);
+                Find.LetterStack.ReceiveLetter(LetterTitle, PBLetterText, MLRP_NewRecipeUnlocked);
+            }
+
             // PONY WORKBENCH: COMBAT EXTENDED MOD
 
             if (ModsConfig.IsActive("CETeam.CombatExtended") && proj == DefDatabase<ResearchProjectDef>.GetNamed("MLRP_CE_AmmoResearch"))

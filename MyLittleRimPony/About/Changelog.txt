@@ -1,15 +1,19 @@
-Version 6.76.136 (May 26th 2025)
+Version 6.73.141 (May 26th 2025)
 
-* Core: Using the power of 15.dev, I have added equip sounds to some plushies.
-	(NYI) * Applejack
-	(NYI) * Fluttershy
-	(NYI) * Pinkie Pie
-	* Rainbow Dash
-	(NYI) * Rarity
-	(NYI) * Twilight Sparkle
-(NYI) * XML Extensions: Added an option to mute the plushie equip sounds.
+(NYI) * Rimefeller: Added 2 new recipes to the Daybreaker statue.
+	* Convert silver to synthylene
+	* Convert synthylene to silver.
+(NYI) * Rimefeller: Added a new recipe to the Fabric Exchange which allows you to purchase 100 synthamide for 690 silver (25% above market value).
+* XML Extensions: Added the ability to configure how much stuff is needed to build Tree Hugger.
+	* Minimum is 100.
+	* Maximum is 1000.
+	* Default is 200.
 * Core: Fixed 'Failed to find RimWorld.ThoughtDef named MLRP_HarmonyChipInstalledAntiBrony. There are (x) defs of this type loaded.' error seen when Royalty wasn't enabled. Thanks to Shizuka_Na_Ikaku from the MLRP Discord for bringing this to my attention.
 (NYI - NEED TO REPLICATE) * Core: Fixed a clipping issue with fanfiction displayed on bookshelves facing a particular direction. Siveen
+(NYI - NEED TO REPLICATE) * Core: Fixed 'Exception while recalculating thought state for pawn <pawn name>: System.NullReferenceException: Object reference not set to an instance of an object' error spam.
+* Core: Fixed a typo in the herbal cure kit description.
+* Core: Fixed letter not being sent when researching gunsmithing.
+* Core: Fixed letter not being sent when researching rainbow laser.
 * Royalty: Fixed the patch which allowed the Empire to use NPC faction pawns as mercenaries not working properly.
 * Royalty: Fixed the alert for an anti brony with a harmony chip displaying incorrectly. Thanks to Aelanna from the RimWorld Discord for helping.
 * Biotech: Fixed a patch which was trying to give two fertility bonuses to the harmony chip.
@@ -18,6 +22,7 @@ Version 6.76.136 (May 26th 2025)
 * Biotech: Converted the Sweetie Bot mechanoid wound sound to .ogg format.
 * Biotech: Converted the Sweetie Bot mechanoid death sound to .ogg format.
 * Biotech: Fixed 'Patch operation Verse.PatchOperationAdd(Defs/HediffDef[defName="MLRP_HarmonyChipInstalled"]/stages/li/statOffsets) failed' error seen when you didn't have the Royalty DLC enabled. Thanks to Shizuka_Na_Ikaku from the MLRP Discord for bringing this to my attention.
+* Hooligan Faction: Drug dealers no longer have abundant stocks of the Heart's Desire flower.
 * XML Extensions: Fixed 'Patch operation Verse.PatchOperationSequence(count=45, lastFailedOperation=XmlExtensions.OptionalPatch) failed' error seen when you didn't have Vanilla Achievements Expanded enabled. Thanks to Siveen from the MLRP Discord for bringing this to my attention.
 
 Version 6.69.125 (April 29th 2025)
