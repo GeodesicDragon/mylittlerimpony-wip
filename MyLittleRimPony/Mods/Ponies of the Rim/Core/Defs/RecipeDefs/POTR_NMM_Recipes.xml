@@ -1,0 +1,63 @@
+<Defs>
+	
+	<!--WINGS-->
+	<RecipeDef ParentName="NMM_BionicMatsOne">
+		<defName>MLRP_POTR_NMM_BionicWing</defName>
+		<label>request bionic wing</label>
+		<description>Offer silver in exchange for a bionic wing.</description>
+		<jobString>Making an offering to Nightmare Moon</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>130</count>
+			</li>
+		</ingredients>
+		<products>
+			<BionicWing>1</BionicWing>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MLRP_NMM_ArchotechBase">
+		<defName>MLRP_POTR_NMM_ArchotechWing</defName>
+		<label>request archotech wing</label>
+		<description>Offer silver in exchange for an archotech wing.</description>
+		<products>
+			<ArchotechWing>1</ArchotechWing>
+		</products>
+	</RecipeDef>
+		
+	<!--HORNS-->
+	
+	<RecipeDef ParentName="NMM_BionicMatsOne">
+		<defName>MLRP_POTR_NMM_BionicHorn</defName>
+		<label>request bionic horn</label>
+		<description>Offer silver in exchange for a bionic horn.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>130</count>
+			</li>
+		</ingredients>
+		<products>
+			<BionicHorn>1</BionicHorn>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MLRP_NMM_ArchotechBase">
+		<defName>MLRP_POTR_NMM_ArchotechHorn</defName>
+		<label>request archotech horn</label>
+		<description>Offer silver in exchange for an archotech horn.</description>
+		<products>
+			<ArchotechHorn>1</ArchotechHorn>
+		</products>
+	</RecipeDef>
+
+</Defs>

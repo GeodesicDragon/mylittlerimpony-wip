@@ -12,5 +12,8 @@
 			<AnimalGatherSpeed>0.25</AnimalGatherSpeed>
 			<AnimalGatherYield>0.25</AnimalGatherYield>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

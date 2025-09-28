@@ -11,5 +11,8 @@
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset>0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

@@ -8,6 +8,9 @@
 		</graphicData>
 		<equippedStatOffsets>
 			<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
-		</equippedStatOffsets>		
+		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

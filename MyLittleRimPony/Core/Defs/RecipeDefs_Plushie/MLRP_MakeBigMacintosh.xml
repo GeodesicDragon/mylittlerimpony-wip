@@ -1,0 +1,32 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeBigMacintosh</defName>
+		<label>Make Big Macintosh</label>
+		<description>Make a Big Macintosh plushie.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>300</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_BigMacintosh>1</PonyPlush_BigMacintosh>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

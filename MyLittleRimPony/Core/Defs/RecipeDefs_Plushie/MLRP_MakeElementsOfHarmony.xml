@@ -1,0 +1,102 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeElementsOfHarmony</defName>
+		<label>Make Elements of Harmony</label>
+		<description>Make the Elements of Harmony.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>1800</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<MLRP_ElementsOfHarmony>1</MLRP_ElementsOfHarmony>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<!--ALTERNATIVE RECIPE-->
+	
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeElementsOfHarmonyAlternative</defName>
+		<label>Make Elements of Harmony (alternative)</label>
+		<description>Make the Elements of Harmony by combining plushies of each of the Mane Six.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_Applejack</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_Fluttershy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_PinkiePie</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_RainbowDash</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_Rarity</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_TwilightSparkle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_CutieMarkCrusaders>1</PonyPlush_CutieMarkCrusaders>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

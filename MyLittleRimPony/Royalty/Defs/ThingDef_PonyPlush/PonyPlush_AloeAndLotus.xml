@@ -11,5 +11,8 @@
 		<equippedStatOffsets>
 			<MeditationFocusGain>0.25</MeditationFocusGain>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

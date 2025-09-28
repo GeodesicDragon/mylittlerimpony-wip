@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<PainShockThreshold>0.5</PainShockThreshold>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

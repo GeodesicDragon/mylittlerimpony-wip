@@ -10,5 +10,8 @@
 		<equippedStatOffsets>
 			<GlobalLearningFactor>1</GlobalLearningFactor>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

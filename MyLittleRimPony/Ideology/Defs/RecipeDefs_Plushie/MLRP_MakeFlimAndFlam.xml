@@ -1,0 +1,32 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeFlimAndFlam</defName>
+		<label>Make Flim and Flam</label>
+		<description>Make a Flim and Flam plushie.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>300</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_FlimAndFlam>1</PonyPlush_FlimAndFlam>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

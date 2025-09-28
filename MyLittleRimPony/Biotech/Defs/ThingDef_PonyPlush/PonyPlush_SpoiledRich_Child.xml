@@ -10,5 +10,8 @@
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

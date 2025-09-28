@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<PawnBeauty>2</PawnBeauty>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

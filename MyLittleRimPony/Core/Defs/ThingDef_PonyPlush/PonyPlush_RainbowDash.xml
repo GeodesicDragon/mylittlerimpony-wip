@@ -11,5 +11,8 @@
 			<MeleeHitChance>5</MeleeHitChance>
 			<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<MentalBreakThreshold>-0.25</MentalBreakThreshold>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

@@ -11,5 +11,8 @@
 		<equippedStatOffsets>
 			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

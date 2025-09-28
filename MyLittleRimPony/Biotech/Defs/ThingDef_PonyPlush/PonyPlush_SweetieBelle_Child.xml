@@ -11,5 +11,8 @@
 			<CookSpeed>40</CookSpeed>
 			<FoodPoisonChance>-0.5</FoodPoisonChance>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

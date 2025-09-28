@@ -11,5 +11,8 @@
 		<equippedStatOffsets>
 			<SuppressionPower>0.25</SuppressionPower>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

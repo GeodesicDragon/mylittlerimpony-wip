@@ -1,0 +1,32 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeQueenChrysalis</defName>
+		<label>Make Queen Chrysalis</label>
+		<description>Make a Queen Chrysalis plushie.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>300</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_QueenChrysalis>1</PonyPlush_QueenChrysalis>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

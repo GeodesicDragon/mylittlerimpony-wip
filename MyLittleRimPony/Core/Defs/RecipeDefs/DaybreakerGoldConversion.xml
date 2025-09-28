@@ -2,21 +2,19 @@
 
 <!--CONVERT GOLD TO JADE-->
 
-<RecipeDef ParentName="DaybreakerRecipes_RegularChemfuel">
+<RecipeDef ParentName="DaybreakerRecipeBase">
 	<defName>MLRP_DB_ConvertGoldIntoJade</defName>
 	<label>convert gold to jade</label>
-	<description>Convert 100 gold into the market value equivalent of jade.</description>
-    <jobString>Converting materials</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>300</workAmount>
-	<recipeUsers>
-		<li>MLRP_Daybreaker</li>
-	</recipeUsers>
+	<description>Convert 100 gold into 200 jade.</description>
     <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
 		<li>
 			<filter>
 				<thingDefs>
@@ -29,25 +27,24 @@
 	<products>
 		<Jade>200</Jade>
 	</products>
+	<displayPriority>0</displayPriority>
 </RecipeDef>
 
 <!--CONVERT GOLD TO STEEL-->
 
-<RecipeDef ParentName="DaybreakerRecipes_RegularChemfuel">
+<RecipeDef ParentName="DaybreakerRecipeBase">
 	<defName>MLRP_DB_ConvertGoldIntoSteel</defName>
 	<label>convert gold to steel</label>
-	<description>Convert 100 gold into the market value equivalent of steel.</description>
-    <jobString>Converting materials</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>300</workAmount>
-	<recipeUsers>
-		<li>MLRP_Daybreaker</li>
-	</recipeUsers>
+	<description>Convert 100 gold into 526 steel.</description>
     <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
 		<li>
 			<filter>
 				<thingDefs>
@@ -60,25 +57,24 @@
 	<products>
 		<Steel>526</Steel>
 	</products>
+	<displayPriority>20</displayPriority>
 </RecipeDef>
 
 <!--CONVERT GOLD TO PLASTEEL-->
 
-<RecipeDef ParentName="DaybreakerRecipes_RegularChemfuel">
+<RecipeDef ParentName="DaybreakerRecipeBase">
 	<defName>MLRP_DB_ConvertGoldIntoPlasteel</defName>
 	<label>convert gold to plasteel</label>
-	<description>Convert 100 gold into the market value equivalent of plasteel.</description>
-    <jobString>Converting materials</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>300</workAmount>
-	<recipeUsers>
-		<li>MLRP_Daybreaker</li>
-	</recipeUsers>
+	<description>Convert 100 gold into 111 plasteel.</description>
     <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
 		<li>
 			<filter>
 				<thingDefs>
@@ -91,25 +87,24 @@
 	<products>
 		<Plasteel>111</Plasteel>
 	</products>
+	<displayPriority>40</displayPriority>
 </RecipeDef>
 
 <!--CONVERT GOLD TO URANIUM-->
 
-<RecipeDef ParentName="DaybreakerRecipes_RegularChemfuel">
+<RecipeDef ParentName="DaybreakerRecipeBase">
 	<defName>MLRP_DB_ConvertGoldIntoUranium</defName>
 	<label>convert gold to uranium</label>
-	<description>Convert 100 gold into the market value equivalent of uranium.</description>
-    <jobString>Converting materials</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>300</workAmount>
-	<recipeUsers>
-		<li>MLRP_Daybreaker</li>
-	</recipeUsers>
+	<description>Convert 100 gold into 167 uranium.</description>
     <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
 		<li>
 			<filter>
 				<thingDefs>
@@ -122,25 +117,24 @@
 	<products>
 		<Uranium>167</Uranium>
 	</products>
+	<displayPriority>60</displayPriority>
 </RecipeDef>
 
 <!--CONVERT 1000 GOLD TO SILVER-->
 
-<RecipeDef ParentName="DaybreakerRecipes_QuintupleChemfuel">
+<RecipeDef ParentName="DaybreakerRecipeBase">
 	<defName>MLRP_DB_ConvertOneThousandGoldIntoSilver</defName>
 	<label>convert a lot of gold to a lot of silver</label>
-	<description>Convert 1000 gold into silver.</description>
-    <jobString>Converting materials</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>300</workAmount>
-	<recipeUsers>
-		<li>MLRP_Daybreaker</li>
-	</recipeUsers>
+	<description>Convert 1000 gold into 10000 silver.</description>
     <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>250</count>
+		</li>
 		<li>
 			<filter>
 				<thingDefs>
@@ -153,6 +147,7 @@
 	<products>
 		<Silver>10000</Silver>
 	</products>
+	<displayPriority>80</displayPriority>
 </RecipeDef>
   
 </Defs>

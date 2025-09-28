@@ -13,6 +13,7 @@
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 		</statBases>
 		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Waist</li>
 			</bodyPartGroups>

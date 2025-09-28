@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<InjuryHealingFactor>0.5</InjuryHealingFactor>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

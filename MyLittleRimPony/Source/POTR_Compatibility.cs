@@ -17,7 +17,7 @@ namespace MLRP_PoniesOfTheRim
 				{
 					return false;
 				}
-				if (otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pegasus") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Unicorn"))
+				if (otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony_PegasusBody") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony_EarthponyBody") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony_UnicornBody"))
 				{
 					return false;
 				}
@@ -42,7 +42,7 @@ namespace MLRP_PoniesOfTheRim
 				}
 				if (pawn.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_BronyTrait")))
 				{
-					if (otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pegasus") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Unicorn"))
+					if (otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony_PegasusBody") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony_EarthponyBody") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony_UnicornBody"))
 					{
 						return 20f;
 					}
@@ -64,7 +64,7 @@ namespace MLRP_PoniesOfTheRim
 				{
 					return false;
 				}
-				if (otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pegasus") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Unicorn"))
+				if (otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony_PegasusBody") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony_EarthponyBody") && otherPawn.def.race.body != DefDatabase<BodyDef>.GetNamed("Pony_UnicornBody"))
 				{
 					return false;
 				}
@@ -89,9 +89,9 @@ namespace MLRP_PoniesOfTheRim
 				}
 				if (pawn.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_AntiBronyTrait")))
 				{
-					if (otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pegasus") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Unicorn"))
+					if (otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony_PegasusBody") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony_EarthponyBody") || otherPawn.def.race.body == DefDatabase<BodyDef>.GetNamed("Pony_UnicornBody"))
 					{
-						return -120f; // Needs to be this high in order to negate the +20 bonus from the fact that ponies are seen by all as physically appealing.
+						return -40f;
 					}
 				}
 			}
@@ -140,43 +140,43 @@ namespace MLRP_PoniesOfTheRim
 		}
 	}
 
-	// PONY MEAT CONSUMPTION
+    // PONY MEAT CONSUMPTION
 
-	[HarmonyPatch(typeof(JobDriver_Ingest), "MakeNewToils")]
-	public static class JobDriver_Ingest_MakeNewToils_Patch
-	{
-		static void Postfix(JobDriver_Ingest __instance)
-		{
-			Pawn pawn = __instance.pawn;
-			Thing food = __instance.job.targetA.Thing;
+    [HarmonyPatch(typeof(JobDriver_Ingest), "MakeNewToils")]
+    public static class JobDriver_Ingest_MakeNewToils_Patch
+    {
+        static void Postfix(JobDriver_Ingest __instance)
+        {
+            Pawn pawn = __instance.pawn;
+            Thing food = __instance.job.targetA.Thing;
 
-			if (food != null && pawn.story?.traits?.HasTrait(TraitDef.Named("MLRP_BronyTrait")) == true)
-			{
-				if (food.def == DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony") ||
-					food.TryGetComp<CompIngredients>()?.ingredients?.Contains(DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony")) == true)
-				{
-					// Add memory thought
-					pawn.needs.mood.thoughts.memories.TryGainMemory(DefDatabase<ThoughtDef>.GetNamed("MLRP_BronyAtePonyMeat"));
-					//Log.Message($"[DEBUG] Thought applied to {pawn.Name}");
-				}
-			}
+            if (food != null && pawn.story?.traits?.HasTrait(TraitDef.Named("MLRP_BronyTrait")) == true)
+            {
+                if (food.def == DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony") ||
+                    food.TryGetComp<CompIngredients>()?.ingredients?.Contains(DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony")) == true)
+                {
+                    // Add memory thought
+                    pawn.needs.mood.thoughts.memories.TryGainMemory(DefDatabase<ThoughtDef>.GetNamed("MLRP_BronyAtePonyMeat"));
+                    //Log.Message($"[DEBUG] Thought applied to {pawn.Name}");
+                }
+            }
 
-			if (food != null && pawn.story?.traits?.HasTrait(TraitDef.Named("MLRP_AntiBronyTrait")) == true)
-			{
-				if (food.def == DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony") ||
-					food.TryGetComp<CompIngredients>()?.ingredients?.Contains(DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony")) == true)
-				{
-					// Add memory thought
-					pawn.needs.mood.thoughts.memories.TryGainMemory(DefDatabase<ThoughtDef>.GetNamed("MLRP_AntiBronyAtePonyMeat"));
-					//Log.Message($"[DEBUG] Thought applied to {pawn.Name}");
-				}
-			}
-		}
-	}
-		
-	// BRONIES LOVE PONYX
+            if (food != null && pawn.story?.traits?.HasTrait(TraitDef.Named("MLRP_AntiBronyTrait")) == true)
+            {
+                if (food.def == DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony") ||
+                    food.TryGetComp<CompIngredients>()?.ingredients?.Contains(DefDatabase<ThingDef>.GetNamedSilentFail("Meat_Pony")) == true)
+                {
+                    // Add memory thought
+                    pawn.needs.mood.thoughts.memories.TryGainMemory(DefDatabase<ThoughtDef>.GetNamed("MLRP_AntiBronyAtePonyMeat"));
+                    //Log.Message($"[DEBUG] Thought applied to {pawn.Name}");
+                }
+            }
+        }
+    }
 
-	public class ThoughtWorker_BronyLovesPonyx : ThoughtWorker
+    // BRONIES LOVE PONYX
+
+    public class ThoughtWorker_BronyLovesPonyx : ThoughtWorker
 	{
 		protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
 		{
@@ -200,23 +200,19 @@ namespace MLRP_PoniesOfTheRim
 		public override float OpinionOffset()
 		{
 			if (!ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
-			{
+				return 0f;
 
-			}
-			else
+			if (ThoughtUtility.ThoughtNullified(pawn, def))
+				return 0f;
+
+			if (pawn?.story?.traits?.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_BronyTrait")) == true)
 			{
-				if (ThoughtUtility.ThoughtNullified(pawn, def))
+				if (otherPawn?.genes?.Xenotype == DefDatabase<XenotypeDef>.GetNamed("Ponyx"))
 				{
-					return 0f;
-				}
-				if (pawn.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_BronyTrait")))
-				{
-					if (otherPawn.genes.Xenotype != DefDatabase<XenotypeDef>.GetNamed("Ponyx"))
-					{
-						return 20f;
-					}
+					return 20f;
 				}
 			}
+
 			return 0f;
 		}
 	}
@@ -242,29 +238,58 @@ namespace MLRP_PoniesOfTheRim
 		}
 	}
 
-	public class Thought_AntiBronyHatesPonyx : Thought_SituationalSocial
-	{
-		public override float OpinionOffset()
-		{
-			if (!ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
-			{
+    public class Thought_AntiBronyHatesPonyx : Thought_SituationalSocial
+    {
+        public override float OpinionOffset()
+        {
+            if (!ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
+                return 0f;
 
-			}
-			else
-			{
-				if (ThoughtUtility.ThoughtNullified(pawn, def))
-				{
-					return 0f;
-				}
-				if (pawn.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_AntiBronyTrait")))
-				{
-					if (otherPawn.genes.Xenotype != DefDatabase<XenotypeDef>.GetNamed("Ponyx"))
-					{
-						return -120f; // Needs to be this high in order to negate the +20 bonus from the fact that ponyx are seen by all as physically appealing.
-					}
-				}
-			}
-			return 0f;
-		}
-	}
+            if (ThoughtUtility.ThoughtNullified(pawn, def))
+                return 0f;
+
+            if (pawn.story.traits.HasTrait(DefDatabase<TraitDef>.GetNamed("MLRP_AntiBronyTrait")) == true)
+            {
+                if (otherPawn.genes.Xenotype == DefDatabase<XenotypeDef>.GetNamed("Ponyx"))
+                {
+                    return -40f;
+                }
+            }
+
+            return 0f;
+        }
+    }
+
+    // ANTI BRONIES DON'T FIND PONIES ATTRACTIVE
+
+    [HarmonyPatch(typeof(ThoughtWorker_Pretty), "CurrentSocialStateInternal")]
+    public static class Patch_ThoughtWorker_Pretty
+    {
+        static void Postfix(ref ThoughtState __result, Pawn pawn, Pawn other)
+        {
+            if (!ModsConfig.IsActive("Pony.PoniesOfTheRim.Core"))
+                return;
+
+            if (!__result.Active)
+                return;
+
+            TraitDef antiRaceTrait = DefDatabase<TraitDef>.GetNamed("MLRP_AntiBronyTrait");
+            if (pawn.story.traits.HasTrait(antiRaceTrait) != true)
+                return;
+
+            BodyDef body = other.def.race.body;
+            XenotypeDef xenotype = other.genes.Xenotype;
+
+            bool isPonyRace =
+                body == DefDatabase<BodyDef>.GetNamed("Pony_PegasusBody") ||
+                body == DefDatabase<BodyDef>.GetNamed("Pony_EarthponyBody") ||
+                body == DefDatabase<BodyDef>.GetNamed("Pony_UnicornBody") ||
+                xenotype == DefDatabase<XenotypeDef>.GetNamed("Ponyx");
+
+            if (isPonyRace)
+            {
+                __result = ThoughtState.Inactive;
+            }
+        }
+    }
 }

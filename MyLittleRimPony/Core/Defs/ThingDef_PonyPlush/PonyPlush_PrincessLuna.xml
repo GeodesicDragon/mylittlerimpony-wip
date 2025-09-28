@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<RestRateMultiplier>0.5</RestRateMultiplier>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

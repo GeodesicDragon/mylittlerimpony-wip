@@ -1,0 +1,32 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeChildPrincessCelestia</defName>
+		<label>Make Princess Celestia (child-sized)</label>
+		<description>Make a Princess Celestia plushie that is small enough to be carried by a child.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>150</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_PrincessCelestia_Child>1</PonyPlush_PrincessCelestia_Child>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

@@ -11,5 +11,8 @@
 			<MiningYield>0.25</MiningYield>
 			<DeepDrillingSpeed>0.25</DeepDrillingSpeed>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

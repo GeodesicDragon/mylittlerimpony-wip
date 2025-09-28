@@ -6,6 +6,7 @@
 // I am always happy to accept updates to this code, especially if you have a better way of doing something I've done.
 // Contact me via my Discord server and we'll talk! (Invite Code: BGKnpza)
 
+using MLRP_ModSettings;
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,12 +23,27 @@ namespace MyLittleRimPony
     {
         static MLRP_Startup()
         {
+            // DISPLAY WELCOME MESSAGE
+
             var MLRP_Version = Assembly.GetExecutingAssembly().GetName().Version.ToString(3);
             Log.Message("MLRP_WelcomeMessage".Translate(MLRP_Version));
 
             if (ModsConfig.IsActive("geodesicdragon.rimpony.medieval"))
             {
                 Log.Message("MLRP_MedievalOverhaul".Translate());
+            }
+
+            // APPLY MOD SETTINGS
+
+            var MLRPOptions = LoadedModManager.GetMod<MLRP_SettingsWindow>();
+            if (MLRPOptions != null)
+            {
+                // Access saved settings
+                var settings = MLRP_SettingsWindow.settings;
+                if (settings != null)
+                {
+                    MLRP_SettingsWindow.MLRP_ApplySettings();
+                }
             }
         }
     }
@@ -49,22 +65,36 @@ namespace MyLittleRimPony
 
     public class Alert_AntiBronyHasHarmonyChip : Alert_Thought
     {
+        private bool royaltyActive;
+
         protected override ThoughtDef Thought
         {
             get
             {
-                if (!ModsConfig.IsActive("Ludeon.RimWorld.Royalty"))
-                {
-                    return null; // Prevents alert logic from running
-                }
+                if (!royaltyActive)
+                    return null;
+
                 return DefDatabase<ThoughtDef>.GetNamed("MLRP_HarmonyChipInstalledAntiBrony", errorOnFail: false);
             }
         }
 
         public Alert_AntiBronyHasHarmonyChip()
         {
-            this.defaultLabel = "MLRP_AntiBronyHasHarmonyChipAlert".Translate();
-            this.explanationKey = "MLRP_AntiBronyHasHarmonyChipAlertText";
+            royaltyActive = ModsConfig.IsActive("Ludeon.RimWorld.Royalty");
+
+            if (royaltyActive)
+            {
+                this.defaultLabel = "MLRP_AntiBronyHasHarmonyChipAlert".Translate();
+                this.explanationKey = "MLRP_AntiBronyHasHarmonyChipAlertText";
+            }
+        }
+
+        public override AlertReport GetReport()
+        {
+            if (!royaltyActive)
+                return false;
+
+            return base.GetReport();
         }
     }
 

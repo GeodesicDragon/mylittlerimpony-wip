@@ -11,5 +11,8 @@
 		<equippedStatOffsets>
 			<ConversionPower>0.25</ConversionPower>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

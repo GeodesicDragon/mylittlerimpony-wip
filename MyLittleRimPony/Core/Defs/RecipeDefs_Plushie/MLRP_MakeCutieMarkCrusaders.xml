@@ -1,0 +1,78 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeCutieMarkCrusaders</defName>
+		<label>Make Cutie Mark Crusaders</label>
+		<description>Make a Cutie Mark Crusaders plushie.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>900</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_CutieMarkCrusaders>1</PonyPlush_CutieMarkCrusaders>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<!--ALTERNATIVE RECIPE-->
+	
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeCutieMarkCrusadersAlternative</defName>
+		<label>Make Cutie Mark Crusaders (alternative)</label>
+		<description>Make a Cutie Mark Crusaders plushie by combining plushies of Apple Bloom, Scootaloo and Sweetie Belle.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_AppleBloom</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_Scootaloo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_SweetieBelle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_CutieMarkCrusaders>1</PonyPlush_CutieMarkCrusaders>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

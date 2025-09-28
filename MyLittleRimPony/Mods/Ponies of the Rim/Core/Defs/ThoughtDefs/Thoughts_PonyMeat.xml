@@ -1,0 +1,43 @@
+<Defs>
+
+<!-- Bronies hate eating pony meat-->
+
+<ThoughtDef>
+    <defName>MLRP_BronyAtePonyMeat</defName>
+    <label>meal contained pony meat</label>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+        <li>
+            <label>meal contained pony meat</label>
+            <description>I think I'm going to be sick!</description>
+            <baseMoodEffect>-10</baseMoodEffect>
+        </li>
+    </stages>
+    <requiredTraits>
+		<li>MLRP_BronyTrait</li>
+    </requiredTraits>
+</ThoughtDef>
+
+<!-- Anti bronies love eating pony meat-->
+
+<ThoughtDef>
+    <defName>MLRP_AntiBronyAtePonyMeat</defName>
+    <label>meal contained pony meat</label>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+        <li>
+            <label>meal contained pony meat</label>
+            <description>Mmm, magic. Heh.</description>
+            <baseMoodEffect>10</baseMoodEffect>
+        </li>
+    </stages>
+    <requiredTraits>
+		<li>MLRP_AntiBronyTrait</li>
+    </requiredTraits>
+</ThoughtDef>
+
+</Defs>

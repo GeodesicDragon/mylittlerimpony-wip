@@ -12,5 +12,8 @@
 		<equippedStatOffsets>
 			<PruningSpeed>5</PruningSpeed>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

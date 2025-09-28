@@ -10,5 +10,8 @@
 		<equippedStatOffsets>
 			<MoveSpeed>2</MoveSpeed>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

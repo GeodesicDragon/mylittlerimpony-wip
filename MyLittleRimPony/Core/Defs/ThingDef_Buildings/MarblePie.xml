@@ -25,7 +25,7 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>7200</WorkToBuild>
+      <WorkToBuild>720</WorkToBuild>
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0</Flammability>
       <Mass>25</Mass>
@@ -51,20 +51,6 @@
     <researchPrerequisites>
       <li>Stonecutting</li>
     </researchPrerequisites>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <shortCircuitInRain>false</shortCircuitInRain>
-        <basePowerConsumption>150</basePowerConsumption>
-        <powerUpgrades>
-          <li>
-            <researchProject>MLRP_MagicMirrorExtraPowerResearch</researchProject>
-            <factor>0.5</factor>
-          </li>
-        </powerUpgrades>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-    </comps>
   </ThingDef>
 
 </Defs>  

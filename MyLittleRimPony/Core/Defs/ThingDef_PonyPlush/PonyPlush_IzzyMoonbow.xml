@@ -12,6 +12,9 @@
 				<part>Head</part>
 			</li>
 		</comps>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
   
 	<HediffDef>

@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<MechBandwidth>2</MechBandwidth>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

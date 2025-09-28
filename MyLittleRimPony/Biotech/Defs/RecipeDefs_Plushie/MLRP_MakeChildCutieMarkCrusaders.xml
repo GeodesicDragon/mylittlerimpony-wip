@@ -1,0 +1,78 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeChildCutieMarkCrusaders</defName>
+		<label>Make Cutie Mark Crusaders (child-sized)</label>
+		<description>Make a Cutie Mark Crusaders plushie that is small enough to be carried by a child.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>450</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_CutieMarkCrusaders_Child>1</PonyPlush_CutieMarkCrusaders_Child>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<!--ALTERNATIVE RECIPE-->
+	
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeCutieMarkCrusadersChildAlternative</defName>
+		<label>Make Cutie Mark Crusaders (child-sized (alternative))</label>
+		<description>Make a Cutie Mark Crusaders that is small enough to be carried by a child plushie by combining child-sized plushies of Apple Bloom, Scootaloo and Sweetie Belle.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_AppleBloom_Child</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_Scootaloo_Child</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PonyPlush_SweetieBelle_Child</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_CutieMarkCrusaders_Child>1</PonyPlush_CutieMarkCrusaders_Child>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

@@ -38,7 +38,7 @@
   
 <!--WEAPON-->
 
-    <ThingDef ParentName="MLRP_MakeableWeapon">
+    <ThingDef ParentName="MLRP_MakeableWeapon" Name="MLRP_RainbowLaserWeapon">
     <defName>MLRP_ElementsOfHarmonyWeaponised</defName>
     <label>Rainbow laser</label>
     <description>This version of the Elements of Harmony tends to put more emphasis on the 'harm' part.</description>
@@ -70,7 +70,7 @@
     <costList>
       <Plasteel>100</Plasteel>
 	  <Gold>5</Gold>
-	  <MLRP_ElementsOfHarmony>1</MLRP_ElementsOfHarmony>
+	  <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <recipeMaker>
       <skillRequirements>

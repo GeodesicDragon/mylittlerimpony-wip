@@ -20,5 +20,8 @@
 		<statBases>
 			<WorkToMake>6000</WorkToMake>
 		</statBases>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

@@ -1,0 +1,29 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_MakePlushieBase">
+		<defName>MLRP_MakeUnicornTwilight</defName>
+		<label>Make Twilight Sparkle (unicorn)</label>
+		<description>Make a unicorn Twilight Sparkle plushie.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>300</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<PonyPlush_UnicornTwilight>1</PonyPlush_UnicornTwilight>
+		</products>
+	</RecipeDef>
+	
+</Defs>

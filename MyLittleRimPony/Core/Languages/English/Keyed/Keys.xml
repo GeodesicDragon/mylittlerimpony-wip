@@ -13,7 +13,7 @@
 	
 	<MLRP_PoisonJokeLetterTitle>Poison joke affliction</MLRP_PoisonJokeLetterTitle> <!--Title of letter.-->
 	<MLRP_PoisonJokeGoodConsciousness>Smoking poison joke has increased {0}'s consciousness.</MLRP_PoisonJokeGoodConsciousness>
-	<MLRP_PoisonJokeBadConsciousness>Smoking poison joke has reduced {0}'s consciousness.</MLRP_PoisonJokeBadConsciousness>
+	<MLRP_PoisonJokeBadConsciousness>Smoking poison joke has rendered {0} unconscious.</MLRP_PoisonJokeBadConsciousness>
 	<MLRP_PoisonJokeGoodSpeed>Smoking poison joke has increased {0}'s movement speed.</MLRP_PoisonJokeGoodSpeed>
 	<MLRP_PoisonJokeBadSpeed>Smoking poison joke has reduced {0}'s movement speed.</MLRP_PoisonJokeBadSpeed>
 	<MLRP_PoisonJokeGoodManipulation>Smoking poison joke has improved {0}'s manipulation.</MLRP_PoisonJokeGoodManipulation>
@@ -47,8 +47,69 @@
 	<MLRP_SELetterText>Now available at the Stone Exchange:\n\n{0}</MLRP_SELetterText>
 	<MLRP_THLetterText>Now available at Tree Hugger:\n\n{0}</MLRP_THLetterText>
 	<MLRP_TPLetterText>Now available at Thingpone:\n\n{0}</MLRP_TPLetterText>
+	<MLRP_NVLetterText>Now available at Nebula Veil's Space Shop:\n\n{0}</MLRP_NVLetterText>
 	
-	<!--MODS-->	
+	<!--MOD SETTINGS-->
+	
+	<MLRP_ModName>My Little RimPony</MLRP_ModName>
+	<MLRP_SettingsApplied>[My Little RimPony] Your changes have been applied.</MLRP_SettingsApplied>
+	<MLRP_SettingsApplyOnClose>Settings will be applied when this window is closed.</MLRP_SettingsApplyOnClose>
+	<MLRP_GeneralHeader>General Settings</MLRP_GeneralHeader>
+	<MLRP_PlushieHeader>Plushie Settings</MLRP_PlushieHeader>
+	<MLRP_PlushieStuffNeeded>Making plushies requires {0} stuff</MLRP_PlushieStuffNeeded>
+	<MLRP_SunnyMinRaidThreat>Sunny will start sending raids once {0} threat points are reached</MLRP_SunnyMinRaidThreat>
+	<MLRP_PlushieSkillNeeded>Crafting plushies requires a skill level of {0}</MLRP_PlushieSkillNeeded>
+	<MLRP_PlushiesTaintedOnDeath>Plushies become tainted on death</MLRP_PlushiesTaintedOnDeath>
+	<MLRP_DBHPippSetting>[Dubs Bad Hygiene] Pipp is short</MLRP_DBHPippSetting>
+	<MLRP_DBHPippExplanation>If checked, the texture for the Pipp Petals plush will be half the size.</MLRP_DBHPippExplanation>
+	<MLRP_TraitHeader>Trait Settings</MLRP_TraitHeader>
+	<MLRP_DiscordBrightness>Discord Lamp glow radius: {0}</MLRP_DiscordBrightness>
+	<MLRP_DiscordStuff>Building a Discord lamp requires {0} stuff</MLRP_DiscordStuff>
+	<MLRP_ScrewballStuff>Building Screwballs requires {0} stuff</MLRP_ScrewballStuff>
+	<MLRP_BronyTrait>Brony trait commonality: {0}</MLRP_BronyTrait>
+	<MLRP_AntiBronyTrait>Anti brony trait commonality: {0}</MLRP_AntiBronyTrait>
+	<enableResearchLettersExplanation>Enable research letters</enableResearchLettersExplanation>
+	<enableResearchLettersToolTip>Sends a letter whenever you complete research which unlocks new recipes.</enableResearchLettersToolTip>
+	<MLRP_EvilSistersHeader>Evil Sisters Settings</MLRP_EvilSistersHeader>
+	<MLRP_SisterStuff>Building either sister statue requires {0} stuff</MLRP_SisterStuff>
+	<MLRP_DBChemfuel>Regular amount of chemfuel to use at the Daybreaker statue: {0}</MLRP_DBChemfuel>
+	<MLRP_DBChemfuelExplanation>Some recipes use more than this amount, and it will be altered accordingly.</MLRP_DBChemfuelExplanation>
+	<MLRP_SweetieBotHeader>Sweetie Bot Settings</MLRP_SweetieBotHeader>
+	<MLRP_SBRange>Turret Range: {0}</MLRP_SBRange>
+	<MLRP_SBTouch>Touch Range Accuracy: {0}</MLRP_SBTouch>
+	<MLRP_SBShort>Short Range Accuracy: {0}</MLRP_SBShort>
+	<MLRP_SBMedium>Medium Range Accuracy: {0}</MLRP_SBMedium>
+	<MLRP_SBLong>Long Range Accuracy: {0}</MLRP_SBLong>
+	<MLRP_SBCE>Aiming Accuracy: {0}</MLRP_SBCE>
+	<MLRP_HigherIsBetter>Higher numbers mean better accuracy.</MLRP_HigherIsBetter>
+	<MLRP_SpawnerHeader>Spawner Settings</MLRP_SpawnerHeader>
+	<MLRP_NRItemToSpawn>Nurse Redheart spawns glitterworld medicine</MLRP_NRItemToSpawn>
+	<MLRP_NRSpawnAmount>Nurse Redheart will spawn {0} medicine</MLRP_NRSpawnAmount>
+	<MLRP_NRSpawnTime>Nurse Redheart will spawn medicine every {0} days</MLRP_NRSpawnTime>
+	<MLRP_CiderSpawnAmount>Super Speedy Cider Squeezy 6000 will spawn {0} beer</MLRP_CiderSpawnAmount>
+	<MLRP_CiderSpawnTime>Super Speedy Cider Squeezy 6000 will spawn beer every {0} days</MLRP_CiderSpawnTime>
+	<MLRP_DerpyMass>Derpy Hooves can carry a total mass of {0} and will require {0} stuff to build</MLRP_DerpyMass>
+	<MLRP_PlushieRecyling>Recycling destroyed plushies will recover {0} materials</MLRP_PlushieRecyling>
+	<MLRP_TreeHuggerStuff>Building Tree Hugger requires {0} stuff</MLRP_TreeHuggerStuff>
+	
+	<MLRP_IdeologyHeader>Ideology DLC Settings</MLRP_IdeologyHeader>
+	<MLRP_HPOldBonuses>Harmony precept provides increased bonuses</MLRP_HPOldBonuses>
+	<MLRP_HPOldBonusesExp>If enabled, the bonuses provided by the Harmony precept will be returned to the values they had prior to Version 3.43.49 of the mod, which is when they were reduced to what they are now.</MLRP_HPOldBonusesExp>
+	
+	<MLRP_BiotechHeader>Biotech DLC Settings</MLRP_BiotechHeader>
+	<MLRP_SBMechCluster>Sweetie Bot mechanoids appear in mechanoid clusters</MLRP_SBMechCluster>
+	<MLRP_SBMute>Mute Sweetie Bot mechanoid call sound</MLRP_SBMute>
+	
+	<MLRP_AnomalyHeader>Anomaly DLC Settings</MLRP_AnomalyHeader>
+	<MLRP_ThingponeStuff>Building Thingpone requires {0} stuff</MLRP_ThingponeStuff>
+	
+	<MLRP_FactionHeader>Faction Settings</MLRP_FactionHeader>
+	<MLRP_NPCFaction>NPC faction is always present when starting a new colony</MLRP_NPCFaction>
+	<MLRP_DogFaction>Diamond Dog faction is always present when starting a new colony</MLRP_DogFaction>
+	<MLRP_BatFaction>Batpony faction is always present when starting a new colony</MLRP_BatFaction>
+	<MLRP_FactionExplanation>If checked, this faction will automatically be added to the world when starting a new colony.</MLRP_FactionExplanation>
+	
+	<!--MODS-->
 	
 	<MLRP_ExtraScrewballOutputTitle>Advanced power researched</MLRP_ExtraScrewballOutputTitle>
 	<MLRP_ExtraScrewballOutputText>+50% to Screwball power output.</MLRP_ExtraScrewballOutputText>

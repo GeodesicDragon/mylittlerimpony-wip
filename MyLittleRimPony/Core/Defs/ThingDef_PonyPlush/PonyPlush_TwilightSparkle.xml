@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<ResearchSpeed>0.25</ResearchSpeed>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

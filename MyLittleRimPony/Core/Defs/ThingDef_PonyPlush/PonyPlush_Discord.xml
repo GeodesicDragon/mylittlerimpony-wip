@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

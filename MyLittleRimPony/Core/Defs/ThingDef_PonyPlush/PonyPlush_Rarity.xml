@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<TradePriceImprovement>0.25</TradePriceImprovement>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

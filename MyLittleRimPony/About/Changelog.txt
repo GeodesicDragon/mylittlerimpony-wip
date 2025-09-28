@@ -1,29 +1,218 @@
-Version 6.73.141 (May 26th 2025)
+Version 7.0.0 (September 25th 2025)
 
-(NYI) * Rimefeller: Added 2 new recipes to the Daybreaker statue.
-	* Convert silver to synthylene
-	* Convert synthylene to silver.
-(NYI) * Rimefeller: Added a new recipe to the Fabric Exchange which allows you to purchase 100 synthamide for 690 silver (25% above market value).
+* Core: Changing mod settings no longer requires you to install XML Extensions.
+* Core: Added the ability to configure whether or not the research tracker is enabled.
+	* Letters are enabled by default.
+	* Thanks to Siveen from the MLRP Discord for suggesting this change.
+* Core: Added the ability to configure the number of points you need to get to before Sunny Starscout will start sending raids.
+	* Minimum is 1000.
+	* Maximum is 10000.
+	* Default is 5000.
+	* Thanks again to Siveen for suggesting this change.
+* Core: Re-added the ability to make the Elements of Harmony and Cutie Mark Crusaders by combining the relevant plushies.
+* Biotech: Added child-equippable Cutie Mark Crusaders. You can also make these by combining the relevant child-sized plushies.
+* Biotech: Added a separate Rainbow Dash plushie that you can give to your fighting children.
+* Core: Removed the ability to configure the crafting level needed to make plushies.
+* Core: Updated the list of names for NPC faction settlements with 101 new entries.
+	* This brings the total number of potential settlement names to 154, which will hopefully prevent duplicates such as 'Ponyville 2.'
+	* All names were taken from the MLP Wiki: <https://mlp.fandom.com/wiki/Locations>
+* Core: The cutie pox has evolved, and is now infecting people entirely at random, though the chance appears to be higher in warmer biomes.
+* Core: You can now burn apparel at the Daybreaker statue.
+* Core: You can now burn drugs at the Daybreaker statue.
+* Core: You can now burn weapons at the Daybreaker statue.
+* Core: The research tracker no longer sends multiple letters whenever research unlocks recipes at more than one building.
+* Core: Changed the world map icon used by the player brony community faction.
+* Core: Removed recipes for [Ry]Rimcraft Metals, as this mod has been updated for 1.5 and above.
+* Core: Sweetie Bot turrets no longer have a negative beauty rating.
+* Core: Removed the ability to set the hit points of aggro turrets.
+* Core: Making a rainbow laser now requires three advanced components instead of the Elements of Harmony.
+* Core: Removed the ability to change back to the old Twilight Sparkle texture. It's still there, but you'll have to create your own patch (or edit the existing XML) if you want to revert. I tried adding the option to change it, but it wouldn't work without a lot of faffing around.
+* Royalty: Removed the ability to turn the anima tree into the Tree of Harmony. (Things kept exploding when I tried it.)
+* Biotech: The shrewd negotiator ability should now work as intended. I observed a 17% reduction in prices during testing where I didn't before.
+* Oddyssey: The price of purchasing 100 vacstone blocks at the Stone Exchange has been increased to 1000 silver.
+	* Marble has realised that it was much easier for people to buy the blocks from her instead of going into space for them.
+	* Selling blocks back to her will still earn you the standard 200 silver.
+* Combat Extended: Patches for this mod will no longer be loaded in version 1.5 of RimWorld.
+* Combat Extended: Fixed 'Verse.PatchOperationReplace(xpath="/Defs/ThingDef[defName="PonyPlush_ShiningArmour"]/statBases"): Failed to find a node with the given xpath' error.
+* Combat Extended: Fixed 'Verse.PatchOperationAdd(xpath="/Defs/ThingDef[defName="PonyPlush_ShiningArmour"]/apparel/bodyPartGroups"): Failed to find a node with the given xpath' error.
+* Combat Extended/Biotech: Fixed 'Verse.PatchOperationAdd(xpath="/Defs/ThingDef[defName="PonyPlush_ShiningArmour_Child"]/apparel/bodyPartGroups"): Failed to find a node with the given xpath' error.
+* Combat Extended/Odyssey: Fixed magical ammunition obstructing Nebula Veil in the research window.
+* MedPod: MedPods are now prevented from curing the Cutie Pox.
+* MedPod: Fixed MedPods attempting to cure the hediff given by the Izzy Moonbow plushie.
+* Vanilla Achievements Expanded: Changed the texture of the 'Book Horse' achievement.
+* Vanilla Backgrounds Expanded: Changed the image used for the 'Sunny And Her Friends' background to one that includes Misty.
+* Vanilla Backgrounds Expanded: Changed the title of the 'Sunny And Her Friends' background to 'The Mane Six (G5)' to reflect the new image.
+
+Version 6.115.209 (August 16th 2025)
+
+* Core: Added a new recipe to the Fabric Exchange which will allow you to buy 10 dye for 30 silver.
+* Odyssey: Added two new recipes to Tree Hugger which allow you to buy and sell psilocaps. Available once drug production is researched.
+* Odyssey: Added two new recipes to Daybreaker which allow you to convert silver to obsidian and back again.
+* Odyssey: Added a new recipe to Nebula Veil's Space shop lets you buy pilot assistants.
+	* Unlocked once you research advanced gravtech.
+	* Requires 8 Intellectual to acquire.
+	* Costs 750 silver.
+* XML Extensions: Added a new setting which will give diamond dog, pegasus and unicorn xenotypes their drug dependencies back. Disabled by default.
+* Core: Fixed being unable to uninstall and move Miss Harshwhinny.
+* Core: Fixed selling recipes at the Stone Exchange showing as 'purchasing materials' while being performed.
+* Core: Fixed being unable to use Derpy Hooves transport pods.
+* Core: You can now add additional things to Derpy Hooves transport pods once loading has begun.
+* Core: Fixed Nurse Haywick not increasing medical tend quality and surgery success chance.
+* Core: You can now rotate the magic mirror.
+* Core: Reordered some recipes at the Daybreaker statue.
+* Biotech: Child-sized Starlight Glimmer plushies can now be equipped on babies.
+* Royalty: The harmony chip now provides +10% to vacuum resistance if the Odyssey DLC is enabled.
+* Biotech: The diamond dog xenotype is no longer genetically dependent on poison joke. (1)
+* Biotech: The pegasus xenotype is no longer genetically dependent on go-juice. (1)
+* Biotech: The unicorn xenotype is no longer genetically dependent on wake-up. (1)
+* Biotech: The child-sized Spoiled Rich plushie now provides +20% to vacuum resistance on top of her usual bonus.
+* Oddysey: The texture for Nebula Veil's Space Shop now remains the same regardless of which direction it is rotated.
+* Oddysey: The Spoiled Rich plushie now provides +10% to vacuum resistance on top of her usual bonus.
+* Dubs Rimatomics: Fixed content for this mod not being loaded in version 1.6 of the game.
+
+1. This change will only apply to newly spawned pawns of these xenotypes; you will need to use dev mode to reset any existing pawns you may have.
+
+Version 6.108.193 (July 14th 2025)
+
+* Odyssey: Added two new recipes to the Stone Exchange which allow you to buy and sell vacstone.
+	* Vacstone has a market value of 2 silver, so 100 blocks will cost or gain you 200 silver.
+	* Unlocked once you research advanced gravtech.
+* Ideology: Fixed 'Could not load Texture2D at 'Things/Plant/TreeAnima_Immature' in any active mod or in base resources' error.
+* Odyssey: Increased the price of 50 gravlite panels at Nebula's shop to 1320 silver (was 820). This includes the price of the 250 vacstone blocks you would normally have used to make them.
+* MendAndRecycle: Pony plushies can no longer be recycled using the 'recycle apparel' recipe. (1)
+* Ponies of the Rim: Fixed a bug which would cause your game to crash to desktop if encountered.
+* Ponies of the Rim: Fixed 'No RimWorld.FactionDef named Pony_PlayerExpedition found to give to VEF.Factions.StartingGoodwillByFaction (null with starting goodwill of 100)' error.
+* XML Extensions: Fixed 'MatFrom with null sourceTex' error. (2)
+* XML Extensions: Fixed 'EmitModSubclass called with null ModContentPack' error. (2)
+* XML Extensions: Fixed harmony tree patch incorrectly requiring the Ideology DLC.
+
+1. I noticed that plushies were being recycled the moment they were made, so this change aims to fix that issue.
+2. Thanks to Imranfish (XML Extensions dev) for pointing me towards fixing these issues.
+
+Version 6.106.185 (July 12th 2025)
+
+* Core: Added five new recipes to the Stone Exchange which allow you to sell excess stone blocks.
+* Ideology: Added a recipe to the Nightmare Moon statue to request 1000 units of raw fungus at a cost of 1200 silver.
+* Anomaly: Added a new recipe to the Fabric Exchange which will allow you to convert 100 dread leather into 233 cloth.
+* Anomaly: Added a new recipe to Thingpone which allows you to purchase a revenant vertebrae.
+	* Unlocked once you research revenant invisibility.
+	* Costs 2850 silver and 1425 twisted meat.
+* Odyssey: Added Nebula Veil's Space Shop.
+	* Sells some DLC items in exchange for silver.
+	* Requires 500 metals, 6 components, and 12 Construction to build.
+	* Can be researched after completing basic gravtech.
+	* Purchasing some items at this building will require your pawns to make use of their skills.
+	* As always, purchasing items at this building is more expensive than acquiring them normally.
+	* Nebula Veil is an original character, owned by me.
+	* Nebula Veil artwork by Sweetpea-and-Friends: https://sweetpea-and-friends.carrd.co
+* Odyssey: Added 3 new recipes, all accessed via Nebula's shop.
+	* Purchase 100 gravlite panels (820 silver and standard gravtech research).
+	* Purchase shuttle engine (3500 silver, shuttles research and 12 Intellectual).
+	* Purchase sentience catalyst (500 silver and 5 Social).
+* Odyssey: Added 6 new recipes to the Fabric Exchange.
+	* Purchase mastodon leather (320 silver)
+	* Purchase sealskin (420 silver)
+	* Purchase thrumbomane (2100 silver)
+	* Purchase mink fur (550 silver)
+	* Purchase hippo leather (390 silver)
+	* Purchase armadillo leather (340 silver)
+* Odyssey: Added the chance to find a unique Rainbow Laser.
+* Vanilla Achievements Expanded/Biotech: Added a new achievement.
+* Vanilla Achievements Expanded/Odyssey: Added a new achievement.
+* Core: Fixed the stonemason not buying stone blocks.
+* Core: Increased the silver cost of requesting some items from the Nightmare Moon statue.
+	* Bionic eye: 1550 silver (was 1300)
+	* Bionic arm: 1550 silver (was 1300)
+	* Bionic leg: 1550 silver (was 1300)
+	* Bionic spine: 1550 silver (was 1300)
+	* Bionic heart: 1550 silver (was 1300)
+	* Bionic stomach: 1180 silver (was 1000)
+	* Bionic ear: 1180 silver (was 1000)
+	* Bionic tongue: 1180 silver (was 1000)
+	* Bionic jaw: 1550 silver (was 750)
+* Core: Requesting bionics from Nightmare Moon now requires you to provide the plasteel and advanced components normally used to make them. (1)
+* Core: Reduced the amount of gold needed for requesting archotech limbs to 250 (was 500). (2)
+* Core: Requesting archotech limbs from Nightmare Moon now requires you to provide plasteel and advanced components instead of bionic limbs. (2)
+* Core: Reduced the cost of researching plushie recycling to 500 (was 3000).
+* Core: Reduced the tech level of the plushie recycling research to Neolithic (was Medieval).
+* Core: Researching how to build Tree Hugger now only requires you to research drug production.
+* Core: Reduced the amount of work needed to build the Stone Exchange to 720 (was 7200).
+* Core: Fixed letters related to new Tree Hugger recipes incorrectly mentioning the Nightmare Moon statue.
+* Core: Making beer at the Daybreaker statue now uses half the regular amount of chemfuel (25, unless you've changed it in XML Extensions).
+* Core: The texture for Screwball now remains the same regardless of which direction it is rotated.
+* Ideology: Fixed the Elements of Harmony not increasing pruning speed.
+* Biotech: Fixed 'XML error: Duplicate XML node name Fertility in this XML block: (massive wall of text)' error.
+* Biotech: Fixed being unable to request a control sublink (standard) from the Nightmare Moon statue after researching standard mechtech.
+* Anomaly: Inhumanised pawns no longer care about friendship and magic.
+	* Thoughts related to the cutie pox, plushies and the party cannon no longer give mood buffs to inhumanised pawns.
+	* Inhumanised anti bronies no longer complain about carrying plushies.
+	* Inhumanised anti bronies no longer complain about having a harmony chip installed.
+	* Inhumanised anti bronies no longer complain about being a pony xenotype.
+* Dubs Bad Hygiene: Requesting bionics from Nightmare Moon now requires you to provide the plasteel and advanced components normally used to make them.
+* Ponies of the Rim: Anti bronies now have a -40 opinion of ponies (was -120). (3)
+* Ponies of the Rim: Anti bronies now have a -40 opinion of ponyx (was -120). (3)
+* Ponies of the Rim: Anti bronies no longer consider ponies and ponyx to be physically appealing.
+* Ponies of the Rim: Fixed anti bronies not having a negative opinion of ponyx.
+* Ponies of the Rim: Fixed bronies not having a positive opinion of ponyx.
+* Ponies of the Rim: Requesting bionics from Nightmare Moon now requires you to provide the plasteel and advanced components normally used to make them.
+* Ponies of the Rim: Thoughts related to eating pony meat no longer apply to inhumanised pawns.
+* Ponies of the Rim: Thoughts related to wearing pony fur apparel no longer apply to inhumanised pawns.
+* Ponies of the Rim: Thoughts related to ponies no longer apply to inhumanised pawns. (Yes, that includes anti bronies hating them.)
+* Vanilla Expanded Framework: Fixed 'Exception loading def from file MLP_Faction_NPC.xml: System.ArgumentException: Could not find type named VFECore.FactionDefExtension... etc' error (only appeared in 1.6).
+
+1. This change was made to bring bionic limb requests in line with mechanitor items, which you also need to provide the other materials for.
+2. This change makes it much faster to request archotech limbs, as you only need to provide the materials needed to make the bionic limbs you would normally have offered before. For example, requesting an archotech leg now costs 2800 silver, 75 plasteel, 20 advanced components, and 250 gold.
+3. It was far too easy to make anti bronies happy by killing ponies, so this change should nerf their mood bonuses.
+
+Version 6.85.147 (June 12th 2025)
+
+* Core: Added minor support for the upcoming RimWorld 1.6 update.
+	* Please be advised that not all of the mod patches have been tested, so things *might* explode.
+	* If anything does happen to explode, please contact me via the MLRP Discord server.
+* Rimatomics: Added Littlepip.
+* Rimatomics: Added 9 new recipes, all of which are accessed at Littlepip.
+	* Due to how Rimatomics handles research, all of these recipes will be available from the start of a new game.
+	* Items purchased at this building are twice as expensive than acquiring them normally.
+	* Purchase 250 turbine blades (710 silver)
+	* Purchase 100 uranium pellets (400 silver)
+	* Purchase 10 plutonium (1200 silver)
+	* Purchase 100 depleted uranium pellets (1600 silver)
+	* Purchase 1 fuel rods (2000 silver)
+	* Purchase 1 fuel rods MOX (4000 silver)
+	* Purchase 1 rocket engine (80 silver)
+	* Purchase 1 missile fuselage (80 silver)
+	* Purchase 1 fission warhead (28800 silver)
+* Rimefeller: Added 2 new recipes to the Daybreaker statue.
+	* Convert 1000 silver to 500 synthylene
+	* Convert 500 synthylene to 1000 silver
+* Rimefeller: Added a new recipe to the Fabric Exchange which allows you to purchase 100 synthamide for 1000 silver (25% above market value).
+* Vanilla Achievements Expanded: Added an achievement to build Littlepip.
 * XML Extensions: Added the ability to configure how much stuff is needed to build Tree Hugger.
 	* Minimum is 100.
 	* Maximum is 1000.
 	* Default is 200.
 * Core: Fixed 'Failed to find RimWorld.ThoughtDef named MLRP_HarmonyChipInstalledAntiBrony. There are (x) defs of this type loaded.' error seen when Royalty wasn't enabled. Thanks to Shizuka_Na_Ikaku from the MLRP Discord for bringing this to my attention.
-(NYI - NEED TO REPLICATE) * Core: Fixed a clipping issue with fanfiction displayed on bookshelves facing a particular direction. Siveen
-(NYI - NEED TO REPLICATE) * Core: Fixed 'Exception while recalculating thought state for pawn <pawn name>: System.NullReferenceException: Object reference not set to an instance of an object' error spam.
+* Core: Fixed fanfiction clipping through bookshelves. Thanks to Siveen from the MLRP Discord for bringing this to my attention.
+* Core: Fixed 'Exception while recalculating thought state for pawn <pawn name>: System.NullReferenceException: Object reference not set to an instance of an object' error spam seen when the Royalty DLC wasn't enabled. Thanks again to Shizuka_Na_Ikaku for bringing this to my attention.
 * Core: Fixed a typo in the herbal cure kit description.
 * Core: Fixed letter not being sent when researching gunsmithing.
 * Core: Fixed letter not being sent when researching rainbow laser.
+* Core: Fixed Spoiled Rich decreasing toxic environment resistance instead of increasing it.
+* Core: The Stone Exchange no longer requires electricity to function, to make things fairer for early game tribal colonies.
+* Core: The Fabric Exchange no longer requires electricity to function, to make things fairer for early game tribal colonies.
+* Core: Building the Fabric Exchange no longer requires you to research complex clothing first.
 * Royalty: Fixed the patch which allowed the Empire to use NPC faction pawns as mercenaries not working properly.
 * Royalty: Fixed the alert for an anti brony with a harmony chip displaying incorrectly. Thanks to Aelanna from the RimWorld Discord for helping.
+* Royalty: Fixed the harmony chip decreasing toxic environment resistance instead of increasing it.
 * Biotech: Fixed a patch which was trying to give two fertility bonuses to the harmony chip.
 * Biotech: Fixed the patch which allowed the Empire to use Diamond Dog faction pawns as mercenaries not working properly.
 * Biotech: Converted the Sweetie Bot mechanoid call sound to .ogg format.
 * Biotech: Converted the Sweetie Bot mechanoid wound sound to .ogg format.
 * Biotech: Converted the Sweetie Bot mechanoid death sound to .ogg format.
-* Biotech: Fixed 'Patch operation Verse.PatchOperationAdd(Defs/HediffDef[defName="MLRP_HarmonyChipInstalled"]/stages/li/statOffsets) failed' error seen when you didn't have the Royalty DLC enabled. Thanks to Shizuka_Na_Ikaku from the MLRP Discord for bringing this to my attention.
+* Biotech: Fixed 'Patch operation Verse.PatchOperationAdd(Defs/HediffDef[defName="MLRP_HarmonyChipInstalled"]/stages/li/statOffsets) failed' error seen when you didn't have the Royalty DLC enabled. Thanks again to Shizuka_Na_Ikaku for bringing this to my attention.
 * Hooligan Faction: Drug dealers no longer have abundant stocks of the Heart's Desire flower.
-* XML Extensions: Fixed 'Patch operation Verse.PatchOperationSequence(count=45, lastFailedOperation=XmlExtensions.OptionalPatch) failed' error seen when you didn't have Vanilla Achievements Expanded enabled. Thanks to Siveen from the MLRP Discord for bringing this to my attention.
+* Rim War: The Diamond Dog faction now creates new settlements.
+* XML Extensions: Fixed 'Patch operation Verse.PatchOperationSequence(count=45, lastFailedOperation=XmlExtensions.OptionalPatch) failed' error seen when you didn't have Vanilla Achievements Expanded enabled. Thanks again to Siveen for bringing this to my attention.
 
 Version 6.69.125 (April 29th 2025)
 

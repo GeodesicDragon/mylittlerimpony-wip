@@ -9,5 +9,8 @@
 		<equippedStatOffsets>
 			<MeleeDodgeChance>10</MeleeDodgeChance>
 		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+		</apparel>
 	</ThingDef>
 </Defs>

@@ -11,7 +11,31 @@
 			<def>PlayerFaction</def>
 			<factionDef>MLRP_BronyFaction</factionDef>
 		</playerFaction>
+		<surfaceLayer>
+			<def>SurfaceLayerFixed</def>
+			<tag>Surface</tag>
+			<layer>Surface</layer>
+			<settingsDef>Surface</settingsDef>
+			<hide>true</hide>
+			<connections>
+				<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+					<zoomMode>ZoomOut</zoomMode>
+				</Orbit>
+				</connections>
+		</surfaceLayer>
 		<parts>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
+				<def>PlanetLayer</def>
+				<tag>Orbit</tag>
+				<layer>Orbit</layer>
+				<settingsDef>Orbit</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Surface>
+						<zoomMode>ZoomIn</zoomMode>
+					</Surface>
+				</connections>
+			</li>
 			<!-- Config pages -->
 			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
 				<def>ConfigurePawnsXenotypes</def>
@@ -196,35 +220,30 @@
 				<def>StartingThing_Defined</def>
 				<thingDef>PonyPlush_Applejack</thingDef>
 				<count>1</count>
-				<stuff>Cloth</stuff>
 			</li>
 			
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
 				<thingDef>PonyPlush_Discord</thingDef>
 				<count>1</count>
-				<stuff>Cloth</stuff>
 			</li>
 			
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
 				<thingDef>PonyPlush_RainbowDash</thingDef>
 				<count>1</count>
-				<stuff>Cloth</stuff>
 			</li>
 
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
 				<thingDef>PonyPlush_Rarity</thingDef>
 				<count>1</count>
-				<stuff>Cloth</stuff>
 			</li>
 			
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
 				<thingDef>PonyPlush_TwilightSparkle</thingDef>
 				<count>1</count>
-				<stuff>Cloth</stuff>
 			</li>
 
 			<!-- Game start dialog -->

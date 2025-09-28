@@ -2,7 +2,6 @@
 
 <TraitDef>
 	<defName>MLRP_BronyTrait</defName>
-	<commonality>0.1</commonality>
 	<degreeDatas>
 		<li>
 			<label>brony</label>
@@ -14,6 +13,7 @@
 				<MLRP_ElementsOfHarmony>-3~1</MLRP_ElementsOfHarmony>
 				<MLRP_ElementsOfHarmonyWeaponised>-98~1</MLRP_ElementsOfHarmonyWeaponised> <!--Does this equal a 1% chance, or am I overthinking it?-->
 			</possessions>
+			<commonality>0.1</commonality>
 		</li>
 	</degreeDatas>
 	<conflictingTraits>
@@ -32,6 +32,7 @@
 			<possessions>
 				<PonyPlush_Ruined>0~2</PonyPlush_Ruined>
 			</possessions>
+			<commonality>0.2</commonality>
 		</li>
 	</degreeDatas>
 	<!--<conflictingTraits>

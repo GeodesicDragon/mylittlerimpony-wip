@@ -1,0 +1,12 @@
+<Defs>
+
+	<RecipeDef Name="MLRP_MakePlushieBase" Abstract="True">
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<recipeUsers>
+			<li>PlushieBench</li>
+		</recipeUsers>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+</Defs>
